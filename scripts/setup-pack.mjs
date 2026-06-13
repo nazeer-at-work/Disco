@@ -60,7 +60,7 @@ function* walk(dir) {
 
 async function main() {
   const cfg = JSON.parse(await fsp.readFile(cfgPath, 'utf8'));
-  const brand = cfg.brand || { name: cfg.appName, slug: slugify(cfg.appName), componentName: 'FluffyIcon', signingPrefix: 'FLUFFY' };
+  const brand = cfg.brand || { name: cfg.appName, slug: slugify(cfg.appName), componentName: 'DiscoIcon', signingPrefix: 'FLUFFY' };
 
   const newName = arg('--name');
   if (!newName) {
@@ -98,9 +98,9 @@ async function main() {
     [cur.pkg, next.pkg],
     [`${cur.signing}_`, `${next.signing}_`],
     [cur.name, next.name],
-    [cap(lastSeg(cur.pkg)), cap(lastSeg(next.pkg))], // e.g. "Fluff" -> "Disco"
+    [cap(lastSeg(cur.pkg)), cap(lastSeg(next.pkg))], // e.g. "Disco" -> "Disco"
     [cur.slug, next.slug],
-    [lastSeg(cur.pkg), lastSeg(next.pkg)],           // e.g. "fluff" -> "disco"
+    [lastSeg(cur.pkg), lastSeg(next.pkg)],           // e.g. "disco" -> "disco"
   ].filter(([a, b]) => a && b && a !== b);
 
   const applyPairs = text => {

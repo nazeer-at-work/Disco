@@ -1,4 +1,4 @@
-package com.fluff.launcher
+package com.disco.launcher
 
 import android.content.ComponentName
 import android.content.Context

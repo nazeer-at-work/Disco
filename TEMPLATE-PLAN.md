@@ -1,7 +1,7 @@
 # Android Icon-Pack Template — Build Plan (v2)
 
-Reusable, Android-only icon-pack template derived from `Fluff`. Same UI, none of
-Fluff's bloat. Goal: a clean structure that scales to **1000+ apps without the
+Reusable, Android-only icon-pack template derived from `Disco`. Same UI, none of
+Disco's bloat. Goal: a clean structure that scales to **1000+ apps without the
 APK exploding**, with a prompt-driven AI icon generator, a Lawnicons-based mapping
 pipeline, and one-command release.
 
@@ -38,11 +38,11 @@ not eliminate growth:
    (`cfg.iconStyle.maxIconPx`, `webpQuality`). 150 KB-avg → ~15 KB-avg.
    → **547 icons: 82 MB → ~10 MB; 1000 icons: ~15–18 MB.**
 2. **Single density folder** — keep `drawable-nodpi` (one copy, no density dupes).
-3. **Native resource bridge** for the in-app grid: resolve `ic_fluffy_<name>` → URI
+3. **Native resource bridge** for the in-app grid: resolve `ic_disco_<name>` → URI
    so the gallery renders the launcher drawable. Removes the separate gallery copy
    (~9 MB @1000) and the 1000-`require()` JS-bundle/Metro cost.
 
-Target: **1000 apps ≈ 15–20 MB AAB** (vs Fluffy ~128 MB for 547).
+Target: **1000 apps ≈ 15–20 MB AAB** (vs Disco ~128 MB for 547).
 
 ---
 
@@ -64,10 +64,10 @@ Target: **1000 apps ≈ 15–20 MB AAB** (vs Fluffy ~128 MB for 547).
 ### B. Component→icon mapping — from Lawnicons
 - Source: Lawnicons `app/assets/appfilter.xml` (~3 MB, **Apache-2.0**), pinned to a
   commit, vendored at `config/lawnicons/appfilter.xml`. Same `<item component=…
-  drawable=…/>` format as Fluff.
+  drawable=…/>` format as Disco.
 - `scripts/build-appfilter.mjs`: for each Lawnicons `<item>` whose icon-name we have
   a drawable for (join by slug, with `config/aliases.json` overrides), emit the item
-  pointing at OUR `ic_fluffy_<name>`. Drop the rest.
+  pointing at OUR `ic_disco_<name>`. Drop the rest.
 - Replaces `build-component-mappings.js` + the adb device-pull + rules workflow.
 - Add `THIRD_PARTY_NOTICES.md` (Lawnicons attribution) + `npm run sync:lawnicons`.
 
@@ -119,7 +119,7 @@ Reads `config/pack.config.json`; one command does the rebrand+ship:
 
 ---
 
-## 5. Strip / edit checklist (from Fluff)
+## 5. Strip / edit checklist (from Disco)
 
 DELETE: feedback API, `config/supabase.ts`, `supabase/`, `success.webp`+`error.webp`,
 `ios/`, `Gemfile`, `.bundle/`, Podfile, `.codex/`, `extensions/`, the two venvs,

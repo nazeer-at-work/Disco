@@ -59,10 +59,10 @@ react {
  */
 def enableProguardInReleaseBuilds = true
 def hasReleaseSigningConfig =
-        project.hasProperty("FLUFFY_UPLOAD_STORE_FILE") &&
-        project.hasProperty("FLUFFY_UPLOAD_STORE_PASSWORD") &&
-        project.hasProperty("FLUFFY_UPLOAD_KEY_ALIAS") &&
-        project.hasProperty("FLUFFY_UPLOAD_KEY_PASSWORD")
+        project.hasProperty("DISCO_UPLOAD_STORE_FILE") &&
+        project.hasProperty("DISCO_UPLOAD_STORE_PASSWORD") &&
+        project.hasProperty("DISCO_UPLOAD_KEY_ALIAS") &&
+        project.hasProperty("DISCO_UPLOAD_KEY_PASSWORD")
 
 def isReleaseTaskRequested = gradle.startParameter.taskNames.any { taskName ->
     def lower = taskName.toLowerCase()
@@ -76,7 +76,7 @@ def isBundleTaskRequested = gradle.startParameter.taskNames.any { taskName ->
 if (isReleaseTaskRequested && !hasReleaseSigningConfig) {
     throw new GradleException(
         "Missing release signing properties. " +
-        "Set FLUFFY_UPLOAD_STORE_FILE, FLUFFY_UPLOAD_STORE_PASSWORD, FLUFFY_UPLOAD_KEY_ALIAS, FLUFFY_UPLOAD_KEY_PASSWORD."
+        "Set DISCO_UPLOAD_STORE_FILE, DISCO_UPLOAD_STORE_PASSWORD, DISCO_UPLOAD_KEY_ALIAS, DISCO_UPLOAD_KEY_PASSWORD."
     )
 }
 
@@ -98,9 +98,9 @@ android {
     buildToolsVersion rootProject.ext.buildToolsVersion
     compileSdk rootProject.ext.compileSdkVersion
 
-    namespace "com.fluff"
+    namespace "com.disco"
     defaultConfig {
-        applicationId "com.fluffy.iconpack"
+        applicationId "com.disco.iconpack"
         minSdkVersion rootProject.ext.minSdkVersion
         targetSdkVersion rootProject.ext.targetSdkVersion
         versionCode 1
@@ -124,10 +124,10 @@ android {
         }
         release {
             if (hasReleaseSigningConfig) {
-                storeFile file(FLUFFY_UPLOAD_STORE_FILE)
-                storePassword FLUFFY_UPLOAD_STORE_PASSWORD
-                keyAlias FLUFFY_UPLOAD_KEY_ALIAS
-                keyPassword FLUFFY_UPLOAD_KEY_PASSWORD
+                storeFile file(DISCO_UPLOAD_STORE_FILE)
+                storePassword DISCO_UPLOAD_STORE_PASSWORD
+                keyAlias DISCO_UPLOAD_KEY_ALIAS
+                keyPassword DISCO_UPLOAD_KEY_PASSWORD
             }
         }
     }

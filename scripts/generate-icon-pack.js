@@ -136,7 +136,7 @@ function buildSymbolVector(symbolName) {
 function buildIconDrawable(color, symbolName) {
   return `<?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:drawable="@drawable/ic_fluffy_back" />
+    <item android:drawable="@drawable/ic_disco_back" />
 
     <item android:left="${cfg.iconStyle.blobInsetDp}dp" android:top="${cfg.iconStyle.blobInsetDp}dp" android:right="${cfg.iconStyle.blobInsetDp}dp" android:bottom="${cfg.iconStyle.blobInsetDp}dp">
         <shape android:shape="oval">
@@ -158,14 +158,14 @@ function buildIconDrawable(color, symbolName) {
         android:gravity="center"
         android:width="${cfg.iconStyle.glyphSizeDp}dp"
         android:height="${cfg.iconStyle.glyphSizeDp}dp"
-        android:drawable="@drawable/ic_fluffy_symbol_${symbolName}" />
+        android:drawable="@drawable/ic_disco_symbol_${symbolName}" />
 </layer-list>`;
 }
 
 function buildCameraFuzzyDrawable(color) {
   return `<?xml version="1.0" encoding="utf-8"?>
 <layer-list xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:drawable="@drawable/ic_fluffy_back" />
+    <item android:drawable="@drawable/ic_disco_back" />
 
     <item android:left="8dp" android:top="10dp" android:right="8dp" android:bottom="10dp">
         <shape android:shape="rectangle">
@@ -279,14 +279,14 @@ function getRasterBaseCandidates(rasterDrawable, entry = {}, iconName = '') {
   add(entry.rasterSource);
   add(rasterDrawable);
   add(iconName);
-  add(iconName.replace(/^ic_fluffy_/, ''));
+  add(iconName.replace(/^ic_disco_/, ''));
 
   Array.from(bases).forEach((base) => {
-    add(base.replace(/^ic_fluffy_/, ''));
+    add(base.replace(/^ic_disco_/, ''));
     add(base.replace(/_custom$/, ''));
-    add(`ic_fluffy_${base}`);
+    add(`ic_disco_${base}`);
     add(`${base}_custom`);
-    add(`ic_fluffy_${base}_custom`);
+    add(`ic_disco_${base}_custom`);
   });
 
   return Array.from(bases);
@@ -457,20 +457,20 @@ async function main() {
     sourceFiles.map((f) => path.basename(f, path.extname(f)).toLowerCase()),
   );
 
-  writeFile(path.join(drawableDir, 'ic_fluffy_back.xml'), buildBackDrawable());
-  writeFile(path.join(drawableDir, 'ic_fluffy_mask.xml'), buildMaskDrawable());
-  writeFile(path.join(drawableDir, 'ic_fluffy_upon.xml'), buildUponDrawable());
+  writeFile(path.join(drawableDir, 'ic_disco_back.xml'), buildBackDrawable());
+  writeFile(path.join(drawableDir, 'ic_disco_mask.xml'), buildMaskDrawable());
+  writeFile(path.join(drawableDir, 'ic_disco_upon.xml'), buildUponDrawable());
 
   const usedSymbols = new Set();
   const unavailableDrawables = new Set();
 
   // Auto-discover: every source image in assets/icons-src becomes a raster
-  // drawable (ic_fluffy_<slug>), so adding an icon is just "generate then build"
+  // drawable (ic_disco_<slug>), so adding an icon is just "generate then build"
   // with no need to hand-edit config/icon-pack.json. Explicit entries in
   // cfg.drawables still win and can carry per-icon overrides (rounding, etc.).
   const drawableEntries = { ...(cfg.drawables || {}) };
   for (const base of sourceBases) {
-    const drawableName = `ic_fluffy_${base.replace(/-/g, '_')}`;
+    const drawableName = `ic_disco_${base.replace(/-/g, '_')}`;
     if (!drawableEntries[drawableName]) {
       drawableEntries[drawableName] = { template: 'raster', rasterSource: base };
     }
@@ -483,7 +483,7 @@ async function main() {
     let template = entry.template || 'blobSymbol';
 
     if (template !== 'raster') {
-      const simpleName = name.replace(/^ic_fluffy_/, '');
+      const simpleName = name.replace(/^ic_disco_/, '');
       const aliasBase = hasSourceForSimpleName(simpleName, sourceBases);
       if (aliasBase) {
         entry.template = 'raster';
@@ -530,7 +530,7 @@ async function main() {
 
   Array.from(usedSymbols).forEach((symbolName) => {
     writeFile(
-      path.join(drawableDir, `ic_fluffy_symbol_${symbolName}.xml`),
+      path.join(drawableDir, `ic_disco_symbol_${symbolName}.xml`),
       buildSymbolVector(symbolName),
     );
   });

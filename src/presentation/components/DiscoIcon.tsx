@@ -2,7 +2,7 @@ import React from 'react';
 import { StyleSheet, View } from 'react-native';
 import { SystemIconId } from '../../domain/entities/SystemIcon';
 
-type FluffyIconProps = {
+type DiscoIconProps = {
   id: SystemIconId;
   size?: number;
   hue: string;
@@ -20,7 +20,7 @@ function Dot({ size, color, style }: { size: number; color: string; style?: obje
   );
 }
 
-export function FluffyIcon({ id, size = 56, hue }: FluffyIconProps) {
+export function DiscoIcon({ id, size = 56, hue }: DiscoIconProps) {
   const glyphSize = size * 0.62;
 
   return (

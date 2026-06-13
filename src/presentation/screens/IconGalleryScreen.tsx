@@ -24,7 +24,7 @@ import {
 } from 'react-native';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { IconCard } from '../components/IconCard';
-import { FluffyIcon } from '../components/FluffyIcon';
+import { DiscoIcon } from '../components/DiscoIcon';
 import { SystemIconDescriptor } from '../../domain/entities/SystemIcon';
 import { appLinks } from '../../config/app-links';
 import iconVersionsConfig from '../../config/icon-versions.json';
@@ -537,7 +537,7 @@ export function IconGalleryScreen({
                   style={previewIconImageStyle}
                 />
               ) : selectedIcon ? (
-                <FluffyIcon
+                <DiscoIcon
                   id={selectedIcon.id}
                   hue={selectedIcon.hue}
                   size={92}

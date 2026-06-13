@@ -30,7 +30,7 @@ const outputPaths = [
   path.join(root, 'android', 'app', 'src', 'main', 'assets', 'appfilter.xml'),
 ];
 
-const NON_ICON = new Set(['ic_fluffy_back', 'ic_fluffy_mask', 'ic_fluffy_upon']);
+const NON_ICON = new Set(['ic_disco_back', 'ic_disco_mask', 'ic_disco_upon']);
 
 // Canonical slug used to match names across sources.
 function norm(value) {
@@ -79,12 +79,12 @@ async function main() {
   // Our shipped drawables -> map of slug -> resource name.
   const ourDrawables = fs
     .readdirSync(drawableDir)
-    .filter(f => /^ic_fluffy_.+\.webp$/i.test(f))
+    .filter(f => /^ic_disco_.+\.webp$/i.test(f))
     .map(f => path.basename(f, path.extname(f)))
-    .filter(name => !NON_ICON.has(name) && !/^ic_fluffy_symbol_/.test(name));
-  const ourBySlug = new Map(); // slug -> ic_fluffy_<...>
+    .filter(name => !NON_ICON.has(name) && !/^ic_disco_symbol_/.test(name));
+  const ourBySlug = new Map(); // slug -> ic_disco_<...>
   ourDrawables.forEach(drawable => {
-    ourBySlug.set(norm(drawable.replace(/^ic_fluffy_/, '')), drawable);
+    ourBySlug.set(norm(drawable.replace(/^ic_disco_/, '')), drawable);
   });
 
   // Lawnicons index: matchSlug -> Set(component)
@@ -125,7 +125,7 @@ async function main() {
     const drawable = ourBySlug.get(slug);
     const components = new Set(preservedByDrawable.get(drawable) || []);
 
-    const aliasVal = aliases[slug] ?? aliases[drawable.replace(/^ic_fluffy_/, '')];
+    const aliasVal = aliases[slug] ?? aliases[drawable.replace(/^ic_disco_/, '')];
     const candidateKeys = [slug];
     if (Array.isArray(aliasVal)) candidateKeys.push(...aliasVal.map(norm));
     else if (aliasVal) candidateKeys.push(norm(aliasVal));
@@ -160,7 +160,7 @@ async function main() {
   console.log(`[appfilter] ${ourBySlug.size} icons | ${mappedDrawables.size} mapped | ${rows.length} component entries (Lawnicons ${LAWNICONS_REF}).`);
   if (unmapped.length) {
     console.log(`[appfilter] ${unmapped.length} icons have NO component mapping yet (add to config/aliases.json or map on-device):`);
-    console.log('  ' + unmapped.map(d => d.replace(/^ic_fluffy_/, '')).join(', '));
+    console.log('  ' + unmapped.map(d => d.replace(/^ic_disco_/, '')).join(', '));
   }
 }
 

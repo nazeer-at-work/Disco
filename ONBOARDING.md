@@ -70,7 +70,7 @@ and the grid + home screen look even. Rounded "container" icons use
 ## How size stays flat at scale
 - Launcher drawables are capped to `iconStyle.maxIconPx` (384px) + `webpQuality`
   (80) in `config/icon-pack.json` → ~15–40 KB each. 547 icons ≈ 11 MB; 1000 ≈ ~20 MB.
-- The in-app grid renders the **same** drawables via `{ uri: 'ic_fluffy_<slug>' }`
+- The in-app grid renders the **same** drawables via `{ uri: 'ic_disco_<slug>' }`
   (RN Android resource lookup) — no duplicate gallery copies, no 1000 `require()`s.
 - Single density folder (`drawable-nodpi`), no per-density duplication.
 

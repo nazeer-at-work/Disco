@@ -1,4 +1,4 @@
-package com.fluff
+package com.disco
 
 import com.facebook.react.ReactActivity
 import com.facebook.react.ReactActivityDelegate

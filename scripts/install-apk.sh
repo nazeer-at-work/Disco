@@ -2,8 +2,8 @@
 set -euo pipefail
 
 ROOT_DIR="$(cd "$(dirname "$0")/.." && pwd)"
-RELEASE_APK="$ROOT_DIR/Fluff-arm64-release.apk"
-DEBUG_APK="$ROOT_DIR/Fluff-arm64-debug.apk"
+RELEASE_APK="$ROOT_DIR/Disco-arm64-release.apk"
+DEBUG_APK="$ROOT_DIR/Disco-arm64-debug.apk"
 APK_PATH="$RELEASE_APK"
 ADB_BIN="${ADB_BIN:-adb}"
 

@@ -14,7 +14,7 @@
  *   node scripts/release.mjs --minor --aab --install
  *
  * Signing for release builds is read by Gradle from android/gradle.properties
- * (git-ignored): FLUFFY_UPLOAD_STORE_FILE / FLUFFY_UPLOAD_KEY_ALIAS / *_PASSWORD.
+ * (git-ignored): DISCO_UPLOAD_STORE_FILE / DISCO_UPLOAD_KEY_ALIAS / *_PASSWORD.
  */
 import fs from 'node:fs';
 import path from 'node:path';

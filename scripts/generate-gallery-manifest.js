@@ -9,7 +9,7 @@ const root = path.resolve(__dirname, '..');
 const sourceDir = path.join(root, 'android', 'app', 'src', 'main', 'res', 'drawable-nodpi');
 const manualIconsPath = path.join(root, 'src', 'config', 'system-icons.json');
 // Non-app drawables produced by generate-icon-pack that must never appear as icons.
-const NON_ICON_DRAWABLES = new Set(['ic_fluffy_back', 'ic_fluffy_mask', 'ic_fluffy_upon']);
+const NON_ICON_DRAWABLES = new Set(['ic_disco_back', 'ic_disco_mask', 'ic_disco_upon']);
 const generatedIconsPath = path.join(root, 'src', 'config', 'system-icons.generated.json');
 const generatedImageMapPath = path.join(root, 'src', 'config', 'icon-image-map.generated.ts');
 
@@ -93,18 +93,18 @@ function main() {
 
   const iconFiles = fs
     .readdirSync(sourceDir)
-    .filter(file => /^ic_fluffy_.+\.webp$/i.test(file))
+    .filter(file => /^ic_disco_.+\.webp$/i.test(file))
     .sort((a, b) => a.localeCompare(b));
 
   // One entry per drawable. `drawable` is the Android resource name (no ext),
   // `id` is the dash-cased public id used by the icon list / labels.
   const discoveredById = new Map();
   iconFiles.forEach(file => {
-    const drawable = path.basename(file, path.extname(file)); // e.g. ic_fluffy_google_meet
-    if (NON_ICON_DRAWABLES.has(drawable) || /^ic_fluffy_symbol_/.test(drawable)) {
+    const drawable = path.basename(file, path.extname(file)); // e.g. ic_disco_google_meet
+    if (NON_ICON_DRAWABLES.has(drawable) || /^ic_disco_symbol_/.test(drawable)) {
       return;
     }
-    const id = drawable.replace(/^ic_fluffy_/, '').replace(/_/g, '-').toLowerCase();
+    const id = drawable.replace(/^ic_disco_/, '').replace(/_/g, '-').toLowerCase();
     if (!discoveredById.has(id)) {
       discoveredById.set(id, { id, drawable });
     }

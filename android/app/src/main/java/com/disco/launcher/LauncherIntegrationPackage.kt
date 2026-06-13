@@ -1,4 +1,4 @@
-package com.fluff.launcher
+package com.disco.launcher
 
 import com.facebook.react.ReactPackage
 import com.facebook.react.bridge.NativeModule

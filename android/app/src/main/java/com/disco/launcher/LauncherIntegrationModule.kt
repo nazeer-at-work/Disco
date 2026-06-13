@@ -1,4 +1,4 @@
-package com.fluff.launcher
+package com.disco.launcher
 
 import android.content.Intent
 import android.content.ActivityNotFoundException
@@ -198,7 +198,7 @@ class LauncherIntegrationModule(private val reactContext: ReactApplicationContex
   private fun getAppLabel(): String {
     val pm = reactContext.packageManager
     val appInfo = reactContext.applicationInfo
-    return pm.getApplicationLabel(appInfo)?.toString() ?: "Fluff"
+    return pm.getApplicationLabel(appInfo)?.toString() ?: "Disco"
   }
 
   private fun findSettingsLauncherIntent(packageName: String): Intent? {

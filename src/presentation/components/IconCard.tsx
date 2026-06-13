@@ -7,7 +7,7 @@ import {
   View,
 } from 'react-native';
 import { SystemIconDescriptor } from '../../domain/entities/SystemIcon';
-import { FluffyIcon } from './FluffyIcon';
+import { DiscoIcon } from './DiscoIcon';
 import { typography } from '../theme/typography';
 import { iconImageMap } from '../../config/icon-image-map.generated';
 
@@ -31,7 +31,7 @@ function IconCardComponent({ icon, onPress }: IconCardProps) {
             />
           </View>
         ) : (
-          <FluffyIcon id={icon.id} hue={icon.hue} />
+          <DiscoIcon id={icon.id} hue={icon.hue} />
         )}
       </View>
       <Text style={styles.label} numberOfLines={2} ellipsizeMode="tail">

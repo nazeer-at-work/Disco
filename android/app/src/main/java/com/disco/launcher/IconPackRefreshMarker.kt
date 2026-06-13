@@ -1,4 +1,4 @@
-package com.fluff.launcher
+package com.disco.launcher
 
 import android.content.BroadcastReceiver
 import android.content.Context

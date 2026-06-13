@@ -7,7 +7,7 @@
   Keep the "transparent background" instruction so icons need no background removal.
 -->
 ---
-Create a single Android app icon source image for a fluffy 3D style icon pack. Subject: {{appName}} app.
+Create a single Android app icon source image for a disco 3D style icon pack. Subject: {{appName}} app.
 Brand fidelity is mandatory: keep the official app logo mark, recognisable geometry, and official brand color palette.
 Color fidelity is mandatory: preserve the same brand hues from the official logo; do not recolor, shift hue, mute saturation, or apply an alternate palette.
 Do not invent a new symbol, do not replace the logo shape, and do not alter core logo proportions.

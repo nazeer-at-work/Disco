@@ -1,5 +1,5 @@
 {
-  "_comment": "Map an icon slug (drawable name without the ic_fluffy_ prefix) to the Lawnicons key (their drawable name or app name, slugified) when the names differ. Value may be a string or an array of keys. Run `npm run build:appfilter` and check the 'NO component mapping yet' report to find icons that need an entry here.",
+  "_comment": "Map an icon slug (drawable name without the ic_disco_ prefix) to the Lawnicons key (their drawable name or app name, slugified) when the names differ. Value may be a string or an array of keys. Run `npm run build:appfilter` and check the 'NO component mapping yet' report to find icons that need an entry here.",
   "adobe_acrobat": "adobe_acrobat_reader",
   "amazon": "amazon_shopping",
   "x": ["twitter", "x_twitter"]

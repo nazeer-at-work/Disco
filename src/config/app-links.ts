@@ -1,7 +1,7 @@
 import { APP_NAME, APP_PACKAGE_NAME, PLAY_STORE_BASE_URL } from '@env';
 
-const appPackageName = APP_PACKAGE_NAME || 'com.fluffy.iconpack';
-const appName = APP_NAME || 'Fluffy';
+const appPackageName = APP_PACKAGE_NAME || 'com.disco.iconpack';
+const appName = APP_NAME || 'Disco';
 const playStoreBaseUrl =
   PLAY_STORE_BASE_URL || 'https://play.google.com/store/apps/details';
 

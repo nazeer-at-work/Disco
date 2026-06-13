@@ -10,7 +10,7 @@ const LOADING_DURATION_MS = 1000;
 const MOON_SPIN_DURATION_MS = 18000;
 const LETTER_STAGGER_MS = 70;
 const LETTER_ANIMATION_MS = 420;
-const TITLE = 'Fluffy';
+const TITLE = 'Disco';
 
 export function StartupLoadingScreen({ onFinish }: StartupLoadingScreenProps) {
   const spinProgress = useMemo(() => new Animated.Value(0), []);
