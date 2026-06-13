@@ -1,0 +1,13 @@
+{
+  "migIndex": 1,
+  "data": [
+    {
+      "path": "assets/fonts/Allison-Regular.ttf",
+      "sha1": "e615aac93bcfce5ec0820210d0284922650f311c"
+    },
+    {
+      "path": "assets/fonts/.gitkeep",
+      "sha1": "da39a3ee5e6b4b0d3255bfef95601890afd80709"
+    }
+  ]
+}

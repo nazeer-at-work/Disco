@@ -1,0 +1,16 @@
+{
+  "appName": "Fluffy",
+  "applicationId": "com.fluffy.iconpack",
+  "namespace": "com.fluff",
+  "versionName": "1.0.0",
+  "versionCode": 1,
+  "playStoreBaseUrl": "https://play.google.com/store/apps/details",
+  "lawniconsRef": "v2.17.1",
+  "imageBackend": "gemini",
+  "brand": {
+    "name": "Fluffy",
+    "slug": "fluffy",
+    "componentName": "FluffyIcon",
+    "signingPrefix": "FLUFFY"
+  }
+}

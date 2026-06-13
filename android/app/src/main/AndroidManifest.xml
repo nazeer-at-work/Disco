@@ -1,0 +1,201 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <queries>
+        <package android:name="com.teslacoilsw.launcher" />
+        <package android:name="com.teslacoilsw.launcher.beta" />
+        <package android:name="app.lawnchair" />
+        <package android:name="projekt.launcher" />
+        <package android:name="com.anddoes.launcher" />
+        <package android:name="com.actionlauncher.playstore" />
+        <package android:name="ginlemon.flowerfree" />
+        <package android:name="org.adwfreak.launcher" />
+        <package android:name="com.mi.android.globallauncher" />
+        <package android:name="com.miui.home" />
+        <package android:name="bitpit.launcher" />
+        <package android:name="com.ss.launcher2" />
+        <package android:name="org.n277.lynxlauncher" />
+        <package android:name="com.nothing.launcher" />
+        <package android:name="com.motorola.launcher3" />
+        <package android:name="com.motorola.blur.launcher" />
+        <package android:name="com.sec.android.app.launcher" />
+        <package android:name="com.google.android.apps.nexuslauncher" />
+        <package android:name="net.oneplus.launcher" />
+        <package android:name="com.oneplus.launcher" />
+    </queries>
+
+    <application
+      android:name=".MainApplication"
+      android:label="@string/app_name"
+      android:icon="@mipmap/ic_launcher"
+      android:roundIcon="@mipmap/ic_launcher_round"
+      android:allowBackup="false"
+      android:theme="@style/AppTheme"
+      android:usesCleartextTraffic="${usesCleartextTraffic}"
+      android:supportsRtl="true">
+      <activity
+        android:name=".MainActivity"
+        android:label="@string/app_name"
+        android:icon="@mipmap/ic_launcher"
+        android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|screenSize|smallestScreenSize|uiMode"
+        android:launchMode="singleTask"
+        android:windowSoftInputMode="adjustResize"
+        android:exported="true">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="com.anddoes.launcher.THEME" />
+            <category android:name="com.teslacoilsw.launcher.THEME" />
+            <category android:name="com.novalauncher.THEME" />
+            <category android:name="org.adw.launcher.THEMES" />
+            <category android:name="com.gau.go.launcherex.theme" />
+        </intent-filter>
+        <intent-filter>
+            <action android:name="org.adw.launcher.THEMES" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+        <intent-filter>
+            <action android:name="org.adw.launcher.icons.ACTION_PICK_ICON" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+        <intent-filter>
+            <action android:name="com.anddoes.launcher.THEME" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+        <intent-filter>
+            <action android:name="com.teslacoilsw.launcher.THEME" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+        <intent-filter>
+            <action android:name="com.gau.go.launcherex.theme" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+        <intent-filter>
+            <action android:name="com.gau.go.launcherex.theme" />
+            <category android:name="android.intent.category.THEME_SCENE" />
+        </intent-filter>
+        <intent-filter>
+            <action android:name="com.novalauncher.THEME" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+        <intent-filter>
+            <action android:name="com.novalauncher.THEME" />
+            <category android:name="com.novalauncher.category.CUSTOM_ICON_PICKER" />
+        </intent-filter>
+        <intent-filter>
+            <action android:name="ch.deletescape.lawnchair.ICONPACK" />
+            <category android:name="ch.deletescape.lawnchair.PICK_ICON" />
+        </intent-filter>
+        <intent-filter>
+            <action android:name="ginlemon.smartlauncher.THEMES" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+        <intent-filter>
+            <action android:name="com.dlto.atom.launcher.THEME" />
+        </intent-filter>
+        <intent-filter>
+            <action android:name="com.fede.launcher.THEME_ICONPACK" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+        <intent-filter>
+            <action android:name="com.gtp.nextlauncher.theme" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+        <intent-filter>
+            <action android:name="com.gtp.nextlauncher.MAIN" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+        <intent-filter>
+            <action android:name="com.gtp.nextlauncher.trial.MAIN" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+        <intent-filter>
+            <action android:name="com.gridappsinc.launcher.theme.apk_action" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+        <intent-filter>
+            <action android:name="com.lge.launcher2.THEME" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+        <intent-filter>
+            <action android:name="net.oneplus.launcher.icons.ACTION_PICK_ICON" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+        <intent-filter>
+            <action android:name="com.phonemetra.turbo.launcher.THEMES" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+        <intent-filter>
+            <action android:name="com.phonemetra.turbo.launcher.icons.ACTION_PICK_ICON" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+        <intent-filter>
+            <action android:name="com.sonymobile.home.ICON_PACK" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+        <intent-filter>
+            <action android:name="mobi.bbase.ahome.THEME" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+        <intent-filter>
+            <action android:name="com.rogro.GDE.THEME.1" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+        <intent-filter>
+            <action android:name="com.android.dxtop.launcher.THEME" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+        <intent-filter>
+            <action android:name="cdproductions.crazyicons.TWO" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+        <intent-filter>
+            <action android:name="com.daeva112.manager.THEME" />
+            <category android:name="android.intent.category.DEFAULT" />
+        </intent-filter>
+        <intent-filter>
+            <action android:name="home.solo.launcher.free.THEMES" />
+            <action android:name="home.solo.launcher.free.ACTION_ICON" />
+        </intent-filter>
+        <intent-filter>
+            <action android:name="com.zeroteam.zerolauncher.theme" />
+            <action android:name="android.intent.action.MAIN" />
+        </intent-filter>
+        <meta-data
+            android:name="com.anddoes.launcher"
+            android:resource="@xml/appfilter" />
+        <meta-data
+            android:name="com.teslacoilsw.launcher"
+            android:resource="@xml/appfilter" />
+        <meta-data
+            android:name="com.gau.go.launcherex.theme"
+            android:resource="@xml/appfilter" />
+        <meta-data
+            android:name="com.novalauncher.THEME"
+            android:resource="@xml/appfilter" />
+        <meta-data
+            android:name="org.adw.launcher.icons"
+            android:resource="@xml/appfilter" />
+      </activity>
+      <receiver
+        android:name=".launcher.IconPackRefreshMarker"
+        android:enabled="true"
+        android:exported="false" />
+      <receiver
+        android:name=".launcher.IconPackPackageChangeReceiver"
+        android:enabled="true"
+        android:exported="true">
+        <intent-filter>
+          <action android:name="android.intent.action.PACKAGE_ADDED" />
+          <action android:name="android.intent.action.PACKAGE_CHANGED" />
+          <action android:name="android.intent.action.PACKAGE_REPLACED" />
+          <action android:name="android.intent.action.MY_PACKAGE_REPLACED" />
+          <action android:name="android.intent.action.PACKAGE_REMOVED" />
+          <data android:scheme="package" />
+        </intent-filter>
+      </receiver>
+    </application>
+</manifest>

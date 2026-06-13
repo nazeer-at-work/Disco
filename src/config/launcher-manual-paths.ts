@@ -1,0 +1,16 @@
+export const launcherManualPaths: Record<string, string> = {
+  nova: 'Nova Settings -> Look & feel -> Icon style -> Icon theme -> Fluff',
+  lawnchair: 'Lawnchair Settings -> Theme -> Icon Pack -> Fluff',
+  hyperion: 'Hyperion Settings -> Icons -> Icon pack -> Fluff',
+  apex: 'Apex Settings -> Theme settings -> Icon pack -> Fluff',
+  action: 'Action Launcher Settings -> Appearance -> Icon Pack -> Fluff',
+  smart: 'Smart Launcher Settings -> Themes -> Icon Pack -> Fluff',
+  adw: 'ADW Settings -> Themes -> Icon Pack -> Fluff',
+  poco: 'POCO Launcher Settings -> Icon pack -> Fluff',
+  niagara: 'Niagara Settings -> Look -> Icon Pack -> Fluff',
+  total: 'Total Launcher Settings -> Icon -> Icon Pack -> Fluff',
+  lynx: 'Lynx Launcher Settings -> Icons -> Icon Pack -> Fluff',
+  moto: 'Moto Launcher Settings -> Home settings -> Icon style -> Fluff',
+  samsung: 'Samsung One UI Home Settings -> Themes -> Icons -> Fluff',
+  nothing: 'Home -> Customization -> Icon pack -> Fluff',
+};

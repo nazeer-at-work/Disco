@@ -1,0 +1,15 @@
+{
+  "defaultVersionId": "current-v0.0.1",
+  "versions": [
+    {
+      "id": "current-v0.0.1",
+      "label": "Current v0.0.1",
+      "source": "system"
+    },
+    {
+      "id": "universal",
+      "label": "Universal list",
+      "source": "system"
+    }
+  ]
+}

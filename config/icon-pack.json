@@ -1,0 +1,35 @@
+{
+  "scale": 1.12,
+  "base": {
+    "cornerRadiusDp": 24,
+    "gradientStart": "#F5F8FF",
+    "gradientCenter": "#E9F6FF",
+    "gradientEnd": "#DCEBFF"
+  },
+  "iconStyle": {
+    "maxIconPx": 384,
+    "webpQuality": 80,
+    "contentScale": 0.82,
+    "roundedContentScale": 0.94,
+    "blobInsetDp": 8,
+    "highlightLeftDp": 12,
+    "highlightTopDp": 10,
+    "highlightRightDp": 34,
+    "highlightBottomDp": 50,
+    "strokeColor": "#66FFFFFF",
+    "highlightColor": "#52FFFFFF",
+    "glyphSizeDp": 22,
+    "glyphColor": "#FFFFFFFF",
+    "rasterInsetDp": 4,
+    "rasterSizeDp": 84
+  },
+  "drawables": {},
+  "drawableDefaults": {
+    "color": "#8FB3FF",
+    "symbol": "settings",
+    "template": "blobSymbol",
+    "includeBase": false,
+    "rasterInsetDp": 0,
+    "rasterSizeDp": 0
+  }
+}
