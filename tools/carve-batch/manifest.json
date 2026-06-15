@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Carve Batch (7-per-session)",
+  "version": "2.0.0",
+  "description": "Batch-remove backgrounds on carve.photos: pick a folder, process 7 at a time, auto-clear the site session, and resume until done. Incognito-friendly.",
+  "permissions": ["activeTab", "tabs", "browsingData"],
+  "host_permissions": ["https://carve.photos/*"],
+  "background": { "service_worker": "background.js" },
+  "action": {
+    "default_title": "Carve Batch",
+    "default_popup": "popup.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://carve.photos/*"],
+      "js": ["content.js"],
+      "run_at": "document_idle"
+    }
+  ]
+}

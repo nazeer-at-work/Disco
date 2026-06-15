@@ -1,0 +1,17 @@
+{
+  "_comment": "Hand-curated icon-slug -> launcher ComponentInfo mappings for apps Lawnicons doesn't cover. Resolve on a device/emulator with: adb shell cmd package resolve-activity --brief <package>. Expand a leading '.' to the full package path. Merged by scripts/build-appfilter.mjs.",
+  "camera": "ComponentInfo{com.nothing.camera/com.nothing.camera.activity.CameraActivity}",
+  "flipkart": "ComponentInfo{com.flipkart.android/com.flipkart.android.GoldIconAlias}",
+  "myntra": "ComponentInfo{com.myntra.android/com.myntra.android.activities.react.ReactActivity.EORS_JUNE_2026}",
+  "taco_bell": "ComponentInfo{com.bhpl.tacobell/com.bhpl.tacobell.presentation.splash.SplashActivity}",
+  "calendly": "ComponentInfo{com.calendly.app/com.calendly.app.splash.SplashActivity}",
+  "chipotle": "ComponentInfo{com.chipotle.mena/com.chipotle.mena.MainActivity}",
+  "royal_match": "ComponentInfo{com.dreamgames.royalmatch/com.dreamgames.library.DreamUnityPlayerActivity}",
+  "rakuten": "ComponentInfo{com.ebates/com.ebates.activity.MainActivity}",
+  "hellofresh": "ComponentInfo{com.hellofresh.androidapp/com.hellofresh.features.legacy.ui.flows.launch.LaunchActivity}",
+  "sephora": "ComponentInfo{com.jio.sephora/com.jio.sephora.SephoraActivity}",
+  "kayak": "ComponentInfo{com.kayak.android/com.kayak.android.splash.SplashActivity}",
+  "coin_master": "ComponentInfo{com.moonactive.coinmaster/com.moon.coinmaster.android.GameActivity}",
+  "okcupid": "ComponentInfo{com.okcupid.okcupid/com.okcupid.okcupid.activity.MainActivity}",
+  "western_union": "ComponentInfo{com.westernunion.moneytransferr3app.in/com.wurnmobile.MainActivity}"
+}

@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <style>
+      body { font: 13px/1.4 -apple-system, system-ui, sans-serif; width: 280px; padding: 12px; }
+      h1 { font-size: 14px; margin: 0 0 8px; }
+      button { width: 100%; padding: 8px; margin: 4px 0; cursor: pointer; border-radius: 6px; border: 1px solid #ccc; }
+      #start { background: #2d6cdf; color: #fff; border-color: #2d6cdf; }
+      label { display: block; margin: 8px 0 2px; color: #555; }
+      input { width: 60px; }
+      #status { margin-top: 8px; color: #333; white-space: pre-wrap; }
+      .muted { color: #888; font-size: 11px; }
+    </style>
+  </head>
+  <body>
+    <h1>Carve Batch</h1>
+    <label>Images per session (free limit)</label>
+    <input id="batchSize" type="number" min="1" max="20" value="7" />
+    <button id="start">Start Batch</button>
+    <div id="status">Open https://carve.photos/upload, then Start.</div>
+    <div class="muted">Processes N, clears the site session in place, and continues until the whole folder is done. Enable "Allow in incognito" in chrome://extensions.</div>
+    <script src="popup.js"></script>
+  </body>
+</html>

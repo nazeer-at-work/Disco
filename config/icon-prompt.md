@@ -1,26 +1,16 @@
 <!--
-  Icon generation prompt template. Edit this file to define THIS pack's art style.
-  Placeholders filled at generation time:
-    {{appName}}    - the app's display name (e.g. "YouTube")
-    {{brandLock}}  - per-app brand lock from config/brand-locks.json (optional)
-  Everything below the marker line is sent to the image model verbatim.
-  Keep the "transparent background" instruction so icons need no background removal.
+  Single shared prompt for ALL icons (no per-app config needed).
+  IMPORTANT: do NOT reference the app/brand by name here — naming a brand makes the
+  image model refuse ("can't reproduce a copyrighted logo"). Instead we send the
+  logo image and ask it to convert THE PROVIDED IMAGE. {{appName}} is intentionally
+  not used in the prompt (it's still used to fetch the reference + name the file).
+  Everything below the --- marker is sent to the image model verbatim, with the
+  reference logo attached as an image.
 -->
 ---
-Create a single Android app icon source image for a disco 3D style icon pack. Subject: {{appName}} app.
-Brand fidelity is mandatory: keep the official app logo mark, recognisable geometry, and official brand color palette.
-Color fidelity is mandatory: preserve the same brand hues from the official logo; do not recolor, shift hue, mute saturation, or apply an alternate palette.
-Do not invent a new symbol, do not replace the logo shape, and do not alter core logo proportions.
-Treat it as an exact logo recreation in plush 3D material, not a reinterpretation or a logo-like variant.
-Mandatory brand lock for this app: {{brandLock}}
-No enclosing badge, no extra ring, no random glyph, no secondary icon plate unless it is part of the official logo.
-Typography is strictly forbidden unless it exists in the official reference mark.
-Do NOT add app names, brand names, letters, words, numbers, slogans, or any readable characters.
-Text-free output is mandatory: if uncertain, remove all lettering and keep only the symbol/mark.
-Style target: short-loop sherpa/teddy-fleece plush texture (soft nubby loops), not long-hair fur.
-Render as a simplified rounded 3D icon object with clean geometric silhouette and bold color blocking, mascot-like but icon-readable.
-Material cues: chenille/sherpa fabric pile, soft seams, cushioned stuffed volume, subtle specular on non-fabric accents.
-Soft studio lighting, clean silhouette, centered composition, no text, no watermark, no extra objects, no border.
-Background MUST be fully transparent (alpha = 0). Output RGBA with a transparent background — no solid fill, no gradient, no plate, no shadow touching the edges.
-Subject should occupy about 82% of canvas area (leave ~9% padding on each side), subject fully visible and not cropped.
-Output must be a square image, 1024x1024, RGBA with transparency.
+Convert the attached image into a premium disco-themed 3D app icon. Treat the attached image purely as the shape-and-color source.
+Preserve the exact shape, silhouette, and colors shown in the attached image — the colors in the image must remain the dominant palette and the result must stay visually identical in form and color (e.g. if the image is green, it stays green, not rainbow). Apply the disco treatment as reflective, glossy 3D material, chrome edges, subtle sparkles, soft holographic accents and dynamic lighting that ENHANCE the existing colors — do NOT recolor, hue-shift, neon-wash, or replace them with a rainbow. Maintain a clean premium look rather than a literal disco ball.
+SHAPE FIDELITY (strict): reproduce ONLY the shapes present in the attached image. Do NOT add, invent, or extend any extra corners, tails, notches, spikes, frames, borders, plates, or background tiles that are not in the source. The outer silhouette must match the attached image exactly — same proportions, same number of points/corners.
+NO SHADOWS (strict): fully transparent background (alpha = 0). Absolutely NO drop shadow, cast shadow, ground shadow, contact shadow, reflection puddle, or dark gradient beneath, behind, or around the icon. Every pixel outside the icon silhouette must be fully transparent. Lighting and depth live ONLY on the object itself, not on the background.
+COMPOSITION (strict): the icon must be perfectly centered in a square 1:1 frame with equal margins on all four sides. Upright and front-facing — no rotation, no tilt, no perspective skew, no off-center placement. The subject should fill about 80% of the frame, fully visible and never cropped. Keep ALL glow, sparkle, reflection and light effects contained inside the frame and symmetric around the center — no light rays, streaks, or elements drifting to one side or bleeding off the edges. A single, self-contained, balanced object.
+Strong depth, modern launcher icon aesthetic, transparent background, optimized for Android and Play Store branding.

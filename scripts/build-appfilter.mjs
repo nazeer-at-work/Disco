@@ -22,6 +22,9 @@ const LAWNICONS_REF = 'v2.17.1';
 const lawniconsCache = path.join(root, 'config', 'lawnicons', 'appfilter.xml');
 const lawniconsUrl = `https://raw.githubusercontent.com/LawnchairLauncher/lawnicons/${LAWNICONS_REF}/app/assets/appfilter.xml`;
 const aliasesPath = path.join(root, 'config', 'aliases.json');
+// Hand-curated slug -> [ComponentInfo{...}] mappings for apps Lawnicons doesn't
+// cover (resolved on-device via `adb shell cmd package resolve-activity`).
+const manualPath = path.join(root, 'config', 'manual-appfilter.json');
 const drawableDir = path.join(root, 'android', 'app', 'src', 'main', 'res', 'drawable-nodpi');
 // The manifest references @xml/appfilter, so res/xml is authoritative; we also
 // write assets/ since some launchers look there. Both must stay in sync.
@@ -115,6 +118,21 @@ async function main() {
     ? JSON.parse(await fsp.readFile(aliasesPath, 'utf8'))
     : {};
 
+  // Manual component mappings (keyed by normalized slug) for apps absent from
+  // Lawnicons. Merged in like preserved/alias components below.
+  const manual = fs.existsSync(manualPath)
+    ? JSON.parse(await fsp.readFile(manualPath, 'utf8'))
+    : {};
+  const manualByDrawable = new Map(); // ic_disco_<slug> -> Set(component)
+  for (const [key, comps] of Object.entries(manual)) {
+    if (key.startsWith('_')) continue; // allow a "_comment" field
+    const drawable = ourBySlug.get(norm(key));
+    if (!drawable) continue;
+    const set = manualByDrawable.get(drawable) || new Set();
+    (Array.isArray(comps) ? comps : [comps]).forEach(c => set.add(c));
+    manualByDrawable.set(drawable, set);
+  }
+
   // Build the final mapping, deduping components globally (first drawable wins).
   const usedComponents = new Set();
   const rows = []; // { component, drawable }
@@ -124,6 +142,7 @@ async function main() {
   for (const slug of sortedSlugs) {
     const drawable = ourBySlug.get(slug);
     const components = new Set(preservedByDrawable.get(drawable) || []);
+    (manualByDrawable.get(drawable) || []).forEach(c => components.add(c));
 
     const aliasVal = aliases[slug] ?? aliases[drawable.replace(/^ic_disco_/, '')];
     const candidateKeys = [slug];

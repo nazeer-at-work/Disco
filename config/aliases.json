@@ -2,5 +2,31 @@
   "_comment": "Map an icon slug (drawable name without the ic_disco_ prefix) to the Lawnicons key (their drawable name or app name, slugified) when the names differ. Value may be a string or an array of keys. Run `npm run build:appfilter` and check the 'NO component mapping yet' report to find icons that need an entry here.",
   "adobe_acrobat": "adobe_acrobat_reader",
   "amazon": "amazon_shopping",
-  "x": ["twitter", "x_twitter"]
+  "x": [
+    "twitter",
+    "x_twitter"
+  ],
+  "chrome": "google_chrome",
+  "outlook": "microsoft_outlook",
+  "booking_com": "booking",
+  "google_calendar": "calendar",
+  "google_calculator": "generic_calculator_minus_multi_plus_equal",
+  "google_clock": "generic_clock",
+  "pubg_mobile": "pubg",
+  "call_of_duty_mobile": "call_of_duty",
+  "brave_browser": "brave",
+  "iheartradio": "iheart",
+  "adobe_lightroom": "lightroom",
+  "alibaba": "alibaba_com",
+  "flo_period_tracker": "flo_period",
+  "claude": "claude_by_anthropic",
+  "exodus_wallet": "exodus",
+  "phantom_wallet": "phantom",
+  "garena_free_fire": [
+    "free_fire",
+    "free_fire_max"
+  ],
+  "mobile_legends": "mobile_legends_bang_bang",
+  "h_m": "h_and_m",
+  "playstore": "google_play_store"
 }

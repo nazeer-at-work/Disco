@@ -1,3 +1,886 @@
 {
-  "apps": []
+  "apps": [
+    {
+      "name": "WhatsApp"
+    },
+    {
+      "name": "Instagram"
+    },
+    {
+      "name": "Facebook"
+    },
+    {
+      "name": "TikTok"
+    },
+    {
+      "name": "YouTube"
+    },
+    {
+      "name": "YouTube Music"
+    },
+    {
+      "name": "Telegram"
+    },
+    {
+      "name": "Snapchat"
+    },
+    {
+      "name": "Messenger"
+    },
+    {
+      "name": "X"
+    },
+    {
+      "name": "Spotify"
+    },
+    {
+      "name": "Netflix"
+    },
+    {
+      "name": "WeChat"
+    },
+    {
+      "name": "Gmail"
+    },
+    {
+      "name": "Google"
+    },
+    {
+      "name": "Google Maps"
+    },
+    {
+      "name": "Chrome"
+    },
+    {
+      "name": "Amazon"
+    },
+    {
+      "name": "Amazon Prime Video"
+    },
+    {
+      "name": "Disney+"
+    },
+    {
+      "name": "Uber"
+    },
+    {
+      "name": "Pinterest"
+    },
+    {
+      "name": "LinkedIn"
+    },
+    {
+      "name": "Reddit"
+    },
+    {
+      "name": "Discord"
+    },
+    {
+      "name": "Twitch"
+    },
+    {
+      "name": "Zoom"
+    },
+    {
+      "name": "Microsoft Teams"
+    },
+    {
+      "name": "Outlook"
+    },
+    {
+      "name": "ChatGPT"
+    },
+    {
+      "name": "Google Gemini"
+    },
+    {
+      "name": "CapCut"
+    },
+    {
+      "name": "Temu"
+    },
+    {
+      "name": "Threads"
+    },
+    {
+      "name": "Shazam"
+    },
+    {
+      "name": "Duolingo"
+    },
+    {
+      "name": "Canva"
+    },
+    {
+      "name": "PayPal"
+    },
+    {
+      "name": "Cash App"
+    },
+    {
+      "name": "Google Drive"
+    },
+    {
+      "name": "Google Photos"
+    },
+    {
+      "name": "Google Translate"
+    },
+    {
+      "name": "Google Pay"
+    },
+    {
+      "name": "Booking.com"
+    },
+    {
+      "name": "Airbnb"
+    },
+    {
+      "name": "Google Meet"
+    },
+    {
+      "name": "Signal"
+    },
+    {
+      "name": "Skype"
+    },
+    {
+      "name": "Microsoft Word"
+    },
+    {
+      "name": "Microsoft Excel"
+    },
+    {
+      "name": "Dropbox"
+    },
+    {
+      "name": "Roblox"
+    },
+    {
+      "name": "Minecraft"
+    },
+    {
+      "name": "Candy Crush Saga"
+    },
+    {
+      "name": "Clash of Clans"
+    },
+    {
+      "name": "Clash Royale"
+    },
+    {
+      "name": "Subway Surfers"
+    },
+    {
+      "name": "PUBG Mobile"
+    },
+    {
+      "name": "Call of Duty Mobile"
+    },
+    {
+      "name": "Among Us"
+    },
+    {
+      "name": "Genshin Impact"
+    },
+    {
+      "name": "8 Ball Pool"
+    },
+    {
+      "name": "Ludo King"
+    },
+    {
+      "name": "Venmo"
+    },
+    {
+      "name": "Coinbase"
+    },
+    {
+      "name": "Binance"
+    },
+    {
+      "name": "Robinhood"
+    },
+    {
+      "name": "Revolut"
+    },
+    {
+      "name": "Wise"
+    },
+    {
+      "name": "MetaMask"
+    },
+    {
+      "name": "Crypto.com"
+    },
+    {
+      "name": "eBay"
+    },
+    {
+      "name": "AliExpress"
+    },
+    {
+      "name": "Shein"
+    },
+    {
+      "name": "Etsy"
+    },
+    {
+      "name": "Walmart"
+    },
+    {
+      "name": "Flipkart"
+    },
+    {
+      "name": "Wish"
+    },
+    {
+      "name": "Uber Eats"
+    },
+    {
+      "name": "DoorDash"
+    },
+    {
+      "name": "McDonalds"
+    },
+    {
+      "name": "Starbucks"
+    },
+    {
+      "name": "Zomato"
+    },
+    {
+      "name": "Swiggy"
+    },
+    {
+      "name": "Lyft"
+    },
+    {
+      "name": "Expedia"
+    },
+    {
+      "name": "Tripadvisor"
+    },
+    {
+      "name": "Grab"
+    },
+    {
+      "name": "Skyscanner"
+    },
+    {
+      "name": "Notion"
+    },
+    {
+      "name": "Slack"
+    },
+    {
+      "name": "Trello"
+    },
+    {
+      "name": "Evernote"
+    },
+    {
+      "name": "Adobe Acrobat"
+    },
+    {
+      "name": "Microsoft PowerPoint"
+    },
+    {
+      "name": "Hulu"
+    },
+    {
+      "name": "Max"
+    },
+    {
+      "name": "Apple Music"
+    },
+    {
+      "name": "SoundCloud"
+    },
+    {
+      "name": "Line"
+    },
+    {
+      "name": "Quora"
+    },
+    {
+      "name": "Firefox"
+    },
+    {
+      "name": "Brave Browser"
+    },
+    {
+      "name": "Microsoft Edge"
+    },
+    {
+      "name": "Opera"
+    },
+    {
+      "name": "DuckDuckGo"
+    },
+    {
+      "name": "NordVPN"
+    },
+    {
+      "name": "VLC"
+    },
+    {
+      "name": "Microsoft Authenticator"
+    },
+    {
+      "name": "Crunchyroll"
+    },
+    {
+      "name": "Peacock TV"
+    },
+    {
+      "name": "Paramount Plus"
+    },
+    {
+      "name": "ESPN"
+    },
+    {
+      "name": "Tubi"
+    },
+    {
+      "name": "Pluto TV"
+    },
+    {
+      "name": "Vimeo"
+    },
+    {
+      "name": "Pandora"
+    },
+    {
+      "name": "Deezer"
+    },
+    {
+      "name": "Tidal"
+    },
+    {
+      "name": "iHeartRadio"
+    },
+    {
+      "name": "Amazon Music"
+    },
+    {
+      "name": "Zelle"
+    },
+    {
+      "name": "Chime"
+    },
+    {
+      "name": "Klarna"
+    },
+    {
+      "name": "Affirm"
+    },
+    {
+      "name": "Kraken"
+    },
+    {
+      "name": "Trust Wallet"
+    },
+    {
+      "name": "Target"
+    },
+    {
+      "name": "Best Buy"
+    },
+    {
+      "name": "Mercari"
+    },
+    {
+      "name": "Wayfair"
+    },
+    {
+      "name": "IKEA"
+    },
+    {
+      "name": "Myntra"
+    },
+    {
+      "name": "Meesho"
+    },
+    {
+      "name": "Grubhub"
+    },
+    {
+      "name": "Instacart"
+    },
+    {
+      "name": "Deliveroo"
+    },
+    {
+      "name": "Dominos Pizza"
+    },
+    {
+      "name": "KFC"
+    },
+    {
+      "name": "Burger King"
+    },
+    {
+      "name": "Kayak"
+    },
+    {
+      "name": "Waze"
+    },
+    {
+      "name": "Agoda"
+    },
+    {
+      "name": "Hotels.com"
+    },
+    {
+      "name": "Trip.com"
+    },
+    {
+      "name": "Asana"
+    },
+    {
+      "name": "Figma"
+    },
+    {
+      "name": "Google Docs"
+    },
+    {
+      "name": "Google Sheets"
+    },
+    {
+      "name": "Grammarly"
+    },
+    {
+      "name": "Strava"
+    },
+    {
+      "name": "MyFitnessPal"
+    },
+    {
+      "name": "Calm"
+    },
+    {
+      "name": "Headspace"
+    },
+    {
+      "name": "Fitbit"
+    },
+    {
+      "name": "Samsung Health"
+    },
+    {
+      "name": "Flo Period Tracker"
+    },
+    {
+      "name": "Nike Training Club"
+    },
+    {
+      "name": "Khan Academy"
+    },
+    {
+      "name": "Coursera"
+    },
+    {
+      "name": "Quizlet"
+    },
+    {
+      "name": "Brilliant"
+    },
+    {
+      "name": "Babbel"
+    },
+    {
+      "name": "Udemy"
+    },
+    {
+      "name": "Photomath"
+    },
+    {
+      "name": "Tinder"
+    },
+    {
+      "name": "Bumble"
+    },
+    {
+      "name": "Hinge"
+    },
+    {
+      "name": "Grindr"
+    },
+    {
+      "name": "OkCupid"
+    },
+    {
+      "name": "Adobe Lightroom"
+    },
+    {
+      "name": "Adobe Express"
+    },
+    {
+      "name": "Snapseed"
+    },
+    {
+      "name": "VSCO"
+    },
+    {
+      "name": "Picsart"
+    },
+    {
+      "name": "InShot"
+    },
+    {
+      "name": "Viber"
+    },
+    {
+      "name": "Tumblr"
+    },
+    {
+      "name": "Mastodon"
+    },
+    {
+      "name": "Bluesky"
+    },
+    {
+      "name": "Nextdoor"
+    },
+    {
+      "name": "Alibaba"
+    },
+    {
+      "name": "Poshmark"
+    },
+    {
+      "name": "Depop"
+    },
+    {
+      "name": "ASOS"
+    },
+    {
+      "name": "Lazada"
+    },
+    {
+      "name": "Shopee"
+    },
+    {
+      "name": "SoFi"
+    },
+    {
+      "name": "Monzo"
+    },
+    {
+      "name": "N26"
+    },
+    {
+      "name": "OKX"
+    },
+    {
+      "name": "Microsoft OneDrive"
+    },
+    {
+      "name": "Microsoft OneNote"
+    },
+    {
+      "name": "1Password"
+    },
+    {
+      "name": "LastPass"
+    },
+    {
+      "name": "Bitwarden"
+    },
+    {
+      "name": "Proton Mail"
+    },
+    {
+      "name": "Proton VPN"
+    },
+    {
+      "name": "ExpressVPN"
+    },
+    {
+      "name": "Claude"
+    },
+    {
+      "name": "Perplexity"
+    },
+    {
+      "name": "Microsoft Copilot"
+    },
+    {
+      "name": "Character AI"
+    },
+    {
+      "name": "Poe"
+    },
+    {
+      "name": "BBC News"
+    },
+    {
+      "name": "CNN"
+    },
+    {
+      "name": "Google News"
+    },
+    {
+      "name": "Flipboard"
+    },
+    {
+      "name": "Medium"
+    },
+    {
+      "name": "Yahoo Mail"
+    },
+    {
+      "name": "Spark Mail"
+    },
+    {
+      "name": "Bybit"
+    },
+    {
+      "name": "KuCoin"
+    },
+    {
+      "name": "Phantom Wallet"
+    },
+    {
+      "name": "Exodus Wallet"
+    },
+    {
+      "name": "Blockchain.com"
+    },
+    {
+      "name": "Wealthsimple"
+    },
+    {
+      "name": "Remitly"
+    },
+    {
+      "name": "Skrill"
+    },
+    {
+      "name": "Western Union"
+    },
+    {
+      "name": "Chipotle"
+    },
+    {
+      "name": "Taco Bell"
+    },
+    {
+      "name": "Pizza Hut"
+    },
+    {
+      "name": "Subway"
+    },
+    {
+      "name": "Wolt"
+    },
+    {
+      "name": "Delta"
+    },
+    {
+      "name": "United Airlines"
+    },
+    {
+      "name": "Emirates"
+    },
+    {
+      "name": "Marriott Bonvoy"
+    },
+    {
+      "name": "BlaBlaCar"
+    },
+    {
+      "name": "ClickUp"
+    },
+    {
+      "name": "Miro"
+    },
+    {
+      "name": "Airtable"
+    },
+    {
+      "name": "Obsidian"
+    },
+    {
+      "name": "MX Player"
+    },
+    {
+      "name": "Plex"
+    },
+    {
+      "name": "SHAREit"
+    },
+    {
+      "name": "Pokémon GO",
+      "slug": "pokemon-go"
+    },
+    {
+      "name": "Fortnite"
+    },
+    {
+      "name": "Brawl Stars"
+    },
+    {
+      "name": "Garena Free Fire"
+    },
+    {
+      "name": "Mobile Legends"
+    },
+    {
+      "name": "Honkai Star Rail"
+    },
+    {
+      "name": "Coin Master"
+    },
+    {
+      "name": "Royal Match"
+    },
+    {
+      "name": "Stumble Guys"
+    },
+    {
+      "name": "Hay Day"
+    },
+    {
+      "name": "Webull"
+    },
+    {
+      "name": "eToro"
+    },
+    {
+      "name": "Bitget"
+    },
+    {
+      "name": "Gate.io"
+    },
+    {
+      "name": "Ledger Live"
+    },
+    {
+      "name": "Zerodha Kite"
+    },
+    {
+      "name": "Groww"
+    },
+    {
+      "name": "Paytm"
+    },
+    {
+      "name": "PhonePe"
+    },
+    {
+      "name": "CRED"
+    },
+    {
+      "name": "Mercado Libre"
+    },
+    {
+      "name": "Rakuten"
+    },
+    {
+      "name": "Vinted"
+    },
+    {
+      "name": "StockX"
+    },
+    {
+      "name": "Costco"
+    },
+    {
+      "name": "Sephora"
+    },
+    {
+      "name": "Zara"
+    },
+    {
+      "name": "H&M"
+    },
+    {
+      "name": "Adidas"
+    },
+    {
+      "name": "Nike"
+    },
+    {
+      "name": "Indeed"
+    },
+    {
+      "name": "Glassdoor"
+    },
+    {
+      "name": "Fiverr"
+    },
+    {
+      "name": "Upwork"
+    },
+    {
+      "name": "Calendly"
+    },
+    {
+      "name": "Yelp"
+    },
+    {
+      "name": "OpenTable"
+    },
+    {
+      "name": "foodpanda"
+    },
+    {
+      "name": "Talabat"
+    },
+    {
+      "name": "HelloFresh"
+    },
+    {
+      "name": "Amazon Kindle"
+    },
+    {
+      "name": "Goodreads"
+    },
+    {
+      "name": "Audible"
+    },
+    {
+      "name": "Substack"
+    },
+    {
+      "name": "Wattpad"
+    },
+    {
+      "name": "WEBTOON"
+    },
+    {
+      "name": "JioSaavn"
+    },
+    {
+      "name": "Gaana"
+    },
+    {
+      "name": "Wynk Music"
+    },
+    {
+      "name": "ZEE5"
+    },
+    {
+      "name": "Google Play Store",
+      "slug": "playstore",
+      "prompt": "Convert the attached image into a premium disco-themed 3D app icon. Treat the attached image purely as the shape-and-color source.\nPreserve the exact shape, silhouette, and colors shown in the attached image — the colors must remain the dominant palette and the result must stay visually identical in form and color. Apply the disco treatment as reflective glossy 3D material, polished chrome edges, subtle sparkles, soft holographic accents and dynamic lighting that ENHANCE the existing colors — do NOT recolor, hue-shift, neon-wash, or replace them with a rainbow. Clean premium look, not a literal disco ball.\nSHAPE FIDELITY (strict): reproduce ONLY the shapes present in the attached image. Do NOT add, invent, or extend extra corners, tails, notches, frames, borders, or background tiles. The outer silhouette must match the attached image exactly.\nBACKGROUND (strict): place the icon on a SOLID, FLAT, PURE WHITE (#FFFFFF) background that completely fills the frame. Do NOT draw a transparency checkerboard, checkered grid, squares, or ANY pattern. Do NOT make the background transparent. The background must be uniform opaque white with nothing else on it.\nNO SHADOWS (strict): absolutely NO drop shadow, cast shadow, ground shadow, contact shadow, reflection puddle, or dark gradient beneath or around the icon. Depth lives ONLY on the object itself.\nCOMPOSITION (strict): the icon must be perfectly centered in a square 1:1 frame with equal margins, upright and front-facing, no rotation or tilt, filling about 80% of the frame, fully visible, never cropped. A single, self-contained, balanced object.\nStrong depth, modern launcher icon aesthetic, optimized for Android."
+    },
+    {
+      "name": "Settings",
+      "slug": "settings",
+      "prompt": "Convert the attached image into a premium disco-themed 3D app icon. Treat the attached image purely as the shape-and-color source.\nPreserve the exact shape, silhouette, and colors shown in the attached image — the colors must remain the dominant palette and the result must stay visually identical in form and color. Apply the disco treatment as reflective glossy 3D material, polished chrome edges, subtle sparkles, soft holographic accents and dynamic lighting that ENHANCE the existing colors — do NOT recolor, hue-shift, neon-wash, or replace them with a rainbow. Clean premium look, not a literal disco ball.\nSHAPE FIDELITY (strict): reproduce ONLY the shapes present in the attached image. Do NOT add, invent, or extend extra corners, tails, notches, frames, borders, or background tiles. The outer silhouette must match the attached image exactly.\nBACKGROUND (strict): place the icon on a SOLID, FLAT, PURE WHITE (#FFFFFF) background that completely fills the frame. Do NOT draw a transparency checkerboard, checkered grid, squares, or ANY pattern. Do NOT make the background transparent. The background must be uniform opaque white with nothing else on it.\nNO SHADOWS (strict): absolutely NO drop shadow, cast shadow, ground shadow, contact shadow, reflection puddle, or dark gradient beneath or around the icon. Depth lives ONLY on the object itself.\nCOMPOSITION (strict): the icon must be perfectly centered in a square 1:1 frame with equal margins, upright and front-facing, no rotation or tilt, filling about 80% of the frame, fully visible, never cropped. A single, self-contained, balanced object.\nStrong depth, modern launcher icon aesthetic, optimized for Android."
+    },
+    {
+      "name": "Camera",
+      "slug": "camera",
+      "prompt": "Convert the attached image into a premium disco-themed 3D app icon. Treat the attached image purely as the shape-and-color source.\nPreserve the exact shape, silhouette, and colors shown in the attached image — the colors must remain the dominant palette and the result must stay visually identical in form and color. Apply the disco treatment as reflective glossy 3D material, polished chrome edges, subtle sparkles, soft holographic accents and dynamic lighting that ENHANCE the existing colors — do NOT recolor, hue-shift, neon-wash, or replace them with a rainbow. Clean premium look, not a literal disco ball.\nSHAPE FIDELITY (strict): reproduce ONLY the shapes present in the attached image. Do NOT add, invent, or extend extra corners, tails, notches, frames, borders, or background tiles. The outer silhouette must match the attached image exactly.\nBACKGROUND (strict): place the icon on a SOLID, FLAT, PURE WHITE (#FFFFFF) background that completely fills the frame. Do NOT draw a transparency checkerboard, checkered grid, squares, or ANY pattern. Do NOT make the background transparent. The background must be uniform opaque white with nothing else on it.\nNO SHADOWS (strict): absolutely NO drop shadow, cast shadow, ground shadow, contact shadow, reflection puddle, or dark gradient beneath or around the icon. Depth lives ONLY on the object itself.\nCOMPOSITION (strict): the icon must be perfectly centered in a square 1:1 frame with equal margins, upright and front-facing, no rotation or tilt, filling about 80% of the frame, fully visible, never cropped. A single, self-contained, balanced object.\nStrong depth, modern launcher icon aesthetic, optimized for Android."
+    },
+    {
+      "name": "Files",
+      "slug": "files",
+      "prompt": "Convert the attached image into a premium disco-themed 3D app icon. Treat the attached image purely as the shape-and-color source.\nPreserve the exact shape, silhouette, and colors shown in the attached image — the colors must remain the dominant palette and the result must stay visually identical in form and color. Apply the disco treatment as reflective glossy 3D material, polished chrome edges, subtle sparkles, soft holographic accents and dynamic lighting that ENHANCE the existing colors — do NOT recolor, hue-shift, neon-wash, or replace them with a rainbow. Clean premium look, not a literal disco ball.\nSHAPE FIDELITY (strict): reproduce ONLY the shapes present in the attached image. Do NOT add, invent, or extend extra corners, tails, notches, frames, borders, or background tiles. The outer silhouette must match the attached image exactly.\nBACKGROUND (strict): place the icon on a SOLID, FLAT, PURE WHITE (#FFFFFF) background that completely fills the frame. Do NOT draw a transparency checkerboard, checkered grid, squares, or ANY pattern. Do NOT make the background transparent. The background must be uniform opaque white with nothing else on it.\nNO SHADOWS (strict): absolutely NO drop shadow, cast shadow, ground shadow, contact shadow, reflection puddle, or dark gradient beneath or around the icon. Depth lives ONLY on the object itself.\nCOMPOSITION (strict): the icon must be perfectly centered in a square 1:1 frame with equal margins, upright and front-facing, no rotation or tilt, filling about 80% of the frame, fully visible, never cropped. A single, self-contained, balanced object.\nStrong depth, modern launcher icon aesthetic, optimized for Android."
+    }
+  ]
 }
