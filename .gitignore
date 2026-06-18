@@ -83,6 +83,9 @@ assets/icons-raw/
 assets/icons-src/
 # Local carve batch folders (7 images each, derived from icons-raw).
 assets/carve-batches/
+assets/carve-batches-v2/
+# Local store assets (generated marketing graphics, not part of the app build).
+assets/store/
 # Optional reference logos used during generation (local only).
 assets/logo-refs/
 # Cached upstream Lawnicons appfilter (re-fetched by build:appfilter when missing).

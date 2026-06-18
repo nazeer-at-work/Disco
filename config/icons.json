@@ -1258,6 +1258,206 @@
     {
       "name": "AllTrails",
       "slug": "alltrails"
+    },
+    {
+      "name": "Mathway",
+      "slug": "mathway"
+    },
+    {
+      "name": "AnkiDroid",
+      "slug": "ankidroid"
+    },
+    {
+      "name": "Kahoot!",
+      "slug": "kahoot"
+    },
+    {
+      "name": "Skillshare",
+      "slug": "skillshare"
+    },
+    {
+      "name": "Busuu",
+      "slug": "busuu"
+    },
+    {
+      "name": "Memrise",
+      "slug": "memrise"
+    },
+    {
+      "name": "Google Classroom",
+      "slug": "google-classroom"
+    },
+    {
+      "name": "Blinkist",
+      "slug": "blinkist"
+    },
+    {
+      "name": "Libby",
+      "slug": "libby"
+    },
+    {
+      "name": "The New York Times",
+      "slug": "the-new-york-times"
+    },
+    {
+      "name": "The Guardian",
+      "slug": "the-guardian"
+    },
+    {
+      "name": "Bloomberg",
+      "slug": "bloomberg"
+    },
+    {
+      "name": "Reuters",
+      "slug": "reuters"
+    },
+    {
+      "name": "Feedly",
+      "slug": "feedly"
+    },
+    {
+      "name": "Pocket",
+      "slug": "pocket"
+    },
+    {
+      "name": "Genius",
+      "slug": "genius"
+    },
+    {
+      "name": "Musixmatch",
+      "slug": "musixmatch"
+    },
+    {
+      "name": "BandLab",
+      "slug": "bandlab"
+    },
+    {
+      "name": "Stremio",
+      "slug": "stremio"
+    },
+    {
+      "name": "DAZN",
+      "slug": "dazn"
+    },
+    {
+      "name": "Apple TV",
+      "slug": "apple-tv"
+    },
+    {
+      "name": "Roku",
+      "slug": "roku"
+    },
+    {
+      "name": "Hearthstone",
+      "slug": "hearthstone"
+    },
+    {
+      "name": "Fall Guys",
+      "slug": "fall-guys"
+    },
+    {
+      "name": "Geometry Dash",
+      "slug": "geometry-dash"
+    },
+    {
+      "name": "Wordscapes",
+      "slug": "wordscapes"
+    },
+    {
+      "name": "lichess",
+      "slug": "lichess"
+    },
+    {
+      "name": "Cut the Rope",
+      "slug": "cut-the-rope"
+    },
+    {
+      "name": "Jetpack Joyride",
+      "slug": "jetpack-joyride"
+    },
+    {
+      "name": "Crossy Road",
+      "slug": "crossy-road"
+    },
+    {
+      "name": "Peloton",
+      "slug": "peloton"
+    },
+    {
+      "name": "Insight Timer",
+      "slug": "insight-timer"
+    },
+    {
+      "name": "Splitwise",
+      "slug": "splitwise"
+    },
+    {
+      "name": "PhotoRoom",
+      "slug": "photoroom"
+    },
+    {
+      "name": "B612",
+      "slug": "b612"
+    },
+    {
+      "name": "Prisma",
+      "slug": "prisma"
+    },
+    {
+      "name": "Alight Motion",
+      "slug": "alight-motion"
+    },
+    {
+      "name": "PowerDirector",
+      "slug": "powerdirector"
+    },
+    {
+      "name": "Filmora",
+      "slug": "filmora"
+    },
+    {
+      "name": "Tasker",
+      "slug": "tasker"
+    },
+    {
+      "name": "IFTTT",
+      "slug": "ifttt"
+    },
+    {
+      "name": "Google Fit",
+      "slug": "google-fit"
+    },
+    {
+      "name": "McAfee Security",
+      "slug": "mcafee-security"
+    },
+    {
+      "name": "Malwarebytes",
+      "slug": "malwarebytes"
+    },
+    {
+      "name": "TunnelBear",
+      "slug": "tunnelbear"
+    },
+    {
+      "name": "Google Chat",
+      "slug": "google-chat"
+    },
+    {
+      "name": "Google Podcasts",
+      "slug": "google-podcasts"
+    },
+    {
+      "name": "Samsung Notes",
+      "slug": "samsung-notes"
+    },
+    {
+      "name": "ColorNote",
+      "slug": "colornote"
+    },
+    {
+      "name": "Brawlhalla",
+      "slug": "brawlhalla"
     }
   ]
 }

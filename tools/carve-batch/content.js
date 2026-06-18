@@ -4,6 +4,59 @@
  * going until the whole folder is done. Files stay in memory; no persistence. */
 
 const state = { running: false, panel: null, logEl: null };
+const keepAlive = { audio: null, ctx: null };
+
+// Generate ~1s of silence as a WAV blob URL (no external file needed).
+function silentWavUrl() {
+  const rate = 8000, n = rate; // 1 second
+  const buf = new ArrayBuffer(44 + n * 2);
+  const v = new DataView(buf);
+  const w = (o, s) => { for (let i = 0; i < s.length; i++) v.setUint8(o + i, s.charCodeAt(i)); };
+  w(0, 'RIFF'); v.setUint32(4, 36 + n * 2, true); w(8, 'WAVE'); w(12, 'fmt ');
+  v.setUint32(16, 16, true); v.setUint16(20, 1, true); v.setUint16(22, 1, true);
+  v.setUint32(24, rate, true); v.setUint32(28, rate * 2, true);
+  v.setUint16(32, 2, true); v.setUint16(34, 16, true); w(36, 'data'); v.setUint32(40, n * 2, true);
+  return URL.createObjectURL(new Blob([buf], { type: 'audio/wav' }));
+}
+
+// Keep this tab from being throttled/frozen/discarded while we run in the
+// background. Two mechanisms: (1) a looping near-silent audio element marks the
+// tab "playing media" so Chrome exempts its timers from background throttling;
+// (2) a faint WebAudio tone reinforces the audible state; (3) the background
+// worker holds a chrome.power lock so the machine/display won't sleep.
+// Must be started from within a user gesture (the folder pick) to satisfy autoplay.
+function startKeepAlive() {
+  try {
+    if (!keepAlive.audio) {
+      const a = document.createElement('audio');
+      a.loop = true; a.src = silentWavUrl(); a.volume = 0.02;
+      a.setAttribute('aria-hidden', 'true'); a.style.display = 'none';
+      document.body.appendChild(a);
+      keepAlive.audio = a;
+    }
+    keepAlive.audio.play().catch(() => {});
+  } catch {}
+  try {
+    if (!keepAlive.ctx) {
+      const Ctx = window.AudioContext || window.webkitAudioContext;
+      const ctx = new Ctx();
+      const osc = ctx.createOscillator();
+      const gain = ctx.createGain();
+      gain.gain.value = 0.0008; // inaudible but non-zero -> tab counts as audible
+      osc.frequency.value = 20;
+      osc.connect(gain); gain.connect(ctx.destination); osc.start();
+      keepAlive.ctx = ctx;
+    }
+    keepAlive.ctx.resume().catch(() => {});
+  } catch {}
+  try { chrome.runtime.sendMessage({ type: 'KEEP_AWAKE' }); } catch {}
+}
+
+function stopKeepAlive() {
+  try { keepAlive.audio && keepAlive.audio.pause(); } catch {}
+  try { keepAlive.ctx && keepAlive.ctx.suspend(); } catch {}
+  try { chrome.runtime.sendMessage({ type: 'RELEASE_AWAKE' }); } catch {}
+}
 
 chrome.runtime.onMessage.addListener((msg, _s, sendResponse) => {
   if (msg?.type !== 'START_BATCH') return;
@@ -24,7 +77,8 @@ async function runBatch(batchSize) {
       .filter(f => /\.(webp|png|jpe?g)$/i.test(f.name))
       .sort((a, b) => a.name.localeCompare(b.name));
     if (!files.length) throw new Error('No images (webp/png/jpg) in that folder.');
-    logLine(`Queue: ${files.length} images, ${batchSize} per session.`);
+    startKeepAlive(); // folder pick is a user gesture -> audio autoplay allowed
+    logLine(`Queue: ${files.length} images, ${batchSize} per session. (tab kept awake)`);
 
     let prevSrc = resultBlobSrc();
 
@@ -70,6 +124,7 @@ async function runBatch(batchSize) {
     logLine(`✅ ALL DONE — ${files.length} images. Check your Downloads folder.`);
   } finally {
     state.running = false;
+    stopKeepAlive();
   }
 }
 

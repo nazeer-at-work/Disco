@@ -85,6 +85,11 @@
     "hue": "#E07BCF"
   },
   {
+    "id": "alight-motion",
+    "label": "Alight Motion",
+    "hue": "#B371E0"
+  },
+  {
     "id": "alltrails",
     "label": "Alltrails",
     "hue": "#DB8470"
@@ -115,6 +120,11 @@
     "hue": "#B2DB70"
   },
   {
+    "id": "ankidroid",
+    "label": "Ankidroid",
+    "hue": "#D97F6D"
+  },
+  {
     "id": "anydesk",
     "label": "Anydesk",
     "hue": "#B1D76A"
@@ -123,6 +133,11 @@
     "id": "apple-music",
     "label": "Apple Music",
     "hue": "#DCC37A"
+  },
+  {
+    "id": "apple-tv",
+    "label": "Apple TV",
+    "hue": "#937CDE"
   },
   {
     "id": "asana",
@@ -150,6 +165,11 @@
     "hue": "#E1927A"
   },
   {
+    "id": "b612",
+    "label": "B612",
+    "hue": "#98DD78"
+  },
+  {
     "id": "babbel",
     "label": "Babbel",
     "hue": "#DFAD7C"
@@ -158,6 +178,11 @@
     "id": "bandcamp",
     "label": "Bandcamp",
     "hue": "#D779E2"
+  },
+  {
+    "id": "bandlab",
+    "label": "Bandlab",
+    "hue": "#D0DF72"
   },
   {
     "id": "bbc-news",
@@ -200,9 +225,19 @@
     "hue": "#78DDD2"
   },
   {
+    "id": "blinkist",
+    "label": "Blinkist",
+    "hue": "#5E80DE"
+  },
+  {
     "id": "blockchain-com",
     "label": "Blockchain Com",
     "hue": "#AF6EDE"
+  },
+  {
+    "id": "bloomberg",
+    "label": "Bloomberg",
+    "hue": "#A06DDF"
   },
   {
     "id": "bluesky",
@@ -235,6 +270,11 @@
     "hue": "#DD5FD5"
   },
   {
+    "id": "brawlhalla",
+    "label": "Brawlhalla",
+    "hue": "#BA6BDB"
+  },
+  {
     "id": "brilliant",
     "label": "Brilliant",
     "hue": "#D9C263"
@@ -248,6 +288,11 @@
     "id": "burger-king",
     "label": "Burger King",
     "hue": "#78E29F"
+  },
+  {
+    "id": "busuu",
+    "label": "Busuu",
+    "hue": "#66D693"
   },
   {
     "id": "bybit",
@@ -395,6 +440,11 @@
     "hue": "#7E80E2"
   },
   {
+    "id": "colornote",
+    "label": "Colornote",
+    "hue": "#DD6994"
+  },
+  {
     "id": "costco",
     "label": "Costco",
     "hue": "#DD64B3"
@@ -410,6 +460,11 @@
     "hue": "#D779E2"
   },
   {
+    "id": "crossy-road",
+    "label": "Crossy Road",
+    "hue": "#E1757A"
+  },
+  {
     "id": "crunchyroll",
     "label": "Crunchyroll",
     "hue": "#DE7DA7"
@@ -420,6 +475,11 @@
     "hue": "#66DB68"
   },
   {
+    "id": "cut-the-rope",
+    "label": "Cut The Rope",
+    "hue": "#78E29F"
+  },
+  {
     "id": "dailymotion",
     "label": "Dailymotion",
     "hue": "#63DEC7"
@@ -428,6 +488,11 @@
     "id": "dashlane",
     "label": "Dashlane",
     "hue": "#D1E47C"
+  },
+  {
+    "id": "dazn",
+    "label": "Dazn",
+    "hue": "#D77A6A"
   },
   {
     "id": "deepl",
@@ -575,6 +640,16 @@
     "hue": "#E47C7E"
   },
   {
+    "id": "fall-guys",
+    "label": "Fall Guys",
+    "hue": "#8765DC"
+  },
+  {
+    "id": "feedly",
+    "label": "Feedly",
+    "hue": "#6DDF72"
+  },
+  {
     "id": "fifa-soccer",
     "label": "Fifa Soccer",
     "hue": "#62DFB7"
@@ -593,6 +668,11 @@
     "id": "files-by-google",
     "label": "Files BY Google",
     "hue": "#7FDC7A"
+  },
+  {
+    "id": "filmora",
+    "label": "Filmora",
+    "hue": "#70DBAF"
   },
   {
     "id": "firefox",
@@ -675,9 +755,19 @@
     "hue": "#D26AD7"
   },
   {
+    "id": "genius",
+    "label": "Genius",
+    "hue": "#7D8DE3"
+  },
+  {
     "id": "genshin-impact",
     "label": "Genshin Impact",
     "hue": "#78B5E3"
+  },
+  {
+    "id": "geometry-dash",
+    "label": "Geometry Dash",
+    "hue": "#DD815F"
   },
   {
     "id": "github",
@@ -730,6 +820,16 @@
     "hue": "#74DCC1"
   },
   {
+    "id": "google-chat",
+    "label": "Google Chat",
+    "hue": "#E0E274"
+  },
+  {
+    "id": "google-classroom",
+    "label": "Google Classroom",
+    "hue": "#DDA764"
+  },
+  {
     "id": "google-clock",
     "label": "Google Clock",
     "hue": "#E27396"
@@ -753,6 +853,11 @@
     "id": "google-earth",
     "label": "Google Earth",
     "hue": "#C469D8"
+  },
+  {
+    "id": "google-fit",
+    "label": "Google Fit",
+    "hue": "#6FDCA0"
   },
   {
     "id": "google-gemini",
@@ -808,6 +913,11 @@
     "id": "google-photos",
     "label": "Google Photos",
     "hue": "#6693D6"
+  },
+  {
+    "id": "google-podcasts",
+    "label": "Google Podcasts",
+    "hue": "#D9DE82"
   },
   {
     "id": "google-sheets",
@@ -880,6 +990,11 @@
     "hue": "#DAD467"
   },
   {
+    "id": "hearthstone",
+    "label": "Hearthstone",
+    "hue": "#DB76B2"
+  },
+  {
     "id": "hellofresh",
     "label": "Hellofresh",
     "hue": "#D88E6E"
@@ -935,6 +1050,11 @@
     "hue": "#B4E17A"
   },
   {
+    "id": "ifttt",
+    "label": "Ifttt",
+    "hue": "#E3977D"
+  },
+  {
     "id": "iheartradio",
     "label": "Iheartradio",
     "hue": "#A17DDE"
@@ -960,6 +1080,11 @@
     "hue": "#E1B27F"
   },
   {
+    "id": "insight-timer",
+    "label": "Insight Timer",
+    "hue": "#DBA575"
+  },
+  {
     "id": "instacart",
     "label": "Instacart",
     "hue": "#E17FC2"
@@ -970,6 +1095,11 @@
     "hue": "#CA78E2"
   },
   {
+    "id": "jetpack-joyride",
+    "label": "Jetpack Joyride",
+    "hue": "#E06CA4"
+  },
+  {
     "id": "jiohotstar",
     "label": "Jiohotstar",
     "hue": "#79E2AD"
@@ -978,6 +1108,11 @@
     "id": "jiosaavn",
     "label": "Jiosaavn",
     "hue": "#8ADB76"
+  },
+  {
+    "id": "kahoot",
+    "label": "Kahoot",
+    "hue": "#DC6A85"
   },
   {
     "id": "kakaotalk",
@@ -1060,6 +1195,16 @@
     "hue": "#80DE7D"
   },
   {
+    "id": "libby",
+    "label": "Libby",
+    "hue": "#956FE2"
+  },
+  {
+    "id": "lichess",
+    "label": "Lichess",
+    "hue": "#937CDE"
+  },
+  {
     "id": "likee",
     "label": "Likee",
     "hue": "#DD7E9A"
@@ -1085,6 +1230,11 @@
     "hue": "#6FDCA0"
   },
   {
+    "id": "malwarebytes",
+    "label": "Malwarebytes",
+    "hue": "#E17096"
+  },
+  {
     "id": "marriott-bonvoy",
     "label": "Marriott Bonvoy",
     "hue": "#80DBE0"
@@ -1095,9 +1245,19 @@
     "hue": "#E17096"
   },
   {
+    "id": "mathway",
+    "label": "Mathway",
+    "hue": "#6BA3DB"
+  },
+  {
     "id": "max",
     "label": "Max",
     "hue": "#747BDC"
+  },
+  {
+    "id": "mcafee-security",
+    "label": "Mcafee Security",
+    "hue": "#D779E2"
   },
   {
     "id": "mcdonalds",
@@ -1118,6 +1278,11 @@
     "id": "mega",
     "label": "Mega",
     "hue": "#C86CDA"
+  },
+  {
+    "id": "memrise",
+    "label": "Memrise",
+    "hue": "#67B2DA"
   },
   {
     "id": "mercado-libre",
@@ -1213,6 +1378,11 @@
     "id": "moovit",
     "label": "Moovit",
     "hue": "#E17096"
+  },
+  {
+    "id": "musixmatch",
+    "label": "Musixmatch",
+    "hue": "#E07BCF"
   },
   {
     "id": "mx-player",
@@ -1340,6 +1510,11 @@
     "hue": "#64B1D8"
   },
   {
+    "id": "peloton",
+    "label": "Peloton",
+    "hue": "#E28479"
+  },
+  {
     "id": "perplexity",
     "label": "Perplexity",
     "hue": "#6DDF72"
@@ -1358,6 +1533,11 @@
     "id": "photomath",
     "label": "Photomath",
     "hue": "#E0E071"
+  },
+  {
+    "id": "photoroom",
+    "label": "Photoroom",
+    "hue": "#E17FC2"
   },
   {
     "id": "picsart",
@@ -1395,6 +1575,11 @@
     "hue": "#E2A47E"
   },
   {
+    "id": "pocket",
+    "label": "Pocket",
+    "hue": "#7BE0C8"
+  },
+  {
     "id": "pocket-casts",
     "label": "Pocket Casts",
     "hue": "#6BDB8D"
@@ -1413,6 +1598,16 @@
     "id": "poshmark",
     "label": "Poshmark",
     "hue": "#6C95DA"
+  },
+  {
+    "id": "powerdirector",
+    "label": "Powerdirector",
+    "hue": "#9C7ADC"
+  },
+  {
+    "id": "prisma",
+    "label": "Prisma",
+    "hue": "#D76574"
   },
   {
     "id": "proton-mail",
@@ -1460,6 +1655,11 @@
     "hue": "#E067C4"
   },
   {
+    "id": "reuters",
+    "label": "Reuters",
+    "hue": "#70E177"
+  },
+  {
     "id": "revolut",
     "label": "Revolut",
     "hue": "#E27ECF"
@@ -1473,6 +1673,11 @@
     "id": "roblox",
     "label": "Roblox",
     "hue": "#DBA261"
+  },
+  {
+    "id": "roku",
+    "label": "Roku",
+    "hue": "#7E80E2"
   },
   {
     "id": "royal-match",
@@ -1493,6 +1698,11 @@
     "id": "samsung-internet",
     "label": "Samsung Internet",
     "hue": "#74B4E2"
+  },
+  {
+    "id": "samsung-notes",
+    "label": "Samsung Notes",
+    "hue": "#B568D9"
   },
   {
     "id": "sephora",
@@ -1533,6 +1743,11 @@
     "id": "signal",
     "label": "Signal",
     "hue": "#64D873"
+  },
+  {
+    "id": "skillshare",
+    "label": "Skillshare",
+    "hue": "#747BDC"
   },
   {
     "id": "skrill",
@@ -1590,6 +1805,11 @@
     "hue": "#DA62A2"
   },
   {
+    "id": "splitwise",
+    "label": "Splitwise",
+    "hue": "#6F95DC"
+  },
+  {
     "id": "spotify",
     "label": "Spotify",
     "hue": "#6C95DA"
@@ -1623,6 +1843,11 @@
     "id": "strava",
     "label": "Strava",
     "hue": "#6FDCA0"
+  },
+  {
+    "id": "stremio",
+    "label": "Stremio",
+    "hue": "#E080B5"
   },
   {
     "id": "stripe",
@@ -1675,6 +1900,11 @@
     "hue": "#DF8662"
   },
   {
+    "id": "tasker",
+    "label": "Tasker",
+    "hue": "#67E0CC"
+  },
+  {
     "id": "teamviewer",
     "label": "Teamviewer",
     "hue": "#67E0CC"
@@ -1693,6 +1923,16 @@
     "id": "temu",
     "label": "Temu",
     "hue": "#6271DF"
+  },
+  {
+    "id": "the-guardian",
+    "label": "The Guardian",
+    "hue": "#6A85D7"
+  },
+  {
+    "id": "the-new-york-times",
+    "label": "The New York Times",
+    "hue": "#6693D6"
   },
   {
     "id": "threads",
@@ -1763,6 +2003,11 @@
     "id": "tumblr",
     "label": "Tumblr",
     "hue": "#A5DC74"
+  },
+  {
+    "id": "tunnelbear",
+    "label": "Tunnelbear",
+    "hue": "#DB61B2"
   },
   {
     "id": "twitch",
@@ -1908,6 +2153,11 @@
     "id": "wolt",
     "label": "Wolt",
     "hue": "#62D2DA"
+  },
+  {
+    "id": "wordscapes",
+    "label": "Wordscapes",
+    "hue": "#8EE080"
   },
   {
     "id": "wps-office",
