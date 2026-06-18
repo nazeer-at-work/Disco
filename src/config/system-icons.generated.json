@@ -10,9 +10,19 @@
     "hue": "#97DB75"
   },
   {
+    "id": "accuweather",
+    "label": "Accuweather",
+    "hue": "#DBB276"
+  },
+  {
     "id": "adidas",
     "label": "Adidas",
     "hue": "#D86483"
+  },
+  {
+    "id": "adidas-running",
+    "label": "Adidas Running",
+    "hue": "#DCD86A"
   },
   {
     "id": "adobe-acrobat",
@@ -30,9 +40,24 @@
     "hue": "#6C95DA"
   },
   {
+    "id": "adobe-photoshop-express",
+    "label": "Adobe Photoshop Express",
+    "hue": "#DC9260"
+  },
+  {
+    "id": "adobe-scan",
+    "label": "Adobe Scan",
+    "hue": "#B371E0"
+  },
+  {
     "id": "affirm",
     "label": "Affirm",
     "hue": "#DEDC6E"
+  },
+  {
+    "id": "afterpay",
+    "label": "Afterpay",
+    "hue": "#6FDCA0"
   },
   {
     "id": "agoda",
@@ -60,6 +85,11 @@
     "hue": "#E07BCF"
   },
   {
+    "id": "alltrails",
+    "label": "Alltrails",
+    "hue": "#DB8470"
+  },
+  {
     "id": "amazon",
     "label": "Amazon",
     "hue": "#DB75C0"
@@ -85,6 +115,11 @@
     "hue": "#B2DB70"
   },
   {
+    "id": "anydesk",
+    "label": "Anydesk",
+    "hue": "#B1D76A"
+  },
+  {
     "id": "apple-music",
     "label": "Apple Music",
     "hue": "#DCC37A"
@@ -105,14 +140,39 @@
     "hue": "#B4E17A"
   },
   {
+    "id": "audiomack",
+    "label": "Audiomack",
+    "hue": "#E47C7E"
+  },
+  {
+    "id": "avg-antivirus",
+    "label": "Avg Antivirus",
+    "hue": "#E1927A"
+  },
+  {
     "id": "babbel",
     "label": "Babbel",
     "hue": "#DFAD7C"
   },
   {
+    "id": "bandcamp",
+    "label": "Bandcamp",
+    "hue": "#D779E2"
+  },
+  {
     "id": "bbc-news",
     "label": "Bbc News",
     "hue": "#73C3E2"
+  },
+  {
+    "id": "behance",
+    "label": "Behance",
+    "hue": "#DAB262"
+  },
+  {
+    "id": "bereal",
+    "label": "Bereal",
+    "hue": "#DBC666"
   },
   {
     "id": "best-buy",
@@ -153,6 +213,16 @@
     "id": "booking-com",
     "label": "Booking Com",
     "hue": "#BE82DE"
+  },
+  {
+    "id": "box",
+    "label": "Box",
+    "hue": "#6BE1DF"
+  },
+  {
+    "id": "brainly",
+    "label": "Brainly",
+    "hue": "#71E087"
   },
   {
     "id": "brave-browser",
@@ -205,9 +275,19 @@
     "hue": "#DD78C1"
   },
   {
+    "id": "camscanner",
+    "label": "Camscanner",
+    "hue": "#81DF8C"
+  },
+  {
     "id": "candy-crush-saga",
     "label": "Candy Crush Saga",
     "hue": "#E2A47E"
+  },
+  {
+    "id": "candy-crush-soda-saga",
+    "label": "Candy Crush Soda Saga",
+    "hue": "#75A5E1"
   },
   {
     "id": "canva",
@@ -225,6 +305,11 @@
     "hue": "#E09B67"
   },
   {
+    "id": "castbox",
+    "label": "Castbox",
+    "hue": "#C675E1"
+  },
+  {
     "id": "character-ai",
     "label": "Character AI",
     "hue": "#72A5DF"
@@ -233,6 +318,11 @@
     "id": "chatgpt",
     "label": "Chatgpt",
     "hue": "#DBB276"
+  },
+  {
+    "id": "chess",
+    "label": "Chess",
+    "hue": "#66D693"
   },
   {
     "id": "chime",
@@ -248,6 +338,11 @@
     "id": "chrome",
     "label": "Chrome",
     "hue": "#93E067"
+  },
+  {
+    "id": "citymapper",
+    "label": "Citymapper",
+    "hue": "#6FDCA0"
   },
   {
     "id": "clash-of-clans",
@@ -268,6 +363,21 @@
     "id": "clickup",
     "label": "Clickup",
     "hue": "#B371E0"
+  },
+  {
+    "id": "clubhouse",
+    "label": "Clubhouse",
+    "hue": "#6DD9AA"
+  },
+  {
+    "id": "clue",
+    "label": "Clue",
+    "hue": "#D0D968"
+  },
+  {
+    "id": "cnbc",
+    "label": "Cnbc",
+    "hue": "#DB75C0"
   },
   {
     "id": "cnn",
@@ -310,6 +420,26 @@
     "hue": "#66DB68"
   },
   {
+    "id": "dailymotion",
+    "label": "Dailymotion",
+    "hue": "#63DEC7"
+  },
+  {
+    "id": "dashlane",
+    "label": "Dashlane",
+    "hue": "#D1E47C"
+  },
+  {
+    "id": "deepl",
+    "label": "Deepl",
+    "hue": "#C0D666"
+  },
+  {
+    "id": "deepseek",
+    "label": "Deepseek",
+    "hue": "#68D2DE"
+  },
+  {
     "id": "deezer",
     "label": "Deezer",
     "hue": "#6F95DC"
@@ -328,6 +458,11 @@
     "id": "depop",
     "label": "Depop",
     "hue": "#61DBD3"
+  },
+  {
+    "id": "deviantart",
+    "label": "Deviantart",
+    "hue": "#A7E07B"
   },
   {
     "id": "discord",
@@ -350,6 +485,11 @@
     "hue": "#A2DD5F"
   },
   {
+    "id": "dream-league-soccer",
+    "label": "Dream League Soccer",
+    "hue": "#6DDF72"
+  },
+  {
     "id": "dropbox",
     "label": "Dropbox",
     "hue": "#74B4E2"
@@ -370,9 +510,24 @@
     "hue": "#7FDC7A"
   },
   {
+    "id": "edx",
+    "label": "Edx",
+    "hue": "#67B2DA"
+  },
+  {
+    "id": "efootball",
+    "label": "Efootball",
+    "hue": "#DA9271"
+  },
+  {
     "id": "emirates",
     "label": "Emirates",
     "hue": "#DA62A2"
+  },
+  {
+    "id": "epic-games",
+    "label": "Epic Games",
+    "hue": "#DEBB68"
   },
   {
     "id": "espn",
@@ -415,6 +570,16 @@
     "hue": "#63C2D9"
   },
   {
+    "id": "facetune",
+    "label": "Facetune",
+    "hue": "#E47C7E"
+  },
+  {
+    "id": "fifa-soccer",
+    "label": "Fifa Soccer",
+    "hue": "#62DFB7"
+  },
+  {
     "id": "figma",
     "label": "Figma",
     "hue": "#D96392"
@@ -445,6 +610,11 @@
     "hue": "#6E79D8"
   },
   {
+    "id": "flightradar24",
+    "label": "Flightradar24",
+    "hue": "#DCD86A"
+  },
+  {
     "id": "flipboard",
     "label": "Flipboard",
     "hue": "#80DE7D"
@@ -453,6 +623,11 @@
     "id": "flipkart",
     "label": "Flipkart",
     "hue": "#DE9663"
+  },
+  {
+    "id": "flixbus",
+    "label": "Flixbus",
+    "hue": "#71B3E0"
   },
   {
     "id": "flo-period-tracker",
@@ -470,14 +645,29 @@
     "hue": "#A2DD5F"
   },
   {
+    "id": "fruit-ninja",
+    "label": "Fruit Ninja",
+    "hue": "#E0E274"
+  },
+  {
     "id": "gaana",
     "label": "Gaana",
     "hue": "#74DE68"
   },
   {
+    "id": "gardenscapes",
+    "label": "Gardenscapes",
+    "hue": "#E37DDD"
+  },
+  {
     "id": "garena-free-fire",
     "label": "Garena Free Fire",
     "hue": "#E17ADD"
+  },
+  {
+    "id": "garmin-connect",
+    "label": "Garmin Connect",
+    "hue": "#72DA62"
   },
   {
     "id": "gate-io",
@@ -490,9 +680,19 @@
     "hue": "#78B5E3"
   },
   {
+    "id": "github",
+    "label": "Github",
+    "hue": "#BE6EDD"
+  },
+  {
     "id": "glassdoor",
     "label": "Glassdoor",
     "hue": "#60DCC3"
+  },
+  {
+    "id": "glovo",
+    "label": "Glovo",
+    "hue": "#806BE1"
   },
   {
     "id": "gmail",
@@ -508,6 +708,11 @@
     "id": "google",
     "label": "Google",
     "hue": "#6994D8"
+  },
+  {
+    "id": "google-authenticator",
+    "label": "Google Authenticator",
+    "hue": "#D88E6E"
   },
   {
     "id": "google-calculator",
@@ -545,9 +750,19 @@
     "hue": "#69D897"
   },
   {
+    "id": "google-earth",
+    "label": "Google Earth",
+    "hue": "#C469D8"
+  },
+  {
     "id": "google-gemini",
     "label": "Google Gemini",
     "hue": "#DD73DD"
+  },
+  {
+    "id": "google-home",
+    "label": "Google Home",
+    "hue": "#7396DE"
   },
   {
     "id": "google-keep",
@@ -573,6 +788,11 @@
     "id": "google-news",
     "label": "Google News",
     "hue": "#63D963"
+  },
+  {
+    "id": "google-one",
+    "label": "Google One",
+    "hue": "#D65EDE"
   },
   {
     "id": "google-pay",
@@ -605,6 +825,16 @@
     "hue": "#7CE4A4"
   },
   {
+    "id": "google-tv",
+    "label": "Google TV",
+    "hue": "#D88E6E"
+  },
+  {
+    "id": "google-wallet",
+    "label": "Google Wallet",
+    "hue": "#8262DA"
+  },
+  {
     "id": "grab",
     "label": "Grab",
     "hue": "#75DBCE"
@@ -618,6 +848,11 @@
     "id": "grindr",
     "label": "Grindr",
     "hue": "#DEC77D"
+  },
+  {
+    "id": "grok",
+    "label": "Grok",
+    "hue": "#9880E0"
   },
   {
     "id": "groww",
@@ -650,9 +885,29 @@
     "hue": "#D88E6E"
   },
   {
+    "id": "hill-climb-racing",
+    "label": "Hill Climb Racing",
+    "hue": "#E0E378"
+  },
+  {
+    "id": "hilton-honors",
+    "label": "Hilton Honors",
+    "hue": "#72DACA"
+  },
+  {
     "id": "hinge",
     "label": "Hinge",
     "hue": "#BE6EDD"
+  },
+  {
+    "id": "home-workout",
+    "label": "Home Workout",
+    "hue": "#7BE0C8"
+  },
+  {
+    "id": "homescapes",
+    "label": "Homescapes",
+    "hue": "#8F79DC"
   },
   {
     "id": "honkai-star-rail",
@@ -660,9 +915,19 @@
     "hue": "#6E79D8"
   },
   {
+    "id": "hopper",
+    "label": "Hopper",
+    "hue": "#B3DD73"
+  },
+  {
     "id": "hotels-com",
     "label": "Hotels Com",
     "hue": "#74E28C"
+  },
+  {
+    "id": "hotspot-shield",
+    "label": "Hotspot Shield",
+    "hue": "#DDA978"
   },
   {
     "id": "hulu",
@@ -678,6 +943,11 @@
     "id": "ikea",
     "label": "Ikea",
     "hue": "#7A8BE1"
+  },
+  {
+    "id": "imo",
+    "label": "Imo",
+    "hue": "#DD6E78"
   },
   {
     "id": "indeed",
@@ -710,6 +980,11 @@
     "hue": "#8ADB76"
   },
   {
+    "id": "kakaotalk",
+    "label": "Kakaotalk",
+    "hue": "#6DC2DF"
+  },
+  {
     "id": "kayak",
     "label": "Kayak",
     "hue": "#778ADF"
@@ -725,9 +1000,24 @@
     "hue": "#6AD7A6"
   },
   {
+    "id": "kinemaster",
+    "label": "Kinemaster",
+    "hue": "#DE8290"
+  },
+  {
     "id": "klarna",
     "label": "Klarna",
     "hue": "#A6DE78"
+  },
+  {
+    "id": "kodi",
+    "label": "Kodi",
+    "hue": "#A667DA"
+  },
+  {
+    "id": "komoot",
+    "label": "Komoot",
+    "hue": "#70DBAF"
   },
   {
     "id": "kraken",
@@ -738,6 +1028,11 @@
     "id": "kucoin",
     "label": "Kucoin",
     "hue": "#6EDD91"
+  },
+  {
+    "id": "kwai",
+    "label": "Kwai",
+    "hue": "#DC74CE"
   },
   {
     "id": "lastpass",
@@ -753,6 +1048,21 @@
     "id": "ledger-live",
     "label": "Ledger Live",
     "hue": "#76E0A9"
+  },
+  {
+    "id": "lensa",
+    "label": "Lensa",
+    "hue": "#DFCE6D"
+  },
+  {
+    "id": "letterboxd",
+    "label": "Letterboxd",
+    "hue": "#80DE7D"
+  },
+  {
+    "id": "likee",
+    "label": "Likee",
+    "hue": "#DD7E9A"
   },
   {
     "id": "line",
@@ -803,6 +1113,11 @@
     "id": "meesho",
     "label": "Meesho",
     "hue": "#E27396"
+  },
+  {
+    "id": "mega",
+    "label": "Mega",
+    "hue": "#C86CDA"
   },
   {
     "id": "mercado-libre",
@@ -865,6 +1180,11 @@
     "hue": "#83DF68"
   },
   {
+    "id": "microsoft-to-do",
+    "label": "Microsoft TO DO",
+    "hue": "#B1D76A"
+  },
+  {
     "id": "microsoft-word",
     "label": "Microsoft Word",
     "hue": "#68A3D9"
@@ -888,6 +1208,11 @@
     "id": "monzo",
     "label": "Monzo",
     "hue": "#6271DF"
+  },
+  {
+    "id": "moovit",
+    "label": "Moovit",
+    "hue": "#E17096"
   },
   {
     "id": "mx-player",
@@ -925,9 +1250,19 @@
     "hue": "#75A5E1"
   },
   {
+    "id": "nike-run-club",
+    "label": "Nike Run Club",
+    "hue": "#D0D765"
+  },
+  {
     "id": "nike-training-club",
     "label": "Nike Training Club",
     "hue": "#C2E076"
+  },
+  {
+    "id": "nordpass",
+    "label": "Nordpass",
+    "hue": "#DBB276"
   },
   {
     "id": "nordvpn",
@@ -938,6 +1273,11 @@
     "id": "notion",
     "label": "Notion",
     "hue": "#DC7AA6"
+  },
+  {
+    "id": "notion-calendar",
+    "label": "Notion Calendar",
+    "hue": "#DD64B3"
   },
   {
     "id": "obsidian",
@@ -978,6 +1318,11 @@
     "id": "paramount-plus",
     "label": "Paramount Plus",
     "hue": "#6DD9AA"
+  },
+  {
+    "id": "payoneer",
+    "label": "Payoneer",
+    "hue": "#DE78CF"
   },
   {
     "id": "paypal",
@@ -1030,6 +1375,11 @@
     "hue": "#62DFB7"
   },
   {
+    "id": "plants-vs-zombies",
+    "label": "Plants VS Zombies",
+    "hue": "#70C3E1"
+  },
+  {
     "id": "playstore",
     "label": "Playstore",
     "hue": "#69DD6D"
@@ -1043,6 +1393,11 @@
     "id": "pluto-tv",
     "label": "Pluto TV",
     "hue": "#E2A47E"
+  },
+  {
+    "id": "pocket-casts",
+    "label": "Pocket Casts",
+    "hue": "#6BDB8D"
   },
   {
     "id": "poe",
@@ -1090,14 +1445,19 @@
     "hue": "#E07187"
   },
   {
+    "id": "real-racing-3",
+    "label": "Real Racing 3",
+    "hue": "#75E19B"
+  },
+  {
     "id": "reddit",
     "label": "Reddit",
     "hue": "#7EDD88"
   },
   {
-    "id": "remitly",
-    "label": "Remitly",
-    "hue": "#DE68A3"
+    "id": "remini",
+    "label": "Remini",
+    "hue": "#E067C4"
   },
   {
     "id": "revolut",
@@ -1120,9 +1480,19 @@
     "hue": "#6693D6"
   },
   {
+    "id": "rumble",
+    "label": "Rumble",
+    "hue": "#68D988"
+  },
+  {
     "id": "samsung-health",
     "label": "Samsung Health",
     "hue": "#E07F76"
+  },
+  {
+    "id": "samsung-internet",
+    "label": "Samsung Internet",
+    "hue": "#74B4E2"
   },
   {
     "id": "sephora",
@@ -1155,6 +1525,11 @@
     "hue": "#937CDE"
   },
   {
+    "id": "shopify",
+    "label": "Shopify",
+    "hue": "#B4E17A"
+  },
+  {
     "id": "signal",
     "label": "Signal",
     "hue": "#64D873"
@@ -1180,6 +1555,11 @@
     "hue": "#8262DA"
   },
   {
+    "id": "sleep-cycle",
+    "label": "Sleep Cycle",
+    "hue": "#E067C4"
+  },
+  {
     "id": "snapchat",
     "label": "Snapchat",
     "hue": "#67E0CC"
@@ -1193,6 +1573,11 @@
     "id": "sofi",
     "label": "Sofi",
     "hue": "#DF819C"
+  },
+  {
+    "id": "sololearn",
+    "label": "Sololearn",
+    "hue": "#A8E27E"
   },
   {
     "id": "soundcloud",
@@ -1210,9 +1595,24 @@
     "hue": "#6C95DA"
   },
   {
+    "id": "stack-overflow",
+    "label": "Stack Overflow",
+    "hue": "#77E26F"
+  },
+  {
+    "id": "standoff-2",
+    "label": "Standoff 2",
+    "hue": "#7C75DB"
+  },
+  {
     "id": "starbucks",
     "label": "Starbucks",
     "hue": "#7AE1BB"
+  },
+  {
+    "id": "steam",
+    "label": "Steam",
+    "hue": "#A2DD5F"
   },
   {
     "id": "stockx",
@@ -1223,6 +1623,11 @@
     "id": "strava",
     "label": "Strava",
     "hue": "#6FDCA0"
+  },
+  {
+    "id": "stripe",
+    "label": "Stripe",
+    "hue": "#A6DE78"
   },
   {
     "id": "stumble-guys",
@@ -1245,6 +1650,11 @@
     "hue": "#DAD467"
   },
   {
+    "id": "surfshark",
+    "label": "Surfshark",
+    "hue": "#9766DB"
+  },
+  {
     "id": "swiggy",
     "label": "Swiggy",
     "hue": "#73DDB3"
@@ -1265,9 +1675,19 @@
     "hue": "#DF8662"
   },
   {
+    "id": "teamviewer",
+    "label": "Teamviewer",
+    "hue": "#67E0CC"
+  },
+  {
     "id": "telegram",
     "label": "Telegram",
     "hue": "#73E27D"
+  },
+  {
+    "id": "temple-run",
+    "label": "Temple Run",
+    "hue": "#74DCC1"
   },
   {
     "id": "temu",
@@ -1278,6 +1698,11 @@
     "id": "threads",
     "label": "Threads",
     "hue": "#6AD7A6"
+  },
+  {
+    "id": "ticktick",
+    "label": "Ticktick",
+    "hue": "#DA70DB"
   },
   {
     "id": "tidal",
@@ -1295,6 +1720,16 @@
     "hue": "#8262DA"
   },
   {
+    "id": "tor-browser",
+    "label": "Tor Browser",
+    "hue": "#6EDD91"
+  },
+  {
+    "id": "trainline",
+    "label": "Trainline",
+    "hue": "#E37889"
+  },
+  {
     "id": "trello",
     "label": "Trello",
     "hue": "#DA62A2"
@@ -1308,6 +1743,11 @@
     "id": "tripadvisor",
     "label": "Tripadvisor",
     "hue": "#8C68DE"
+  },
+  {
+    "id": "truecaller",
+    "label": "Truecaller",
+    "hue": "#DD815F"
   },
   {
     "id": "trust-wallet",
@@ -1375,6 +1815,11 @@
     "hue": "#B3DE5E"
   },
   {
+    "id": "vivino",
+    "label": "Vivino",
+    "hue": "#8A7FE1"
+  },
+  {
     "id": "vlc",
     "label": "Vlc",
     "hue": "#74B4E2"
@@ -1410,6 +1855,11 @@
     "hue": "#A4DA71"
   },
   {
+    "id": "webex",
+    "label": "Webex",
+    "hue": "#7E80E2"
+  },
+  {
     "id": "webtoon",
     "label": "Webtoon",
     "hue": "#806BE1"
@@ -1435,6 +1885,16 @@
     "hue": "#D88E6E"
   },
   {
+    "id": "wikipedia",
+    "label": "Wikipedia",
+    "hue": "#73E27D"
+  },
+  {
+    "id": "windscribe",
+    "label": "Windscribe",
+    "hue": "#98DD78"
+  },
+  {
     "id": "wise",
     "label": "Wise",
     "hue": "#DC9774"
@@ -1448,6 +1908,11 @@
     "id": "wolt",
     "label": "Wolt",
     "hue": "#62D2DA"
+  },
+  {
+    "id": "wps-office",
+    "label": "Wps Office",
+    "hue": "#DF62D5"
   },
   {
     "id": "wynk-music",
@@ -1478,6 +1943,11 @@
     "id": "youtube-music",
     "label": "Youtube Music",
     "hue": "#E07F76"
+  },
+  {
+    "id": "zalando",
+    "label": "Zalando",
+    "hue": "#67E0CC"
   },
   {
     "id": "zara",

@@ -652,9 +652,6 @@
       "name": "Wealthsimple"
     },
     {
-      "name": "Remitly"
-    },
-    {
       "name": "Skrill"
     },
     {
@@ -881,6 +878,386 @@
       "name": "Files",
       "slug": "files",
       "prompt": "Convert the attached image into a premium disco-themed 3D app icon. Treat the attached image purely as the shape-and-color source.\nPreserve the exact shape, silhouette, and colors shown in the attached image — the colors must remain the dominant palette and the result must stay visually identical in form and color. Apply the disco treatment as reflective glossy 3D material, polished chrome edges, subtle sparkles, soft holographic accents and dynamic lighting that ENHANCE the existing colors — do NOT recolor, hue-shift, neon-wash, or replace them with a rainbow. Clean premium look, not a literal disco ball.\nSHAPE FIDELITY (strict): reproduce ONLY the shapes present in the attached image. Do NOT add, invent, or extend extra corners, tails, notches, frames, borders, or background tiles. The outer silhouette must match the attached image exactly.\nBACKGROUND (strict): place the icon on a SOLID, FLAT, PURE WHITE (#FFFFFF) background that completely fills the frame. Do NOT draw a transparency checkerboard, checkered grid, squares, or ANY pattern. Do NOT make the background transparent. The background must be uniform opaque white with nothing else on it.\nNO SHADOWS (strict): absolutely NO drop shadow, cast shadow, ground shadow, contact shadow, reflection puddle, or dark gradient beneath or around the icon. Depth lives ONLY on the object itself.\nCOMPOSITION (strict): the icon must be perfectly centered in a square 1:1 frame with equal margins, upright and front-facing, no rotation or tilt, filling about 80% of the frame, fully visible, never cropped. A single, self-contained, balanced object.\nStrong depth, modern launcher icon aesthetic, optimized for Android."
+    },
+    {
+      "name": "AccuWeather",
+      "slug": "accuweather"
+    },
+    {
+      "name": "Adobe Photoshop Express",
+      "slug": "adobe-photoshop-express"
+    },
+    {
+      "name": "Adobe Scan",
+      "slug": "adobe-scan"
+    },
+    {
+      "name": "AVG AntiVirus",
+      "slug": "avg-antivirus"
+    },
+    {
+      "name": "Behance",
+      "slug": "behance"
+    },
+    {
+      "name": "Box",
+      "slug": "box"
+    },
+    {
+      "name": "Brainly",
+      "slug": "brainly"
+    },
+    {
+      "name": "CamScanner",
+      "slug": "camscanner"
+    },
+    {
+      "name": "Candy Crush Soda Saga",
+      "slug": "candy-crush-soda-saga"
+    },
+    {
+      "name": "Castbox",
+      "slug": "castbox"
+    },
+    {
+      "name": "Chess.com",
+      "slug": "chess"
+    },
+    {
+      "name": "CNBC",
+      "slug": "cnbc"
+    },
+    {
+      "name": "DeepSeek",
+      "slug": "deepseek"
+    },
+    {
+      "name": "DeviantArt",
+      "slug": "deviantart"
+    },
+    {
+      "name": "edX",
+      "slug": "edx"
+    },
+    {
+      "name": "Epic Games",
+      "slug": "epic-games"
+    },
+    {
+      "name": "FIFA Soccer",
+      "slug": "fifa-soccer"
+    },
+    {
+      "name": "Flightradar24",
+      "slug": "flightradar24"
+    },
+    {
+      "name": "Fruit Ninja",
+      "slug": "fruit-ninja"
+    },
+    {
+      "name": "GitHub",
+      "slug": "github"
+    },
+    {
+      "name": "Google Earth",
+      "slug": "google-earth"
+    },
+    {
+      "name": "Google Authenticator",
+      "slug": "google-authenticator"
+    },
+    {
+      "name": "Google Home",
+      "slug": "google-home"
+    },
+    {
+      "name": "Google One",
+      "slug": "google-one"
+    },
+    {
+      "name": "Google TV",
+      "slug": "google-tv"
+    },
+    {
+      "name": "Google Wallet",
+      "slug": "google-wallet"
+    },
+    {
+      "name": "Grok",
+      "slug": "grok"
+    },
+    {
+      "name": "Hilton Honors",
+      "slug": "hilton-honors"
+    },
+    {
+      "name": "Home Workout",
+      "slug": "home-workout"
+    },
+    {
+      "name": "Hopper",
+      "slug": "hopper"
+    },
+    {
+      "name": "Hotspot Shield",
+      "slug": "hotspot-shield"
+    },
+    {
+      "name": "imo",
+      "slug": "imo"
+    },
+    {
+      "name": "KineMaster",
+      "slug": "kinemaster"
+    },
+    {
+      "name": "Letterboxd",
+      "slug": "letterboxd"
+    },
+    {
+      "name": "MEGA",
+      "slug": "mega"
+    },
+    {
+      "name": "Microsoft To Do",
+      "slug": "microsoft-to-do"
+    },
+    {
+      "name": "Notion Calendar",
+      "slug": "notion-calendar"
+    },
+    {
+      "name": "Pocket Casts",
+      "slug": "pocket-casts"
+    },
+    {
+      "name": "Remini",
+      "slug": "remini"
+    },
+    {
+      "name": "Shopify",
+      "slug": "shopify"
+    },
+    {
+      "name": "Sololearn",
+      "slug": "sololearn"
+    },
+    {
+      "name": "Stack Overflow",
+      "slug": "stack-overflow"
+    },
+    {
+      "name": "Steam",
+      "slug": "steam"
+    },
+    {
+      "name": "TeamViewer",
+      "slug": "teamviewer"
+    },
+    {
+      "name": "Truecaller",
+      "slug": "truecaller"
+    },
+    {
+      "name": "KakaoTalk",
+      "slug": "kakaotalk"
+    },
+    {
+      "name": "Wikipedia",
+      "slug": "wikipedia"
+    },
+    {
+      "name": "DeepL",
+      "slug": "deepl"
+    },
+    {
+      "name": "Tor Browser",
+      "slug": "tor-browser"
+    },
+    {
+      "name": "Samsung Internet Browser",
+      "slug": "samsung-internet"
+    },
+    {
+      "name": "Surfshark",
+      "slug": "surfshark"
+    },
+    {
+      "name": "Dashlane",
+      "slug": "dashlane"
+    },
+    {
+      "name": "NordPass",
+      "slug": "nordpass"
+    },
+    {
+      "name": "Stripe",
+      "slug": "stripe"
+    },
+    {
+      "name": "Payoneer",
+      "slug": "payoneer"
+    },
+    {
+      "name": "Afterpay",
+      "slug": "afterpay"
+    },
+    {
+      "name": "Zalando",
+      "slug": "zalando"
+    },
+    {
+      "name": "Glovo",
+      "slug": "glovo"
+    },
+    {
+      "name": "Trainline",
+      "slug": "trainline"
+    },
+    {
+      "name": "Citymapper",
+      "slug": "citymapper"
+    },
+    {
+      "name": "Moovit",
+      "slug": "moovit"
+    },
+    {
+      "name": "FlixBus",
+      "slug": "flixbus"
+    },
+    {
+      "name": "Temple Run",
+      "slug": "temple-run"
+    },
+    {
+      "name": "Plants vs Zombies",
+      "slug": "plants-vs-zombies"
+    },
+    {
+      "name": "Gardenscapes",
+      "slug": "gardenscapes"
+    },
+    {
+      "name": "Homescapes",
+      "slug": "homescapes"
+    },
+    {
+      "name": "eFootball",
+      "slug": "efootball"
+    },
+    {
+      "name": "Dream League Soccer",
+      "slug": "dream-league-soccer"
+    },
+    {
+      "name": "Real Racing 3",
+      "slug": "real-racing-3"
+    },
+    {
+      "name": "Hill Climb Racing",
+      "slug": "hill-climb-racing"
+    },
+    {
+      "name": "Standoff 2",
+      "slug": "standoff-2"
+    },
+    {
+      "name": "Dailymotion",
+      "slug": "dailymotion"
+    },
+    {
+      "name": "Rumble",
+      "slug": "rumble"
+    },
+    {
+      "name": "Bandcamp",
+      "slug": "bandcamp"
+    },
+    {
+      "name": "Audiomack",
+      "slug": "audiomack"
+    },
+    {
+      "name": "Kodi",
+      "slug": "kodi"
+    },
+    {
+      "name": "Lensa",
+      "slug": "lensa"
+    },
+    {
+      "name": "Facetune",
+      "slug": "facetune"
+    },
+    {
+      "name": "Likee",
+      "slug": "likee"
+    },
+    {
+      "name": "Kwai",
+      "slug": "kwai"
+    },
+    {
+      "name": "AnyDesk",
+      "slug": "anydesk"
+    },
+    {
+      "name": "Webex",
+      "slug": "webex"
+    },
+    {
+      "name": "Garmin Connect",
+      "slug": "garmin-connect"
+    },
+    {
+      "name": "Nike Run Club",
+      "slug": "nike-run-club"
+    },
+    {
+      "name": "Clue Period Tracker",
+      "slug": "clue"
+    },
+    {
+      "name": "Sleep Cycle",
+      "slug": "sleep-cycle"
+    },
+    {
+      "name": "TickTick",
+      "slug": "ticktick"
+    },
+    {
+      "name": "BeReal",
+      "slug": "bereal"
+    },
+    {
+      "name": "Clubhouse",
+      "slug": "clubhouse"
+    },
+    {
+      "name": "adidas Running",
+      "slug": "adidas-running"
+    },
+    {
+      "name": "Windscribe",
+      "slug": "windscribe"
+    },
+    {
+      "name": "Vivino",
+      "slug": "vivino"
+    },
+    {
+      "name": "WPS Office",
+      "slug": "wps-office"
+    },
+    {
+      "name": "komoot",
+      "slug": "komoot"
+    },
+    {
+      "name": "AllTrails",
+      "slug": "alltrails"
     }
   ]
 }
