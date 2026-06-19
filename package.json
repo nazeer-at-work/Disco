@@ -1,6 +1,6 @@
 {
   "name": "icon-pack-template",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": true,
   "scripts": {
     "android": "NODE_ENV=development bash ./scripts/run-android.sh",

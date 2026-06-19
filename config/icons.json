@@ -1458,6 +1458,242 @@
     {
       "name": "Brawlhalla",
       "slug": "brawlhalla"
+    },
+    {
+      "name": "2048",
+      "slug": "2048"
+    },
+    {
+      "name": "Gboard",
+      "slug": "gboard"
+    },
+    {
+      "name": "Microsoft SwiftKey",
+      "slug": "microsoft-swiftkey"
+    },
+    {
+      "name": "Ecosia",
+      "slug": "ecosia"
+    },
+    {
+      "name": "Opera GX",
+      "slug": "opera-gx"
+    },
+    {
+      "name": "Kiwi Browser",
+      "slug": "kiwi-browser"
+    },
+    {
+      "name": "Total Commander",
+      "slug": "total-commander"
+    },
+    {
+      "name": "ZArchiver",
+      "slug": "zarchiver"
+    },
+    {
+      "name": "Solid Explorer",
+      "slug": "solid-explorer"
+    },
+    {
+      "name": "AIDA64",
+      "slug": "aida64"
+    },
+    {
+      "name": "FaceApp",
+      "slug": "faceapp"
+    },
+    {
+      "name": "Reface",
+      "slug": "reface"
+    },
+    {
+      "name": "Meitu",
+      "slug": "meitu"
+    },
+    {
+      "name": "Fotor",
+      "slug": "fotor"
+    },
+    {
+      "name": "PicCollage",
+      "slug": "piccollage"
+    },
+    {
+      "name": "SoundHound",
+      "slug": "soundhound"
+    },
+    {
+      "name": "Smule",
+      "slug": "smule"
+    },
+    {
+      "name": "JOOX",
+      "slug": "joox"
+    },
+    {
+      "name": "StarMaker",
+      "slug": "starmaker"
+    },
+    {
+      "name": "WeSing",
+      "slug": "wesing"
+    },
+    {
+      "name": "Last.fm",
+      "slug": "last-fm"
+    },
+    {
+      "name": "Viki",
+      "slug": "viki"
+    },
+    {
+      "name": "Viu",
+      "slug": "viu"
+    },
+    {
+      "name": "MUBI",
+      "slug": "mubi"
+    },
+    {
+      "name": "Jellyfin",
+      "slug": "jellyfin"
+    },
+    {
+      "name": "Emby",
+      "slug": "emby"
+    },
+    {
+      "name": "KMPlayer",
+      "slug": "kmplayer"
+    },
+    {
+      "name": "Niconico",
+      "slug": "niconico"
+    },
+    {
+      "name": "Sonic Dash",
+      "slug": "sonic-dash"
+    },
+    {
+      "name": "Pokemon UNITE",
+      "slug": "pokemon-unite"
+    },
+    {
+      "name": "Magic Tiles 3",
+      "slug": "magic-tiles-3"
+    },
+    {
+      "name": "Bowmasters",
+      "slug": "bowmasters"
+    },
+    {
+      "name": "Solitaire",
+      "slug": "solitaire"
+    },
+    {
+      "name": "Mahjong",
+      "slug": "mahjong"
+    },
+    {
+      "name": "Sudoku",
+      "slug": "sudoku"
+    },
+    {
+      "name": "Hill Climb Racing 2",
+      "slug": "hill-climb-racing-2"
+    },
+    {
+      "name": "AFK Arena",
+      "slug": "afk-arena"
+    },
+    {
+      "name": "Plague Inc.",
+      "slug": "plague-inc"
+    },
+    {
+      "name": "Bloons TD 6",
+      "slug": "bloons-td-6"
+    },
+    {
+      "name": "Vampire Survivors",
+      "slug": "vampire-survivors"
+    },
+    {
+      "name": "Honkai Impact 3rd",
+      "slug": "honkai-impact-3"
+    },
+    {
+      "name": "Nubank",
+      "slug": "nubank"
+    },
+    {
+      "name": "GCash",
+      "slug": "gcash"
+    },
+    {
+      "name": "Toss",
+      "slug": "toss"
+    },
+    {
+      "name": "PicPay",
+      "slug": "picpay"
+    },
+    {
+      "name": "Trendyol",
+      "slug": "trendyol"
+    },
+    {
+      "name": "Tokopedia",
+      "slug": "tokopedia"
+    },
+    {
+      "name": "Jumia",
+      "slug": "jumia"
+    },
+    {
+      "name": "noon",
+      "slug": "noon"
+    },
+    {
+      "name": "Organic Maps",
+      "slug": "organic-maps"
+    },
+    {
+      "name": "Transit",
+      "slug": "transit"
+    },
+    {
+      "name": "Wikiloc",
+      "slug": "wikiloc"
+    },
+    {
+      "name": "Lifesum",
+      "slug": "lifesum"
+    },
+    {
+      "name": "YAZIO",
+      "slug": "yazio"
+    },
+    {
+      "name": "Mimo",
+      "slug": "mimo"
+    },
+    {
+      "name": "LingoDeer",
+      "slug": "lingodeer"
+    },
+    {
+      "name": "Drops",
+      "slug": "drops"
+    },
+    {
+      "name": "Badoo",
+      "slug": "badoo"
+    },
+    {
+      "name": "happn",
+      "slug": "happn"
     }
   ]
 }
