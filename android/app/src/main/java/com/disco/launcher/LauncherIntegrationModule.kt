@@ -35,6 +35,21 @@ class LauncherIntegrationModule(private val reactContext: ReactApplicationContex
 
   override fun getName(): String = "LauncherIntegration"
 
+  /**
+   * Best-effort nudge for launchers to re-read this icon pack (after the pack is
+   * updated with new icons/mappings) without the user switching packs. Mirrors the
+   * automatic nudge done on app resume.
+   */
+  @ReactMethod
+  fun refreshIconPack(promise: Promise) {
+    try {
+      IconPackRefreshHelper.notifyIconPackChanged(reactContext)
+      promise.resolve(true)
+    } catch (error: Exception) {
+      promise.reject("ICON_PACK_REFRESH_ERROR", error)
+    }
+  }
+
   @ReactMethod
   fun getSupportedLaunchers(promise: Promise) {
     try {
