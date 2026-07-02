@@ -90,6 +90,16 @@
     "hue": "#6DDF72"
   },
   {
+    "id": "ajio",
+    "label": "Ajio",
+    "hue": "#82DF81"
+  },
+  {
+    "id": "alarmy",
+    "label": "Alarmy",
+    "hue": "#DD815F"
+  },
+  {
     "id": "alibaba",
     "label": "Alibaba",
     "hue": "#63D963"
@@ -105,9 +115,24 @@
     "hue": "#B371E0"
   },
   {
+    "id": "allegro",
+    "label": "Allegro",
+    "hue": "#DD8973"
+  },
+  {
     "id": "alltrails",
     "label": "Alltrails",
     "hue": "#DB8470"
+  },
+  {
+    "id": "ally",
+    "label": "Ally",
+    "hue": "#D86483"
+  },
+  {
+    "id": "aloha-browser",
+    "label": "Aloha Browser",
+    "hue": "#6060DC"
   },
   {
     "id": "amazon",
@@ -130,9 +155,19 @@
     "hue": "#6ADC7D"
   },
   {
+    "id": "american-express",
+    "label": "American Express",
+    "hue": "#70DBAF"
+  },
+  {
     "id": "among-us",
     "label": "Among US",
     "hue": "#B2DB70"
+  },
+  {
+    "id": "anghami",
+    "label": "Anghami",
+    "hue": "#DD6E78"
   },
   {
     "id": "ankidroid",
@@ -143,6 +178,11 @@
     "id": "anydesk",
     "label": "Anydesk",
     "hue": "#B1D76A"
+  },
+  {
+    "id": "ap-news",
+    "label": "AP News",
+    "hue": "#76E0A9"
   },
   {
     "id": "apple-music",
@@ -205,6 +245,21 @@
     "hue": "#D0DF72"
   },
   {
+    "id": "bank-of-america",
+    "label": "Bank OF America",
+    "hue": "#A570E1"
+  },
+  {
+    "id": "basecamp",
+    "label": "Basecamp",
+    "hue": "#A3D86E"
+  },
+  {
+    "id": "bbc-iplayer",
+    "label": "Bbc Iplayer",
+    "hue": "#9B69DD"
+  },
+  {
     "id": "bbc-news",
     "label": "Bbc News",
     "hue": "#73C3E2"
@@ -223,6 +278,16 @@
     "id": "best-buy",
     "label": "Best Buy",
     "hue": "#69DD6D"
+  },
+  {
+    "id": "bigbasket",
+    "label": "Bigbasket",
+    "hue": "#73E27D"
+  },
+  {
+    "id": "bilibili",
+    "label": "Bilibili",
+    "hue": "#BA6BDB"
   },
   {
     "id": "binance",
@@ -250,6 +315,11 @@
     "hue": "#5E80DE"
   },
   {
+    "id": "blinkit",
+    "label": "Blinkit",
+    "hue": "#906CE0"
+  },
+  {
     "id": "blockchain-com",
     "label": "Blockchain Com",
     "hue": "#AF6EDE"
@@ -270,9 +340,19 @@
     "hue": "#6CD2E0"
   },
   {
+    "id": "bolt",
+    "label": "Bolt",
+    "hue": "#8F79DC"
+  },
+  {
     "id": "booking-com",
     "label": "Booking Com",
     "hue": "#BE82DE"
+  },
+  {
+    "id": "boomplay",
+    "label": "Boomplay",
+    "hue": "#7EDD88"
   },
   {
     "id": "bowmasters",
@@ -375,6 +455,16 @@
     "hue": "#DAB262"
   },
   {
+    "id": "capital-one",
+    "label": "Capital One",
+    "hue": "#E0E378"
+  },
+  {
+    "id": "careem",
+    "label": "Careem",
+    "hue": "#67B2DA"
+  },
+  {
     "id": "cash-app",
     "label": "Cash App",
     "hue": "#E09B67"
@@ -390,6 +480,11 @@
     "hue": "#72A5DF"
   },
   {
+    "id": "chase",
+    "label": "Chase",
+    "hue": "#867CDF"
+  },
+  {
     "id": "chatgpt",
     "label": "Chatgpt",
     "hue": "#DBB276"
@@ -398,6 +493,11 @@
     "id": "chess",
     "label": "Chess",
     "hue": "#66D693"
+  },
+  {
+    "id": "chewy",
+    "label": "Chewy",
+    "hue": "#AB6ADC"
   },
   {
     "id": "chime",
@@ -480,9 +580,19 @@
     "hue": "#DD64B3"
   },
   {
+    "id": "coupang",
+    "label": "Coupang",
+    "hue": "#6FD2E2"
+  },
+  {
     "id": "coursera",
     "label": "Coursera",
     "hue": "#7DE3B2"
+  },
+  {
+    "id": "crave",
+    "label": "Crave",
+    "hue": "#63DEC7"
   },
   {
     "id": "cred",
@@ -508,6 +618,11 @@
     "id": "cut-the-rope",
     "label": "Cut The Rope",
     "hue": "#78E29F"
+  },
+  {
+    "id": "dailyhunt",
+    "label": "Dailyhunt",
+    "hue": "#C2E076"
   },
   {
     "id": "dailymotion",
@@ -565,6 +680,11 @@
     "hue": "#A6DE78"
   },
   {
+    "id": "discovery",
+    "label": "Discovery",
+    "hue": "#D97F6D"
+  },
+  {
     "id": "disney",
     "label": "Disney",
     "hue": "#75DBCE"
@@ -600,9 +720,19 @@
     "hue": "#D0D765"
   },
   {
+    "id": "dunkin",
+    "label": "Dunkin",
+    "hue": "#DA9271"
+  },
+  {
     "id": "duolingo",
     "label": "Duolingo",
     "hue": "#D66666"
+  },
+  {
+    "id": "easyjet",
+    "label": "Easyjet",
+    "hue": "#DD815F"
   },
   {
     "id": "ebay",
@@ -623,6 +753,11 @@
     "id": "efootball",
     "label": "Efootball",
     "hue": "#DA9271"
+  },
+  {
+    "id": "element",
+    "label": "Element",
+    "hue": "#73E27D"
   },
   {
     "id": "emby",
@@ -698,6 +833,11 @@
     "id": "feedly",
     "label": "Feedly",
     "hue": "#6DDF72"
+  },
+  {
+    "id": "fidelity",
+    "label": "Fidelity",
+    "hue": "#A6DE78"
   },
   {
     "id": "fifa-soccer",
@@ -780,9 +920,24 @@
     "hue": "#78E391"
   },
   {
+    "id": "free-now",
+    "label": "Free Now",
+    "hue": "#CA78E2"
+  },
+  {
+    "id": "freeletics",
+    "label": "Freeletics",
+    "hue": "#6F95DC"
+  },
+  {
     "id": "fruit-ninja",
     "label": "Fruit Ninja",
     "hue": "#E0E274"
+  },
+  {
+    "id": "funimation",
+    "label": "Funimation",
+    "hue": "#D779E2"
   },
   {
     "id": "gaana",
@@ -865,6 +1020,16 @@
     "hue": "#6994D8"
   },
   {
+    "id": "google-arts-culture",
+    "label": "Google Arts Culture",
+    "hue": "#6E79D8"
+  },
+  {
+    "id": "google-assistant",
+    "label": "Google Assistant",
+    "hue": "#DA62A2"
+  },
+  {
     "id": "google-authenticator",
     "label": "Google Authenticator",
     "hue": "#D88E6E"
@@ -920,6 +1085,11 @@
     "hue": "#C469D8"
   },
   {
+    "id": "google-fi",
+    "label": "Google FI",
+    "hue": "#CC6FDC"
+  },
+  {
     "id": "google-fit",
     "label": "Google Fit",
     "hue": "#6FDCA0"
@@ -938,6 +1108,11 @@
     "id": "google-keep",
     "label": "Google Keep",
     "hue": "#68D2DE"
+  },
+  {
+    "id": "google-lens",
+    "label": "Google Lens",
+    "hue": "#DA9271"
   },
   {
     "id": "google-maps",
@@ -1005,6 +1180,11 @@
     "hue": "#D88E6E"
   },
   {
+    "id": "google-voice",
+    "label": "Google Voice",
+    "hue": "#67B2DA"
+  },
+  {
     "id": "google-wallet",
     "label": "Google Wallet",
     "hue": "#8262DA"
@@ -1030,6 +1210,11 @@
     "hue": "#9880E0"
   },
   {
+    "id": "groupme",
+    "label": "Groupme",
+    "hue": "#C675E1"
+  },
+  {
     "id": "groww",
     "label": "Groww",
     "hue": "#77E26F"
@@ -1053,6 +1238,11 @@
     "id": "hay-day",
     "label": "Hay Day",
     "hue": "#D376E0"
+  },
+  {
+    "id": "hbo-max",
+    "label": "Hbo Max",
+    "hue": "#DF68B3"
   },
   {
     "id": "headspace",
@@ -1155,6 +1345,16 @@
     "hue": "#DD78C1"
   },
   {
+    "id": "indrive",
+    "label": "Indrive",
+    "hue": "#A4DA71"
+  },
+  {
+    "id": "inshorts",
+    "label": "Inshorts",
+    "hue": "#74DCC1"
+  },
+  {
     "id": "inshot",
     "label": "Inshot",
     "hue": "#E1B27F"
@@ -1175,6 +1375,11 @@
     "hue": "#CA78E2"
   },
   {
+    "id": "iqiyi",
+    "label": "Iqiyi",
+    "hue": "#67DA78"
+  },
+  {
     "id": "jellyfin",
     "label": "Jellyfin",
     "hue": "#6563DE"
@@ -1185,9 +1390,19 @@
     "hue": "#E06CA4"
   },
   {
+    "id": "jiocinema",
+    "label": "Jiocinema",
+    "hue": "#DEBA7C"
+  },
+  {
     "id": "jiohotstar",
     "label": "Jiohotstar",
     "hue": "#79E2AD"
+  },
+  {
+    "id": "jiomart",
+    "label": "Jiomart",
+    "hue": "#73DDB3"
   },
   {
     "id": "jiosaavn",
@@ -1205,6 +1420,11 @@
     "hue": "#DB6B76"
   },
   {
+    "id": "just-eat",
+    "label": "Just Eat",
+    "hue": "#7B68DF"
+  },
+  {
     "id": "kahoot",
     "label": "Kahoot",
     "hue": "#DC6A85"
@@ -1213,6 +1433,11 @@
     "id": "kakaotalk",
     "label": "Kakaotalk",
     "hue": "#6DC2DF"
+  },
+  {
+    "id": "kaspersky",
+    "label": "Kaspersky",
+    "hue": "#83DF68"
   },
   {
     "id": "kayak",
@@ -1228,6 +1453,11 @@
     "id": "khan-academy",
     "label": "Khan Academy",
     "hue": "#6AD7A6"
+  },
+  {
+    "id": "kik",
+    "label": "Kik",
+    "hue": "#E27488"
   },
   {
     "id": "kinemaster",
@@ -1325,6 +1555,11 @@
     "hue": "#DD7E9A"
   },
   {
+    "id": "lime",
+    "label": "Lime",
+    "hue": "#A6DE78"
+  },
+  {
     "id": "line",
     "label": "Line",
     "hue": "#70E177"
@@ -1338,6 +1573,11 @@
     "id": "linkedin",
     "label": "Linkedin",
     "hue": "#C0D666"
+  },
+  {
+    "id": "lowes",
+    "label": "Lowes",
+    "hue": "#69C2DD"
   },
   {
     "id": "ludo-king",
@@ -1440,6 +1680,11 @@
     "hue": "#D073DE"
   },
   {
+    "id": "mi-browser",
+    "label": "MI Browser",
+    "hue": "#6AB2DC"
+  },
+  {
     "id": "microsoft-authenticator",
     "label": "Microsoft Authenticator",
     "hue": "#DAD467"
@@ -1458,6 +1703,11 @@
     "id": "microsoft-excel",
     "label": "Microsoft Excel",
     "hue": "#D0DD6E"
+  },
+  {
+    "id": "microsoft-launcher",
+    "label": "Microsoft Launcher",
+    "hue": "#73DC65"
   },
   {
     "id": "microsoft-onedrive",
@@ -1515,6 +1765,11 @@
     "hue": "#7FDC7A"
   },
   {
+    "id": "monday-com",
+    "label": "Monday Com",
+    "hue": "#9880E0"
+  },
+  {
     "id": "monzo",
     "label": "Monzo",
     "hue": "#6271DF"
@@ -1560,9 +1815,19 @@
     "hue": "#DDA978"
   },
   {
+    "id": "news-break",
+    "label": "News Break",
+    "hue": "#E07BCF"
+  },
+  {
     "id": "nextdoor",
     "label": "Nextdoor",
     "hue": "#81DF8C"
+  },
+  {
+    "id": "niagara-launcher",
+    "label": "Niagara Launcher",
+    "hue": "#67DA78"
   },
   {
     "id": "niconico",
@@ -1615,6 +1880,11 @@
     "hue": "#DF6D95"
   },
   {
+    "id": "nykaa",
+    "label": "Nykaa",
+    "hue": "#72DA62"
+  },
+  {
     "id": "obsidian",
     "label": "Obsidian",
     "hue": "#C3E37D"
@@ -1628,6 +1898,16 @@
     "id": "okx",
     "label": "Okx",
     "hue": "#DC74CE"
+  },
+  {
+    "id": "ola",
+    "label": "Ola",
+    "hue": "#DB75C0"
+  },
+  {
+    "id": "omio",
+    "label": "Omio",
+    "hue": "#DB75C0"
   },
   {
     "id": "opentable",
@@ -1650,9 +1930,19 @@
     "hue": "#E3897D"
   },
   {
+    "id": "oura",
+    "label": "Oura",
+    "hue": "#E27488"
+  },
+  {
     "id": "outlook",
     "label": "Outlook",
     "hue": "#C066D6"
+  },
+  {
+    "id": "ozon",
+    "label": "Ozon",
+    "hue": "#DFAB68"
   },
   {
     "id": "pandora",
@@ -1730,6 +2020,11 @@
     "hue": "#B4DF77"
   },
   {
+    "id": "pinduoduo",
+    "label": "Pinduoduo",
+    "hue": "#E1757A"
+  },
+  {
     "id": "pinterest",
     "label": "Pinterest",
     "hue": "#DFAB68"
@@ -1805,9 +2100,19 @@
     "hue": "#D76574"
   },
   {
+    "id": "proton-drive",
+    "label": "Proton Drive",
+    "hue": "#E1757A"
+  },
+  {
     "id": "proton-mail",
     "label": "Proton Mail",
     "hue": "#DCD86A"
+  },
+  {
+    "id": "proton-pass",
+    "label": "Proton Pass",
+    "hue": "#8ADB76"
   },
   {
     "id": "proton-vpn",
@@ -1818,6 +2123,11 @@
     "id": "pubg-mobile",
     "label": "Pubg Mobile",
     "hue": "#81DF8C"
+  },
+  {
+    "id": "qobuz",
+    "label": "Qobuz",
+    "hue": "#67B2DA"
   },
   {
     "id": "quizlet",
@@ -1890,6 +2200,11 @@
     "hue": "#68D988"
   },
   {
+    "id": "ryanair",
+    "label": "Ryanair",
+    "hue": "#E1927A"
+  },
+  {
     "id": "samsung-health",
     "label": "Samsung Health",
     "hue": "#E07F76"
@@ -1908,6 +2223,11 @@
     "id": "sephora",
     "label": "Sephora",
     "hue": "#97DB75"
+  },
+  {
+    "id": "session",
+    "label": "Session",
+    "hue": "#80DE7D"
   },
   {
     "id": "settings",
@@ -1970,9 +2290,19 @@
     "hue": "#8262DA"
   },
   {
+    "id": "sleep-as-android",
+    "label": "Sleep AS Android",
+    "hue": "#A7E07B"
+  },
+  {
     "id": "sleep-cycle",
     "label": "Sleep Cycle",
     "hue": "#E067C4"
+  },
+  {
+    "id": "smartnews",
+    "label": "Smartnews",
+    "hue": "#6EDE82"
   },
   {
     "id": "smule",
@@ -1985,9 +2315,19 @@
     "hue": "#67E0CC"
   },
   {
+    "id": "snapdeal",
+    "label": "Snapdeal",
+    "hue": "#D1E278"
+  },
+  {
     "id": "snapseed",
     "label": "Snapseed",
     "hue": "#CC6FDC"
+  },
+  {
+    "id": "snow",
+    "label": "Snow",
+    "hue": "#E1B06B"
   },
   {
     "id": "sofi",
@@ -2010,6 +2350,16 @@
     "hue": "#A8E27E"
   },
   {
+    "id": "sonic-dash",
+    "label": "Sonic Dash",
+    "hue": "#7087DB"
+  },
+  {
+    "id": "sonyliv",
+    "label": "Sonyliv",
+    "hue": "#E067C4"
+  },
+  {
     "id": "soundcloud",
     "label": "Soundcloud",
     "hue": "#E47C7E"
@@ -2020,9 +2370,19 @@
     "hue": "#7EDD88"
   },
   {
+    "id": "southwest-airlines",
+    "label": "Southwest Airlines",
+    "hue": "#DE8290"
+  },
+  {
     "id": "spark-mail",
     "label": "Spark Mail",
     "hue": "#DA62A2"
+  },
+  {
+    "id": "speedtest",
+    "label": "Speedtest",
+    "hue": "#DD8973"
   },
   {
     "id": "splitwise",
@@ -2125,6 +2485,16 @@
     "hue": "#DA72C0"
   },
   {
+    "id": "tantan",
+    "label": "Tantan",
+    "hue": "#65D783"
+  },
+  {
+    "id": "taobao",
+    "label": "Taobao",
+    "hue": "#DFAD7C"
+  },
+  {
     "id": "target",
     "label": "Target",
     "hue": "#DF8662"
@@ -2155,6 +2525,11 @@
     "hue": "#6271DF"
   },
   {
+    "id": "the-economist",
+    "label": "The Economist",
+    "hue": "#5EDEA2"
+  },
+  {
     "id": "the-guardian",
     "label": "The Guardian",
     "hue": "#6A85D7"
@@ -2168,6 +2543,11 @@
     "id": "threads",
     "label": "Threads",
     "hue": "#6AD7A6"
+  },
+  {
+    "id": "threema",
+    "label": "Threema",
+    "hue": "#D66DD9"
   },
   {
     "id": "ticktick",
@@ -2185,9 +2565,19 @@
     "hue": "#DA706C"
   },
   {
+    "id": "tim-hortons",
+    "label": "Tim Hortons",
+    "hue": "#7C75DB"
+  },
+  {
     "id": "tinder",
     "label": "Tinder",
     "hue": "#8262DA"
+  },
+  {
+    "id": "todoist",
+    "label": "Todoist",
+    "hue": "#DD73DD"
   },
   {
     "id": "tokopedia",
@@ -2240,6 +2630,11 @@
     "hue": "#8C68DE"
   },
   {
+    "id": "trivago",
+    "label": "Trivago",
+    "hue": "#7A8BE1"
+  },
+  {
     "id": "truecaller",
     "label": "Truecaller",
     "hue": "#DD815F"
@@ -2280,9 +2675,19 @@
     "hue": "#79DBDC"
   },
   {
+    "id": "uc-browser",
+    "label": "UC Browser",
+    "hue": "#DC74CE"
+  },
+  {
     "id": "udemy",
     "label": "Udemy",
     "hue": "#DD6994"
+  },
+  {
+    "id": "unacademy",
+    "label": "Unacademy",
+    "hue": "#E0A07B"
   },
   {
     "id": "united-airlines",
@@ -2330,6 +2735,11 @@
     "hue": "#6ADC7D"
   },
   {
+    "id": "vivaldi",
+    "label": "Vivaldi",
+    "hue": "#D65EDE"
+  },
+  {
     "id": "vivino",
     "label": "Vivino",
     "hue": "#8A7FE1"
@@ -2340,9 +2750,19 @@
     "hue": "#74B4E2"
   },
   {
+    "id": "vllo",
+    "label": "Vllo",
+    "hue": "#9766DB"
+  },
+  {
     "id": "vsco",
     "label": "Vsco",
     "hue": "#6271DF"
+  },
+  {
+    "id": "walgreens",
+    "label": "Walgreens",
+    "hue": "#C0D869"
   },
   {
     "id": "walmart",
@@ -2390,6 +2810,11 @@
     "hue": "#867CDF"
   },
   {
+    "id": "wells-fargo",
+    "label": "Wells Fargo",
+    "hue": "#66D693"
+  },
+  {
     "id": "wesing",
     "label": "Wesing",
     "hue": "#78DDD2"
@@ -2415,9 +2840,19 @@
     "hue": "#73E27D"
   },
   {
+    "id": "wildberries",
+    "label": "Wildberries",
+    "hue": "#A264D8"
+  },
+  {
     "id": "windscribe",
     "label": "Windscribe",
     "hue": "#98DD78"
+  },
+  {
+    "id": "wink",
+    "label": "Wink",
+    "hue": "#7D8DE3"
   },
   {
     "id": "wise",
@@ -2428,6 +2863,11 @@
     "id": "wish",
     "label": "Wish",
     "hue": "#E2A47E"
+  },
+  {
+    "id": "wolfram-alpha",
+    "label": "Wolfram Alpha",
+    "hue": "#8BDC79"
   },
   {
     "id": "wolt",
@@ -2445,6 +2885,11 @@
     "hue": "#DF62D5"
   },
   {
+    "id": "wuthering-waves",
+    "label": "Wuthering Waves",
+    "hue": "#A5DC74"
+  },
+  {
     "id": "wynk-music",
     "label": "Wynk Music",
     "hue": "#C272DF"
@@ -2455,9 +2900,24 @@
     "hue": "#63D963"
   },
   {
+    "id": "xender",
+    "label": "Xender",
+    "hue": "#DD815F"
+  },
+  {
     "id": "yahoo-mail",
     "label": "Yahoo Mail",
     "hue": "#6CDA9C"
+  },
+  {
+    "id": "yandex-browser",
+    "label": "Yandex Browser",
+    "hue": "#E27ECF"
+  },
+  {
+    "id": "yandex-music",
+    "label": "Yandex Music",
+    "hue": "#D0D765"
   },
   {
     "id": "yazio",
@@ -2470,9 +2930,19 @@
     "hue": "#72DA62"
   },
   {
+    "id": "youku",
+    "label": "Youku",
+    "hue": "#DDA764"
+  },
+  {
     "id": "youtube",
     "label": "Youtube",
     "hue": "#D8D064"
+  },
+  {
+    "id": "youtube-kids",
+    "label": "Youtube Kids",
+    "hue": "#83DF68"
   },
   {
     "id": "youtube-music",
@@ -2480,9 +2950,19 @@
     "hue": "#E07F76"
   },
   {
+    "id": "youtube-tv",
+    "label": "Youtube TV",
+    "hue": "#E37DDD"
+  },
+  {
     "id": "zalando",
     "label": "Zalando",
     "hue": "#67E0CC"
+  },
+  {
+    "id": "zalo",
+    "label": "Zalo",
+    "hue": "#6BDB8D"
   },
   {
     "id": "zara",
@@ -2495,6 +2975,11 @@
     "hue": "#6AB2DC"
   },
   {
+    "id": "zedge",
+    "label": "Zedge",
+    "hue": "#DFCB81"
+  },
+  {
     "id": "zee5",
     "label": "Zee5",
     "hue": "#84E16B"
@@ -2505,9 +2990,24 @@
     "hue": "#DE68A3"
   },
   {
+    "id": "zenless-zone-zero",
+    "label": "Zenless Zone Zero",
+    "hue": "#66DB68"
+  },
+  {
+    "id": "zepto",
+    "label": "Zepto",
+    "hue": "#72DA62"
+  },
+  {
     "id": "zerodha-kite",
     "label": "Zerodha Kite",
     "hue": "#DE6F5E"
+  },
+  {
+    "id": "zoho-mail",
+    "label": "Zoho Mail",
+    "hue": "#6EB3DE"
   },
   {
     "id": "zomato",

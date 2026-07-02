@@ -22,6 +22,14 @@
         <package android:name="com.google.android.apps.nexuslauncher" />
         <package android:name="net.oneplus.launcher" />
         <package android:name="com.oneplus.launcher" />
+        <intent>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.HOME" />
+        </intent>
     </queries>
 
     <application

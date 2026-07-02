@@ -6,6 +6,7 @@ import React, {
   useState,
 } from 'react';
 import {
+  ActivityIndicator,
   Animated,
   Alert,
   Dimensions,
@@ -22,11 +23,13 @@ import {
   TextInput,
   View,
 } from 'react-native';
+import MaterialIcons from '@react-native-vector-icons/material-icons';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { IconCard } from '../components/IconCard';
 import { DiscoIcon } from '../components/DiscoIcon';
 import { SystemIconDescriptor } from '../../domain/entities/SystemIcon';
 import { appLinks } from '../../config/app-links';
+import { isSupabaseConfigured } from '../../config/supabase';
 import iconVersionsConfig from '../../config/icon-versions.json';
 import { iconImageMap } from '../../config/icon-image-map.generated';
 import { launcherManualPaths } from '../../config/launcher-manual-paths';
@@ -34,16 +37,28 @@ import { styles } from './IconGalleryScreen.styles';
 import { MoonLogo } from '../components/MoonLogo';
 import { SettingsTabScreen } from './SettingsTabScreen';
 import {
+  CheckSquareIcon,
   HomeTabIcon,
   SettingsTabIcon,
 } from '../assets/icons/IconGalleryIcons';
-import { IconGalleryScreenProps } from './IconGalleryScreen.types';
 import {
+  FeedbackMode,
+  IconGalleryScreenProps,
+} from './IconGalleryScreen.types';
+import {
+  addSubmittedFeedbackPackages,
+  getCurrentHomeLauncher,
   getSupportedLaunchers,
+  getSubmittedFeedbackPackages,
+  getLaunchableApps,
+  LaunchableApp,
   openLauncherSettings,
   SupportedLauncher,
 } from '../../infrastructure/native/LauncherBridge';
+import { submitIconFeedback } from '../../infrastructure/api/submitIconFeedback';
 const notFoundImageSource = require('../../../assets/images/not-found.webp');
+const successImageSource = require('../../../assets/images/success.webp');
+const errorImageSource = require('../../../assets/images/error.webp');
 
 const parsedConfig = iconVersionsConfig as {
   defaultVersionId?: string;
@@ -83,6 +98,19 @@ export function IconGalleryScreen({
     null,
   );
   const [isPreviewVisible, setIsPreviewVisible] = useState(false);
+  const [launchableApps, setLaunchableApps] = useState<LaunchableApp[]>([]);
+  const [appsLoading, setAppsLoading] = useState(false);
+  const [feedbackVisible, setFeedbackVisible] = useState(false);
+  const [feedbackSubmittingVisible, setFeedbackSubmittingVisible] =
+    useState(false);
+  const [feedbackSuccessVisible, setFeedbackSuccessVisible] = useState(false);
+  const [feedbackErrorVisible, setFeedbackErrorVisible] = useState(false);
+  const [feedbackErrorMessage, setFeedbackErrorMessage] = useState('');
+  const [feedbackQuery, setFeedbackQuery] = useState('');
+  const [selectedAppPackages, setSelectedAppPackages] = useState<string[]>([]);
+  const [submittedAppPackages, setSubmittedAppPackages] = useState<string[]>(
+    [],
+  );
   const [bottomBarWidth, setBottomBarWidth] = useState(0);
   const [contentWidth, setContentWidth] = useState(
     () => Dimensions.get('window').width,
@@ -194,6 +222,21 @@ export function IconGalleryScreen({
   const selectedImageSource = selectedIcon
     ? iconImageMap[selectedIcon.id]
     : undefined;
+  const filteredLaunchableApps = useMemo(() => {
+    const query = feedbackQuery.trim().toLowerCase();
+    if (!query) {
+      return launchableApps;
+    }
+    return launchableApps.filter(
+      app =>
+        app.label.toLowerCase().includes(query) ||
+        app.packageName.toLowerCase().includes(query),
+    );
+  }, [feedbackQuery, launchableApps]);
+  const submittedPackagesSet = useMemo(
+    () => new Set(submittedAppPackages),
+    [submittedAppPackages],
+  );
   const switchTabWithReveal = useCallback(
     (nextTab: 'icons' | 'settings') => {
       if (nextTab === activeTab) {
@@ -258,6 +301,103 @@ export function IconGalleryScreen({
       setSelectedIcon(null);
     });
   }
+
+  const loadLaunchableApps = useCallback(async () => {
+    if (Platform.OS !== 'android') {
+      return;
+    }
+    setAppsLoading(true);
+    try {
+      const apps = await getLaunchableApps();
+      setLaunchableApps(apps);
+    } catch {
+      Alert.alert('Could not load apps', 'Please try again.');
+    } finally {
+      setAppsLoading(false);
+    }
+  }, []);
+
+  const openFeedbackPicker = useCallback(
+    async (initialQuery: string = '') => {
+      setFeedbackQuery(initialQuery);
+      setSelectedAppPackages([]);
+      setFeedbackVisible(true);
+      try {
+        const submittedPackages = await getSubmittedFeedbackPackages('request');
+        setSubmittedAppPackages(submittedPackages);
+      } catch {
+        setSubmittedAppPackages([]);
+      }
+      if (!launchableApps.length && !appsLoading) {
+        await loadLaunchableApps();
+      }
+    },
+    [appsLoading, launchableApps.length, loadLaunchableApps],
+  );
+
+  const toggleSelectedPackage = useCallback((packageName: string) => {
+    setSelectedAppPackages(current =>
+      current.includes(packageName)
+        ? current.filter(item => item !== packageName)
+        : [...current, packageName],
+    );
+  }, []);
+
+  const submitFeedbackSelection = useCallback(async () => {
+    const selectedApps = launchableApps.filter(app =>
+      selectedAppPackages.includes(app.packageName),
+    );
+    if (!selectedApps.length) {
+      Alert.alert('No apps selected', 'Select at least one app to continue.');
+      return;
+    }
+
+    let currentHomeLauncher = null;
+    try {
+      currentHomeLauncher = await getCurrentHomeLauncher();
+    } catch {
+      currentHomeLauncher = null;
+    }
+    const payload = {
+      type: 'request' as FeedbackMode,
+      selectedApps,
+      launcherDetails: {
+        currentHomeLauncher,
+      },
+      submittedAt: new Date().toISOString(),
+    };
+
+    try {
+      setFeedbackSubmittingVisible(true);
+      await submitIconFeedback(payload);
+      const selectedPackageNames = selectedApps.map(app => app.packageName);
+      try {
+        const mergedPackages = await addSubmittedFeedbackPackages(
+          'request',
+          selectedPackageNames,
+        );
+        setSubmittedAppPackages(mergedPackages);
+      } catch {
+        // Ignore local persistence failures when backend succeeded.
+      }
+
+      setFeedbackVisible(false);
+      setFeedbackSuccessVisible(true);
+      setFeedbackErrorVisible(false);
+      setFeedbackErrorMessage('');
+    } catch (error) {
+      console.warn('feedback_submit_failed', error);
+      const message = isSupabaseConfigured()
+        ? 'Could not submit right now. Please try again.'
+        : 'Supabase is not configured. Set SUPABASE_URL and SUPABASE_ANON_KEY.';
+      setFeedbackVisible(false);
+      setFeedbackSuccessVisible(false);
+      setFeedbackErrorMessage(message);
+      setFeedbackErrorVisible(true);
+    } finally {
+      setFeedbackSubmittingVisible(false);
+    }
+  }, [launchableApps, selectedAppPackages]);
 
   const showIconSearchEmptyState =
     normalizedQuery.length > 0 && sortedIconsToShow.length === 0;
@@ -472,6 +612,14 @@ export function IconGalleryScreen({
                         <Text style={styles.gridEmptySubtitle}>
                           We can add this app icon in the next update.
                         </Text>
+                        <Pressable
+                          style={styles.gridEmptyActionButton}
+                          onPress={() => openFeedbackPicker(searchQuery.trim())}
+                        >
+                          <Text style={styles.gridEmptyActionLabel}>
+                            Request icon
+                          </Text>
+                        </Pressable>
                       </View>
                     ) : null
                   }
@@ -490,6 +638,7 @@ export function IconGalleryScreen({
               openingLauncherId={openingLauncherId}
               onApply={handleApply}
               onOpenLauncher={handleOpenLauncher}
+              onOpenRequest={() => openFeedbackPicker()}
               onCheckForUpdates={handleCheckForUpdates}
               onRateAndReview={handleRateAndReview}
               onShareApp={handleShareApp}
@@ -546,6 +695,239 @@ export function IconGalleryScreen({
             </View>
             <Text style={styles.previewTitle}>{selectedIcon?.label}</Text>
           </Animated.View>
+        </View>
+      </Modal>
+
+      <Modal
+        animationType="slide"
+        transparent
+        visible={feedbackVisible}
+        onRequestClose={() => setFeedbackVisible(false)}
+        statusBarTranslucent
+      >
+        <View style={[styles.feedbackOverlay, { paddingTop: insets.top }]}>
+          <Pressable
+            style={styles.feedbackBackdrop}
+            onPress={() => setFeedbackVisible(false)}
+          />
+          <View
+            style={[
+              styles.feedbackSheet,
+              {
+                paddingBottom: 22 + insets.bottom,
+              },
+            ]}
+          >
+            <View style={styles.previewHandle} />
+            <Text style={styles.feedbackTitle}>Request New Icons</Text>
+            <Text style={styles.feedbackSubtitle}>
+              Select one or more installed apps.
+            </Text>
+
+            <View style={styles.feedbackSearchShell}>
+              <TextInput
+                placeholder="Search app name..."
+                placeholderTextColor="#7086A8"
+                value={feedbackQuery}
+                onChangeText={setFeedbackQuery}
+                style={styles.feedbackSearchInput}
+              />
+            </View>
+
+            <View style={styles.feedbackListShell}>
+              {appsLoading ? (
+                <View style={styles.loaderWrap}>
+                  <ActivityIndicator color="#304AA0" />
+                </View>
+              ) : filteredLaunchableApps.length === 0 ? (
+                <View style={styles.feedbackEmptyState}>
+                  <Text style={styles.feedbackEmptyTitle}>No apps found</Text>
+                  <Pressable
+                    style={styles.feedbackEmptyReload}
+                    onPress={loadLaunchableApps}
+                  >
+                    <Text style={styles.feedbackEmptyReloadLabel}>
+                      Reload apps
+                    </Text>
+                  </Pressable>
+                </View>
+              ) : (
+                <FlatList
+                  data={filteredLaunchableApps}
+                  keyExtractor={item => item.packageName}
+                  keyboardShouldPersistTaps="handled"
+                  renderItem={({ item }) => {
+                    const checked = selectedAppPackages.includes(
+                      item.packageName,
+                    );
+                    const isSubmitted = submittedPackagesSet.has(
+                      item.packageName,
+                    );
+                    return (
+                      <Pressable
+                        style={[
+                          styles.feedbackRow,
+                          isSubmitted && styles.feedbackRowDisabled,
+                        ]}
+                        onPress={() => toggleSelectedPackage(item.packageName)}
+                        disabled={isSubmitted}
+                      >
+                        <View style={styles.feedbackRowMain}>
+                          {item.iconUri ? (
+                            <Image
+                              source={{ uri: item.iconUri }}
+                              style={styles.feedbackAppIcon}
+                            />
+                          ) : (
+                            <View style={styles.feedbackAppIconFallback}>
+                              <Text style={styles.feedbackAppIconFallbackText}>
+                                {item.label.trim().charAt(0).toUpperCase() ||
+                                  '?'}
+                              </Text>
+                            </View>
+                          )}
+                          <View style={styles.feedbackRowTitleWrap}>
+                            <Text
+                              style={[
+                                styles.feedbackRowTitle,
+                                isSubmitted && styles.feedbackRowTitleDisabled,
+                              ]}
+                            >
+                              {item.label}
+                            </Text>
+                            {isSubmitted ? (
+                              <Text style={styles.feedbackRowStatusLabel}>
+                                Already sent
+                              </Text>
+                            ) : null}
+                          </View>
+                        </View>
+                        <View style={styles.feedbackCheckbox}>
+                          <CheckSquareIcon checked={checked} />
+                        </View>
+                      </Pressable>
+                    );
+                  }}
+                />
+              )}
+            </View>
+
+            <View style={styles.feedbackActions}>
+              <Pressable
+                style={[
+                  styles.feedbackActionButton,
+                  styles.feedbackActionSecondary,
+                ]}
+                onPress={() => setFeedbackVisible(false)}
+                disabled={feedbackSubmittingVisible}
+                accessibilityRole="button"
+                accessibilityLabel="Cancel"
+              >
+                <MaterialIcons name="close" size={22} color="#4B5567" />
+              </Pressable>
+              <Pressable
+                style={[
+                  styles.feedbackActionButton,
+                  styles.feedbackActionPrimary,
+                  selectedAppPackages.length === 0 &&
+                    styles.feedbackActionPrimaryDisabled,
+                ]}
+                onPress={submitFeedbackSelection}
+                disabled={
+                  selectedAppPackages.length === 0 || feedbackSubmittingVisible
+                }
+                accessibilityRole="button"
+                accessibilityLabel="Submit"
+              >
+                <MaterialIcons
+                  name="send"
+                  size={20}
+                  color={
+                    selectedAppPackages.length === 0 || feedbackSubmittingVisible
+                      ? '#8FA0C0'
+                      : '#304AA0'
+                  }
+                />
+              </Pressable>
+            </View>
+            {feedbackSubmittingVisible ? (
+              <View style={styles.feedbackSubmittingOverlay}>
+                <View style={styles.feedbackOpeningCard}>
+                  <ActivityIndicator color="#304AA0" size="large" />
+                  <Text style={styles.feedbackOpeningText}>
+                    Submitting icon request...
+                  </Text>
+                </View>
+              </View>
+            ) : null}
+          </View>
+        </View>
+      </Modal>
+
+      <Modal
+        animationType="fade"
+        transparent
+        visible={feedbackSuccessVisible}
+        onRequestClose={() => setFeedbackSuccessVisible(false)}
+        statusBarTranslucent
+      >
+        <View style={[styles.feedbackOverlay, { paddingTop: insets.top }]}>
+          <Pressable
+            style={styles.feedbackBackdrop}
+            onPress={() => setFeedbackSuccessVisible(false)}
+          />
+          <View
+            style={[
+              styles.feedbackSuccessSheet,
+              {
+                paddingBottom: 28 + insets.bottom,
+              },
+            ]}
+          >
+            <Image source={successImageSource} style={styles.feedbackSuccessImage} />
+            <Text style={styles.feedbackSuccessTitle}>
+              Request sent successfully
+            </Text>
+            <Pressable
+              style={styles.feedbackSuccessButton}
+              onPress={() => setFeedbackSuccessVisible(false)}
+            >
+              <Text style={styles.feedbackSuccessButtonLabel}>Done</Text>
+            </Pressable>
+          </View>
+        </View>
+      </Modal>
+
+      <Modal
+        animationType="fade"
+        transparent
+        visible={feedbackErrorVisible}
+        onRequestClose={() => setFeedbackErrorVisible(false)}
+        statusBarTranslucent
+      >
+        <View style={[styles.feedbackOverlay, { paddingTop: insets.top }]}>
+          <Pressable
+            style={styles.feedbackBackdrop}
+            onPress={() => setFeedbackErrorVisible(false)}
+          />
+          <View
+            style={[
+              styles.feedbackSuccessSheet,
+              {
+                paddingBottom: 28 + insets.bottom,
+              },
+            ]}
+          >
+            <Image source={errorImageSource} style={styles.feedbackSuccessImage} />
+            <Text style={styles.feedbackSuccessTitle}>Submission failed</Text>
+            <Text style={styles.feedbackErrorMessage}>{feedbackErrorMessage}</Text>
+            <Pressable
+              style={styles.feedbackSuccessButton}
+              onPress={() => setFeedbackErrorVisible(false)}
+            >
+              <Text style={styles.feedbackSuccessButtonLabel}>Done</Text>
+            </Pressable>
+          </View>
         </View>
       </Modal>
 

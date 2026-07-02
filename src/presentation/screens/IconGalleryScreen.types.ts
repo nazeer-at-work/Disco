@@ -11,3 +11,5 @@ export type TabIconProps = {
 export type CheckSquareIconProps = {
   checked: boolean;
 };
+
+export type FeedbackMode = 'request';

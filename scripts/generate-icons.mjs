@@ -194,12 +194,26 @@ async function getVertexToken() {
 }
 
 // Same gemini-*-flash-image model, routed through Vertex AI (GCP billing).
+// Abort a request that hangs (Vertex's shared endpoint sometimes stalls for many
+// minutes). On timeout the fetch rejects -> the caller's retry loop re-issues it,
+// instead of the whole run blocking forever on one stuck call.
+const REQUEST_TIMEOUT_MS = Number(process.env.GEN_TIMEOUT_MS || 90000);
+async function fetchWithTimeout(url, opts) {
+  const ac = new AbortController();
+  const timer = setTimeout(() => ac.abort(), REQUEST_TIMEOUT_MS);
+  try {
+    return await fetch(url, { ...opts, signal: ac.signal });
+  } finally {
+    clearTimeout(timer);
+  }
+}
+
 async function generateImageVertex({ project, location, model, prompt, referenceBuffer }) {
   const token = await getVertexToken();
   // The global endpoint uses a bare host (no region prefix).
   const host = location === 'global' ? 'aiplatform.googleapis.com' : `${location}-aiplatform.googleapis.com`;
   const url = `https://${host}/v1/projects/${project}/locations/${location}/publishers/google/models/${encodeURIComponent(model)}:generateContent`;
-  const res = await fetch(url, {
+  const res = await fetchWithTimeout(url, {
     method: 'POST',
     headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },
     body: JSON.stringify({
@@ -215,7 +229,7 @@ async function generateImageVertex({ project, location, model, prompt, reference
 
 // AI Studio (Generative Language API) via API key.
 async function generateImageAiStudio({ apiKey, model, prompt, referenceBuffer }) {
-  const res = await fetch(
+  const res = await fetchWithTimeout(
     `https://generativelanguage.googleapis.com/v1beta/models/${encodeURIComponent(model)}:generateContent`,
     {
       method: 'POST',

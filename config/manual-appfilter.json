@@ -17,5 +17,11 @@
   "cnbc": "ComponentInfo{com.cnbc.client/com.cnbc.client.activities.SplashActivity}",
   "hilton_honors": "ComponentInfo{com.hilton.android.hhonors/com.mofo.android.hilton.core.activity.BootActivity}",
   "hopper": "ComponentInfo{com.hopper.mountainview.play/com.hopper.mountainview.activities.LaunchPage}",
-  "candy_crush_soda_saga": "ComponentInfo{com.king.candycrushsodasaga/com.king.candycrushsodasaga.StritzActivity}"
+  "candy_crush_soda_saga": "ComponentInfo{com.king.candycrushsodasaga/com.king.candycrushsodasaga.StritzActivity}",
+  "sonyliv": [
+    "ComponentInfo{com.sonyliv/com.sonyliv.ui.splash.SplashActivity}",
+    "ComponentInfo{com.sonyliv/com.sonyliv.splash.SplashActivity}"
+  ],
+  "speedtest": "ComponentInfo{org.zwanoo.android.speedtest/com.ookla.mobile4.screens.main.MainActivity}",
+  "google_arts_culture": "ComponentInfo{com.google.android.apps.cultural/com.google.android.apps.cultural.flutter.HomeFlutterActivity}"
 }

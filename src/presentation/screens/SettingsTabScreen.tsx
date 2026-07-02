@@ -6,6 +6,7 @@ import {
   ChevronRightIcon,
   RowBellIcon,
   RowMoonIcon,
+  RowPenIcon,
   RowShareIcon,
   RowUserIcon,
 } from '../assets/icons/SettingsTabIcons';
@@ -19,6 +20,7 @@ export function SettingsTabScreen({
   openingLauncherId,
   onApply,
   onOpenLauncher,
+  onOpenRequest,
   onCheckForUpdates,
   onRateAndReview,
   onShareApp,
@@ -83,6 +85,19 @@ export function SettingsTabScreen({
               )
             ) : null}
           </View>
+        </View>
+
+        <View style={styles.section}>
+          <Text style={styles.sectionTitle}>Feedback</Text>
+          <Pressable style={styles.row} onPress={onOpenRequest}>
+            <View style={styles.rowLeadingIcon}>
+              <RowPenIcon />
+            </View>
+            <Text style={styles.rowLabel}>Request new icon</Text>
+            <View style={styles.rowChevron}>
+              <ChevronRightIcon />
+            </View>
+          </Pressable>
         </View>
 
         <View style={styles.section}>

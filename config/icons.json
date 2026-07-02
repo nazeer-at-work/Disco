@@ -854,7 +854,8 @@
       "name": "Gaana"
     },
     {
-      "name": "Wynk Music"
+      "name": "Wynk Music",
+      "slug": "wynk-music"
     },
     {
       "name": "ZEE5"
@@ -1694,6 +1695,406 @@
     {
       "name": "happn",
       "slug": "happn"
+    },
+    {
+      "name": "Chase",
+      "slug": "chase"
+    },
+    {
+      "name": "Bank of America",
+      "slug": "bank-of-america"
+    },
+    {
+      "name": "Wells Fargo",
+      "slug": "wells-fargo"
+    },
+    {
+      "name": "American Express",
+      "slug": "american-express"
+    },
+    {
+      "name": "Capital One",
+      "slug": "capital-one"
+    },
+    {
+      "name": "Fidelity",
+      "slug": "fidelity"
+    },
+    {
+      "name": "Ally",
+      "slug": "ally"
+    },
+    {
+      "name": "Zalo",
+      "slug": "zalo"
+    },
+    {
+      "name": "GroupMe",
+      "slug": "groupme"
+    },
+    {
+      "name": "Kik",
+      "slug": "kik"
+    },
+    {
+      "name": "Element",
+      "slug": "element"
+    },
+    {
+      "name": "Threema",
+      "slug": "threema"
+    },
+    {
+      "name": "Session",
+      "slug": "session"
+    },
+    {
+      "name": "HBO Max",
+      "slug": "hbo-max"
+    },
+    {
+      "name": "Discovery+",
+      "slug": "discovery"
+    },
+    {
+      "name": "BBC iPlayer",
+      "slug": "bbc-iplayer"
+    },
+    {
+      "name": "JioCinema",
+      "slug": "jiocinema"
+    },
+    {
+      "name": "JioHotstar",
+      "slug": "jiohotstar"
+    },
+    {
+      "name": "SonyLIV",
+      "slug": "sonyliv"
+    },
+    {
+      "name": "Bilibili",
+      "slug": "bilibili"
+    },
+    {
+      "name": "iQIYI",
+      "slug": "iqiyi"
+    },
+    {
+      "name": "Youku",
+      "slug": "youku"
+    },
+    {
+      "name": "Funimation",
+      "slug": "funimation"
+    },
+    {
+      "name": "Crave",
+      "slug": "crave"
+    },
+    {
+      "name": "Anghami",
+      "slug": "anghami"
+    },
+    {
+      "name": "Boomplay",
+      "slug": "boomplay"
+    },
+    {
+      "name": "Qobuz",
+      "slug": "qobuz"
+    },
+    {
+      "name": "Yandex Music",
+      "slug": "yandex-music"
+    },
+    {
+      "name": "Nykaa",
+      "slug": "nykaa"
+    },
+    {
+      "name": "AJIO",
+      "slug": "ajio"
+    },
+    {
+      "name": "Snapdeal",
+      "slug": "snapdeal"
+    },
+    {
+      "name": "JioMart",
+      "slug": "jiomart"
+    },
+    {
+      "name": "BigBasket",
+      "slug": "bigbasket"
+    },
+    {
+      "name": "Blinkit",
+      "slug": "blinkit"
+    },
+    {
+      "name": "Zepto",
+      "slug": "zepto"
+    },
+    {
+      "name": "Coupang",
+      "slug": "coupang"
+    },
+    {
+      "name": "Pinduoduo",
+      "slug": "pinduoduo"
+    },
+    {
+      "name": "Taobao",
+      "slug": "taobao"
+    },
+    {
+      "name": "Wildberries",
+      "slug": "wildberries"
+    },
+    {
+      "name": "Ozon",
+      "slug": "ozon"
+    },
+    {
+      "name": "Allegro",
+      "slug": "allegro"
+    },
+    {
+      "name": "Lowe's",
+      "slug": "lowes"
+    },
+    {
+      "name": "Walgreens",
+      "slug": "walgreens"
+    },
+    {
+      "name": "Chewy",
+      "slug": "chewy"
+    },
+    {
+      "name": "Just Eat",
+      "slug": "just-eat"
+    },
+    {
+      "name": "Dunkin'",
+      "slug": "dunkin"
+    },
+    {
+      "name": "Tim Hortons",
+      "slug": "tim-hortons"
+    },
+    {
+      "name": "Bolt",
+      "slug": "bolt"
+    },
+    {
+      "name": "Ola",
+      "slug": "ola"
+    },
+    {
+      "name": "inDrive",
+      "slug": "indrive"
+    },
+    {
+      "name": "Careem",
+      "slug": "careem"
+    },
+    {
+      "name": "FREE NOW",
+      "slug": "free-now"
+    },
+    {
+      "name": "Lime",
+      "slug": "lime"
+    },
+    {
+      "name": "Southwest Airlines",
+      "slug": "southwest-airlines"
+    },
+    {
+      "name": "Ryanair",
+      "slug": "ryanair"
+    },
+    {
+      "name": "easyJet",
+      "slug": "easyjet"
+    },
+    {
+      "name": "Trivago",
+      "slug": "trivago"
+    },
+    {
+      "name": "Omio",
+      "slug": "omio"
+    },
+    {
+      "name": "Todoist",
+      "slug": "todoist"
+    },
+    {
+      "name": "monday.com",
+      "slug": "monday-com"
+    },
+    {
+      "name": "Basecamp",
+      "slug": "basecamp"
+    },
+    {
+      "name": "Zoho Mail",
+      "slug": "zoho-mail"
+    },
+    {
+      "name": "Google Lens",
+      "slug": "google-lens"
+    },
+    {
+      "name": "Google Assistant",
+      "slug": "google-assistant"
+    },
+    {
+      "name": "Google Voice",
+      "slug": "google-voice"
+    },
+    {
+      "name": "YouTube Kids",
+      "slug": "youtube-kids"
+    },
+    {
+      "name": "YouTube TV",
+      "slug": "youtube-tv"
+    },
+    {
+      "name": "Google Fi",
+      "slug": "google-fi"
+    },
+    {
+      "name": "Google Arts & Culture",
+      "slug": "google-arts-culture"
+    },
+    {
+      "name": "Vivaldi",
+      "slug": "vivaldi"
+    },
+    {
+      "name": "UC Browser",
+      "slug": "uc-browser"
+    },
+    {
+      "name": "Yandex Browser",
+      "slug": "yandex-browser"
+    },
+    {
+      "name": "Aloha Browser",
+      "slug": "aloha-browser"
+    },
+    {
+      "name": "Mi Browser",
+      "slug": "mi-browser"
+    },
+    {
+      "name": "Kaspersky",
+      "slug": "kaspersky"
+    },
+    {
+      "name": "Proton Pass",
+      "slug": "proton-pass"
+    },
+    {
+      "name": "Proton Drive",
+      "slug": "proton-drive"
+    },
+    {
+      "name": "Wuthering Waves",
+      "slug": "wuthering-waves"
+    },
+    {
+      "name": "Zenless Zone Zero",
+      "slug": "zenless-zone-zero"
+    },
+    {
+      "name": "Tantan",
+      "slug": "tantan"
+    },
+    {
+      "name": "Oura",
+      "slug": "oura"
+    },
+    {
+      "name": "Freeletics",
+      "slug": "freeletics"
+    },
+    {
+      "name": "Unacademy",
+      "slug": "unacademy"
+    },
+    {
+      "name": "Wolfram Alpha",
+      "slug": "wolfram-alpha"
+    },
+    {
+      "name": "The Economist",
+      "slug": "the-economist"
+    },
+    {
+      "name": "AP News",
+      "slug": "ap-news"
+    },
+    {
+      "name": "Inshorts",
+      "slug": "inshorts"
+    },
+    {
+      "name": "Dailyhunt",
+      "slug": "dailyhunt"
+    },
+    {
+      "name": "SmartNews",
+      "slug": "smartnews"
+    },
+    {
+      "name": "News Break",
+      "slug": "news-break"
+    },
+    {
+      "name": "Wink",
+      "slug": "wink"
+    },
+    {
+      "name": "SNOW",
+      "slug": "snow"
+    },
+    {
+      "name": "VLLO",
+      "slug": "vllo"
+    },
+    {
+      "name": "Zedge",
+      "slug": "zedge"
+    },
+    {
+      "name": "Xender",
+      "slug": "xender"
+    },
+    {
+      "name": "Microsoft Launcher",
+      "slug": "microsoft-launcher"
+    },
+    {
+      "name": "Niagara Launcher",
+      "slug": "niagara-launcher"
+    },
+    {
+      "name": "Speedtest by Ookla",
+      "slug": "speedtest"
+    },
+    {
+      "name": "Sleep as Android",
+      "slug": "sleep-as-android"
+    },
+    {
+      "name": "Alarmy",
+      "slug": "alarmy"
     }
   ]
 }

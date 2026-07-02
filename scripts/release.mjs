@@ -107,14 +107,28 @@ function main() {
   // package.json — version
   replaceInFile('package.json', [[/"version":\s*"[^"]*"/, `"version": "${versionName}"`]]);
 
-  // .env — consumed by src/config/app-links.ts at build time
-  const env = [
-    `APP_NAME=${appName}`,
-    `APP_PACKAGE_NAME=${applicationId}`,
-    `PLAY_STORE_BASE_URL=${playStoreBaseUrl}`,
-    '',
-  ].join('\n');
-  writeFile(path.join(root, '.env'), env);
+  // .env — consumed by src/config/app-links.ts at build time. MERGE (don't clobber):
+  // preserve any other vars (e.g. SUPABASE_* / VERTEX_* used by other tooling).
+  const envPath = path.join(root, '.env');
+  const managed = {
+    APP_NAME: appName,
+    APP_PACKAGE_NAME: applicationId,
+    PLAY_STORE_BASE_URL: playStoreBaseUrl,
+  };
+  const lines = fs.existsSync(envPath) ? readFile(envPath).split('\n') : [];
+  const seen = new Set();
+  const merged = [];
+  for (const line of lines) {
+    const m = line.match(/^\s*([A-Z0-9_]+)\s*=/i);
+    if (m && managed[m[1]] !== undefined) {
+      merged.push(`${m[1]}=${managed[m[1]]}`);
+      seen.add(m[1]);
+    } else {
+      merged.push(line);
+    }
+  }
+  for (const [k, v] of Object.entries(managed)) if (!seen.has(k)) merged.push(`${k}=${v}`);
+  writeFile(envPath, merged.join('\n').replace(/\n+$/, '') + '\n');
 
   console.log('[release] config synced.');
 

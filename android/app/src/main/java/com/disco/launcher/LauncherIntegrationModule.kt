@@ -2,12 +2,22 @@ package com.disco.launcher
 
 import android.content.Intent
 import android.content.ActivityNotFoundException
+import android.content.Context
+import android.content.pm.ApplicationInfo
 import android.content.pm.PackageManager
+import android.graphics.Bitmap
+import android.graphics.Canvas
+import android.graphics.drawable.Drawable
+import android.os.Build
 import com.facebook.react.bridge.Arguments
 import com.facebook.react.bridge.Promise
+import com.facebook.react.bridge.ReadableArray
 import com.facebook.react.bridge.ReactApplicationContext
 import com.facebook.react.bridge.ReactContextBaseJavaModule
 import com.facebook.react.bridge.ReactMethod
+import java.io.File
+import java.io.FileOutputStream
+import java.util.UUID
 
 data class SupportedLauncher(
   val id: String,
@@ -15,8 +25,17 @@ data class SupportedLauncher(
   val packageNames: List<String>,
 )
 
+private data class LaunchableAppEntry(
+  val label: String,
+  val iconUri: String?,
+  val activityName: String?,
+)
+
 class LauncherIntegrationModule(private val reactContext: ReactApplicationContext) :
   ReactContextBaseJavaModule(reactContext) {
+  private val feedbackPrefs by lazy {
+    reactContext.getSharedPreferences("disco_feedback", Context.MODE_PRIVATE)
+  }
 
   private val launchers = listOf(
     SupportedLauncher(
@@ -68,6 +87,202 @@ class LauncherIntegrationModule(private val reactContext: ReactApplicationContex
       promise.resolve(result)
     } catch (error: Exception) {
       promise.reject("LAUNCHER_LIST_ERROR", error)
+    }
+  }
+
+  @ReactMethod
+  fun getLaunchableApps(promise: Promise) {
+    try {
+      val pm = reactContext.packageManager
+      val byPackage = linkedMapOf<String, LaunchableAppEntry>()
+
+      // Path 1: launcher activities (fast, accurate for visible launcher apps).
+      val launcherIntent = Intent(Intent.ACTION_MAIN).addCategory(Intent.CATEGORY_LAUNCHER)
+      val resolveFlags = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+        PackageManager.ResolveInfoFlags.of(0)
+      } else {
+        null
+      }
+      @Suppress("DEPRECATION")
+      val activities = if (resolveFlags != null) {
+        pm.queryIntentActivities(launcherIntent, resolveFlags)
+      } else {
+        pm.queryIntentActivities(launcherIntent, 0)
+      }
+      activities.forEach { resolveInfo ->
+        val activityInfo = resolveInfo.activityInfo ?: return@forEach
+        val packageName = activityInfo.packageName ?: return@forEach
+        if (packageName == reactContext.packageName) return@forEach
+        if (!byPackage.containsKey(packageName)) {
+          val label = resolveInfo.loadLabel(pm)?.toString()?.trim().orEmpty()
+          val iconDataUri = drawableToFileUri(packageName, resolveInfo.loadIcon(pm))
+          byPackage[packageName] = LaunchableAppEntry(
+            label = if (label.isNotEmpty()) label else packageName,
+            iconUri = iconDataUri,
+            activityName = activityInfo.name,
+          )
+        }
+      }
+
+      // Path 2: installed apps that have a launch intent (fallback coverage).
+      val appFlags = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+        PackageManager.ApplicationInfoFlags.of(0)
+      } else {
+        null
+      }
+      @Suppress("DEPRECATION")
+      val installedApps = if (appFlags != null) {
+        pm.getInstalledApplications(appFlags)
+      } else {
+        pm.getInstalledApplications(0)
+      }
+      installedApps.forEach { appInfo ->
+        val packageName = appInfo.packageName ?: return@forEach
+        if (packageName == reactContext.packageName) return@forEach
+        if ((appInfo.flags and ApplicationInfo.FLAG_INSTALLED) == 0) return@forEach
+        if ((appInfo.flags and ApplicationInfo.FLAG_SUSPENDED) != 0) return@forEach
+        val launchIntent = pm.getLaunchIntentForPackage(packageName) ?: return@forEach
+        val resolved = launchIntent.resolveActivity(pm) ?: return@forEach
+        if (resolved.packageName != packageName) return@forEach
+        if (!byPackage.containsKey(packageName)) {
+          val label = pm.getApplicationLabel(appInfo)?.toString()?.trim().orEmpty()
+          val iconDataUri = drawableToFileUri(packageName, pm.getApplicationIcon(appInfo))
+          byPackage[packageName] = LaunchableAppEntry(
+            label = if (label.isNotEmpty()) label else packageName,
+            iconUri = iconDataUri,
+            activityName = resolved.className,
+          )
+        }
+      }
+
+      val rows = byPackage.entries
+        .sortedWith(compareBy({ it.value.label.lowercase() }, { it.key.lowercase() }))
+      val result = Arguments.createArray()
+      rows.forEach { entry ->
+        val row = Arguments.createMap()
+        row.putString("packageName", entry.key)
+        row.putString("label", entry.value.label)
+        row.putString("iconUri", entry.value.iconUri)
+        row.putString("activityName", entry.value.activityName)
+        result.pushMap(row)
+      }
+
+      promise.resolve(result)
+    } catch (error: Exception) {
+      promise.reject("LAUNCHABLE_APPS_ERROR", error)
+    }
+  }
+
+  @ReactMethod
+  fun getCurrentHomeLauncher(promise: Promise) {
+    try {
+      val pm = reactContext.packageManager
+      val homeIntent = Intent(Intent.ACTION_MAIN).addCategory(Intent.CATEGORY_HOME)
+      val resolveInfo = if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU) {
+        pm.resolveActivity(
+          homeIntent,
+          PackageManager.ResolveInfoFlags.of(PackageManager.MATCH_DEFAULT_ONLY.toLong()),
+        )
+      } else {
+        @Suppress("DEPRECATION")
+        pm.resolveActivity(homeIntent, PackageManager.MATCH_DEFAULT_ONLY)
+      }
+
+      val activityInfo = resolveInfo?.activityInfo
+      if (activityInfo == null) {
+        promise.resolve(null)
+        return
+      }
+
+      val row = Arguments.createMap()
+      row.putString("packageName", activityInfo.packageName)
+      row.putString("activityName", activityInfo.name)
+      row.putString("label", resolveInfo.loadLabel(pm)?.toString()?.trim().orEmpty())
+      promise.resolve(row)
+    } catch (error: Exception) {
+      promise.reject("CURRENT_HOME_LAUNCHER_ERROR", error)
+    }
+  }
+
+  @ReactMethod
+  fun getSubmittedFeedbackPackages(mode: String, promise: Promise) {
+    try {
+      val key = "submitted_${mode.lowercase()}"
+      val stored = feedbackPrefs.getStringSet(key, emptySet()) ?: emptySet()
+      val result = Arguments.createArray()
+      stored.sorted().forEach { pkg ->
+        result.pushString(pkg)
+      }
+      promise.resolve(result)
+    } catch (error: Exception) {
+      promise.reject("FEEDBACK_SUBMITTED_READ_ERROR", error)
+    }
+  }
+
+  @ReactMethod
+  fun addSubmittedFeedbackPackages(mode: String, packages: ReadableArray, promise: Promise) {
+    try {
+      val key = "submitted_${mode.lowercase()}"
+      val merged = (feedbackPrefs.getStringSet(key, emptySet()) ?: emptySet()).toMutableSet()
+      for (index in 0 until packages.size()) {
+        val pkg = packages.getString(index)?.trim().orEmpty()
+        if (pkg.isNotEmpty()) {
+          merged.add(pkg)
+        }
+      }
+      feedbackPrefs.edit().putStringSet(key, merged).apply()
+
+      val result = Arguments.createArray()
+      merged.sorted().forEach { pkg ->
+        result.pushString(pkg)
+      }
+      promise.resolve(result)
+    } catch (error: Exception) {
+      promise.reject("FEEDBACK_SUBMITTED_WRITE_ERROR", error)
+    }
+  }
+
+  @ReactMethod
+  fun getFeedbackDeviceId(promise: Promise) {
+    try {
+      val key = "feedback_device_id"
+      val existing = feedbackPrefs.getString(key, null)?.trim()
+      if (!existing.isNullOrEmpty()) {
+        promise.resolve(existing)
+        return
+      }
+
+      val created = UUID.randomUUID().toString()
+      feedbackPrefs.edit().putString(key, created).apply()
+      promise.resolve(created)
+    } catch (error: Exception) {
+      promise.reject("FEEDBACK_DEVICE_ID_ERROR", error)
+    }
+  }
+
+  private fun drawableToFileUri(packageName: String, drawable: Drawable?): String? {
+    if (drawable == null) return null
+
+    return try {
+      val size = 128
+      val bitmap = Bitmap.createBitmap(size, size, Bitmap.Config.ARGB_8888)
+      val canvas = Canvas(bitmap)
+      drawable.setBounds(0, 0, size, size)
+      drawable.draw(canvas)
+
+      val dir = File(reactContext.cacheDir, "launchable-app-icons")
+      if (!dir.exists()) {
+        dir.mkdirs()
+      }
+      val safeName = packageName.replace(Regex("[^A-Za-z0-9._-]"), "_")
+      val file = File(dir, "$safeName.png")
+      FileOutputStream(file).use { out ->
+        bitmap.compress(Bitmap.CompressFormat.PNG, 100, out)
+        out.flush()
+      }
+      "file://${file.absolutePath}"
+    } catch (_: Exception) {
+      null
     }
   }
 

@@ -12,5 +12,8 @@
   "bhim": "Use BHIM identity: tricolor arrow motif with BHIM-style geometry and color order, not a generic payment icon.",
   "redbus": "Use redBus logo style: red primary with white bus motif/wordmark-inspired symbol, no unrelated transit icon.",
   "snapseed": "Use Snapseed icon style: green leaf over layered white/green tile motif.",
-  "gemini": "Use Google Gemini logo style: blue-violet star/spark shape with clean gradient family and exact mark orientation."
+  "gemini": "Use Google Gemini logo style: blue-violet star/spark shape with clean gradient family and exact mark orientation.",
+  "ajio": "Use the exact AJIO mark: a dark navy circle with a stylized uppercase 'A' monogram cut out inside (the A formed by the negative space, with a horizontal bar near the base); no wordmark, no unrelated letters, do NOT use the Myntra 'M'.",
+  "jiohotstar": "Use the exact JioHotstar mark: a white/gold multi-pointed sparkle/star burst centered on a vivid blue-to-magenta gradient background; preserve the asymmetric spiky star geometry, no letters or wordmark.",
+  "wynk-music": "Use the exact Wynk Music mark: a white musical note (single quaver/eighth note) with concentric ripple rings radiating around it on a red/pink gradient; preserve the note + ripple geometry, no letters or wordmark."
 }
