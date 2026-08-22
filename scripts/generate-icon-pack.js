@@ -83,9 +83,13 @@ function normalizeDrawableConfig(entry) {
 function buildAppFilter(mappings) {
   const items = toItemLines(mappings);
   return `<?xml version="1.0" encoding="utf-8"?>
-<resources>
+<appfilter>
+    <scale factor="0.8" />
+    <iconback img1="ic_disco_back" />
+    <iconmask img1="ic_disco_mask" />
+    <iconupon img1="ic_disco_upon" />
 ${items}
-</resources>`;
+</appfilter>`;
 }
 
 function buildBackDrawable() {
@@ -457,9 +461,6 @@ async function main() {
     sourceFiles.map((f) => path.basename(f, path.extname(f)).toLowerCase()),
   );
 
-  writeFile(path.join(drawableDir, 'ic_disco_back.xml'), buildBackDrawable());
-  writeFile(path.join(drawableDir, 'ic_disco_mask.xml'), buildMaskDrawable());
-  writeFile(path.join(drawableDir, 'ic_disco_upon.xml'), buildUponDrawable());
 
   const usedSymbols = new Set();
   const unavailableDrawables = new Set();

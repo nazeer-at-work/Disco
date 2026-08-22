@@ -8,10 +8,12 @@ import {
   RowMoonIcon,
   RowPenIcon,
   RowShareIcon,
+  RowShieldIcon,
   RowUserIcon,
 } from '../assets/icons/SettingsTabIcons';
 import { SettingsTabScreenProps } from './SettingsTabScreen.types';
-
+import { GlowingApplyButton } from '../components/GlowingApplyButton';
+import { useSafeAreaInsets } from 'react-native-safe-area-context';
 export function SettingsTabScreen({
   launchersExpanded,
   onToggleLaunchers,
@@ -21,18 +23,26 @@ export function SettingsTabScreen({
   onApply,
   onOpenLauncher,
   onOpenRequest,
+  onOpenReport,
   onCheckForUpdates,
   onRateAndReview,
   onShareApp,
+  freeCoins,
+  paidCoins,
+  onBuyCoins,
 }: SettingsTabScreenProps) {
+  const insets = useSafeAreaInsets();
+  
   return (
-    <ScrollView style={styles.scroll} contentContainerStyle={styles.container}>
-      <View style={styles.surface}>
+    <ScrollView style={styles.scroll} contentContainerStyle={[styles.container, { paddingBottom: 92 + insets.bottom }]}>
+      <View style={[styles.surface, { paddingBottom: 24 }]}>
         <View style={styles.headerRow}>
           <Text style={styles.headerTitle}>Settings</Text>
-          <Pressable style={styles.topButton} onPress={onApply}>
-            <Text style={styles.topButtonLabel}>Apply</Text>
-          </Pressable>
+          <GlowingApplyButton
+            title="Apply"
+            onPress={onApply}
+            style={{ position: 'absolute', right: 0 }}
+          />
         </View>
 
         <View style={styles.section}>
@@ -58,23 +68,17 @@ export function SettingsTabScreen({
                     return (
                       <View
                         key={launcher.id}
-                        style={[
-                          styles.launcherRow,
-                          !launcher.installed && styles.launcherRowDisabled,
-                        ]}
+                        style={styles.launcherRow}
                       >
                         <View style={styles.launcherHeader}>
                           <Text style={styles.launcherName}>{launcher.name}</Text>
                           <Pressable
-                            style={[
-                              styles.launcherOpenButton,
-                              !launcher.installed && styles.launcherOpenButtonDisabled,
-                            ]}
+                            style={styles.launcherOpenButton}
                             onPress={() => onOpenLauncher(launcher)}
                             disabled={isBusy}
                           >
                             <Text style={styles.launcherOpenButtonLabel}>
-                              {isBusy ? 'Opening...' : 'Apply'}
+                              {isBusy ? 'Wait...' : launcher.installed ? 'Apply' : 'Get'}
                             </Text>
                           </Pressable>
                         </View>
@@ -88,12 +92,36 @@ export function SettingsTabScreen({
         </View>
 
         <View style={styles.section}>
+          <Text style={styles.sectionTitle}>My Coins</Text>
+          <View style={styles.coinCard}>
+            <View style={styles.coinCardLeft}>
+              <Text style={styles.coinCardEmoji}>🪙</Text>
+              <View>
+                <Text style={styles.coinCardBalance}>{freeCoins + paidCoins} Coins</Text>
+              </View>
+            </View>
+            <Pressable style={styles.coinCardButton} onPress={onBuyCoins}>
+              <Text style={styles.coinCardButtonText}>Get Coins</Text>
+            </Pressable>
+          </View>
+        </View>
+
+        <View style={styles.section}>
           <Text style={styles.sectionTitle}>Feedback</Text>
           <Pressable style={styles.row} onPress={onOpenRequest}>
             <View style={styles.rowLeadingIcon}>
               <RowPenIcon />
             </View>
             <Text style={styles.rowLabel}>Request new icon</Text>
+            <View style={styles.rowChevron}>
+              <ChevronRightIcon />
+            </View>
+          </Pressable>
+          <Pressable style={styles.row} onPress={onOpenReport}>
+            <View style={styles.rowLeadingIcon}>
+              <RowShieldIcon />
+            </View>
+            <Text style={styles.rowLabel}>Report mismatched icons</Text>
             <View style={styles.rowChevron}>
               <ChevronRightIcon />
             </View>

@@ -1,6 +1,6 @@
 {
-  "name": "icon-pack-template",
-  "version": "1.0.6",
+  "name": "disco-icon-pack",
+  "version": "1.0.8",
   "private": true,
   "scripts": {
     "android": "NODE_ENV=development bash ./scripts/run-android.sh",
@@ -20,6 +20,9 @@
     "@react-native-vector-icons/material-icons": "^12.4.1",
     "react": "19.2.3",
     "react-native": "0.84.0",
+    "react-native-iap": "^16.3.1",
+    "react-native-in-app-review": "^4.4.2",
+    "react-native-nitro-modules": "^0.36.5",
     "react-native-safe-area-context": "^5.5.2",
     "react-native-svg": "^15.15.3"
   },

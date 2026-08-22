@@ -72,6 +72,8 @@ export const styles = StyleSheet.create({
     borderWidth: 0.5,
     borderColor: 'rgba(53, 83, 140, 0.2)',
     marginBottom: 8,
+    flexDirection: 'row',
+    alignItems: 'center',
   },
   searchInput: {
     color: '#2A3F66',
@@ -771,5 +773,101 @@ export const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     zIndex: 1,
+  },
+  coinCostContainer: {
+    marginHorizontal: 20,
+    marginBottom: 14,
+    borderRadius: 18,
+    overflow: 'hidden',
+    borderWidth: 1,
+    borderColor: 'rgba(255,255,255,0.07)',
+    backgroundColor: 'rgba(255,255,255,0.04)',
+  },
+  // ── Coin row ──
+  coinRow: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    paddingHorizontal: 16,
+    paddingVertical: 12,
+  },
+  coinPill: {
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 6,
+  },
+  coinPillEmoji: {
+    fontSize: 16,
+  },
+  coinPillLabel: {
+    color: '#000000ff',
+    fontSize: 12,
+    fontFamily: typography.medium,
+  },
+  coinPillValue: {
+    color: '#000000ff',
+    fontSize: 13,
+    fontFamily: typography.bold,
+  },
+  coinPillValueLow: {
+    color: '#F87171',
+  },
+  coinDivider: {
+    width: 1,
+    height: 20,
+    backgroundColor: 'rgba(255,255,255,0.08)',
+    marginHorizontal: 12,
+  },
+  // ── Insufficient banner ──
+  insufficientBanner: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    backgroundColor: 'rgba(48, 74, 160, 0.12)',
+    borderTopWidth: 1,
+    borderTopColor: 'rgba(48, 74, 160, 0.25)',
+    paddingHorizontal: 16,
+    paddingVertical: 12,
+    gap: 10,
+  },
+  insufficientLeft: {
+    flexDirection: 'row',
+    alignItems: 'center',
+    gap: 10,
+    flex: 1,
+  },
+  insufficientEmoji: {
+    fontSize: 20,
+  },
+  insufficientTitle: {
+    color: '#CBD5E1',
+    fontSize: 13,
+    fontFamily: typography.semiBold,
+  },
+  insufficientSub: {
+    color: '#475569',
+    fontSize: 11,
+    fontFamily: typography.regular,
+    marginTop: 1,
+  },
+  getCoinsInlineButton: {
+    backgroundColor: '#304AA0',
+    paddingHorizontal: 14,
+    paddingVertical: 8,
+    borderRadius: 12,
+  },
+  getCoinsInlineButtonPressed: {
+    opacity: 0.75,
+  },
+  getCoinsInlineButtonText: {
+    color: '#FFFFFF',
+    fontFamily: typography.bold,
+    fontSize: 12,
+  },
+  searchInputFlexible: {
+    flex: 1,
+  },
+  headerBadgeWrap: {
+    marginRight: 10,
   },
 });

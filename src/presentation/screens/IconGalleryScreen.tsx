@@ -9,6 +9,7 @@ import {
   ActivityIndicator,
   Animated,
   Alert,
+  AppState,
   Dimensions,
   Easing,
   FlatList,
@@ -23,6 +24,7 @@ import {
   TextInput,
   View,
 } from 'react-native';
+import InAppReview from 'react-native-in-app-review';
 import MaterialIcons from '@react-native-vector-icons/material-icons';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { IconCard } from '../components/IconCard';
@@ -55,7 +57,19 @@ import {
   openLauncherSettings,
   SupportedLauncher,
 } from '../../infrastructure/native/LauncherBridge';
-import { submitIconFeedback } from '../../infrastructure/api/submitIconFeedback';
+import {
+  submitIconFeedback,
+  getCoinBalance,
+  verifyPurchaseOnBackend,
+} from '../../infrastructure/api/submitIconFeedback';
+import {
+  initializeBilling,
+  disconnectBilling,
+} from '../../infrastructure/billing/CoinBillingManager';
+import { PaywallModal } from '../components/PaywallModal';
+import { CustomAlertModal } from '../components/CustomAlertModal';
+import { ApplyLauncherModal } from '../components/ApplyLauncherModal';
+import { Purchase } from 'react-native-iap';
 const notFoundImageSource = require('../../../assets/images/not-found.webp');
 const successImageSource = require('../../../assets/images/success.webp');
 const errorImageSource = require('../../../assets/images/error.webp');
@@ -72,6 +86,9 @@ const parsedConfig = iconVersionsConfig as {
 const versionOptions = parsedConfig.versions ?? [];
 const fallbackVersionId = versionOptions[0]?.id ?? 'system';
 const initialScope = parsedConfig.defaultVersionId ?? fallbackVersionId;
+
+// Track tokens that we've already shown an alert for to prevent infinite UI loops
+const alertedTokens = new Set<string>();
 
 const previewIconImageStyle: ImageStyle = {
   width: 92,
@@ -106,11 +123,60 @@ export function IconGalleryScreen({
   const [feedbackSuccessVisible, setFeedbackSuccessVisible] = useState(false);
   const [feedbackErrorVisible, setFeedbackErrorVisible] = useState(false);
   const [feedbackErrorMessage, setFeedbackErrorMessage] = useState('');
+  const [feedbackMode, setFeedbackMode] = useState<FeedbackMode>('request');
   const [feedbackQuery, setFeedbackQuery] = useState('');
   const [selectedAppPackages, setSelectedAppPackages] = useState<string[]>([]);
   const [submittedAppPackages, setSubmittedAppPackages] = useState<string[]>(
     [],
   );
+  const [freeCoins, setFreeCoins] = useState(10);
+  const [paidCoins, setPaidCoins] = useState(0);
+  const [paywallVisible, setPaywallVisible] = useState(false);
+  const [customAlertVisible, setCustomAlertVisible] = useState(false);
+  const [customAlertConfig, setCustomAlertConfig] = useState<{
+    title: string;
+    message: string;
+    type: 'success' | 'error' | 'warning' | 'info';
+  }>({
+    title: '',
+    message: '',
+    type: 'info',
+  });
+  const [applyModalVisible, setApplyModalVisible] = useState(false);
+  const [applyModalConfig, setApplyModalConfig] = useState<{
+    title: string;
+    message: string;
+    buttons: { text: string; primary?: boolean; onPress: () => void }[];
+  } | null>(null);
+
+  const pendingReview = useRef(false);
+
+  useEffect(() => {
+    const subscription = AppState.addEventListener('change', nextAppState => {
+      if (nextAppState === 'active' && pendingReview.current) {
+        pendingReview.current = false;
+        if (InAppReview.isAvailable()) {
+          InAppReview.RequestInAppReview()
+            .catch(e => {
+              console.warn('InAppReview error', e);
+            });
+        }
+      }
+    });
+
+    return () => {
+      subscription.remove();
+    };
+  }, []);
+
+  const showCustomAlert = (
+    title: string,
+    message: string,
+    type: 'success' | 'error' | 'warning' | 'info',
+  ) => {
+    setCustomAlertConfig({ title, message, type });
+    setCustomAlertVisible(true);
+  };
   const [bottomBarWidth, setBottomBarWidth] = useState(0);
   const [contentWidth, setContentWidth] = useState(
     () => Dimensions.get('window').width,
@@ -318,12 +384,13 @@ export function IconGalleryScreen({
   }, []);
 
   const openFeedbackPicker = useCallback(
-    async (initialQuery: string = '') => {
+    async (mode: FeedbackMode, initialQuery: string = '') => {
+      setFeedbackMode(mode);
       setFeedbackQuery(initialQuery);
       setSelectedAppPackages([]);
       setFeedbackVisible(true);
       try {
-        const submittedPackages = await getSubmittedFeedbackPackages('request');
+        const submittedPackages = await getSubmittedFeedbackPackages(mode);
         setSubmittedAppPackages(submittedPackages);
       } catch {
         setSubmittedAppPackages([]);
@@ -334,6 +401,8 @@ export function IconGalleryScreen({
     },
     [appsLoading, launchableApps.length, loadLaunchableApps],
   );
+  const showIconSearchEmptyState =
+    normalizedQuery.length > 0 && sortedIconsToShow.length === 0;
 
   const toggleSelectedPackage = useCallback((packageName: string) => {
     setSelectedAppPackages(current =>
@@ -359,7 +428,7 @@ export function IconGalleryScreen({
       currentHomeLauncher = null;
     }
     const payload = {
-      type: 'request' as FeedbackMode,
+      type: feedbackMode,
       selectedApps,
       launcherDetails: {
         currentHomeLauncher,
@@ -369,11 +438,13 @@ export function IconGalleryScreen({
 
     try {
       setFeedbackSubmittingVisible(true);
-      await submitIconFeedback(payload);
+      const res = await submitIconFeedback(payload);
+      setFreeCoins(res.freeCoins);
+      setPaidCoins(res.paidCoins);
       const selectedPackageNames = selectedApps.map(app => app.packageName);
       try {
         const mergedPackages = await addSubmittedFeedbackPackages(
-          'request',
+          feedbackMode,
           selectedPackageNames,
         );
         setSubmittedAppPackages(mergedPackages);
@@ -397,10 +468,86 @@ export function IconGalleryScreen({
     } finally {
       setFeedbackSubmittingVisible(false);
     }
-  }, [launchableApps, selectedAppPackages]);
+  }, [feedbackMode, launchableApps, selectedAppPackages]);
 
-  const showIconSearchEmptyState =
-    normalizedQuery.length > 0 && sortedIconsToShow.length === 0;
+  const handlePurchaseSuccess = async (purchase: Purchase) => {
+    try {
+      const pkg = (purchase as any).packageNameAndroid || (purchase as any).appBundleIdIOS;
+      const updatedBal = await verifyPurchaseOnBackend(
+        purchase.purchaseToken ?? purchase.transactionId ?? '',
+        purchase.productId,
+        pkg,
+      );
+      setFreeCoins(updatedBal.freeCoins);
+      setPaidCoins(updatedBal.paidCoins);
+      showCustomAlert(
+        'Coins Added!',
+        'Your purchase was completed and credited.',
+        'success',
+      );
+    } catch (err: any) {
+      console.warn('Failed to verify purchase on backend', err);
+      const msg = err?.message || String(err);
+      
+      const token = purchase.purchaseToken ?? purchase.transactionId ?? 'unknown';
+      const hasAlerted = alertedTokens.has(token);
+      
+      // If the backend already processed this token, we don't need to alert the user.
+      // Re-throw it so CoinBillingManager can consume the receipt silently.
+      if (!msg.includes('already processed') && !hasAlerted) {
+        alertedTokens.add(token);
+        if (msg.includes('purchase_pending')) {
+          showCustomAlert(
+            'Payment Pending',
+            'Your payment is currently pending. Please check back later.',
+            'info',
+          );
+        } else {
+          showCustomAlert(
+            'Sync Failed',
+            'Payment succeeded but failed to sync coins with server.',
+            'error',
+          );
+        }
+      }
+      
+      throw err;
+    }
+  };
+
+  useEffect(() => {
+    const fetchBalance = async () => {
+      try {
+        const bal = await getCoinBalance();
+        setFreeCoins(bal.freeCoins);
+        setPaidCoins(bal.paidCoins);
+      } catch (err) {
+        console.warn('Failed to load initial coin balance', err);
+      }
+    };
+    fetchBalance();
+
+    initializeBilling(
+      handlePurchaseSuccess,
+      (err: any) => {
+        const msg = err?.message || String(err);
+        if (msg.includes('purchase_pending')) {
+          showCustomAlert(
+            'Payment Pending',
+            'Your payment is being processed by Google. Coins will be added once confirmed.',
+            'info'
+          );
+        } else {
+          console.warn('IAP Initialization/Purchase Listener Error:', err);
+        }
+      },
+    );
+
+    return () => {
+      disconnectBilling();
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
 
   useEffect(() => {
     if (Platform.OS !== 'android') {
@@ -432,33 +579,84 @@ export function IconGalleryScreen({
     }
 
     if (!launcher.installed) {
-      Alert.alert(
-        `${launcher.name} not installed`,
-        'Install this launcher first, then reopen the app.',
-      );
+      Linking.openURL(`market://details?id=${launcher.packageName}`).catch(() => {
+        Linking.openURL(`https://play.google.com/store/apps/details?id=${launcher.packageName}`);
+      });
+      return;
+    }
+
+    if (launcher.id === 'pixel' || launcher.id === 'moto' || launcher.id === 'google') {
+      setApplyModalConfig({
+        title: launcher.name,
+        message: `${launcher.name} currently does not support custom icon packs natively.\n\nHowever, you can install a supported launcher like Nova Launcher to apply this icon pack. Would you like to install it?`,
+        buttons: [
+          { text: 'CANCEL', onPress: () => setApplyModalVisible(false) },
+          {
+            text: 'OK',
+            primary: true,
+            onPress: () => {
+              setApplyModalVisible(false);
+              Linking.openURL('https://play.google.com/store/apps/details?id=com.teslacoilsw.launcher').catch(() => {
+                showCustomAlert('Error', 'Could not open Play Store.', 'error');
+              });
+            }
+          }
+        ]
+      });
+      setApplyModalVisible(true);
+      return;
+    }
+
+    const manualPath =
+      launcherManualPaths[launcher.id] ??
+      `${launcher.name} settings -> icon pack -> Fluff`;
+
+    if (launcher.id === 'samsung') {
+      setApplyModalConfig({
+        title: `Apply to ${launcher.name}`,
+        message: `How to apply:\n${manualPath}`,
+        buttons: [
+          { text: 'Cancel', onPress: () => setApplyModalVisible(false) },
+          {
+            text: 'Open Theme Park',
+            primary: true,
+            onPress: async () => {
+              setApplyModalVisible(false);
+              Linking.openURL('samsungapps://ProductDetail/com.samsung.android.themedesigner').catch(() => {
+                Linking.openURL('https://galaxystore.samsung.com/detail/com.samsung.android.themedesigner');
+              });
+            },
+          },
+        ]
+      });
+      setApplyModalVisible(true);
       return;
     }
 
     setOpeningLauncherId(launcher.id);
     try {
       const opened = await openLauncherSettings(launcher.id);
-      if (!opened) {
-        const manualPath =
-          launcherManualPaths[launcher.id] ??
-          `${launcher.name} settings -> icon pack -> ${appLinks.appName}`;
-        Alert.alert(
-          'Could not open launcher settings',
-          `Open ${launcher.name} and apply manually:\n${manualPath}`,
-        );
+      if (opened) {
+        pendingReview.current = true;
+      } else {
+        setApplyModalConfig({
+          title: `Apply to ${launcher.name}`,
+          message: `Could not auto-apply. Please apply manually:\n\n${manualPath}`,
+          buttons: [
+            { text: 'Got it', primary: true, onPress: () => setApplyModalVisible(false) },
+          ]
+        });
+        setApplyModalVisible(true);
       }
     } catch {
-      const manualPath =
-        launcherManualPaths[launcher.id] ??
-        `${launcher.name} settings -> icon pack -> ${appLinks.appName}`;
-      Alert.alert(
-        'Could not open launcher settings',
-        `Open ${launcher.name} and apply manually:\n${manualPath}`,
-      );
+      setApplyModalConfig({
+        title: `Apply to ${launcher.name}`,
+        message: `Could not auto-apply. Please apply manually:\n\n${manualPath}`,
+        buttons: [
+          { text: 'Got it', primary: true, onPress: () => setApplyModalVisible(false) },
+        ]
+      });
+      setApplyModalVisible(true);
     } finally {
       setOpeningLauncherId(null);
     }
@@ -506,7 +704,7 @@ export function IconGalleryScreen({
     } catch {
       Alert.alert(
         'Unable to open store',
-        `Please open Play Store and search for ${appLinks.appName}.`,
+        'Please open Play Store and search for Fluff.',
       );
     }
   };
@@ -531,7 +729,7 @@ export function IconGalleryScreen({
     } catch {
       Alert.alert(
         'Unable to open store',
-        `Please open Play Store and rate ${appLinks.appName}.`,
+        'Please open Play Store and rate Fluff.',
       );
     }
   };
@@ -541,7 +739,7 @@ export function IconGalleryScreen({
 
     try {
       await Share.share({
-        message: `Try ${appLinks.appName} icon pack: ${webStoreUrl}`,
+        message: `Try Fluff icon pack: ${webStoreUrl}`,
       });
     } catch {
       Alert.alert('Unable to share', 'Please share the app link manually.');
@@ -582,7 +780,7 @@ export function IconGalleryScreen({
                   placeholderTextColor="#5C6F91"
                   value={searchQuery}
                   onChangeText={setSearchQuery}
-                  style={styles.searchInput}
+                  style={[styles.searchInput, styles.searchInputFlexible]}
                 />
               </View>
 
@@ -614,7 +812,9 @@ export function IconGalleryScreen({
                         </Text>
                         <Pressable
                           style={styles.gridEmptyActionButton}
-                          onPress={() => openFeedbackPicker(searchQuery.trim())}
+                          onPress={() =>
+                            openFeedbackPicker('request', searchQuery.trim())
+                          }
                         >
                           <Text style={styles.gridEmptyActionLabel}>
                             Request icon
@@ -638,10 +838,14 @@ export function IconGalleryScreen({
               openingLauncherId={openingLauncherId}
               onApply={handleApply}
               onOpenLauncher={handleOpenLauncher}
-              onOpenRequest={() => openFeedbackPicker()}
+              onOpenRequest={() => openFeedbackPicker('request')}
+              onOpenReport={() => openFeedbackPicker('report')}
               onCheckForUpdates={handleCheckForUpdates}
               onRateAndReview={handleRateAndReview}
               onShareApp={handleShareApp}
+              freeCoins={freeCoins}
+              paidCoins={paidCoins}
+              onBuyCoins={() => setPaywallVisible(true)}
             />
           </View>
         </Animated.View>
@@ -719,7 +923,11 @@ export function IconGalleryScreen({
             ]}
           >
             <View style={styles.previewHandle} />
-            <Text style={styles.feedbackTitle}>Request New Icons</Text>
+            <Text style={styles.feedbackTitle}>
+              {feedbackMode === 'request'
+                ? 'Request New Icons'
+                : 'Report Mismatched Icons'}
+            </Text>
             <Text style={styles.feedbackSubtitle}>
               Select one or more installed apps.
             </Text>
@@ -812,6 +1020,73 @@ export function IconGalleryScreen({
               )}
             </View>
 
+            {feedbackMode === 'request' && (
+              <View style={styles.coinCostContainer}>
+                {/* ── Coin row: cost vs balance ── */}
+                <View style={styles.coinRow}>
+                  <View style={styles.coinPill}>
+                    <Text style={styles.coinPillEmoji}>🪙</Text>
+                    <Text style={styles.coinPillLabel}>
+                      Cost{' '}
+                      <Text style={styles.coinPillValue}>
+                        {selectedAppPackages.length}
+                      </Text>
+                    </Text>
+                  </View>
+                  <View style={styles.coinDivider} />
+                  <View style={styles.coinPill}>
+                    <Text style={styles.coinPillEmoji}>💰</Text>
+                    <Text style={styles.coinPillLabel}>
+                      Balance{' '}
+                      <Text
+                        style={[
+                          styles.coinPillValue,
+                          freeCoins + paidCoins < selectedAppPackages.length &&
+                            selectedAppPackages.length > 0 &&
+                            styles.coinPillValueLow,
+                        ]}
+                      >
+                        {freeCoins + paidCoins}
+                      </Text>
+                    </Text>
+                  </View>
+                </View>
+
+                {/* ── Insufficient coins banner ── */}
+                {freeCoins + paidCoins < selectedAppPackages.length &&
+                  selectedAppPackages.length > 0 && (
+                    <View style={styles.insufficientBanner}>
+                      <View style={styles.insufficientLeft}>
+                        <Text style={styles.insufficientEmoji}>🪙</Text>
+                        <View>
+                          <Text style={styles.insufficientTitle}>
+                            Need more coins?
+                          </Text>
+                          <Text style={styles.insufficientSub}>
+                            {selectedAppPackages.length - (freeCoins + paidCoins)}{' '}
+                            more needed for this request
+                          </Text>
+                        </View>
+                      </View>
+                      <Pressable
+                        style={({ pressed }) => [
+                          styles.getCoinsInlineButton,
+                          pressed && styles.getCoinsInlineButtonPressed,
+                        ]}
+                        onPress={() => {
+                          setFeedbackVisible(false);
+                          setPaywallVisible(true);
+                        }}
+                      >
+                        <Text style={styles.getCoinsInlineButtonText}>
+                          Get Coins
+                        </Text>
+                      </Pressable>
+                    </View>
+                  )}
+              </View>
+            )}
+
             <View style={styles.feedbackActions}>
               <Pressable
                 style={[
@@ -829,12 +1104,16 @@ export function IconGalleryScreen({
                 style={[
                   styles.feedbackActionButton,
                   styles.feedbackActionPrimary,
-                  selectedAppPackages.length === 0 &&
+                  (selectedAppPackages.length === 0 ||
+                    feedbackSubmittingVisible ||
+                    (feedbackMode === 'request' && freeCoins + paidCoins < selectedAppPackages.length)) &&
                     styles.feedbackActionPrimaryDisabled,
                 ]}
                 onPress={submitFeedbackSelection}
                 disabled={
-                  selectedAppPackages.length === 0 || feedbackSubmittingVisible
+                  selectedAppPackages.length === 0 ||
+                  feedbackSubmittingVisible ||
+                  (feedbackMode === 'request' && freeCoins + paidCoins < selectedAppPackages.length)
                 }
                 accessibilityRole="button"
                 accessibilityLabel="Submit"
@@ -843,7 +1122,9 @@ export function IconGalleryScreen({
                   name="send"
                   size={20}
                   color={
-                    selectedAppPackages.length === 0 || feedbackSubmittingVisible
+                    selectedAppPackages.length === 0 ||
+                    feedbackSubmittingVisible ||
+                    (feedbackMode === 'request' && freeCoins + paidCoins < selectedAppPackages.length)
                       ? '#8FA0C0'
                       : '#304AA0'
                   }
@@ -855,7 +1136,9 @@ export function IconGalleryScreen({
                 <View style={styles.feedbackOpeningCard}>
                   <ActivityIndicator color="#304AA0" size="large" />
                   <Text style={styles.feedbackOpeningText}>
-                    Submitting icon request...
+                    {feedbackMode === 'request'
+                      ? 'Submitting icon request...'
+                      : 'Submitting mismatch report...'}
                   </Text>
                 </View>
               </View>
@@ -886,7 +1169,9 @@ export function IconGalleryScreen({
           >
             <Image source={successImageSource} style={styles.feedbackSuccessImage} />
             <Text style={styles.feedbackSuccessTitle}>
-              Request sent successfully
+              {feedbackMode === 'request'
+                ? 'Request sent successfully'
+                : 'Report sent successfully'}
             </Text>
             <Pressable
               style={styles.feedbackSuccessButton}
@@ -931,7 +1216,37 @@ export function IconGalleryScreen({
         </View>
       </Modal>
 
-      <View style={styles.bottomBarShell}>
+      <PaywallModal
+        visible={paywallVisible}
+        onClose={() => setPaywallVisible(false)}
+        freeCoins={freeCoins}
+        paidCoins={paidCoins}
+        onBalanceUpdated={(free, paid) => {
+          setFreeCoins(free);
+          setPaidCoins(paid);
+        }}
+        onPurchaseSuccess={handlePurchaseSuccess}
+      />
+
+      <CustomAlertModal
+        visible={customAlertVisible}
+        title={customAlertConfig.title}
+        message={customAlertConfig.message}
+        type={customAlertConfig.type}
+        onClose={() => setCustomAlertVisible(false)}
+      />
+
+      {applyModalConfig && (
+        <ApplyLauncherModal
+          visible={applyModalVisible}
+          title={applyModalConfig.title}
+          message={applyModalConfig.message}
+          buttons={applyModalConfig.buttons}
+          onClose={() => setApplyModalVisible(false)}
+        />
+      )}
+
+      <View style={[styles.bottomBarShell, { bottom: 16 + insets.bottom }]}>
         <View
           style={styles.bottomBar}
           onLayout={event => {
