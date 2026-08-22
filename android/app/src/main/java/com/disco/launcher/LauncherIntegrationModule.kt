@@ -38,49 +38,63 @@ class LauncherIntegrationModule(private val reactContext: ReactApplicationContex
   }
 
   private val launchers = listOf(
-    SupportedLauncher(
-      "nova",
-      "Nova Launcher",
-      listOf("com.teslacoilsw.launcher", "com.teslacoilsw.launcher.beta"),
-    ),
-    SupportedLauncher("lawnchair", "Lawnchair", listOf("app.lawnchair")),
-    SupportedLauncher("apex", "Apex Launcher", listOf("com.anddoes.launcher")),
-    SupportedLauncher("action", "Action Launcher", listOf("com.actionlauncher.playstore")),
-    SupportedLauncher("smart", "Smart Launcher", listOf("ginlemon.flowerfree")),
-    SupportedLauncher("adw", "ADW Launcher 2", listOf("org.adwfreak.launcher")),
-    SupportedLauncher("poco", "POCO Launcher", listOf("com.mi.android.globallauncher")),
-    SupportedLauncher("nothing", "Nothing Launcher", listOf("com.nothing.launcher")),
+    SupportedLauncher("action", "Action", listOf("com.actionlauncher.playstore", "com.chrislacy.actionlauncher.pro")),
+    SupportedLauncher("adw", "ADW", listOf("org.adw.launcher", "org.adwfreak.launcher")),
+    SupportedLauncher("apex", "Apex", listOf("com.anddoes.launcher", "com.anddoes.launcher.pro")),
+    SupportedLauncher("before", "Before", listOf("com.beforesoft.launcher")),
+    SupportedLauncher("coloros", "ColorOS", listOf("com.oppo.launcher")),
+    SupportedLauncher("go", "GO EX", listOf("com.gau.go.launcherex")),
+    SupportedLauncher("hios", "HiOS", listOf("com.transsion.hilauncher")),
+    SupportedLauncher("holo", "Holo", listOf("com.mobint.hololauncher")),
+    SupportedLauncher("holohd", "Holo HD", listOf("com.mobint.hololauncher.hd")),
+    SupportedLauncher("lawnchair", "Lawnchair", listOf("ch.deletescape.lawnchair.plah", "ch.deletescape.lawnchair.ci", "app.lawnchair")),
+    SupportedLauncher("lghome", "LG Home", listOf("com.lge.launcher2", "com.lge.launcher3")),
+    SupportedLauncher("lucid", "Lucid", listOf("com.powerpoint45.launcher")),
+    SupportedLauncher("nothing", "Nothing", listOf("com.nothing.launcher")),
+    SupportedLauncher("nougat", "Nougat", listOf("me.craftsapp.nlauncher")),
+    SupportedLauncher("nova", "Nova", listOf("com.teslacoilsw.launcher", "com.teslacoilsw.launcher.prime", "com.teslacoilsw.launcher.beta")),
+    SupportedLauncher("oxygenos", "OxygenOS", listOf("net.oneplus.launcher", "com.oneplus.launcher")),
+    SupportedLauncher("pixel", "Pixel", listOf("com.google.android.apps.nexuslauncher")),
+    SupportedLauncher("projectivy", "Projectivy", listOf("com.spocky.projengmenu")),
+    SupportedLauncher("smart", "Smart", listOf("ginlemon.flowerfree", "ginlemon.flowerpro", "ginlemon.flowerpro.special")),
+    SupportedLauncher("solo", "Solo", listOf("home.solo.launcher.free")),
+    SupportedLauncher("poco", "POCO", listOf("com.mi.android.globallauncher")),
+    SupportedLauncher("moto", "Moto Launcher", listOf("com.motorola.launcher3")),
+    SupportedLauncher("microsoft", "Microsoft", listOf("com.microsoft.launcher")),
+    SupportedLauncher("blackberry", "BlackBerry", listOf("com.blackberry.blackberrylauncher")),
+    SupportedLauncher("flick", "Flick", listOf("com.universallauncher.universallauncher")),
+    SupportedLauncher("square", "Square", listOf("com.ss.squarehome2")),
+    SupportedLauncher("niagara", "Niagara", listOf("bitpit.launcher")),
+    SupportedLauncher("hyperion", "Hyperion", listOf("projekt.launcher")),
+    SupportedLauncher("kiss", "KISS", listOf("fr.neamar.kiss")),
+    SupportedLauncher("kvaesitso", "Kvaesitso", listOf("de.mm20.launcher2.release")),
+    SupportedLauncher("samsung", "Samsung One UI", listOf("com.sec.android.app.launcher")),
+    SupportedLauncher("tinybit", "TinyBit", listOf("rocks.tbog.tblauncher")),
+    SupportedLauncher("zenui", "ZenUI", listOf("com.asus.launcher")),
   )
 
   override fun getName(): String = "LauncherIntegration"
-
-  /**
-   * Best-effort nudge for launchers to re-read this icon pack (after the pack is
-   * updated with new icons/mappings) without the user switching packs. Mirrors the
-   * automatic nudge done on app resume.
-   */
-  @ReactMethod
-  fun refreshIconPack(promise: Promise) {
-    try {
-      IconPackRefreshHelper.notifyIconPackChanged(reactContext)
-      promise.resolve(true)
-    } catch (error: Exception) {
-      promise.reject("ICON_PACK_REFRESH_ERROR", error)
-    }
-  }
 
   @ReactMethod
   fun getSupportedLaunchers(promise: Promise) {
     try {
       val result = Arguments.createArray()
 
-      launchers.forEach { launcher ->
+      val processedLaunchers = launchers.map { launcher ->
         val installedPackage = launcher.packageNames.firstOrNull { isPackageInstalled(it) }
+        object {
+            val launcher = launcher
+            val isInstalled = installedPackage != null
+            val packageName = installedPackage ?: launcher.packageNames.first()
+        }
+      }.sortedByDescending { it.isInstalled }
+
+      processedLaunchers.forEach { item ->
         val row = Arguments.createMap()
-        row.putString("id", launcher.id)
-        row.putString("name", launcher.name)
-        row.putString("packageName", installedPackage ?: launcher.packageNames.first())
-        row.putBoolean("installed", installedPackage != null)
+        row.putString("id", item.launcher.id)
+        row.putString("name", item.launcher.name)
+        row.putString("packageName", item.packageName)
+        row.putBoolean("installed", item.isInstalled)
         result.pushMap(row)
       }
 
@@ -252,9 +266,19 @@ class LauncherIntegrationModule(private val reactContext: ReactApplicationContex
         return
       }
 
-      val created = UUID.randomUUID().toString()
-      feedbackPrefs.edit().putString(key, created).apply()
-      promise.resolve(created)
+      val androidId = android.provider.Settings.Secure.getString(
+        reactApplicationContext.contentResolver,
+        android.provider.Settings.Secure.ANDROID_ID
+      )?.trim()
+
+      val deviceId = if (!androidId.isNullOrEmpty() && androidId != "9774d56d682e549c") {
+        androidId
+      } else {
+        UUID.randomUUID().toString()
+      }
+
+      feedbackPrefs.edit().putString(key, deviceId).apply()
+      promise.resolve(deviceId)
     } catch (error: Exception) {
       promise.reject("FEEDBACK_DEVICE_ID_ERROR", error)
     }
@@ -428,7 +452,7 @@ class LauncherIntegrationModule(private val reactContext: ReactApplicationContex
   private fun getAppLabel(): String {
     val pm = reactContext.packageManager
     val appInfo = reactContext.applicationInfo
-    return pm.getApplicationLabel(appInfo)?.toString() ?: "Disco"
+    return pm.getApplicationLabel(appInfo)?.toString() ?: "Fluff"
   }
 
   private fun findSettingsLauncherIntent(packageName: String): Intent? {

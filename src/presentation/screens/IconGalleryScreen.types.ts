@@ -12,4 +12,4 @@ export type CheckSquareIconProps = {
   checked: boolean;
 };
 
-export type FeedbackMode = 'request';
+export type FeedbackMode = 'request' | 'report';

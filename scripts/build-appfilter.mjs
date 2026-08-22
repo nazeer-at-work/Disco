@@ -169,7 +169,15 @@ async function main() {
   const body = rows
     .map(r => `    <item component="${xmlEscape(r.component)}" drawable="${r.drawable}" />`)
     .join('\n');
-  const xml = `<?xml version="1.0" encoding="utf-8"?>\n<resources>\n${body}\n</resources>\n`;
+  const xml = `<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <version>1</version>
+    <scale factor="0.8" />
+    <iconback img1="ic_disco_back" img2="ic_disco_back" img3="ic_disco_back" img4="ic_disco_back" img5="ic_disco_back" />
+    <item component="ComponentInfo{com.disco.iconpack/com.disco.MainActivity}" drawable="ic_disco_disco" />
+${body}
+</resources>
+`;
   for (const out of outputPaths) {
     await fsp.mkdir(path.dirname(out), { recursive: true });
     await fsp.writeFile(out, xml, 'utf8');

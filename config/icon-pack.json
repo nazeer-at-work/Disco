@@ -2,9 +2,9 @@
   "scale": 1.12,
   "base": {
     "cornerRadiusDp": 24,
-    "gradientStart": "#F5F8FF",
-    "gradientCenter": "#E9F6FF",
-    "gradientEnd": "#DCEBFF"
+    "gradientStart": "#461e92",
+    "gradientCenter": "#2c1070",
+    "gradientEnd": "#200536"
   },
   "iconStyle": {
     "maxIconPx": 384,

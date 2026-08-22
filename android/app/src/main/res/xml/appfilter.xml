@@ -1,5 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <version>1</version>
+    <scale factor="0.8" />
+    <iconback img1="ic_disco_back" img2="ic_disco_back" img3="ic_disco_back" img4="ic_disco_back" img5="ic_disco_back" />
+    <item component="ComponentInfo{com.disco.iconpack/com.disco.MainActivity}" drawable="ic_disco_disco" />
     <item component="ComponentInfo{ai.character.app/ai.character.app.MainActivity}" drawable="ic_disco_character_ai" />
     <item component="ComponentInfo{ai.character.app/ai.character.app.MainActivityDefault}" drawable="ic_disco_character_ai" />
     <item component="ComponentInfo{ai.perplexity.app.android/ai.perplexity.app.android.ui.main.MainActivity}" drawable="ic_disco_perplexity" />
@@ -914,6 +918,7 @@
     <item component="ComponentInfo{com.devhd.feedly/com.devhd.feedly.MainActivity}" drawable="ic_disco_feedly" />
     <item component="ComponentInfo{com.deviantart.android.damobile/com.deviantart.android.damobile.activity.HomeActivity}" drawable="ic_disco_deviantart" />
     <item component="ComponentInfo{com.devsence.pizzahut/com.devsence.pizzahut.MainActivity}" drawable="ic_disco_pizza_hut" />
+    <item component="ComponentInfo{com.disco.iconpack/com.disco.MainActivity}" drawable="ic_disco_disco" />
     <item component="ComponentInfo{com.discord/com.discord.app.AppActivity}" drawable="ic_disco_discord" />
     <item component="ComponentInfo{com.discord/com.discord.app.AppActivity$Main}" drawable="ic_disco_discord" />
     <item component="ComponentInfo{com.discord/com.discord.app.AppActivityMain}" drawable="ic_disco_discord" />
