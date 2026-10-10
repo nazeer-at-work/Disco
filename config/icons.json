@@ -1,904 +1,280 @@
 {
   "apps": [
     {
-      "name": "WhatsApp"
+      "name": " 1password",
+      "slug": "_1password"
     },
     {
-      "name": "Instagram"
+      "name": " 2048",
+      "slug": "_2048"
     },
     {
-      "name": "Facebook"
+      "name": " 8 Ball Pool",
+      "slug": "_8_ball_pool"
     },
     {
-      "name": "TikTok"
-    },
-    {
-      "name": "YouTube"
-    },
-    {
-      "name": "YouTube Music"
-    },
-    {
-      "name": "Telegram"
-    },
-    {
-      "name": "Snapchat"
-    },
-    {
-      "name": "Messenger"
-    },
-    {
-      "name": "X"
-    },
-    {
-      "name": "Spotify"
-    },
-    {
-      "name": "Netflix"
-    },
-    {
-      "name": "WeChat"
-    },
-    {
-      "name": "Gmail"
-    },
-    {
-      "name": "Google"
-    },
-    {
-      "name": "Google Maps"
-    },
-    {
-      "name": "Chrome"
-    },
-    {
-      "name": "Amazon"
-    },
-    {
-      "name": "Amazon Prime Video"
-    },
-    {
-      "name": "Disney+"
-    },
-    {
-      "name": "Uber"
-    },
-    {
-      "name": "Pinterest"
-    },
-    {
-      "name": "LinkedIn"
-    },
-    {
-      "name": "Reddit"
-    },
-    {
-      "name": "Discord"
-    },
-    {
-      "name": "Twitch"
-    },
-    {
-      "name": "Zoom"
-    },
-    {
-      "name": "Microsoft Teams"
-    },
-    {
-      "name": "Outlook"
-    },
-    {
-      "name": "ChatGPT"
-    },
-    {
-      "name": "Google Gemini"
-    },
-    {
-      "name": "CapCut"
-    },
-    {
-      "name": "Temu"
-    },
-    {
-      "name": "Threads"
-    },
-    {
-      "name": "Shazam"
-    },
-    {
-      "name": "Duolingo"
-    },
-    {
-      "name": "Canva"
-    },
-    {
-      "name": "PayPal"
-    },
-    {
-      "name": "Cash App"
-    },
-    {
-      "name": "Google Drive"
-    },
-    {
-      "name": "Google Photos"
-    },
-    {
-      "name": "Google Translate"
-    },
-    {
-      "name": "Google Pay"
-    },
-    {
-      "name": "Booking.com"
-    },
-    {
-      "name": "Airbnb"
-    },
-    {
-      "name": "Google Meet"
-    },
-    {
-      "name": "Signal"
-    },
-    {
-      "name": "Skype"
-    },
-    {
-      "name": "Microsoft Word"
-    },
-    {
-      "name": "Microsoft Excel"
-    },
-    {
-      "name": "Dropbox"
-    },
-    {
-      "name": "Roblox"
-    },
-    {
-      "name": "Minecraft"
-    },
-    {
-      "name": "Candy Crush Saga"
-    },
-    {
-      "name": "Clash of Clans"
-    },
-    {
-      "name": "Clash Royale"
-    },
-    {
-      "name": "Subway Surfers"
-    },
-    {
-      "name": "PUBG Mobile"
-    },
-    {
-      "name": "Call of Duty Mobile"
-    },
-    {
-      "name": "Among Us"
-    },
-    {
-      "name": "Genshin Impact"
-    },
-    {
-      "name": "8 Ball Pool"
-    },
-    {
-      "name": "Ludo King"
-    },
-    {
-      "name": "Venmo"
-    },
-    {
-      "name": "Coinbase"
-    },
-    {
-      "name": "Binance"
-    },
-    {
-      "name": "Robinhood"
-    },
-    {
-      "name": "Revolut"
-    },
-    {
-      "name": "Wise"
-    },
-    {
-      "name": "MetaMask"
-    },
-    {
-      "name": "Crypto.com"
-    },
-    {
-      "name": "eBay"
-    },
-    {
-      "name": "AliExpress"
-    },
-    {
-      "name": "Shein"
-    },
-    {
-      "name": "Etsy"
-    },
-    {
-      "name": "Walmart"
-    },
-    {
-      "name": "Flipkart"
-    },
-    {
-      "name": "Wish"
-    },
-    {
-      "name": "Uber Eats"
-    },
-    {
-      "name": "DoorDash"
-    },
-    {
-      "name": "McDonalds"
-    },
-    {
-      "name": "Starbucks"
-    },
-    {
-      "name": "Zomato"
-    },
-    {
-      "name": "Swiggy"
-    },
-    {
-      "name": "Lyft"
-    },
-    {
-      "name": "Expedia"
-    },
-    {
-      "name": "Tripadvisor"
-    },
-    {
-      "name": "Grab"
-    },
-    {
-      "name": "Skyscanner"
-    },
-    {
-      "name": "Notion"
-    },
-    {
-      "name": "Slack"
-    },
-    {
-      "name": "Trello"
-    },
-    {
-      "name": "Evernote"
-    },
-    {
-      "name": "Adobe Acrobat"
-    },
-    {
-      "name": "Microsoft PowerPoint"
-    },
-    {
-      "name": "Hulu"
-    },
-    {
-      "name": "Max"
-    },
-    {
-      "name": "Apple Music"
-    },
-    {
-      "name": "SoundCloud"
-    },
-    {
-      "name": "Line"
-    },
-    {
-      "name": "Quora"
-    },
-    {
-      "name": "Firefox"
-    },
-    {
-      "name": "Brave Browser"
-    },
-    {
-      "name": "Microsoft Edge"
-    },
-    {
-      "name": "Opera"
-    },
-    {
-      "name": "DuckDuckGo"
-    },
-    {
-      "name": "NordVPN"
-    },
-    {
-      "name": "VLC"
-    },
-    {
-      "name": "Microsoft Authenticator"
-    },
-    {
-      "name": "Crunchyroll"
-    },
-    {
-      "name": "Peacock TV"
-    },
-    {
-      "name": "Paramount Plus"
-    },
-    {
-      "name": "ESPN"
-    },
-    {
-      "name": "Tubi"
-    },
-    {
-      "name": "Pluto TV"
-    },
-    {
-      "name": "Vimeo"
-    },
-    {
-      "name": "Pandora"
-    },
-    {
-      "name": "Deezer"
-    },
-    {
-      "name": "Tidal"
-    },
-    {
-      "name": "iHeartRadio"
-    },
-    {
-      "name": "Amazon Music"
-    },
-    {
-      "name": "Zelle"
-    },
-    {
-      "name": "Chime"
-    },
-    {
-      "name": "Klarna"
-    },
-    {
-      "name": "Affirm"
-    },
-    {
-      "name": "Kraken"
-    },
-    {
-      "name": "Trust Wallet"
-    },
-    {
-      "name": "Target"
-    },
-    {
-      "name": "Best Buy"
-    },
-    {
-      "name": "Mercari"
-    },
-    {
-      "name": "Wayfair"
-    },
-    {
-      "name": "IKEA"
-    },
-    {
-      "name": "Myntra"
-    },
-    {
-      "name": "Meesho"
-    },
-    {
-      "name": "Grubhub"
-    },
-    {
-      "name": "Instacart"
-    },
-    {
-      "name": "Deliveroo"
-    },
-    {
-      "name": "Dominos Pizza"
-    },
-    {
-      "name": "KFC"
-    },
-    {
-      "name": "Burger King"
-    },
-    {
-      "name": "Kayak"
-    },
-    {
-      "name": "Waze"
-    },
-    {
-      "name": "Agoda"
-    },
-    {
-      "name": "Hotels.com"
-    },
-    {
-      "name": "Trip.com"
-    },
-    {
-      "name": "Asana"
-    },
-    {
-      "name": "Figma"
-    },
-    {
-      "name": "Google Docs"
-    },
-    {
-      "name": "Google Sheets"
-    },
-    {
-      "name": "Grammarly"
-    },
-    {
-      "name": "Strava"
-    },
-    {
-      "name": "MyFitnessPal"
-    },
-    {
-      "name": "Calm"
-    },
-    {
-      "name": "Headspace"
-    },
-    {
-      "name": "Fitbit"
-    },
-    {
-      "name": "Samsung Health"
-    },
-    {
-      "name": "Flo Period Tracker"
-    },
-    {
-      "name": "Nike Training Club"
-    },
-    {
-      "name": "Khan Academy"
-    },
-    {
-      "name": "Coursera"
-    },
-    {
-      "name": "Quizlet"
-    },
-    {
-      "name": "Brilliant"
-    },
-    {
-      "name": "Babbel"
-    },
-    {
-      "name": "Udemy"
-    },
-    {
-      "name": "Photomath"
-    },
-    {
-      "name": "Tinder"
-    },
-    {
-      "name": "Bumble"
-    },
-    {
-      "name": "Hinge"
-    },
-    {
-      "name": "Grindr"
-    },
-    {
-      "name": "OkCupid"
-    },
-    {
-      "name": "Adobe Lightroom"
-    },
-    {
-      "name": "Adobe Express"
-    },
-    {
-      "name": "Snapseed"
-    },
-    {
-      "name": "VSCO"
-    },
-    {
-      "name": "Picsart"
-    },
-    {
-      "name": "InShot"
-    },
-    {
-      "name": "Viber"
-    },
-    {
-      "name": "Tumblr"
-    },
-    {
-      "name": "Mastodon"
-    },
-    {
-      "name": "Bluesky"
-    },
-    {
-      "name": "Nextdoor"
-    },
-    {
-      "name": "Alibaba"
-    },
-    {
-      "name": "Poshmark"
-    },
-    {
-      "name": "Depop"
-    },
-    {
-      "name": "ASOS"
-    },
-    {
-      "name": "Lazada"
-    },
-    {
-      "name": "Shopee"
-    },
-    {
-      "name": "SoFi"
-    },
-    {
-      "name": "Monzo"
-    },
-    {
-      "name": "N26"
-    },
-    {
-      "name": "OKX"
-    },
-    {
-      "name": "Microsoft OneDrive"
-    },
-    {
-      "name": "Microsoft OneNote"
-    },
-    {
-      "name": "1Password"
-    },
-    {
-      "name": "LastPass"
-    },
-    {
-      "name": "Bitwarden"
-    },
-    {
-      "name": "Proton Mail"
-    },
-    {
-      "name": "Proton VPN"
-    },
-    {
-      "name": "ExpressVPN"
-    },
-    {
-      "name": "Claude"
-    },
-    {
-      "name": "Perplexity"
-    },
-    {
-      "name": "Microsoft Copilot"
-    },
-    {
-      "name": "Character AI"
-    },
-    {
-      "name": "Poe"
-    },
-    {
-      "name": "BBC News"
-    },
-    {
-      "name": "CNN"
-    },
-    {
-      "name": "Google News"
-    },
-    {
-      "name": "Flipboard"
-    },
-    {
-      "name": "Medium"
-    },
-    {
-      "name": "Yahoo Mail"
-    },
-    {
-      "name": "Spark Mail"
-    },
-    {
-      "name": "Bybit"
-    },
-    {
-      "name": "KuCoin"
-    },
-    {
-      "name": "Phantom Wallet"
-    },
-    {
-      "name": "Exodus Wallet"
-    },
-    {
-      "name": "Blockchain.com"
-    },
-    {
-      "name": "Wealthsimple"
-    },
-    {
-      "name": "Skrill"
-    },
-    {
-      "name": "Western Union"
-    },
-    {
-      "name": "Chipotle"
-    },
-    {
-      "name": "Taco Bell"
-    },
-    {
-      "name": "Pizza Hut"
-    },
-    {
-      "name": "Subway"
-    },
-    {
-      "name": "Wolt"
-    },
-    {
-      "name": "Delta"
-    },
-    {
-      "name": "United Airlines"
-    },
-    {
-      "name": "Emirates"
-    },
-    {
-      "name": "Marriott Bonvoy"
-    },
-    {
-      "name": "BlaBlaCar"
-    },
-    {
-      "name": "ClickUp"
-    },
-    {
-      "name": "Miro"
-    },
-    {
-      "name": "Airtable"
-    },
-    {
-      "name": "Obsidian"
-    },
-    {
-      "name": "MX Player"
-    },
-    {
-      "name": "Plex"
-    },
-    {
-      "name": "SHAREit"
-    },
-    {
-      "name": "Pokémon GO",
-      "slug": "pokemon-go"
-    },
-    {
-      "name": "Fortnite"
-    },
-    {
-      "name": "Brawl Stars"
-    },
-    {
-      "name": "Garena Free Fire"
-    },
-    {
-      "name": "Mobile Legends"
-    },
-    {
-      "name": "Honkai Star Rail"
-    },
-    {
-      "name": "Coin Master"
-    },
-    {
-      "name": "Royal Match"
-    },
-    {
-      "name": "Stumble Guys"
-    },
-    {
-      "name": "Hay Day"
-    },
-    {
-      "name": "Webull"
-    },
-    {
-      "name": "eToro"
-    },
-    {
-      "name": "Bitget"
-    },
-    {
-      "name": "Gate.io"
-    },
-    {
-      "name": "Ledger Live"
-    },
-    {
-      "name": "Zerodha Kite"
-    },
-    {
-      "name": "Groww"
-    },
-    {
-      "name": "Paytm"
-    },
-    {
-      "name": "PhonePe"
-    },
-    {
-      "name": "CRED"
-    },
-    {
-      "name": "Mercado Libre"
-    },
-    {
-      "name": "Rakuten"
-    },
-    {
-      "name": "Vinted"
-    },
-    {
-      "name": "StockX"
-    },
-    {
-      "name": "Costco"
-    },
-    {
-      "name": "Sephora"
-    },
-    {
-      "name": "Zara"
-    },
-    {
-      "name": "H&M"
-    },
-    {
-      "name": "Adidas"
-    },
-    {
-      "name": "Nike"
-    },
-    {
-      "name": "Indeed"
-    },
-    {
-      "name": "Glassdoor"
-    },
-    {
-      "name": "Fiverr"
-    },
-    {
-      "name": "Upwork"
-    },
-    {
-      "name": "Calendly"
-    },
-    {
-      "name": "Yelp"
-    },
-    {
-      "name": "OpenTable"
-    },
-    {
-      "name": "foodpanda"
-    },
-    {
-      "name": "Talabat"
-    },
-    {
-      "name": "HelloFresh"
-    },
-    {
-      "name": "Amazon Kindle"
-    },
-    {
-      "name": "Goodreads"
-    },
-    {
-      "name": "Audible"
-    },
-    {
-      "name": "Substack"
-    },
-    {
-      "name": "Wattpad"
-    },
-    {
-      "name": "WEBTOON"
-    },
-    {
-      "name": "JioSaavn"
-    },
-    {
-      "name": "Gaana"
-    },
-    {
-      "name": "Wynk Music",
-      "slug": "wynk-music"
-    },
-    {
-      "name": "ZEE5"
-    },
-    {
-      "name": "Google Play Store",
-      "slug": "playstore",
-      "prompt": "Convert the attached image into a premium disco-themed 3D app icon. Treat the attached image purely as the shape-and-color source.\nPreserve the exact shape, silhouette, and colors shown in the attached image — the colors must remain the dominant palette and the result must stay visually identical in form and color. Apply the disco treatment as reflective glossy 3D material, polished chrome edges, subtle sparkles, soft holographic accents and dynamic lighting that ENHANCE the existing colors — do NOT recolor, hue-shift, neon-wash, or replace them with a rainbow. Clean premium look, not a literal disco ball.\nSHAPE FIDELITY (strict): reproduce ONLY the shapes present in the attached image. Do NOT add, invent, or extend extra corners, tails, notches, frames, borders, or background tiles. The outer silhouette must match the attached image exactly.\nBACKGROUND (strict): place the icon on a SOLID, FLAT, PURE WHITE (#FFFFFF) background that completely fills the frame. Do NOT draw a transparency checkerboard, checkered grid, squares, or ANY pattern. Do NOT make the background transparent. The background must be uniform opaque white with nothing else on it.\nNO SHADOWS (strict): absolutely NO drop shadow, cast shadow, ground shadow, contact shadow, reflection puddle, or dark gradient beneath or around the icon. Depth lives ONLY on the object itself.\nCOMPOSITION (strict): the icon must be perfectly centered in a square 1:1 frame with equal margins, upright and front-facing, no rotation or tilt, filling about 80% of the frame, fully visible, never cropped. A single, self-contained, balanced object.\nStrong depth, modern launcher icon aesthetic, optimized for Android."
-    },
-    {
-      "name": "Settings",
-      "slug": "settings",
-      "prompt": "Convert the attached image into a premium disco-themed 3D app icon. Treat the attached image purely as the shape-and-color source.\nPreserve the exact shape, silhouette, and colors shown in the attached image — the colors must remain the dominant palette and the result must stay visually identical in form and color. Apply the disco treatment as reflective glossy 3D material, polished chrome edges, subtle sparkles, soft holographic accents and dynamic lighting that ENHANCE the existing colors — do NOT recolor, hue-shift, neon-wash, or replace them with a rainbow. Clean premium look, not a literal disco ball.\nSHAPE FIDELITY (strict): reproduce ONLY the shapes present in the attached image. Do NOT add, invent, or extend extra corners, tails, notches, frames, borders, or background tiles. The outer silhouette must match the attached image exactly.\nBACKGROUND (strict): place the icon on a SOLID, FLAT, PURE WHITE (#FFFFFF) background that completely fills the frame. Do NOT draw a transparency checkerboard, checkered grid, squares, or ANY pattern. Do NOT make the background transparent. The background must be uniform opaque white with nothing else on it.\nNO SHADOWS (strict): absolutely NO drop shadow, cast shadow, ground shadow, contact shadow, reflection puddle, or dark gradient beneath or around the icon. Depth lives ONLY on the object itself.\nCOMPOSITION (strict): the icon must be perfectly centered in a square 1:1 frame with equal margins, upright and front-facing, no rotation or tilt, filling about 80% of the frame, fully visible, never cropped. A single, self-contained, balanced object.\nStrong depth, modern launcher icon aesthetic, optimized for Android."
-    },
-    {
-      "name": "Camera",
-      "slug": "camera",
-      "prompt": "Convert the attached image into a premium disco-themed 3D app icon. Treat the attached image purely as the shape-and-color source.\nPreserve the exact shape, silhouette, and colors shown in the attached image — the colors must remain the dominant palette and the result must stay visually identical in form and color. Apply the disco treatment as reflective glossy 3D material, polished chrome edges, subtle sparkles, soft holographic accents and dynamic lighting that ENHANCE the existing colors — do NOT recolor, hue-shift, neon-wash, or replace them with a rainbow. Clean premium look, not a literal disco ball.\nSHAPE FIDELITY (strict): reproduce ONLY the shapes present in the attached image. Do NOT add, invent, or extend extra corners, tails, notches, frames, borders, or background tiles. The outer silhouette must match the attached image exactly.\nBACKGROUND (strict): place the icon on a SOLID, FLAT, PURE WHITE (#FFFFFF) background that completely fills the frame. Do NOT draw a transparency checkerboard, checkered grid, squares, or ANY pattern. Do NOT make the background transparent. The background must be uniform opaque white with nothing else on it.\nNO SHADOWS (strict): absolutely NO drop shadow, cast shadow, ground shadow, contact shadow, reflection puddle, or dark gradient beneath or around the icon. Depth lives ONLY on the object itself.\nCOMPOSITION (strict): the icon must be perfectly centered in a square 1:1 frame with equal margins, upright and front-facing, no rotation or tilt, filling about 80% of the frame, fully visible, never cropped. A single, self-contained, balanced object.\nStrong depth, modern launcher icon aesthetic, optimized for Android."
-    },
-    {
-      "name": "Files",
-      "slug": "files",
-      "prompt": "Convert the attached image into a premium disco-themed 3D app icon. Treat the attached image purely as the shape-and-color source.\nPreserve the exact shape, silhouette, and colors shown in the attached image — the colors must remain the dominant palette and the result must stay visually identical in form and color. Apply the disco treatment as reflective glossy 3D material, polished chrome edges, subtle sparkles, soft holographic accents and dynamic lighting that ENHANCE the existing colors — do NOT recolor, hue-shift, neon-wash, or replace them with a rainbow. Clean premium look, not a literal disco ball.\nSHAPE FIDELITY (strict): reproduce ONLY the shapes present in the attached image. Do NOT add, invent, or extend extra corners, tails, notches, frames, borders, or background tiles. The outer silhouette must match the attached image exactly.\nBACKGROUND (strict): place the icon on a SOLID, FLAT, PURE WHITE (#FFFFFF) background that completely fills the frame. Do NOT draw a transparency checkerboard, checkered grid, squares, or ANY pattern. Do NOT make the background transparent. The background must be uniform opaque white with nothing else on it.\nNO SHADOWS (strict): absolutely NO drop shadow, cast shadow, ground shadow, contact shadow, reflection puddle, or dark gradient beneath or around the icon. Depth lives ONLY on the object itself.\nCOMPOSITION (strict): the icon must be perfectly centered in a square 1:1 frame with equal margins, upright and front-facing, no rotation or tilt, filling about 80% of the frame, fully visible, never cropped. A single, self-contained, balanced object.\nStrong depth, modern launcher icon aesthetic, optimized for Android."
-    },
-    {
-      "name": "AccuWeather",
+      "name": "Accuweather",
       "slug": "accuweather"
     },
     {
-      "name": "Adobe Photoshop Express",
-      "slug": "adobe-photoshop-express"
+      "name": "Adidas",
+      "slug": "adidas"
+    },
+    {
+      "name": "Adidas Running",
+      "slug": "adidas_running"
+    },
+    {
+      "name": "Adobe Acrobat",
+      "slug": "adobe_acrobat"
+    },
+    {
+      "name": "Adobe Express",
+      "slug": "adobe_express"
+    },
+    {
+      "name": "Adobe Lightroom",
+      "slug": "adobe_lightroom"
     },
     {
       "name": "Adobe Scan",
-      "slug": "adobe-scan"
+      "slug": "adobe_scan"
     },
     {
-      "name": "AVG AntiVirus",
-      "slug": "avg-antivirus"
+      "name": "Affirm",
+      "slug": "affirm"
+    },
+    {
+      "name": "Afk Arena",
+      "slug": "afk_arena"
+    },
+    {
+      "name": "Afterpay",
+      "slug": "afterpay"
+    },
+    {
+      "name": "Agoda",
+      "slug": "agoda"
+    },
+    {
+      "name": "Aida64",
+      "slug": "aida64"
+    },
+    {
+      "name": "Airbnb",
+      "slug": "airbnb"
+    },
+    {
+      "name": "Airtable",
+      "slug": "airtable"
+    },
+    {
+      "name": "Ajio",
+      "slug": "ajio"
+    },
+    {
+      "name": "Alarmy",
+      "slug": "alarmy"
+    },
+    {
+      "name": "Alibaba",
+      "slug": "alibaba"
+    },
+    {
+      "name": "Aliexpress",
+      "slug": "aliexpress"
+    },
+    {
+      "name": "Alight Motion",
+      "slug": "alight_motion"
+    },
+    {
+      "name": "Allegro",
+      "slug": "allegro"
+    },
+    {
+      "name": "Alltrails",
+      "slug": "alltrails"
+    },
+    {
+      "name": "Ally",
+      "slug": "ally"
+    },
+    {
+      "name": "Amazon",
+      "slug": "amazon"
+    },
+    {
+      "name": "Amazon Music",
+      "slug": "amazon_music"
+    },
+    {
+      "name": "Amazon Prime Video",
+      "slug": "amazon_prime_video"
+    },
+    {
+      "name": "Amex",
+      "slug": "amex"
+    },
+    {
+      "name": "Amongus",
+      "slug": "amongus"
+    },
+    {
+      "name": "Anghami",
+      "slug": "anghami"
+    },
+    {
+      "name": "Ankidroid",
+      "slug": "ankidroid"
+    },
+    {
+      "name": "Anydesk",
+      "slug": "anydesk"
+    },
+    {
+      "name": "Ap News",
+      "slug": "ap_news"
+    },
+    {
+      "name": "Apple Tv",
+      "slug": "apple_tv"
+    },
+    {
+      "name": "Applemusic",
+      "slug": "applemusic"
+    },
+    {
+      "name": "Asana",
+      "slug": "asana"
+    },
+    {
+      "name": "Asos",
+      "slug": "asos"
+    },
+    {
+      "name": "Audible",
+      "slug": "audible"
+    },
+    {
+      "name": "Audiomack",
+      "slug": "audiomack"
+    },
+    {
+      "name": "Avg Antivirus",
+      "slug": "avg_antivirus"
+    },
+    {
+      "name": "B612",
+      "slug": "b612"
+    },
+    {
+      "name": "Babbel",
+      "slug": "babbel"
+    },
+    {
+      "name": "Badoo",
+      "slug": "badoo"
+    },
+    {
+      "name": "Bandcamp",
+      "slug": "bandcamp"
+    },
+    {
+      "name": "Bandlab",
+      "slug": "bandlab"
+    },
+    {
+      "name": "Bank Of America",
+      "slug": "bank_of_america"
+    },
+    {
+      "name": "Basecamp",
+      "slug": "basecamp"
+    },
+    {
+      "name": "Bbc Iplayer",
+      "slug": "bbc_iplayer"
+    },
+    {
+      "name": "Bbc News",
+      "slug": "bbc_news"
     },
     {
       "name": "Behance",
       "slug": "behance"
+    },
+    {
+      "name": "Bereal",
+      "slug": "bereal"
+    },
+    {
+      "name": "Bestbuy",
+      "slug": "bestbuy"
+    },
+    {
+      "name": "Bigbasket",
+      "slug": "bigbasket"
+    },
+    {
+      "name": "Bilibili",
+      "slug": "bilibili"
+    },
+    {
+      "name": "Binance",
+      "slug": "binance"
+    },
+    {
+      "name": "Bitget",
+      "slug": "bitget"
+    },
+    {
+      "name": "Bitwarden",
+      "slug": "bitwarden"
+    },
+    {
+      "name": "Blablacar",
+      "slug": "blablacar"
+    },
+    {
+      "name": "Blinkist",
+      "slug": "blinkist"
+    },
+    {
+      "name": "Blinkit",
+      "slug": "blinkit"
+    },
+    {
+      "name": "Blockchain Com",
+      "slug": "blockchain_com"
+    },
+    {
+      "name": "Bloomberg",
+      "slug": "bloomberg"
+    },
+    {
+      "name": "Bloonstd6",
+      "slug": "bloonstd6"
+    },
+    {
+      "name": "Bluesky",
+      "slug": "bluesky"
+    },
+    {
+      "name": "Bolt",
+      "slug": "bolt"
+    },
+    {
+      "name": "Booking",
+      "slug": "booking"
+    },
+    {
+      "name": "Boomplay",
+      "slug": "boomplay"
+    },
+    {
+      "name": "Bowmasters",
+      "slug": "bowmasters"
     },
     {
       "name": "Box",
@@ -909,1192 +285,2076 @@
       "slug": "brainly"
     },
     {
-      "name": "CamScanner",
-      "slug": "camscanner"
-    },
-    {
-      "name": "Candy Crush Soda Saga",
-      "slug": "candy-crush-soda-saga"
-    },
-    {
-      "name": "Castbox",
-      "slug": "castbox"
-    },
-    {
-      "name": "Chess.com",
-      "slug": "chess"
-    },
-    {
-      "name": "CNBC",
-      "slug": "cnbc"
-    },
-    {
-      "name": "DeepSeek",
-      "slug": "deepseek"
-    },
-    {
-      "name": "DeviantArt",
-      "slug": "deviantart"
-    },
-    {
-      "name": "edX",
-      "slug": "edx"
-    },
-    {
-      "name": "Epic Games",
-      "slug": "epic-games"
-    },
-    {
-      "name": "FIFA Soccer",
-      "slug": "fifa-soccer"
-    },
-    {
-      "name": "Flightradar24",
-      "slug": "flightradar24"
-    },
-    {
-      "name": "Fruit Ninja",
-      "slug": "fruit-ninja"
-    },
-    {
-      "name": "GitHub",
-      "slug": "github"
-    },
-    {
-      "name": "Google Earth",
-      "slug": "google-earth"
-    },
-    {
-      "name": "Google Authenticator",
-      "slug": "google-authenticator"
-    },
-    {
-      "name": "Google Home",
-      "slug": "google-home"
-    },
-    {
-      "name": "Google One",
-      "slug": "google-one"
-    },
-    {
-      "name": "Google TV",
-      "slug": "google-tv"
-    },
-    {
-      "name": "Google Wallet",
-      "slug": "google-wallet"
-    },
-    {
-      "name": "Grok",
-      "slug": "grok"
-    },
-    {
-      "name": "Hilton Honors",
-      "slug": "hilton-honors"
-    },
-    {
-      "name": "Home Workout",
-      "slug": "home-workout"
-    },
-    {
-      "name": "Hopper",
-      "slug": "hopper"
-    },
-    {
-      "name": "Hotspot Shield",
-      "slug": "hotspot-shield"
-    },
-    {
-      "name": "imo",
-      "slug": "imo"
-    },
-    {
-      "name": "KineMaster",
-      "slug": "kinemaster"
-    },
-    {
-      "name": "Letterboxd",
-      "slug": "letterboxd"
-    },
-    {
-      "name": "MEGA",
-      "slug": "mega"
-    },
-    {
-      "name": "Microsoft To Do",
-      "slug": "microsoft-to-do"
-    },
-    {
-      "name": "Notion Calendar",
-      "slug": "notion-calendar"
-    },
-    {
-      "name": "Pocket Casts",
-      "slug": "pocket-casts"
-    },
-    {
-      "name": "Remini",
-      "slug": "remini"
-    },
-    {
-      "name": "Shopify",
-      "slug": "shopify"
-    },
-    {
-      "name": "Sololearn",
-      "slug": "sololearn"
-    },
-    {
-      "name": "Stack Overflow",
-      "slug": "stack-overflow"
-    },
-    {
-      "name": "Steam",
-      "slug": "steam"
-    },
-    {
-      "name": "TeamViewer",
-      "slug": "teamviewer"
-    },
-    {
-      "name": "Truecaller",
-      "slug": "truecaller"
-    },
-    {
-      "name": "KakaoTalk",
-      "slug": "kakaotalk"
-    },
-    {
-      "name": "Wikipedia",
-      "slug": "wikipedia"
-    },
-    {
-      "name": "DeepL",
-      "slug": "deepl"
-    },
-    {
-      "name": "Tor Browser",
-      "slug": "tor-browser"
-    },
-    {
-      "name": "Samsung Internet Browser",
-      "slug": "samsung-internet"
-    },
-    {
-      "name": "Surfshark",
-      "slug": "surfshark"
-    },
-    {
-      "name": "Dashlane",
-      "slug": "dashlane"
-    },
-    {
-      "name": "NordPass",
-      "slug": "nordpass"
-    },
-    {
-      "name": "Stripe",
-      "slug": "stripe"
-    },
-    {
-      "name": "Payoneer",
-      "slug": "payoneer"
-    },
-    {
-      "name": "Afterpay",
-      "slug": "afterpay"
-    },
-    {
-      "name": "Zalando",
-      "slug": "zalando"
-    },
-    {
-      "name": "Glovo",
-      "slug": "glovo"
-    },
-    {
-      "name": "Trainline",
-      "slug": "trainline"
-    },
-    {
-      "name": "Citymapper",
-      "slug": "citymapper"
-    },
-    {
-      "name": "Moovit",
-      "slug": "moovit"
-    },
-    {
-      "name": "FlixBus",
-      "slug": "flixbus"
-    },
-    {
-      "name": "Temple Run",
-      "slug": "temple-run"
-    },
-    {
-      "name": "Plants vs Zombies",
-      "slug": "plants-vs-zombies"
-    },
-    {
-      "name": "Gardenscapes",
-      "slug": "gardenscapes"
-    },
-    {
-      "name": "Homescapes",
-      "slug": "homescapes"
-    },
-    {
-      "name": "eFootball",
-      "slug": "efootball"
-    },
-    {
-      "name": "Dream League Soccer",
-      "slug": "dream-league-soccer"
-    },
-    {
-      "name": "Real Racing 3",
-      "slug": "real-racing-3"
-    },
-    {
-      "name": "Hill Climb Racing",
-      "slug": "hill-climb-racing"
-    },
-    {
-      "name": "Standoff 2",
-      "slug": "standoff-2"
-    },
-    {
-      "name": "Dailymotion",
-      "slug": "dailymotion"
-    },
-    {
-      "name": "Rumble",
-      "slug": "rumble"
-    },
-    {
-      "name": "Bandcamp",
-      "slug": "bandcamp"
-    },
-    {
-      "name": "Audiomack",
-      "slug": "audiomack"
-    },
-    {
-      "name": "Kodi",
-      "slug": "kodi"
-    },
-    {
-      "name": "Lensa",
-      "slug": "lensa"
-    },
-    {
-      "name": "Facetune",
-      "slug": "facetune"
-    },
-    {
-      "name": "Likee",
-      "slug": "likee"
-    },
-    {
-      "name": "Kwai",
-      "slug": "kwai"
-    },
-    {
-      "name": "AnyDesk",
-      "slug": "anydesk"
-    },
-    {
-      "name": "Webex",
-      "slug": "webex"
-    },
-    {
-      "name": "Garmin Connect",
-      "slug": "garmin-connect"
-    },
-    {
-      "name": "Nike Run Club",
-      "slug": "nike-run-club"
-    },
-    {
-      "name": "Clue Period Tracker",
-      "slug": "clue"
-    },
-    {
-      "name": "Sleep Cycle",
-      "slug": "sleep-cycle"
-    },
-    {
-      "name": "TickTick",
-      "slug": "ticktick"
-    },
-    {
-      "name": "BeReal",
-      "slug": "bereal"
-    },
-    {
-      "name": "Clubhouse",
-      "slug": "clubhouse"
-    },
-    {
-      "name": "adidas Running",
-      "slug": "adidas-running"
-    },
-    {
-      "name": "Windscribe",
-      "slug": "windscribe"
-    },
-    {
-      "name": "Vivino",
-      "slug": "vivino"
-    },
-    {
-      "name": "WPS Office",
-      "slug": "wps-office"
-    },
-    {
-      "name": "komoot",
-      "slug": "komoot"
-    },
-    {
-      "name": "AllTrails",
-      "slug": "alltrails"
-    },
-    {
-      "name": "Mathway",
-      "slug": "mathway"
-    },
-    {
-      "name": "AnkiDroid",
-      "slug": "ankidroid"
-    },
-    {
-      "name": "Kahoot!",
-      "slug": "kahoot"
-    },
-    {
-      "name": "Skillshare",
-      "slug": "skillshare"
-    },
-    {
-      "name": "Busuu",
-      "slug": "busuu"
-    },
-    {
-      "name": "Memrise",
-      "slug": "memrise"
-    },
-    {
-      "name": "Google Classroom",
-      "slug": "google-classroom"
-    },
-    {
-      "name": "Blinkist",
-      "slug": "blinkist"
-    },
-    {
-      "name": "Libby",
-      "slug": "libby"
-    },
-    {
-      "name": "The New York Times",
-      "slug": "the-new-york-times"
-    },
-    {
-      "name": "The Guardian",
-      "slug": "the-guardian"
-    },
-    {
-      "name": "Bloomberg",
-      "slug": "bloomberg"
-    },
-    {
-      "name": "Reuters",
-      "slug": "reuters"
-    },
-    {
-      "name": "Feedly",
-      "slug": "feedly"
-    },
-    {
-      "name": "Pocket",
-      "slug": "pocket"
-    },
-    {
-      "name": "Genius",
-      "slug": "genius"
-    },
-    {
-      "name": "Musixmatch",
-      "slug": "musixmatch"
-    },
-    {
-      "name": "BandLab",
-      "slug": "bandlab"
-    },
-    {
-      "name": "Stremio",
-      "slug": "stremio"
-    },
-    {
-      "name": "DAZN",
-      "slug": "dazn"
-    },
-    {
-      "name": "Apple TV",
-      "slug": "apple-tv"
-    },
-    {
-      "name": "Roku",
-      "slug": "roku"
-    },
-    {
-      "name": "Hearthstone",
-      "slug": "hearthstone"
-    },
-    {
-      "name": "Fall Guys",
-      "slug": "fall-guys"
-    },
-    {
-      "name": "Geometry Dash",
-      "slug": "geometry-dash"
-    },
-    {
-      "name": "Wordscapes",
-      "slug": "wordscapes"
-    },
-    {
-      "name": "lichess",
-      "slug": "lichess"
-    },
-    {
-      "name": "Cut the Rope",
-      "slug": "cut-the-rope"
-    },
-    {
-      "name": "Jetpack Joyride",
-      "slug": "jetpack-joyride"
-    },
-    {
-      "name": "Crossy Road",
-      "slug": "crossy-road"
-    },
-    {
-      "name": "Peloton",
-      "slug": "peloton"
-    },
-    {
-      "name": "Insight Timer",
-      "slug": "insight-timer"
-    },
-    {
-      "name": "Splitwise",
-      "slug": "splitwise"
-    },
-    {
-      "name": "PhotoRoom",
-      "slug": "photoroom"
-    },
-    {
-      "name": "B612",
-      "slug": "b612"
-    },
-    {
-      "name": "Prisma",
-      "slug": "prisma"
-    },
-    {
-      "name": "Alight Motion",
-      "slug": "alight-motion"
-    },
-    {
-      "name": "PowerDirector",
-      "slug": "powerdirector"
-    },
-    {
-      "name": "Filmora",
-      "slug": "filmora"
-    },
-    {
-      "name": "Tasker",
-      "slug": "tasker"
-    },
-    {
-      "name": "IFTTT",
-      "slug": "ifttt"
-    },
-    {
-      "name": "Google Fit",
-      "slug": "google-fit"
-    },
-    {
-      "name": "McAfee Security",
-      "slug": "mcafee-security"
-    },
-    {
-      "name": "Malwarebytes",
-      "slug": "malwarebytes"
-    },
-    {
-      "name": "TunnelBear",
-      "slug": "tunnelbear"
-    },
-    {
-      "name": "Google Chat",
-      "slug": "google-chat"
-    },
-    {
-      "name": "Google Podcasts",
-      "slug": "google-podcasts"
-    },
-    {
-      "name": "Samsung Notes",
-      "slug": "samsung-notes"
-    },
-    {
-      "name": "ColorNote",
-      "slug": "colornote"
+      "name": "Brave",
+      "slug": "brave"
     },
     {
       "name": "Brawlhalla",
       "slug": "brawlhalla"
     },
     {
-      "name": "2048",
-      "slug": "2048"
+      "name": "Brawlstars",
+      "slug": "brawlstars"
     },
     {
-      "name": "Gboard",
-      "slug": "gboard"
+      "name": "Brilliant",
+      "slug": "brilliant"
     },
     {
-      "name": "Microsoft SwiftKey",
-      "slug": "microsoft-swiftkey"
+      "name": "Bumble",
+      "slug": "bumble"
     },
     {
-      "name": "Ecosia",
-      "slug": "ecosia"
+      "name": "Burger King",
+      "slug": "burger_king"
     },
     {
-      "name": "Opera GX",
-      "slug": "opera-gx"
+      "name": "Busuu",
+      "slug": "busuu"
     },
     {
-      "name": "Kiwi Browser",
-      "slug": "kiwi-browser"
+      "name": "Bybit",
+      "slug": "bybit"
     },
     {
-      "name": "Total Commander",
-      "slug": "total-commander"
+      "name": "Calculator",
+      "slug": "calculator"
     },
     {
-      "name": "ZArchiver",
-      "slug": "zarchiver"
+      "name": "Calendar",
+      "slug": "calendar"
     },
     {
-      "name": "Solid Explorer",
-      "slug": "solid-explorer"
+      "name": "Calendly",
+      "slug": "calendly"
     },
     {
-      "name": "AIDA64",
-      "slug": "aida64"
+      "name": "Call Of Duty",
+      "slug": "call_of_duty"
     },
     {
-      "name": "FaceApp",
-      "slug": "faceapp"
+      "name": "Calm",
+      "slug": "calm"
     },
     {
-      "name": "Reface",
-      "slug": "reface"
+      "name": "Camera",
+      "slug": "camera"
     },
     {
-      "name": "Meitu",
-      "slug": "meitu"
+      "name": "Camscanner",
+      "slug": "camscanner"
     },
     {
-      "name": "Fotor",
-      "slug": "fotor"
+      "name": "Candy Crush Saga",
+      "slug": "candy_crush_saga"
     },
     {
-      "name": "PicCollage",
-      "slug": "piccollage"
+      "name": "Candy Crush Soda",
+      "slug": "candy_crush_soda"
     },
     {
-      "name": "SoundHound",
-      "slug": "soundhound"
+      "name": "Canva",
+      "slug": "canva"
     },
     {
-      "name": "Smule",
-      "slug": "smule"
+      "name": "Capcut",
+      "slug": "capcut"
     },
     {
-      "name": "JOOX",
-      "slug": "joox"
-    },
-    {
-      "name": "StarMaker",
-      "slug": "starmaker"
-    },
-    {
-      "name": "WeSing",
-      "slug": "wesing"
-    },
-    {
-      "name": "Last.fm",
-      "slug": "last-fm"
-    },
-    {
-      "name": "Viki",
-      "slug": "viki"
-    },
-    {
-      "name": "Viu",
-      "slug": "viu"
-    },
-    {
-      "name": "MUBI",
-      "slug": "mubi"
-    },
-    {
-      "name": "Jellyfin",
-      "slug": "jellyfin"
-    },
-    {
-      "name": "Emby",
-      "slug": "emby"
-    },
-    {
-      "name": "KMPlayer",
-      "slug": "kmplayer"
-    },
-    {
-      "name": "Niconico",
-      "slug": "niconico"
-    },
-    {
-      "name": "Sonic Dash",
-      "slug": "sonic-dash"
-    },
-    {
-      "name": "Pokemon UNITE",
-      "slug": "pokemon-unite"
-    },
-    {
-      "name": "Magic Tiles 3",
-      "slug": "magic-tiles-3"
-    },
-    {
-      "name": "Bowmasters",
-      "slug": "bowmasters"
-    },
-    {
-      "name": "Solitaire",
-      "slug": "solitaire"
-    },
-    {
-      "name": "Mahjong",
-      "slug": "mahjong"
-    },
-    {
-      "name": "Sudoku",
-      "slug": "sudoku"
-    },
-    {
-      "name": "Hill Climb Racing 2",
-      "slug": "hill-climb-racing-2"
-    },
-    {
-      "name": "AFK Arena",
-      "slug": "afk-arena"
-    },
-    {
-      "name": "Plague Inc.",
-      "slug": "plague-inc"
-    },
-    {
-      "name": "Bloons TD 6",
-      "slug": "bloons-td-6"
-    },
-    {
-      "name": "Vampire Survivors",
-      "slug": "vampire-survivors"
-    },
-    {
-      "name": "Honkai Impact 3rd",
-      "slug": "honkai-impact-3"
-    },
-    {
-      "name": "Nubank",
-      "slug": "nubank"
-    },
-    {
-      "name": "GCash",
-      "slug": "gcash"
-    },
-    {
-      "name": "Toss",
-      "slug": "toss"
-    },
-    {
-      "name": "PicPay",
-      "slug": "picpay"
-    },
-    {
-      "name": "Trendyol",
-      "slug": "trendyol"
-    },
-    {
-      "name": "Tokopedia",
-      "slug": "tokopedia"
-    },
-    {
-      "name": "Jumia",
-      "slug": "jumia"
-    },
-    {
-      "name": "noon",
-      "slug": "noon"
-    },
-    {
-      "name": "Organic Maps",
-      "slug": "organic-maps"
-    },
-    {
-      "name": "Transit",
-      "slug": "transit"
-    },
-    {
-      "name": "Wikiloc",
-      "slug": "wikiloc"
-    },
-    {
-      "name": "Lifesum",
-      "slug": "lifesum"
-    },
-    {
-      "name": "YAZIO",
-      "slug": "yazio"
-    },
-    {
-      "name": "Mimo",
-      "slug": "mimo"
-    },
-    {
-      "name": "LingoDeer",
-      "slug": "lingodeer"
-    },
-    {
-      "name": "Drops",
-      "slug": "drops"
-    },
-    {
-      "name": "Badoo",
-      "slug": "badoo"
-    },
-    {
-      "name": "happn",
-      "slug": "happn"
-    },
-    {
-      "name": "Chase",
-      "slug": "chase"
-    },
-    {
-      "name": "Bank of America",
-      "slug": "bank-of-america"
-    },
-    {
-      "name": "Wells Fargo",
-      "slug": "wells-fargo"
-    },
-    {
-      "name": "American Express",
-      "slug": "american-express"
-    },
-    {
-      "name": "Capital One",
-      "slug": "capital-one"
-    },
-    {
-      "name": "Fidelity",
-      "slug": "fidelity"
-    },
-    {
-      "name": "Ally",
-      "slug": "ally"
-    },
-    {
-      "name": "Zalo",
-      "slug": "zalo"
-    },
-    {
-      "name": "GroupMe",
-      "slug": "groupme"
-    },
-    {
-      "name": "Kik",
-      "slug": "kik"
-    },
-    {
-      "name": "Element",
-      "slug": "element"
-    },
-    {
-      "name": "Threema",
-      "slug": "threema"
-    },
-    {
-      "name": "Session",
-      "slug": "session"
-    },
-    {
-      "name": "HBO Max",
-      "slug": "hbo-max"
-    },
-    {
-      "name": "Discovery+",
-      "slug": "discovery"
-    },
-    {
-      "name": "BBC iPlayer",
-      "slug": "bbc-iplayer"
-    },
-    {
-      "name": "JioCinema",
-      "slug": "jiocinema"
-    },
-    {
-      "name": "JioHotstar",
-      "slug": "jiohotstar"
-    },
-    {
-      "name": "SonyLIV",
-      "slug": "sonyliv"
-    },
-    {
-      "name": "Bilibili",
-      "slug": "bilibili"
-    },
-    {
-      "name": "iQIYI",
-      "slug": "iqiyi"
-    },
-    {
-      "name": "Youku",
-      "slug": "youku"
-    },
-    {
-      "name": "Funimation",
-      "slug": "funimation"
-    },
-    {
-      "name": "Crave",
-      "slug": "crave"
-    },
-    {
-      "name": "Anghami",
-      "slug": "anghami"
-    },
-    {
-      "name": "Boomplay",
-      "slug": "boomplay"
-    },
-    {
-      "name": "Qobuz",
-      "slug": "qobuz"
-    },
-    {
-      "name": "Yandex Music",
-      "slug": "yandex-music"
-    },
-    {
-      "name": "Nykaa",
-      "slug": "nykaa"
-    },
-    {
-      "name": "AJIO",
-      "slug": "ajio"
-    },
-    {
-      "name": "Snapdeal",
-      "slug": "snapdeal"
-    },
-    {
-      "name": "JioMart",
-      "slug": "jiomart"
-    },
-    {
-      "name": "BigBasket",
-      "slug": "bigbasket"
-    },
-    {
-      "name": "Blinkit",
-      "slug": "blinkit"
-    },
-    {
-      "name": "Zepto",
-      "slug": "zepto"
-    },
-    {
-      "name": "Coupang",
-      "slug": "coupang"
-    },
-    {
-      "name": "Pinduoduo",
-      "slug": "pinduoduo"
-    },
-    {
-      "name": "Taobao",
-      "slug": "taobao"
-    },
-    {
-      "name": "Wildberries",
-      "slug": "wildberries"
-    },
-    {
-      "name": "Ozon",
-      "slug": "ozon"
-    },
-    {
-      "name": "Allegro",
-      "slug": "allegro"
-    },
-    {
-      "name": "Lowe's",
-      "slug": "lowes"
-    },
-    {
-      "name": "Walgreens",
-      "slug": "walgreens"
-    },
-    {
-      "name": "Chewy",
-      "slug": "chewy"
-    },
-    {
-      "name": "Just Eat",
-      "slug": "just-eat"
-    },
-    {
-      "name": "Dunkin'",
-      "slug": "dunkin"
-    },
-    {
-      "name": "Tim Hortons",
-      "slug": "tim-hortons"
-    },
-    {
-      "name": "Bolt",
-      "slug": "bolt"
-    },
-    {
-      "name": "Ola",
-      "slug": "ola"
-    },
-    {
-      "name": "inDrive",
-      "slug": "indrive"
+      "name": "Capitalone",
+      "slug": "capitalone"
     },
     {
       "name": "Careem",
       "slug": "careem"
     },
     {
-      "name": "FREE NOW",
-      "slug": "free-now"
+      "name": "Castbox",
+      "slug": "castbox"
     },
     {
-      "name": "Lime",
-      "slug": "lime"
+      "name": "Characterai",
+      "slug": "characterai"
     },
     {
-      "name": "Southwest Airlines",
-      "slug": "southwest-airlines"
+      "name": "Chase",
+      "slug": "chase"
     },
     {
-      "name": "Ryanair",
-      "slug": "ryanair"
+      "name": "Chess",
+      "slug": "chess"
     },
     {
-      "name": "easyJet",
-      "slug": "easyjet"
+      "name": "Chewy",
+      "slug": "chewy"
     },
     {
-      "name": "Trivago",
-      "slug": "trivago"
+      "name": "Chime",
+      "slug": "chime"
     },
     {
-      "name": "Omio",
-      "slug": "omio"
+      "name": "Chipotle",
+      "slug": "chipotle"
     },
     {
-      "name": "Todoist",
-      "slug": "todoist"
+      "name": "Citymapper",
+      "slug": "citymapper"
     },
     {
-      "name": "monday.com",
-      "slug": "monday-com"
+      "name": "Clash Of Clans",
+      "slug": "clash_of_clans"
     },
     {
-      "name": "Basecamp",
-      "slug": "basecamp"
+      "name": "Clash Royale",
+      "slug": "clash_royale"
     },
     {
-      "name": "Zoho Mail",
-      "slug": "zoho-mail"
+      "name": "Claude",
+      "slug": "claude"
     },
     {
-      "name": "Google Lens",
-      "slug": "google-lens"
+      "name": "Clickup",
+      "slug": "clickup"
     },
     {
-      "name": "Google Assistant",
-      "slug": "google-assistant"
+      "name": "Clock",
+      "slug": "clock"
     },
     {
-      "name": "Google Voice",
-      "slug": "google-voice"
+      "name": "Clubhouse",
+      "slug": "clubhouse"
     },
     {
-      "name": "YouTube Kids",
-      "slug": "youtube-kids"
+      "name": "Clue",
+      "slug": "clue"
     },
     {
-      "name": "YouTube TV",
-      "slug": "youtube-tv"
+      "name": "Cnn",
+      "slug": "cnn"
     },
     {
-      "name": "Google Fi",
-      "slug": "google-fi"
+      "name": "Coin Master",
+      "slug": "coin_master"
     },
     {
-      "name": "Google Arts & Culture",
-      "slug": "google-arts-culture"
+      "name": "Coinbase",
+      "slug": "coinbase"
     },
     {
-      "name": "Vivaldi",
-      "slug": "vivaldi"
+      "name": "Colornote",
+      "slug": "colornote"
     },
     {
-      "name": "UC Browser",
-      "slug": "uc-browser"
+      "name": "Contacts",
+      "slug": "contacts"
     },
     {
-      "name": "Yandex Browser",
-      "slug": "yandex-browser"
+      "name": "Costco",
+      "slug": "costco"
     },
     {
-      "name": "Aloha Browser",
-      "slug": "aloha-browser"
+      "name": "Coupang",
+      "slug": "coupang"
     },
     {
-      "name": "Mi Browser",
-      "slug": "mi-browser"
+      "name": "Coursera",
+      "slug": "coursera"
     },
     {
-      "name": "Kaspersky",
-      "slug": "kaspersky"
+      "name": "Crave",
+      "slug": "crave"
     },
     {
-      "name": "Proton Pass",
-      "slug": "proton-pass"
+      "name": "Cred",
+      "slug": "cred"
     },
     {
-      "name": "Proton Drive",
-      "slug": "proton-drive"
+      "name": "Cron",
+      "slug": "cron"
     },
     {
-      "name": "Wuthering Waves",
-      "slug": "wuthering-waves"
+      "name": "Crossy Road",
+      "slug": "crossy_road"
     },
     {
-      "name": "Zenless Zone Zero",
-      "slug": "zenless-zone-zero"
+      "name": "Crunchyroll",
+      "slug": "crunchyroll"
     },
     {
-      "name": "Tantan",
-      "slug": "tantan"
+      "name": "Cryptocom",
+      "slug": "cryptocom"
     },
     {
-      "name": "Oura",
-      "slug": "oura"
-    },
-    {
-      "name": "Freeletics",
-      "slug": "freeletics"
-    },
-    {
-      "name": "Unacademy",
-      "slug": "unacademy"
-    },
-    {
-      "name": "Wolfram Alpha",
-      "slug": "wolfram-alpha"
-    },
-    {
-      "name": "The Economist",
-      "slug": "the-economist"
-    },
-    {
-      "name": "AP News",
-      "slug": "ap-news"
-    },
-    {
-      "name": "Inshorts",
-      "slug": "inshorts"
+      "name": "Cut The Rope",
+      "slug": "cut_the_rope"
     },
     {
       "name": "Dailyhunt",
       "slug": "dailyhunt"
     },
     {
-      "name": "SmartNews",
+      "name": "Dailymotion",
+      "slug": "dailymotion"
+    },
+    {
+      "name": "Dashlane",
+      "slug": "dashlane"
+    },
+    {
+      "name": "Dazn",
+      "slug": "dazn"
+    },
+    {
+      "name": "Deepl",
+      "slug": "deepl"
+    },
+    {
+      "name": "Deepseek",
+      "slug": "deepseek"
+    },
+    {
+      "name": "Deezer",
+      "slug": "deezer"
+    },
+    {
+      "name": "Deliveroo",
+      "slug": "deliveroo"
+    },
+    {
+      "name": "Delta",
+      "slug": "delta"
+    },
+    {
+      "name": "Depop",
+      "slug": "depop"
+    },
+    {
+      "name": "Deviantart",
+      "slug": "deviantart"
+    },
+    {
+      "name": "Disco",
+      "slug": "disco"
+    },
+    {
+      "name": "Discord",
+      "slug": "discord"
+    },
+    {
+      "name": "Discovery ",
+      "slug": "discovery_"
+    },
+    {
+      "name": "Disney",
+      "slug": "disney"
+    },
+    {
+      "name": "Dominos",
+      "slug": "dominos"
+    },
+    {
+      "name": "Doordash",
+      "slug": "doordash"
+    },
+    {
+      "name": "Drive",
+      "slug": "drive"
+    },
+    {
+      "name": "Dropbox",
+      "slug": "dropbox"
+    },
+    {
+      "name": "Drops",
+      "slug": "drops"
+    },
+    {
+      "name": "Duckduckgo",
+      "slug": "duckduckgo"
+    },
+    {
+      "name": "Dunkin",
+      "slug": "dunkin"
+    },
+    {
+      "name": "Duolingo",
+      "slug": "duolingo"
+    },
+    {
+      "name": "Easyjet",
+      "slug": "easyjet"
+    },
+    {
+      "name": "Ebay",
+      "slug": "ebay"
+    },
+    {
+      "name": "Economist",
+      "slug": "economist"
+    },
+    {
+      "name": "Ecosia",
+      "slug": "ecosia"
+    },
+    {
+      "name": "Edx",
+      "slug": "edx"
+    },
+    {
+      "name": "Efootball",
+      "slug": "efootball"
+    },
+    {
+      "name": "Element",
+      "slug": "element"
+    },
+    {
+      "name": "Emby",
+      "slug": "emby"
+    },
+    {
+      "name": "Emirates",
+      "slug": "emirates"
+    },
+    {
+      "name": "Epic Games",
+      "slug": "epic_games"
+    },
+    {
+      "name": "Espn",
+      "slug": "espn"
+    },
+    {
+      "name": "Etoro",
+      "slug": "etoro"
+    },
+    {
+      "name": "Etsy",
+      "slug": "etsy"
+    },
+    {
+      "name": "Evernote",
+      "slug": "evernote"
+    },
+    {
+      "name": "Exodus Wallet",
+      "slug": "exodus_wallet"
+    },
+    {
+      "name": "Expedia",
+      "slug": "expedia"
+    },
+    {
+      "name": "Expressvpn",
+      "slug": "expressvpn"
+    },
+    {
+      "name": "Faceapp",
+      "slug": "faceapp"
+    },
+    {
+      "name": "Facebook",
+      "slug": "facebook"
+    },
+    {
+      "name": "Facebook Messenger",
+      "slug": "facebook_messenger"
+    },
+    {
+      "name": "Facetune",
+      "slug": "facetune"
+    },
+    {
+      "name": "Fall Guys",
+      "slug": "fall_guys"
+    },
+    {
+      "name": "Feedly",
+      "slug": "feedly"
+    },
+    {
+      "name": "Fidelity",
+      "slug": "fidelity"
+    },
+    {
+      "name": "Figma",
+      "slug": "figma"
+    },
+    {
+      "name": "Filmorago",
+      "slug": "filmorago"
+    },
+    {
+      "name": "Firefox",
+      "slug": "firefox"
+    },
+    {
+      "name": "Fitbit",
+      "slug": "fitbit"
+    },
+    {
+      "name": "Fiverr",
+      "slug": "fiverr"
+    },
+    {
+      "name": "Flightradar24",
+      "slug": "flightradar24"
+    },
+    {
+      "name": "Flipboard",
+      "slug": "flipboard"
+    },
+    {
+      "name": "Flipkart",
+      "slug": "flipkart"
+    },
+    {
+      "name": "Flixbus",
+      "slug": "flixbus"
+    },
+    {
+      "name": "Flo",
+      "slug": "flo"
+    },
+    {
+      "name": "Foodpanda",
+      "slug": "foodpanda"
+    },
+    {
+      "name": "Fortnite",
+      "slug": "fortnite"
+    },
+    {
+      "name": "Fotor",
+      "slug": "fotor"
+    },
+    {
+      "name": "Free Fire",
+      "slug": "free_fire"
+    },
+    {
+      "name": "Free Now",
+      "slug": "free_now"
+    },
+    {
+      "name": "Freeletics",
+      "slug": "freeletics"
+    },
+    {
+      "name": "Fruit Ninja",
+      "slug": "fruit_ninja"
+    },
+    {
+      "name": "Funimation",
+      "slug": "funimation"
+    },
+    {
+      "name": "Gaana",
+      "slug": "gaana"
+    },
+    {
+      "name": "Gardenscapes",
+      "slug": "gardenscapes"
+    },
+    {
+      "name": "Garmin Connect",
+      "slug": "garmin_connect"
+    },
+    {
+      "name": "Gate Io",
+      "slug": "gate_io"
+    },
+    {
+      "name": "Gcash",
+      "slug": "gcash"
+    },
+    {
+      "name": "Genius",
+      "slug": "genius"
+    },
+    {
+      "name": "Genshin Impact",
+      "slug": "genshin_impact"
+    },
+    {
+      "name": "Geometry Dash",
+      "slug": "geometry_dash"
+    },
+    {
+      "name": "Github",
+      "slug": "github"
+    },
+    {
+      "name": "Glassdoor",
+      "slug": "glassdoor"
+    },
+    {
+      "name": "Glovo",
+      "slug": "glovo"
+    },
+    {
+      "name": "Goodreads",
+      "slug": "goodreads"
+    },
+    {
+      "name": "Google",
+      "slug": "google"
+    },
+    {
+      "name": "Google Arts And Culture",
+      "slug": "google_arts_and_culture"
+    },
+    {
+      "name": "Google Assistant",
+      "slug": "google_assistant"
+    },
+    {
+      "name": "Google Authenticator",
+      "slug": "google_authenticator"
+    },
+    {
+      "name": "Google Camera",
+      "slug": "google_camera"
+    },
+    {
+      "name": "Google Chat",
+      "slug": "google_chat"
+    },
+    {
+      "name": "Google Chrome",
+      "slug": "google_chrome"
+    },
+    {
+      "name": "Google Classroom",
+      "slug": "google_classroom"
+    },
+    {
+      "name": "Google Contacts",
+      "slug": "google_contacts"
+    },
+    {
+      "name": "Google Docs",
+      "slug": "google_docs"
+    },
+    {
+      "name": "Google Drive",
+      "slug": "google_drive"
+    },
+    {
+      "name": "Google Earth",
+      "slug": "google_earth"
+    },
+    {
+      "name": "Google Fi",
+      "slug": "google_fi"
+    },
+    {
+      "name": "Google Files",
+      "slug": "google_files"
+    },
+    {
+      "name": "Google Fit",
+      "slug": "google_fit"
+    },
+    {
+      "name": "Google Gemini",
+      "slug": "google_gemini"
+    },
+    {
+      "name": "Google Home",
+      "slug": "google_home"
+    },
+    {
+      "name": "Google Keep",
+      "slug": "google_keep"
+    },
+    {
+      "name": "Google Keyboard",
+      "slug": "google_keyboard"
+    },
+    {
+      "name": "Google Lens",
+      "slug": "google_lens"
+    },
+    {
+      "name": "Google Mail",
+      "slug": "google_mail"
+    },
+    {
+      "name": "Google Maps",
+      "slug": "google_maps"
+    },
+    {
+      "name": "Google Meet",
+      "slug": "google_meet"
+    },
+    {
+      "name": "Google Messages",
+      "slug": "google_messages"
+    },
+    {
+      "name": "Google News",
+      "slug": "google_news"
+    },
+    {
+      "name": "Google One",
+      "slug": "google_one"
+    },
+    {
+      "name": "Google Pay",
+      "slug": "google_pay"
+    },
+    {
+      "name": "Google Phone",
+      "slug": "google_phone"
+    },
+    {
+      "name": "Google Photos",
+      "slug": "google_photos"
+    },
+    {
+      "name": "Google Play Store",
+      "slug": "google_play_store"
+    },
+    {
+      "name": "Google Podcasts",
+      "slug": "google_podcasts"
+    },
+    {
+      "name": "Google Sheets",
+      "slug": "google_sheets"
+    },
+    {
+      "name": "Google Tasks",
+      "slug": "google_tasks"
+    },
+    {
+      "name": "Google Translate",
+      "slug": "google_translate"
+    },
+    {
+      "name": "Google Tv",
+      "slug": "google_tv"
+    },
+    {
+      "name": "Google Voice",
+      "slug": "google_voice"
+    },
+    {
+      "name": "Google Wallet",
+      "slug": "google_wallet"
+    },
+    {
+      "name": "Grab",
+      "slug": "grab"
+    },
+    {
+      "name": "Grammarly",
+      "slug": "grammarly"
+    },
+    {
+      "name": "Grindr",
+      "slug": "grindr"
+    },
+    {
+      "name": "Grok",
+      "slug": "grok"
+    },
+    {
+      "name": "Groupme",
+      "slug": "groupme"
+    },
+    {
+      "name": "Groww",
+      "slug": "groww"
+    },
+    {
+      "name": "Guardian",
+      "slug": "guardian"
+    },
+    {
+      "name": "Happn",
+      "slug": "happn"
+    },
+    {
+      "name": "Hay Day",
+      "slug": "hay_day"
+    },
+    {
+      "name": "Hbo Max",
+      "slug": "hbo_max"
+    },
+    {
+      "name": "Headspace",
+      "slug": "headspace"
+    },
+    {
+      "name": "Hearthstone",
+      "slug": "hearthstone"
+    },
+    {
+      "name": "Hellofresh",
+      "slug": "hellofresh"
+    },
+    {
+      "name": "Hill Climb 2",
+      "slug": "hill_climb_2"
+    },
+    {
+      "name": "Hill Climb Racing",
+      "slug": "hill_climb_racing"
+    },
+    {
+      "name": "Hilton Honors",
+      "slug": "hilton_honors"
+    },
+    {
+      "name": "Hinge",
+      "slug": "hinge"
+    },
+    {
+      "name": "Hm",
+      "slug": "hm"
+    },
+    {
+      "name": "Homescapes",
+      "slug": "homescapes"
+    },
+    {
+      "name": "Honkai Star Rail",
+      "slug": "honkai_star_rail"
+    },
+    {
+      "name": "Hotels Com",
+      "slug": "hotels_com"
+    },
+    {
+      "name": "Hulu",
+      "slug": "hulu"
+    },
+    {
+      "name": "Ifttt",
+      "slug": "ifttt"
+    },
+    {
+      "name": "Iheartradio",
+      "slug": "iheartradio"
+    },
+    {
+      "name": "Ikea",
+      "slug": "ikea"
+    },
+    {
+      "name": "Imo",
+      "slug": "imo"
+    },
+    {
+      "name": "Indeed",
+      "slug": "indeed"
+    },
+    {
+      "name": "Indrive",
+      "slug": "indrive"
+    },
+    {
+      "name": "Inshorts",
+      "slug": "inshorts"
+    },
+    {
+      "name": "Inshot",
+      "slug": "inshot"
+    },
+    {
+      "name": "Insight Timer",
+      "slug": "insight_timer"
+    },
+    {
+      "name": "Instacart",
+      "slug": "instacart"
+    },
+    {
+      "name": "Instagram",
+      "slug": "instagram"
+    },
+    {
+      "name": "Iqiyi",
+      "slug": "iqiyi"
+    },
+    {
+      "name": "Jellyfin",
+      "slug": "jellyfin"
+    },
+    {
+      "name": "Jetpack Joyride",
+      "slug": "jetpack_joyride"
+    },
+    {
+      "name": "Jiocinema",
+      "slug": "jiocinema"
+    },
+    {
+      "name": "Jiohotstar",
+      "slug": "jiohotstar"
+    },
+    {
+      "name": "Jiomart",
+      "slug": "jiomart"
+    },
+    {
+      "name": "Jiosaavn",
+      "slug": "jiosaavn"
+    },
+    {
+      "name": "Joox",
+      "slug": "joox"
+    },
+    {
+      "name": "Jumia",
+      "slug": "jumia"
+    },
+    {
+      "name": "Just Eat",
+      "slug": "just_eat"
+    },
+    {
+      "name": "Kahoot",
+      "slug": "kahoot"
+    },
+    {
+      "name": "Kakaotalk",
+      "slug": "kakaotalk"
+    },
+    {
+      "name": "Kfc",
+      "slug": "kfc"
+    },
+    {
+      "name": "Khan Academy",
+      "slug": "khan_academy"
+    },
+    {
+      "name": "Kik",
+      "slug": "kik"
+    },
+    {
+      "name": "Kindle",
+      "slug": "kindle"
+    },
+    {
+      "name": "Kinemaster",
+      "slug": "kinemaster"
+    },
+    {
+      "name": "Kiwibrowser",
+      "slug": "kiwibrowser"
+    },
+    {
+      "name": "Klarna",
+      "slug": "klarna"
+    },
+    {
+      "name": "Kmplayer",
+      "slug": "kmplayer"
+    },
+    {
+      "name": "Kodi",
+      "slug": "kodi"
+    },
+    {
+      "name": "Komoot",
+      "slug": "komoot"
+    },
+    {
+      "name": "Kraken",
+      "slug": "kraken"
+    },
+    {
+      "name": "Kucoin",
+      "slug": "kucoin"
+    },
+    {
+      "name": "Kwai",
+      "slug": "kwai"
+    },
+    {
+      "name": "Lastfm",
+      "slug": "lastfm"
+    },
+    {
+      "name": "Lastpass",
+      "slug": "lastpass"
+    },
+    {
+      "name": "Lazada",
+      "slug": "lazada"
+    },
+    {
+      "name": "Ledger Live",
+      "slug": "ledger_live"
+    },
+    {
+      "name": "Lensa",
+      "slug": "lensa"
+    },
+    {
+      "name": "Letterboxd",
+      "slug": "letterboxd"
+    },
+    {
+      "name": "Libby",
+      "slug": "libby"
+    },
+    {
+      "name": "Lichess",
+      "slug": "lichess"
+    },
+    {
+      "name": "Lifesum",
+      "slug": "lifesum"
+    },
+    {
+      "name": "Likee",
+      "slug": "likee"
+    },
+    {
+      "name": "Lime",
+      "slug": "lime"
+    },
+    {
+      "name": "Line",
+      "slug": "line"
+    },
+    {
+      "name": "Lingodeer",
+      "slug": "lingodeer"
+    },
+    {
+      "name": "Linkedin",
+      "slug": "linkedin"
+    },
+    {
+      "name": "Lowes",
+      "slug": "lowes"
+    },
+    {
+      "name": "Ludo King",
+      "slug": "ludo_king"
+    },
+    {
+      "name": "Lyft",
+      "slug": "lyft"
+    },
+    {
+      "name": "Mahjong",
+      "slug": "mahjong"
+    },
+    {
+      "name": "Malwarebytes",
+      "slug": "malwarebytes"
+    },
+    {
+      "name": "Maps",
+      "slug": "maps"
+    },
+    {
+      "name": "Marriott Bonvoy",
+      "slug": "marriott_bonvoy"
+    },
+    {
+      "name": "Mastodon",
+      "slug": "mastodon"
+    },
+    {
+      "name": "Mathway",
+      "slug": "mathway"
+    },
+    {
+      "name": "Max",
+      "slug": "max"
+    },
+    {
+      "name": "Mcafee Security",
+      "slug": "mcafee_security"
+    },
+    {
+      "name": "Mcdonalds",
+      "slug": "mcdonalds"
+    },
+    {
+      "name": "Medium",
+      "slug": "medium"
+    },
+    {
+      "name": "Meesho",
+      "slug": "meesho"
+    },
+    {
+      "name": "Mega",
+      "slug": "mega"
+    },
+    {
+      "name": "Meitu",
+      "slug": "meitu"
+    },
+    {
+      "name": "Memrise",
+      "slug": "memrise"
+    },
+    {
+      "name": "Mercado Libre",
+      "slug": "mercado_libre"
+    },
+    {
+      "name": "Mercari",
+      "slug": "mercari"
+    },
+    {
+      "name": "Messages",
+      "slug": "messages"
+    },
+    {
+      "name": "Metamask",
+      "slug": "metamask"
+    },
+    {
+      "name": "Mi Browser",
+      "slug": "mi_browser"
+    },
+    {
+      "name": "Microsoft Authenticator",
+      "slug": "microsoft_authenticator"
+    },
+    {
+      "name": "Microsoft Copilot",
+      "slug": "microsoft_copilot"
+    },
+    {
+      "name": "Microsoft Edge",
+      "slug": "microsoft_edge"
+    },
+    {
+      "name": "Microsoft Excel",
+      "slug": "microsoft_excel"
+    },
+    {
+      "name": "Microsoft Launcher",
+      "slug": "microsoft_launcher"
+    },
+    {
+      "name": "Microsoft Onedrive",
+      "slug": "microsoft_onedrive"
+    },
+    {
+      "name": "Microsoft Onenote",
+      "slug": "microsoft_onenote"
+    },
+    {
+      "name": "Microsoft Outlook",
+      "slug": "microsoft_outlook"
+    },
+    {
+      "name": "Microsoft Powerpoint",
+      "slug": "microsoft_powerpoint"
+    },
+    {
+      "name": "Microsoft Teams",
+      "slug": "microsoft_teams"
+    },
+    {
+      "name": "Microsoft Todo",
+      "slug": "microsoft_todo"
+    },
+    {
+      "name": "Microsoft Word",
+      "slug": "microsoft_word"
+    },
+    {
+      "name": "Mimo",
+      "slug": "mimo"
+    },
+    {
+      "name": "Minecraft",
+      "slug": "minecraft"
+    },
+    {
+      "name": "Miro",
+      "slug": "miro"
+    },
+    {
+      "name": "Mobile Legends Bang Bang",
+      "slug": "mobile_legends_bang_bang"
+    },
+    {
+      "name": "Monzo",
+      "slug": "monzo"
+    },
+    {
+      "name": "Moovit",
+      "slug": "moovit"
+    },
+    {
+      "name": "Mubi",
+      "slug": "mubi"
+    },
+    {
+      "name": "Musixmatch",
+      "slug": "musixmatch"
+    },
+    {
+      "name": "Mx",
+      "slug": "mx"
+    },
+    {
+      "name": "Myfitnesspal",
+      "slug": "myfitnesspal"
+    },
+    {
+      "name": "Myntra",
+      "slug": "myntra"
+    },
+    {
+      "name": "N26",
+      "slug": "n26"
+    },
+    {
+      "name": "Netflix",
+      "slug": "netflix"
+    },
+    {
+      "name": "Newsbreak",
+      "slug": "newsbreak"
+    },
+    {
+      "name": "Nextdoor",
+      "slug": "nextdoor"
+    },
+    {
+      "name": "Niagara Launcher",
+      "slug": "niagara_launcher"
+    },
+    {
+      "name": "Niconico",
+      "slug": "niconico"
+    },
+    {
+      "name": "Nike",
+      "slug": "nike"
+    },
+    {
+      "name": "Nike Run Club",
+      "slug": "nike_run_club"
+    },
+    {
+      "name": "Nike Training Club",
+      "slug": "nike_training_club"
+    },
+    {
+      "name": "Noon",
+      "slug": "noon"
+    },
+    {
+      "name": "Nordpass",
+      "slug": "nordpass"
+    },
+    {
+      "name": "Nordvpn",
+      "slug": "nordvpn"
+    },
+    {
+      "name": "Notion",
+      "slug": "notion"
+    },
+    {
+      "name": "Nubank",
+      "slug": "nubank"
+    },
+    {
+      "name": "Nykaa",
+      "slug": "nykaa"
+    },
+    {
+      "name": "Obsidian",
+      "slug": "obsidian"
+    },
+    {
+      "name": "Okcupid",
+      "slug": "okcupid"
+    },
+    {
+      "name": "Okx",
+      "slug": "okx"
+    },
+    {
+      "name": "Ola",
+      "slug": "ola"
+    },
+    {
+      "name": "Omio",
+      "slug": "omio"
+    },
+    {
+      "name": "Openai Chatgpt",
+      "slug": "openai_chatgpt"
+    },
+    {
+      "name": "Opentable",
+      "slug": "opentable"
+    },
+    {
+      "name": "Opera",
+      "slug": "opera"
+    },
+    {
+      "name": "Opera Gx",
+      "slug": "opera_gx"
+    },
+    {
+      "name": "Organicmaps",
+      "slug": "organicmaps"
+    },
+    {
+      "name": "Oura",
+      "slug": "oura"
+    },
+    {
+      "name": "Ozon",
+      "slug": "ozon"
+    },
+    {
+      "name": "Pandora",
+      "slug": "pandora"
+    },
+    {
+      "name": "Paramount Plus",
+      "slug": "paramount_plus"
+    },
+    {
+      "name": "Payoneer",
+      "slug": "payoneer"
+    },
+    {
+      "name": "Paypal",
+      "slug": "paypal"
+    },
+    {
+      "name": "Paytm",
+      "slug": "paytm"
+    },
+    {
+      "name": "Peacock",
+      "slug": "peacock"
+    },
+    {
+      "name": "Peloton",
+      "slug": "peloton"
+    },
+    {
+      "name": "Perplexity",
+      "slug": "perplexity"
+    },
+    {
+      "name": "Phantom",
+      "slug": "phantom"
+    },
+    {
+      "name": "Phone",
+      "slug": "phone"
+    },
+    {
+      "name": "Phonepe",
+      "slug": "phonepe"
+    },
+    {
+      "name": "Photomath",
+      "slug": "photomath"
+    },
+    {
+      "name": "Photoroom",
+      "slug": "photoroom"
+    },
+    {
+      "name": "Piccollage",
+      "slug": "piccollage"
+    },
+    {
+      "name": "Picpay",
+      "slug": "picpay"
+    },
+    {
+      "name": "Picsart",
+      "slug": "picsart"
+    },
+    {
+      "name": "Pinduoduo",
+      "slug": "pinduoduo"
+    },
+    {
+      "name": "Pinterest",
+      "slug": "pinterest"
+    },
+    {
+      "name": "Pizzahut",
+      "slug": "pizzahut"
+    },
+    {
+      "name": "Plagueinc",
+      "slug": "plagueinc"
+    },
+    {
+      "name": "Plants Vs Zombies",
+      "slug": "plants_vs_zombies"
+    },
+    {
+      "name": "Plex",
+      "slug": "plex"
+    },
+    {
+      "name": "Pluto Tv",
+      "slug": "pluto_tv"
+    },
+    {
+      "name": "Pocket",
+      "slug": "pocket"
+    },
+    {
+      "name": "Pocket Casts",
+      "slug": "pocket_casts"
+    },
+    {
+      "name": "Poe",
+      "slug": "poe"
+    },
+    {
+      "name": "Pokemon Go",
+      "slug": "pokemon_go"
+    },
+    {
+      "name": "Pokemon Unite",
+      "slug": "pokemon_unite"
+    },
+    {
+      "name": "Poshmark",
+      "slug": "poshmark"
+    },
+    {
+      "name": "Powerdirector",
+      "slug": "powerdirector"
+    },
+    {
+      "name": "Prisma",
+      "slug": "prisma"
+    },
+    {
+      "name": "Proton Drive",
+      "slug": "proton_drive"
+    },
+    {
+      "name": "Proton Mail",
+      "slug": "proton_mail"
+    },
+    {
+      "name": "Proton Pass",
+      "slug": "proton_pass"
+    },
+    {
+      "name": "Proton Vpn",
+      "slug": "proton_vpn"
+    },
+    {
+      "name": "Pubg Mobile",
+      "slug": "pubg_mobile"
+    },
+    {
+      "name": "Qobuz",
+      "slug": "qobuz"
+    },
+    {
+      "name": "Quizlet",
+      "slug": "quizlet"
+    },
+    {
+      "name": "Quora",
+      "slug": "quora"
+    },
+    {
+      "name": "Rakuten",
+      "slug": "rakuten"
+    },
+    {
+      "name": "Real Racing 3",
+      "slug": "real_racing_3"
+    },
+    {
+      "name": "Reddit",
+      "slug": "reddit"
+    },
+    {
+      "name": "Reface",
+      "slug": "reface"
+    },
+    {
+      "name": "Remini",
+      "slug": "remini"
+    },
+    {
+      "name": "Reuters",
+      "slug": "reuters"
+    },
+    {
+      "name": "Revolut",
+      "slug": "revolut"
+    },
+    {
+      "name": "Robinhood",
+      "slug": "robinhood"
+    },
+    {
+      "name": "Roblox",
+      "slug": "roblox"
+    },
+    {
+      "name": "Roku",
+      "slug": "roku"
+    },
+    {
+      "name": "Royal Match",
+      "slug": "royal_match"
+    },
+    {
+      "name": "Rumble",
+      "slug": "rumble"
+    },
+    {
+      "name": "Ryanair",
+      "slug": "ryanair"
+    },
+    {
+      "name": "Samsung Health",
+      "slug": "samsung_health"
+    },
+    {
+      "name": "Samsung Internet",
+      "slug": "samsung_internet"
+    },
+    {
+      "name": "Samsung Notes",
+      "slug": "samsung_notes"
+    },
+    {
+      "name": "Sephora",
+      "slug": "sephora"
+    },
+    {
+      "name": "Session",
+      "slug": "session"
+    },
+    {
+      "name": "Settings",
+      "slug": "settings"
+    },
+    {
+      "name": "Shareit",
+      "slug": "shareit"
+    },
+    {
+      "name": "Shazam",
+      "slug": "shazam"
+    },
+    {
+      "name": "Shein",
+      "slug": "shein"
+    },
+    {
+      "name": "Shopee",
+      "slug": "shopee"
+    },
+    {
+      "name": "Shopify",
+      "slug": "shopify"
+    },
+    {
+      "name": "Signal",
+      "slug": "signal"
+    },
+    {
+      "name": "Skillshare",
+      "slug": "skillshare"
+    },
+    {
+      "name": "Skrill",
+      "slug": "skrill"
+    },
+    {
+      "name": "Skype",
+      "slug": "skype"
+    },
+    {
+      "name": "Skyscanner",
+      "slug": "skyscanner"
+    },
+    {
+      "name": "Slack",
+      "slug": "slack"
+    },
+    {
+      "name": "Sleepcycle",
+      "slug": "sleepcycle"
+    },
+    {
+      "name": "Smartnews",
       "slug": "smartnews"
     },
     {
-      "name": "News Break",
-      "slug": "news-break"
+      "name": "Smule",
+      "slug": "smule"
+    },
+    {
+      "name": "Snapchat",
+      "slug": "snapchat"
+    },
+    {
+      "name": "Snapdeal",
+      "slug": "snapdeal"
+    },
+    {
+      "name": "Snapseed",
+      "slug": "snapseed"
+    },
+    {
+      "name": "Snow",
+      "slug": "snow"
+    },
+    {
+      "name": "Sofi",
+      "slug": "sofi"
+    },
+    {
+      "name": "Solid Explorer",
+      "slug": "solid_explorer"
+    },
+    {
+      "name": "Solitaire",
+      "slug": "solitaire"
+    },
+    {
+      "name": "Sololearn",
+      "slug": "sololearn"
+    },
+    {
+      "name": "Sonic Dash",
+      "slug": "sonic_dash"
+    },
+    {
+      "name": "Sonyliv",
+      "slug": "sonyliv"
+    },
+    {
+      "name": "Soundcloud",
+      "slug": "soundcloud"
+    },
+    {
+      "name": "Soundhound",
+      "slug": "soundhound"
+    },
+    {
+      "name": "Southwest Airlines",
+      "slug": "southwest_airlines"
+    },
+    {
+      "name": "Spark",
+      "slug": "spark"
+    },
+    {
+      "name": "Speedtest",
+      "slug": "speedtest"
+    },
+    {
+      "name": "Splitwise",
+      "slug": "splitwise"
+    },
+    {
+      "name": "Spotify",
+      "slug": "spotify"
+    },
+    {
+      "name": "Stack Overflow",
+      "slug": "stack_overflow"
+    },
+    {
+      "name": "Starbucks",
+      "slug": "starbucks"
+    },
+    {
+      "name": "Starmaker",
+      "slug": "starmaker"
+    },
+    {
+      "name": "Steam",
+      "slug": "steam"
+    },
+    {
+      "name": "Stockx",
+      "slug": "stockx"
+    },
+    {
+      "name": "Strava",
+      "slug": "strava"
+    },
+    {
+      "name": "Stremio",
+      "slug": "stremio"
+    },
+    {
+      "name": "Stripe",
+      "slug": "stripe"
+    },
+    {
+      "name": "Stumble Guys",
+      "slug": "stumble_guys"
+    },
+    {
+      "name": "Substack Reader",
+      "slug": "substack_reader"
+    },
+    {
+      "name": "Subway",
+      "slug": "subway"
+    },
+    {
+      "name": "Sudoku",
+      "slug": "sudoku"
+    },
+    {
+      "name": "Surfshark",
+      "slug": "surfshark"
+    },
+    {
+      "name": "Swiftkey",
+      "slug": "swiftkey"
+    },
+    {
+      "name": "Swiggy",
+      "slug": "swiggy"
+    },
+    {
+      "name": "Taco Bell",
+      "slug": "taco_bell"
+    },
+    {
+      "name": "Talabat",
+      "slug": "talabat"
+    },
+    {
+      "name": "Tantan",
+      "slug": "tantan"
+    },
+    {
+      "name": "Taobao",
+      "slug": "taobao"
+    },
+    {
+      "name": "Target",
+      "slug": "target"
+    },
+    {
+      "name": "Tasker",
+      "slug": "tasker"
+    },
+    {
+      "name": "Teamviewer",
+      "slug": "teamviewer"
+    },
+    {
+      "name": "Telegram",
+      "slug": "telegram"
+    },
+    {
+      "name": "Temple Run",
+      "slug": "temple_run"
+    },
+    {
+      "name": "Temu",
+      "slug": "temu"
+    },
+    {
+      "name": "Threads",
+      "slug": "threads"
+    },
+    {
+      "name": "Threema",
+      "slug": "threema"
+    },
+    {
+      "name": "Ticktick",
+      "slug": "ticktick"
+    },
+    {
+      "name": "Tidal",
+      "slug": "tidal"
+    },
+    {
+      "name": "Tiktok",
+      "slug": "tiktok"
+    },
+    {
+      "name": "Tim Hortons",
+      "slug": "tim_hortons"
+    },
+    {
+      "name": "Tinder",
+      "slug": "tinder"
+    },
+    {
+      "name": "Todoist",
+      "slug": "todoist"
+    },
+    {
+      "name": "Tokopedia",
+      "slug": "tokopedia"
+    },
+    {
+      "name": "Torbrowser",
+      "slug": "torbrowser"
+    },
+    {
+      "name": "Toss",
+      "slug": "toss"
+    },
+    {
+      "name": "Totalcommander",
+      "slug": "totalcommander"
+    },
+    {
+      "name": "Trainline",
+      "slug": "trainline"
+    },
+    {
+      "name": "Transit",
+      "slug": "transit"
+    },
+    {
+      "name": "Trello",
+      "slug": "trello"
+    },
+    {
+      "name": "Trendyol",
+      "slug": "trendyol"
+    },
+    {
+      "name": "Tripadvisor",
+      "slug": "tripadvisor"
+    },
+    {
+      "name": "Tripcom",
+      "slug": "tripcom"
+    },
+    {
+      "name": "Trivago",
+      "slug": "trivago"
+    },
+    {
+      "name": "Trust Wallet",
+      "slug": "trust_wallet"
+    },
+    {
+      "name": "Tubi",
+      "slug": "tubi"
+    },
+    {
+      "name": "Tumblr",
+      "slug": "tumblr"
+    },
+    {
+      "name": "Tunnelbear",
+      "slug": "tunnelbear"
+    },
+    {
+      "name": "Twitch",
+      "slug": "twitch"
+    },
+    {
+      "name": "Twitter",
+      "slug": "twitter"
+    },
+    {
+      "name": "Uber",
+      "slug": "uber"
+    },
+    {
+      "name": "Ubereats",
+      "slug": "ubereats"
+    },
+    {
+      "name": "Uc Browser",
+      "slug": "uc_browser"
+    },
+    {
+      "name": "Udemy",
+      "slug": "udemy"
+    },
+    {
+      "name": "Unacademy",
+      "slug": "unacademy"
+    },
+    {
+      "name": "United Airlines",
+      "slug": "united_airlines"
+    },
+    {
+      "name": "Upwork",
+      "slug": "upwork"
+    },
+    {
+      "name": "Vampiresurvivors",
+      "slug": "vampiresurvivors"
+    },
+    {
+      "name": "Venmo",
+      "slug": "venmo"
+    },
+    {
+      "name": "Viber",
+      "slug": "viber"
+    },
+    {
+      "name": "Viki",
+      "slug": "viki"
+    },
+    {
+      "name": "Vimeo",
+      "slug": "vimeo"
+    },
+    {
+      "name": "Vinted",
+      "slug": "vinted"
+    },
+    {
+      "name": "Viu",
+      "slug": "viu"
+    },
+    {
+      "name": "Vivaldi",
+      "slug": "vivaldi"
+    },
+    {
+      "name": "Vivino",
+      "slug": "vivino"
+    },
+    {
+      "name": "Vlc",
+      "slug": "vlc"
+    },
+    {
+      "name": "Vllo",
+      "slug": "vllo"
+    },
+    {
+      "name": "Vsco",
+      "slug": "vsco"
+    },
+    {
+      "name": "Walgreens",
+      "slug": "walgreens"
+    },
+    {
+      "name": "Walmart",
+      "slug": "walmart"
+    },
+    {
+      "name": "Wattpad",
+      "slug": "wattpad"
+    },
+    {
+      "name": "Wayfair",
+      "slug": "wayfair"
+    },
+    {
+      "name": "Waze",
+      "slug": "waze"
+    },
+    {
+      "name": "Wealthsimple",
+      "slug": "wealthsimple"
+    },
+    {
+      "name": "Webex",
+      "slug": "webex"
+    },
+    {
+      "name": "Webtoon",
+      "slug": "webtoon"
+    },
+    {
+      "name": "Webull",
+      "slug": "webull"
+    },
+    {
+      "name": "Wechat",
+      "slug": "wechat"
+    },
+    {
+      "name": "Wells Fargo",
+      "slug": "wells_fargo"
+    },
+    {
+      "name": "Wesing",
+      "slug": "wesing"
+    },
+    {
+      "name": "Western Union",
+      "slug": "western_union"
+    },
+    {
+      "name": "Whatsapp",
+      "slug": "whatsapp"
+    },
+    {
+      "name": "Wikiloc",
+      "slug": "wikiloc"
+    },
+    {
+      "name": "Wikipedia",
+      "slug": "wikipedia"
+    },
+    {
+      "name": "Wildberries",
+      "slug": "wildberries"
+    },
+    {
+      "name": "Windscribe",
+      "slug": "windscribe"
     },
     {
       "name": "Wink",
       "slug": "wink"
     },
     {
-      "name": "SNOW",
-      "slug": "snow"
+      "name": "Wise",
+      "slug": "wise"
     },
     {
-      "name": "VLLO",
-      "slug": "vllo"
+      "name": "Wish",
+      "slug": "wish"
     },
     {
-      "name": "Zedge",
-      "slug": "zedge"
+      "name": "Wolfram Alpha",
+      "slug": "wolfram_alpha"
+    },
+    {
+      "name": "Wolt",
+      "slug": "wolt"
+    },
+    {
+      "name": "Wordscapes",
+      "slug": "wordscapes"
+    },
+    {
+      "name": "Wpsoffice",
+      "slug": "wpsoffice"
+    },
+    {
+      "name": "Wuthering Waves",
+      "slug": "wuthering_waves"
+    },
+    {
+      "name": "Wynk Music",
+      "slug": "wynk_music"
+    },
+    {
+      "name": "X",
+      "slug": "x"
     },
     {
       "name": "Xender",
       "slug": "xender"
     },
     {
-      "name": "Microsoft Launcher",
-      "slug": "microsoft-launcher"
+      "name": "Yahoo Mail",
+      "slug": "yahoo_mail"
     },
     {
-      "name": "Niagara Launcher",
-      "slug": "niagara-launcher"
+      "name": "Yandex Music",
+      "slug": "yandex_music"
     },
     {
-      "name": "Speedtest by Ookla",
-      "slug": "speedtest"
+      "name": "Yazio",
+      "slug": "yazio"
     },
     {
-      "name": "Sleep as Android",
-      "slug": "sleep-as-android"
+      "name": "Yelp",
+      "slug": "yelp"
     },
     {
-      "name": "Alarmy",
-      "slug": "alarmy"
+      "name": "Youku",
+      "slug": "youku"
+    },
+    {
+      "name": "Youtube",
+      "slug": "youtube"
+    },
+    {
+      "name": "Youtube Kids",
+      "slug": "youtube_kids"
+    },
+    {
+      "name": "Youtube Music",
+      "slug": "youtube_music"
+    },
+    {
+      "name": "Youtube Tv",
+      "slug": "youtube_tv"
+    },
+    {
+      "name": "Zalando",
+      "slug": "zalando"
+    },
+    {
+      "name": "Zalo",
+      "slug": "zalo"
+    },
+    {
+      "name": "Zara",
+      "slug": "zara"
+    },
+    {
+      "name": "Zarchiver",
+      "slug": "zarchiver"
+    },
+    {
+      "name": "Zedge",
+      "slug": "zedge"
+    },
+    {
+      "name": "Zee5",
+      "slug": "zee5"
+    },
+    {
+      "name": "Zelle",
+      "slug": "zelle"
+    },
+    {
+      "name": "Zenless Zone Zero",
+      "slug": "zenless_zone_zero"
+    },
+    {
+      "name": "Zepto",
+      "slug": "zepto"
+    },
+    {
+      "name": "Zerodha Kite",
+      "slug": "zerodha_kite"
+    },
+    {
+      "name": "Zohomail",
+      "slug": "zohomail"
+    },
+    {
+      "name": "Zomato",
+      "slug": "zomato"
+    },
+    {
+      "name": "Zoom",
+      "slug": "zoom"
     }
   ]
 }

@@ -1,19 +1,44 @@
 {
   "manifest_version": 3,
   "name": "Carve Batch (7-per-session)",
-  "version": "2.1.0",
-  "description": "Batch-remove backgrounds on carve.photos: pick a folder, process 7 at a time, auto-clear the site session, and resume until done. Keeps the tab awake in the background.",
-  "permissions": ["activeTab", "tabs", "browsingData", "power"],
-  "host_permissions": ["https://carve.photos/*"],
-  "background": { "service_worker": "background.js" },
+  "version": "2.3.0",
+  "description": "Batch-remove backgrounds on carve.photos: pick a folder, process 7 at a time, auto-clear the site session, and resume until done. Keeps the tab awake and strictly verifies each download.",
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "browsingData",
+    "power",
+    "downloads",
+    "cookies"
+  ],
+  "host_permissions": [
+    "https://carve.photos/*"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
   "action": {
     "default_title": "Carve Batch",
     "default_popup": "popup.html"
   },
   "content_scripts": [
     {
-      "matches": ["https://carve.photos/*"],
-      "js": ["content.js"],
+      "matches": [
+        "https://carve.photos/*"
+      ],
+      "js": [
+        "page-spoof.js"
+      ],
+      "run_at": "document_start",
+      "world": "MAIN"
+    },
+    {
+      "matches": [
+        "https://carve.photos/*"
+      ],
+      "js": [
+        "content.js"
+      ],
       "run_at": "document_idle"
     }
   ]

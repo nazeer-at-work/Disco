@@ -1,39 +1,44 @@
-# Carve Batch (7-per-session) — Chrome extension
+# Carve Batch — Chrome extension
 
-Removes backgrounds on `carve.photos` for a whole folder, working around the free
-per-session cap: it processes **N images (default 7)**, then **clears carve's site
-storage + reloads** for a fresh free session, and **auto-resumes** until the entire
-folder is done. The queue lives in the extension's storage, so it survives the
-reloads (and incognito).
+Removes backgrounds on [carve.photos](https://carve.photos) for a whole folder,
+working around the free per-session cap: it processes **N images (default 7)**, then
+**clears carve's site storage and cookies in place** for a fresh free session, and
+**auto-resumes** until the whole folder is done. It also keeps the tab **awake in the
+background** (silent-audio keep-alive + a power lock) so you can switch apps while it runs.
 
-## Load it
-1. `chrome://extensions` → enable **Developer mode**.
-2. **Load unpacked** → select `Disco/tools/carve-batch/`.
-3. Click **Details** on the extension → enable **Allow in incognito** (you said you'll run incognito).
+Now includes **strict download verification**: it uses the `chrome.downloads` API to
+track that the image file actually begins and completes writing to disk before marking
+it as downloaded. If a button click fails to trigger a download, it attempts an in-page
+direct blob fallback, detects limit modals, and stops if downloads fail consecutively.
+
+## Load / Reload it
+1. Go to `chrome://extensions` and enable **Developer mode**.
+2. If already loaded, click the **🔄 reload** icon on **Carve Batch**.
+   If loading for the first time, click **Load unpacked** → select `tools/carve-batch/`.
+3. It appears as **Carve Batch** (v2.3.0).
 
 ## Run
-1. Open an **incognito** window → `https://carve.photos/upload`.
-2. Click the extension icon → set **images per session** (7) → **Start / Resume Batch**.
-3. Pick the source folder — for this project: `Disco/assets/icons-raw/` (the white-bg originals).
-4. Leave the tab open. The in-page panel logs progress. It will: do 7 → clear session → reload → do the next 7 → … until done.
-5. Results download to your **Downloads** folder. Move them into `assets/icons-src/`, then `npm run build:icon-pack`.
+1. From the pack root, stage the icons that need transparency:
+   ```bash
+   npm run carve:stage         # -> assets/carve-batches/<set>/batch-001 … NNN
+   ```
+2. Open `https://carve.photos/upload`.
+3. Click the **Carve Batch** icon → set **images per session** (7) → **Start Batch**.
+4. Pick a folder. The in-page panel logs progress:
+   - Uploads each image.
+   - Waits for ONNX processing to render the transparent blob.
+   - Arms download watcher and clicks **Download Free**.
+   - Verifies the download file completion on disk via `chrome.downloads`.
+   - If UI click doesn't trigger download, uses direct blob fallback.
+   - Resets site data and cookies after each session of N.
+5. Results land in your **Downloads** folder.
+6. Back in the pack root, import them:
+   ```bash
+   npm run carve:import        # Downloads -> assets/icons-src/<slug>.webp
+   ```
 
-Buttons: **Reset job** clears the saved queue if you want to start over.
-
-## Important / known risks
-- **Selectors may need tuning.** The upload-input and free-download detection are
-  heuristic (carried over from the older Fluff extension). If carve.photos changed
-  its UI, edit the selectors / `scoreDownloadElement()` in `content.js`.
-- **The reset only works if the cap is client-side.** This clears localStorage,
-  sessionStorage, IndexedDB, Cache Storage and cookies for carve.photos. If carve
-  enforces the cap server-side (by IP/account), clearing storage won't reset it —
-  and incognito won't help either (same IP). Test one reset cycle first.
-- **Downloads location** is the browser default (the page triggers the download);
-  the extension can't redirect it without the `downloads` permission.
-- **Keep the machine awake** for long runs (250 imgs ≈ 36 sessions). System sleep
-  pauses it; screensaver/display-off is fine.
-
-## First-time sanity check (do this before a 250 run)
-Run with **just ~9 images** in a test folder so you see one full cycle:
-upload 7 → "Clearing carve session + reloading" → page reloads → it resumes and
-does the last 2 → "ALL DONE". If that cycle works, point it at `icons-raw/`.
+## Notes / Known Safeguards
+- **Verified Downloads ("keep a check"):** The extension will never falsely report "downloaded" unless `chrome.downloads` confirms the file has completed downloading on disk.
+- **Direct Fallback:** If carve.photos' UI button click fails or gets throttled by Chrome, it triggers a fallback download directly from the processed transparent blob.
+- **Free Quota & Limit Detection:** Detects English and Russian limit / quota popups (`daily-limit`, `limit reached`, `upgrade`, `лимит`). If a server-side IP limit is enforced, the batch halts cleanly and alerts you rather than running blank cycles.
+- **Keep-awake:** Keeps the tab active with low-level audio + power lock.

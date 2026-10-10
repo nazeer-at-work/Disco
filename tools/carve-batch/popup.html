@@ -3,23 +3,36 @@
   <head>
     <meta charset="utf-8" />
     <style>
-      body { font: 13px/1.4 -apple-system, system-ui, sans-serif; width: 280px; padding: 12px; }
-      h1 { font-size: 14px; margin: 0 0 8px; }
-      button { width: 100%; padding: 8px; margin: 4px 0; cursor: pointer; border-radius: 6px; border: 1px solid #ccc; }
-      #start { background: #2d6cdf; color: #fff; border-color: #2d6cdf; }
-      label { display: block; margin: 8px 0 2px; color: #555; }
-      input { width: 60px; }
-      #status { margin-top: 8px; color: #333; white-space: pre-wrap; }
-      .muted { color: #888; font-size: 11px; }
+      body { font: 13px/1.5 -apple-system, system-ui, sans-serif; width: 300px; padding: 14px; margin: 0; }
+      h1 { font-size: 14px; margin: 0 0 4px; font-weight: 700; }
+      .sub { font-size: 11px; color: #888; margin: 0 0 12px; }
+      label { display: block; margin: 10px 0 2px; color: #555; font-size: 12px; }
+      input[type=number] { width: 64px; padding: 4px 6px; border: 1px solid #ccc; border-radius: 5px; font-size: 13px; }
+      button { width: 100%; padding: 9px; margin: 10px 0 4px; cursor: pointer; border-radius: 7px; border: none; font-size: 13px; font-weight: 600; }
+      #start { background: #2563eb; color: #fff; }
+      #start:hover { background: #1d4ed8; }
+      #start:disabled { background: #93c5fd; cursor: default; }
+      #status { margin-top: 6px; color: #333; font-size: 12px; white-space: pre-wrap; }
+      .tip { background: #f0f9ff; border: 1px solid #bae6fd; border-radius: 6px; padding: 8px 10px; margin-top: 10px; font-size: 11px; color: #0369a1; line-height: 1.5; }
+      .tip strong { display: block; margin-bottom: 2px; color: #0c4a6e; }
     </style>
   </head>
   <body>
     <h1>Carve Batch</h1>
-    <label>Images per session (free limit)</label>
+    <div class="sub">v2.3 · verified downloads</div>
+
+    <label>Images per session (free quota)</label>
     <input id="batchSize" type="number" min="1" max="20" value="7" />
+
     <button id="start">Start Batch</button>
     <div id="status">Open https://carve.photos/upload, then Start.</div>
-    <div class="muted">Processes N, clears the site session in place, and continues until the whole folder is done. Enable "Allow in incognito" in chrome://extensions.</div>
+
+    <div class="tip">
+      <strong>📁 Pick parent folder for multi-batch</strong>
+      Navigate <em>into</em> the <code>carve</code> (or <code>assets/carve</code>) folder and click <strong>Upload</strong>.
+      All <code>batch-01</code>, <code>batch-02</code>… sub-folders inside are queued automatically — no need to pick them one by one.
+    </div>
+
     <script src="popup.js"></script>
   </body>
 </html>

@@ -23,5 +23,6 @@
     "ComponentInfo{com.sonyliv/com.sonyliv.splash.SplashActivity}"
   ],
   "speedtest": "ComponentInfo{org.zwanoo.android.speedtest/com.ookla.mobile4.screens.main.MainActivity}",
-  "google_arts_culture": "ComponentInfo{com.google.android.apps.cultural/com.google.android.apps.cultural.flutter.HomeFlutterActivity}"
+  "google_arts_culture": "ComponentInfo{com.google.android.apps.cultural/com.google.android.apps.cultural.flutter.HomeFlutterActivity}",
+  "clue_period_tracker": "ComponentInfo{com.clue.android/com.helloclue.ui.MainActivity}"
 }

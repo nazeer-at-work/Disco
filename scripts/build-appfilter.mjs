@@ -1,189 +1,243 @@
 #!/usr/bin/env node
-/**
- * Build android/app/src/main/assets/appfilter.xml (the component -> icon mapping
- * the launcher reads) from three sources, unioned per drawable:
- *
- *   1. Lawnicons' community appfilter (pinned, Apache-2.0) — broad, well-maintained
- *      coverage of component/activity names. Matched to our icons by drawable slug,
- *      app-name slug, or an explicit alias.
- *   2. The existing committed appfilter — preserves any hand-curated mappings
- *      (e.g. regional apps Lawnicons doesn't cover) for drawables we still ship.
- *   3. config/aliases.json — manual ourSlug -> lawniconsKey overrides.
- *
- * We never ship Lawnicons' icons — only the mapping data. See THIRD_PARTY_NOTICES.md.
- */
 import fs from 'node:fs';
 import fsp from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const LAWNICONS_REF = 'v2.17.1';
-const lawniconsCache = path.join(root, 'config', 'lawnicons', 'appfilter.xml');
-const lawniconsUrl = `https://raw.githubusercontent.com/LawnchairLauncher/lawnicons/${LAWNICONS_REF}/app/assets/appfilter.xml`;
-const aliasesPath = path.join(root, 'config', 'aliases.json');
-// Hand-curated slug -> [ComponentInfo{...}] mappings for apps Lawnicons doesn't
-// cover (resolved on-device via `adb shell cmd package resolve-activity`).
-const manualPath = path.join(root, 'config', 'manual-appfilter.json');
+const configPath = path.join(root, 'config', 'icon-pack.json');
 const drawableDir = path.join(root, 'android', 'app', 'src', 'main', 'res', 'drawable-nodpi');
-// The manifest references @xml/appfilter, so res/xml is authoritative; we also
-// write assets/ since some launchers look there. Both must stay in sync.
-const outputPaths = [
-  path.join(root, 'android', 'app', 'src', 'main', 'res', 'xml', 'appfilter.xml'),
-  path.join(root, 'android', 'app', 'src', 'main', 'assets', 'appfilter.xml'),
-];
 
-const NON_ICON = new Set(['ic_disco_back', 'ic_disco_mask', 'ic_disco_upon']);
-
-// Canonical slug used to match names across sources.
-function norm(value) {
-  return String(value || '')
-    .toLowerCase()
-    .replace(/[^a-z0-9]+/g, '_')
-    .replace(/^_+|_+$/g, '');
-}
+const NON_ICON = new Set([
+  'ic_disco_back',
+  'ic_disco_mask',
+  'ic_disco_upon',
+  'ic_disco_back_1',
+  'iconback',
+  'iconmask',
+  'iconupon',
+]);
 
 function xmlEscape(value) {
-  return String(value).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
-}
-
-// Pull component / drawable / name out of each <item .../> line.
-function parseAppfilterItems(xml) {
-  const items = [];
-  const re = /<item\b[^>]*\/?>/g;
-  let m;
-  while ((m = re.exec(xml)) !== null) {
-    const tag = m[0];
-    const component = (tag.match(/component="([^"]+)"/) || [])[1];
-    if (!component) continue;
-    const drawable = (tag.match(/drawable="([^"]+)"/) || [])[1] || '';
-    const name = (tag.match(/name="([^"]+)"/) || [])[1] || '';
-    items.push({ component, drawable, name });
-  }
-  return items;
-}
-
-async function ensureLawnicons() {
-  if (fs.existsSync(lawniconsCache)) {
-    return fsp.readFile(lawniconsCache, 'utf8');
-  }
-  console.log(`[appfilter] Fetching Lawnicons ${LAWNICONS_REF} appfilter...`);
-  const res = await fetch(lawniconsUrl);
-  if (!res.ok) {
-    throw new Error(`Failed to fetch Lawnicons appfilter (${res.status}). URL: ${lawniconsUrl}`);
-  }
-  const xml = await res.text();
-  await fsp.mkdir(path.dirname(lawniconsCache), { recursive: true });
-  await fsp.writeFile(lawniconsCache, xml, 'utf8');
-  return xml;
+  return String(value)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
 }
 
 async function main() {
-  // Our shipped drawables -> map of slug -> resource name.
-  const ourDrawables = fs
-    .readdirSync(drawableDir)
-    .filter(f => /^ic_disco_.+\.webp$/i.test(f))
-    .map(f => path.basename(f, path.extname(f)))
-    .filter(name => !NON_ICON.has(name) && !/^ic_disco_symbol_/.test(name));
-  const ourBySlug = new Map(); // slug -> ic_disco_<...>
-  ourDrawables.forEach(drawable => {
-    ourBySlug.set(norm(drawable.replace(/^ic_disco_/, '')), drawable);
-  });
+  const cfg = JSON.parse(await fsp.readFile(configPath, 'utf8'));
 
-  // Lawnicons index: matchSlug -> Set(component)
-  const lawnXml = await ensureLawnicons();
-  const lawnIndex = new Map();
-  const addToIndex = (slug, component) => {
-    if (!slug) return;
-    if (!lawnIndex.has(slug)) lawnIndex.set(slug, new Set());
-    lawnIndex.get(slug).add(component);
-  };
-  for (const item of parseAppfilterItems(lawnXml)) {
-    addToIndex(norm(item.drawable), item.component);
-    addToIndex(norm(item.name), item.component);
+  // All shipped webp drawables
+  const shippedDrawables = fs.existsSync(drawableDir)
+    ? fs
+        .readdirSync(drawableDir)
+        .filter((f) => f.endsWith('.webp'))
+        .map((f) => path.basename(f, path.extname(f)))
+        .filter((name) => !NON_ICON.has(name) && !name.startsWith('ic_disco_symbol_'))
+    : [];
+
+  const srcDrawables = fs.existsSync(path.join(root, 'assets', 'icons-src'))
+    ? fs
+        .readdirSync(path.join(root, 'assets', 'icons-src'))
+        .filter((f) => f.endsWith('.webp'))
+        .map((f) => path.basename(f, path.extname(f)))
+        .filter((name) => !NON_ICON.has(name) && !name.startsWith('ic_disco_symbol_'))
+    : [];
+
+  const validDrawablesSet = new Set([...shippedDrawables, ...srcDrawables]);
+  if (validDrawablesSet.size === 0) {
+    Object.keys(cfg.drawables || {}).forEach((d) => {
+      if (!NON_ICON.has(d) && !d.startsWith('ic_disco_symbol_')) {
+        validDrawablesSet.add(d);
+      }
+    });
   }
 
-  // Preserve existing curated mappings for drawables we still ship.
-  const preservedByDrawable = new Map(); // ic_<prefix>_<...> -> Set(component)
-  const existingPath = outputPaths.find(p => fs.existsSync(p));
-  if (existingPath) {
-    for (const item of parseAppfilterItems(await fsp.readFile(existingPath, 'utf8'))) {
-      if (!ourBySlug.has(norm(item.drawable.replace(/^ic_[a-z0-9]+_/, '')))) continue;
-      if (!preservedByDrawable.has(item.drawable)) preservedByDrawable.set(item.drawable, new Set());
-      preservedByDrawable.get(item.drawable).add(item.component);
+  const sortedDrawables = Array.from(validDrawablesSet).sort();
+
+  // Disco own-app mappings (for launcher self-theming)
+  const DISCO_OWN_APP_MAPPINGS = [
+    { component: 'ComponentInfo{com.disco.iconpack/com.disco.iconpack.MainActivity}', drawable: 'disco' },
+    { component: 'ComponentInfo{com.disco.iconpack/com.disco.MainActivity}', drawable: 'disco' },
+    { component: 'ComponentInfo{com.disco.iconpack/.MainActivity}', drawable: 'disco' },
+    { component: 'ComponentInfo{com.disco.iconpack/com.disco.launcher.IconPickerActivity}', drawable: 'disco' },
+    { component: 'ComponentInfo{com.disco.iconpack/com.disco.iconpack.launcher.IconPickerActivity}', drawable: 'disco' },
+  ];
+
+  // Mappings
+  const rawMappings = cfg.mappings || [];
+  const existingMappingKeys = new Set(rawMappings.map((m) => `${m.component}|${m.drawable}`));
+  for (const om of DISCO_OWN_APP_MAPPINGS) {
+    const key = `${om.component}|${om.drawable}`;
+    if (!existingMappingKeys.has(key) && validDrawablesSet.has(om.drawable)) {
+      rawMappings.push(om);
+      existingMappingKeys.add(key);
     }
   }
 
-  const aliases = fs.existsSync(aliasesPath)
-    ? JSON.parse(await fsp.readFile(aliasesPath, 'utf8'))
-    : {};
+  const validMappings = rawMappings.filter((m) => validDrawablesSet.has(m.drawable));
 
-  // Manual component mappings (keyed by normalized slug) for apps absent from
-  // Lawnicons. Merged in like preserved/alias components below.
-  const manual = fs.existsSync(manualPath)
-    ? JSON.parse(await fsp.readFile(manualPath, 'utf8'))
-    : {};
-  const manualByDrawable = new Map(); // ic_disco_<slug> -> Set(component)
-  for (const [key, comps] of Object.entries(manual)) {
-    if (key.startsWith('_')) continue; // allow a "_comment" field
-    const drawable = ourBySlug.get(norm(key));
-    if (!drawable) continue;
-    const set = manualByDrawable.get(drawable) || new Set();
-    (Array.isArray(comps) ? comps : [comps]).forEach(c => set.add(c));
-    manualByDrawable.set(drawable, set);
-  }
-
-  // Build the final mapping, deduping components globally (first drawable wins).
-  const usedComponents = new Set();
-  const rows = []; // { component, drawable }
-  const mappedDrawables = new Set();
-  const sortedSlugs = [...ourBySlug.keys()].sort();
-
-  for (const slug of sortedSlugs) {
-    const drawable = ourBySlug.get(slug);
-    const components = new Set(preservedByDrawable.get(drawable) || []);
-    (manualByDrawable.get(drawable) || []).forEach(c => components.add(c));
-
-    const aliasVal = aliases[slug] ?? aliases[drawable.replace(/^ic_disco_/, '')];
-    const candidateKeys = [slug];
-    if (Array.isArray(aliasVal)) candidateKeys.push(...aliasVal.map(norm));
-    else if (aliasVal) candidateKeys.push(norm(aliasVal));
-
-    for (const key of candidateKeys) {
-      const hits = lawnIndex.get(key);
-      if (hits) hits.forEach(c => components.add(c));
-    }
-
-    let count = 0;
-    for (const component of [...components].sort()) {
-      if (usedComponents.has(component)) continue;
-      usedComponents.add(component);
-      rows.push({ component, drawable });
-      count += 1;
-    }
-    if (count > 0) mappedDrawables.add(drawable);
-  }
-
-  rows.sort((a, b) => a.component.localeCompare(b.component));
-
-  const body = rows
-    .map(r => `    <item component="${xmlEscape(r.component)}" drawable="${r.drawable}" />`)
+  // 1. Build appfilter.xml
+  const appfilterLines = validMappings
+    .map((m) => `    <item component="${xmlEscape(m.component)}" drawable="${m.drawable}" />`)
     .join('\n');
-  const xml = `<?xml version="1.0" encoding="utf-8"?>\n<resources>\n${body}\n</resources>\n`;
-  for (const out of outputPaths) {
+  const appfilterXml = `<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <version>1</version>
+    <iconback img1="ic_disco_back" />
+    <scale factor="0.80" />
+${appfilterLines}
+</resources>\n`;
+
+  const appfilterPaths = [
+    path.join(root, 'android', 'app', 'src', 'main', 'res', 'xml', 'appfilter.xml'),
+    path.join(root, 'android', 'app', 'src', 'main', 'assets', 'appfilter.xml'),
+  ];
+  for (const out of appfilterPaths) {
     await fsp.mkdir(path.dirname(out), { recursive: true });
-    await fsp.writeFile(out, xml, 'utf8');
+    await fsp.writeFile(out, appfilterXml, 'utf8');
   }
 
-  const unmapped = [...ourBySlug.values()].filter(d => !mappedDrawables.has(d)).sort();
-  console.log(`[appfilter] ${ourBySlug.size} icons | ${mappedDrawables.size} mapped | ${rows.length} component entries (Lawnicons ${LAWNICONS_REF}).`);
-  if (unmapped.length) {
-    console.log(`[appfilter] ${unmapped.length} icons have NO component mapping yet (add to config/aliases.json or map on-device):`);
-    console.log('  ' + unmapped.map(d => d.replace(/^ic_disco_/, '')).join(', '));
+  // 2. Build drawable.xml (4 Semantic Categories: System, Google, Games, Apps)
+  const SYSTEM_SET = new Set([
+    'calculator', 'calendar', 'calendar_31', 'camera', 'clock', 'contacts',
+    'downloads', 'feedback', 'gallery', 'lineage_settings', 'messages', 'messages_2',
+    'phone', 'phone_2', 'retro_music', 'settings', 'sound_recorder', 'voice_recorder',
+    'google_calculator', 'google_calendar', 'google_camera', 'google_clock',
+    'google_contacts', 'google_messages', 'google_phone'
+  ]);
+
+  const GOOGLE_SET = new Set([
+    'chrome', 'drive', 'gmail', 'google_drive', 'google_earth', 'google_fit',
+    'google_home', 'google_keep', 'google_lens', 'google_maps', 'google_meet',
+    'google_news', 'google_one', 'google_pay', 'google_photos', 'google_play',
+    'google_play_store', 'google_podcasts', 'google_tv', 'google_voice',
+    'google_wallet', 'maps', 'photos', 'playstore', 'youtube', 'youtube_music',
+    'google_chrome', 'google_mail'
+  ]);
+
+  const GAME_SET = new Set([
+    '_2048', '_8_ball_pool', 'amongus', 'among_us', 'asphalt_9', 'brawlstars',
+    'brawl_stars', 'candy_crush_saga', 'clash_of_clans', 'clash_royale',
+    'genshin_impact', 'minecraft', 'pokemon_go', 'pubg', 'roblox', 'subway_surfers'
+  ]);
+
+  const catSystem = [];
+  const catGoogle = [];
+  const catGames = [];
+  const catApps = [];
+
+  for (const d of sortedDrawables) {
+    if (GOOGLE_SET.has(d) || d.startsWith('google_') || d.startsWith('youtube')) {
+      catGoogle.push(d);
+    } else if (SYSTEM_SET.has(d)) {
+      catSystem.push(d);
+    } else if (GAME_SET.has(d)) {
+      catGames.push(d);
+    } else {
+      catApps.push(d);
+    }
   }
+
+  let drawableXml = `<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <version>1</version>
+`;
+
+  const addCategory = (title, list) => {
+    if (!list.length) return;
+    drawableXml += `\n    <category title="${title}" />\n`;
+    for (const d of list) {
+      drawableXml += `    <item drawable="${d}" />\n`;
+    }
+  };
+
+  addCategory('System', catSystem);
+  addCategory('Google', catGoogle);
+  addCategory('Games', catGames);
+  addCategory('Apps', catApps);
+  drawableXml += `</resources>\n`;
+
+  const drawablePaths = [
+    path.join(root, 'android', 'app', 'src', 'main', 'res', 'xml', 'drawable.xml'),
+    path.join(root, 'android', 'app', 'src', 'main', 'assets', 'drawable.xml'),
+  ];
+  for (const out of drawablePaths) {
+    await fsp.mkdir(path.dirname(out), { recursive: true });
+    await fsp.writeFile(out, drawableXml, 'utf8');
+  }
+
+  // 3. Build icon_pack.xml
+  const iconPackXmlLines = sortedDrawables.map((d) => `        <item>${d}</item>`).join('\n');
+  const iconPackXml = `<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="icon_pack" translatable="false">
+${iconPackXmlLines}
+    </string-array>
+</resources>\n`;
+
+  const iconPackPaths = [
+    path.join(root, 'android', 'app', 'src', 'main', 'res', 'values', 'icon_pack.xml'),
+    path.join(root, 'android', 'app', 'src', 'main', 'res', 'xml', 'icon_pack.xml'),
+    path.join(root, 'android', 'app', 'src', 'main', 'assets', 'icon_pack.xml'),
+  ];
+  for (const out of iconPackPaths) {
+    await fsp.mkdir(path.dirname(out), { recursive: true });
+    await fsp.writeFile(out, iconPackXml, 'utf8');
+  }
+
+  // 4. Build theme_resources.xml
+  const themeAppfilterLines = validMappings
+    .map((m) => `    <AppIcon component="${xmlEscape(m.component)}" image="${m.drawable}" />`)
+    .join('\n');
+  const themeXml = `<?xml version="1.0" encoding="utf-8"?>
+<theme-resources>
+    <version>1</version>
+    <label>Disco</label>
+    <iconback img1="ic_disco_back" />
+    <scale factor="0.80" />
+${themeAppfilterLines}
+</theme-resources>\n`;
+
+  const themePaths = [
+    path.join(root, 'android', 'app', 'src', 'main', 'res', 'xml', 'theme_resources.xml'),
+    path.join(root, 'android', 'app', 'src', 'main', 'assets', 'theme_resources.xml'),
+  ];
+  for (const out of themePaths) {
+    await fsp.mkdir(path.dirname(out), { recursive: true });
+    await fsp.writeFile(out, themeXml, 'utf8');
+  }
+
+  // 5. Build appmap.xml
+  const appmapItems = validMappings
+    .map((m) => {
+      const match = m.component.match(/ComponentInfo\{[^/]+\/([^}]+)\}/);
+      const className = match ? match[1] : '';
+      if (!className) return null;
+      return `    <item class="${xmlEscape(className)}" drawable="${m.drawable}" />`;
+    })
+    .filter(Boolean)
+    .join('\n');
+  const appmapXml = `<?xml version="1.0" encoding="utf-8"?>
+<appmap>
+${appmapItems}
+</appmap>\n`;
+
+  const appmapPaths = [
+    path.join(root, 'android', 'app', 'src', 'main', 'res', 'xml', 'appmap.xml'),
+    path.join(root, 'android', 'app', 'src', 'main', 'assets', 'appmap.xml'),
+  ];
+  for (const out of appmapPaths) {
+    await fsp.mkdir(path.dirname(out), { recursive: true });
+    await fsp.writeFile(out, appmapXml, 'utf8');
+  }
+
+  console.log(`[launcher-sync] Generated appfilter.xml (${validMappings.length} mappings), drawable.xml (${sortedDrawables.length} drawables in 4 categories), icon_pack.xml, theme_resources.xml, and appmap.xml across res/xml, assets, and res/values.`);
 }
 
-main().catch(err => {
+main().catch((err) => {
   console.error(err);
   process.exit(1);
 });
