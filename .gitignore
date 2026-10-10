@@ -104,3 +104,4 @@ android/keystore/
 *.p12
 *.pfx
 android/gradle.properties
+android/app/src/main/res/*
