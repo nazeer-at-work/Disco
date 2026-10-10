@@ -1,10 +1,10 @@
 {
-  "updatedAt": "2026-10-08T08:09:27.797Z",
+  "updatedAt": "2026-10-10T08:02:15.321Z",
   "totalMasterApps": 3000,
   "stats": {
     "completed": 554,
-    "raw_generated": 4,
-    "pending": 2442,
+    "raw_generated": 9,
+    "pending": 2437,
     "completionPercentage": "18.5%"
   },
   "apps": [
@@ -171,8 +171,9 @@
       "category": "Auto & Vehicles",
       "downloads": "10B",
       "packageId": "",
-      "status": "pending",
-      "generatedAt": null
+      "status": "raw_generated",
+      "generatedAt": null,
+      "updatedAt": "2026-10-10T08:02:15.318Z"
     },
     {
       "rank": 16,
@@ -215,8 +216,9 @@
       "category": "Tools",
       "downloads": "10B",
       "packageId": "",
-      "status": "pending",
-      "generatedAt": null
+      "status": "raw_generated",
+      "generatedAt": null,
+      "updatedAt": "2026-10-10T08:01:53.959Z"
     },
     {
       "rank": 20,
@@ -259,8 +261,9 @@
       "category": "Entertainment",
       "downloads": "5B",
       "packageId": "",
-      "status": "pending",
-      "generatedAt": null
+      "status": "raw_generated",
+      "generatedAt": null,
+      "updatedAt": "2026-10-10T08:01:33.364Z"
     },
     {
       "rank": 24,
@@ -325,8 +328,9 @@
       "category": "Tools",
       "downloads": "5B",
       "packageId": "",
-      "status": "pending",
-      "generatedAt": null
+      "status": "raw_generated",
+      "generatedAt": null,
+      "updatedAt": "2026-10-10T08:01:13.154Z"
     },
     {
       "rank": 30,
@@ -336,8 +340,9 @@
       "category": "Tools",
       "downloads": "5B",
       "packageId": "",
-      "status": "pending",
-      "generatedAt": null
+      "status": "raw_generated",
+      "generatedAt": null,
+      "updatedAt": "2026-10-10T05:40:38.134Z"
     },
     {
       "rank": 31,

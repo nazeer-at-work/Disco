@@ -51,7 +51,8 @@ const height = getArg('--height', '512');
 const guidance = getArg('--guidance', '3.5');
 
 let limit = parseInt(getArg('--limit', getArg('-l', getArg('--count', getArg('-n', '1')))), 10);
-const targetSlug = getArg('--slug', getArg('-s', null));
+const targetSlug = getArg('--slug', getArg('-s', getArg('--slugs', null)));
+const overwrite = args.includes('--overwrite');
 const dryRun = args.includes('--dry-run');
 const printOnly = args.includes('--print');
 
@@ -78,10 +79,16 @@ function persistTracker() {
 let promptTemplate = '';
 if (fs.existsSync(PROMPT_TEMPLATE_PATH)) {
   const content = fs.readFileSync(PROMPT_TEMPLATE_PATH, 'utf8');
-  const marker = content.indexOf('---');
-  promptTemplate = marker !== -1 ? content.substring(marker + 3).trim() : content.trim();
+  const markerIdx = content.search(/^---\s*$/m);
+  if (markerIdx !== -1) {
+    const afterMarker = content.slice(markerIdx);
+    const newlineIdx = afterMarker.indexOf('\n');
+    promptTemplate = (newlineIdx !== -1 ? afterMarker.slice(newlineIdx + 1) : afterMarker).trim();
+  } else {
+    promptTemplate = content.trim();
+  }
 } else {
-  promptTemplate = `Convert the attached image into a premium disco-themed 3D app icon. Treat the attached image purely as the shape-and-color source. Preserve the exact shape, silhouette, and colors shown in the attached image.`;
+  promptTemplate = `Convert the attached image into a glossy, vibrant 3D app icon. Render the exact subject and exact colors from the attached image into a smooth 3D enamel and glossy finish with polished rounded bevels and clean specular shine. Strictly retain all original colors and shapes from the reference image without desaturating, recoloring, or altering any hue. Solid flat pure white background (#FFFFFF). Clean centered composition, no text, no glow.`;
 }
 
 // Load brand locks
@@ -189,17 +196,21 @@ async function getReferenceImage(app, slug, packageId) {
 // Select items
 let selected = [];
 if (targetSlug) {
-  const hit = allApps.find((a) => a.slug === targetSlug || a.canonicalSlug === targetSlug);
-  if (hit) selected = [hit];
-  else {
-    console.error(`❌ App slug "${targetSlug}" not found in tracker.`);
+  const targetList = targetSlug.split(',').map((s) => s.trim().toLowerCase());
+  for (const slug of targetList) {
+    const hit = allApps.find((a) => a.slug === slug || a.canonicalSlug === slug);
+    if (hit) selected.push(hit);
+    else console.warn(`⚠️ App slug "${slug}" not found in tracker.`);
+  }
+  if (selected.length === 0) {
+    console.error(`❌ None of the requested slugs were found.`);
     process.exit(1);
   }
 } else {
   const pendingApps = allApps.filter((a) => {
     if (a.status !== 'pending') return false;
     const rawFile = path.join(RAW_DIR, `${a.slug}.webp`);
-    if (fs.existsSync(rawFile)) {
+    if (!overwrite && fs.existsSync(rawFile)) {
       a.status = 'raw_generated';
       return false;
     }
