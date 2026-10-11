@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 import fs from 'node:fs';
+import os from 'node:os';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { execSync } from 'node:child_process';
@@ -37,14 +38,21 @@ const getArg = (name, fallback) => {
 
 // Find mflux edit binary
 const candidateMfluxPaths = [
+  process.env.MFLUX_COMMAND,
   path.join(packRoot, '.mflux-venv', 'bin', 'mflux-generate-flux2-edit'),
-  '/Users/nazeer/Desktop/Icon Packs/Fluffy/.mflux-venv/bin/mflux-generate-flux2-edit',
-  '/Users/nazeer/Desktop/icon packs/Fluffy/.mflux-venv/bin/mflux-generate-flux2-edit',
-  'mflux-generate-flux2-edit',
-];
-let mfluxCmd = candidateMfluxPaths.find((p) => fs.existsSync(p)) || 'mflux-generate-flux2-edit';
+  path.resolve(packRoot, '..', 'Fluff', '.mflux-venv', 'bin', 'mflux-generate-flux2-edit'),
+].filter(Boolean);
+const mfluxCmd = candidateMfluxPaths.find((candidate) => fs.existsSync(candidate));
 
-const modelPath = process.env.FLUX_MODEL_PATH || getArg('--model', '/Users/nazeer/AI/flux-klein/flux2-klein-4b-mlx');
+if (!mfluxCmd) {
+  throw new Error(
+    `MFLUX executable not found. Checked: ${candidateMfluxPaths.join(', ')}. ` +
+      'Set MFLUX_COMMAND to the full mflux-generate-flux2-edit path.',
+  );
+}
+
+const defaultModelPath = path.join(os.homedir(), 'AI', 'flux-klein', 'flux2-klein-4b-mlx');
+const modelPath = process.env.FLUX_MODEL_PATH || getArg('--model', defaultModelPath);
 const steps = getArg('--steps', '4');
 const width = getArg('--width', '512');
 const height = getArg('--height', '512');
@@ -106,12 +114,12 @@ async function getReferenceImage(app, slug, packageId) {
     path.join(REF_DIR, `${slug}.png`),
     path.join(REF_DIR, `${slug}.webp`),
     path.join(packRoot, 'assets', 'logo-refs', `${slug}.png`),
-    `/Users/nazeer/Desktop/icon packs/spidey-icon-pack/assets/icon-generation-references/${slug}.png`,
-    `/Users/nazeer/Desktop/icon packs/spidey-icon-pack/assets/icon-generation-references/${packageId || slug}.png`,
-    `/Users/nazeer/Desktop/icon packs/Fluffy/assets/icon-generation-references/${slug}.png`,
-    `/Users/nazeer/Desktop/icon packs/Fluffy/assets/icon-generation-references/${packageId || slug}.png`,
-    `/Users/nazeer/Desktop/icon packs/pixel-icon-pack/assets/icon-generation-references/${slug}.png`,
-    `/Users/nazeer/Desktop/icon packs/3d-icon-pack/assets/icon-generation-references/${slug}.png`,
+    path.resolve(packRoot, '..', 'spidey', 'assets', 'icon-generation-references', `${slug}.png`),
+    path.resolve(packRoot, '..', 'spidey', 'assets', 'icon-generation-references', `${packageId || slug}.png`),
+    path.resolve(packRoot, '..', 'Fluff', 'assets', 'icon-generation-references', `${slug}.png`),
+    path.resolve(packRoot, '..', 'Fluff', 'assets', 'icon-generation-references', `${packageId || slug}.png`),
+    path.resolve(packRoot, '..', 'pixel', 'assets', 'icon-generation-references', `${slug}.png`),
+    path.resolve(packRoot, '..', '3d-icon-pack', 'assets', 'icon-generation-references', `${slug}.png`),
   ];
   for (const p of localCandidates) {
     if (fs.existsSync(p)) return p;

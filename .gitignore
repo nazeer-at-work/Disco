@@ -79,7 +79,7 @@ yarn-error.log
 !.env.example
 
 # Icon masters (large source images) stay local — only the capped drawables ship.
-assets/icons-raw/
+# assets/icons-raw/
 assets/icons-src/
 # Local carve batch folders (7 images each, derived from icons-raw).
 assets/carve-batches/
