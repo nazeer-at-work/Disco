@@ -8,7 +8,6 @@ import {
   RowMoonIcon,
   RowPenIcon,
   RowShareIcon,
-  RowShieldIcon,
   RowUserIcon,
 } from '../assets/icons/SettingsTabIcons';
 import { SettingsTabScreenProps } from './SettingsTabScreen.types';
@@ -23,7 +22,6 @@ export function SettingsTabScreen({
   onApply,
   onOpenLauncher,
   onOpenRequest,
-  onOpenReport,
   onCheckForUpdates,
   onRateAndReview,
   onShareApp,
@@ -113,15 +111,6 @@ export function SettingsTabScreen({
               <RowPenIcon />
             </View>
             <Text style={styles.rowLabel}>Request new icon</Text>
-            <View style={styles.rowChevron}>
-              <ChevronRightIcon />
-            </View>
-          </Pressable>
-          <Pressable style={styles.row} onPress={onOpenReport}>
-            <View style={styles.rowLeadingIcon}>
-              <RowShieldIcon />
-            </View>
-            <Text style={styles.rowLabel}>Report mismatched icons</Text>
             <View style={styles.rowChevron}>
               <ChevronRightIcon />
             </View>

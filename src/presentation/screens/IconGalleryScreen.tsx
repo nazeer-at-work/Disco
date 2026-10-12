@@ -609,7 +609,7 @@ export function IconGalleryScreen({
 
     const manualPath =
       launcherManualPaths[launcher.id] ??
-      `${launcher.name} settings -> icon pack -> Fluff`;
+      `${launcher.name} settings -> icon pack -> ${appLinks.appName}`;
 
     if (launcher.id === 'samsung') {
       setApplyModalConfig({
@@ -704,7 +704,7 @@ export function IconGalleryScreen({
     } catch {
       Alert.alert(
         'Unable to open store',
-        'Please open Play Store and search for Fluff.',
+        `Please open Play Store and search for ${appLinks.appName}.`,
       );
     }
   };
@@ -729,7 +729,7 @@ export function IconGalleryScreen({
     } catch {
       Alert.alert(
         'Unable to open store',
-        'Please open Play Store and rate Fluff.',
+        `Please open Play Store and rate ${appLinks.appName}.`,
       );
     }
   };
@@ -739,7 +739,7 @@ export function IconGalleryScreen({
 
     try {
       await Share.share({
-        message: `Try Fluff icon pack: ${webStoreUrl}`,
+        message: `Try ${appLinks.appName} icon pack: ${webStoreUrl}`,
       });
     } catch {
       Alert.alert('Unable to share', 'Please share the app link manually.');
@@ -839,7 +839,6 @@ export function IconGalleryScreen({
               onApply={handleApply}
               onOpenLauncher={handleOpenLauncher}
               onOpenRequest={() => openFeedbackPicker('request')}
-              onOpenReport={() => openFeedbackPicker('report')}
               onCheckForUpdates={handleCheckForUpdates}
               onRateAndReview={handleRateAndReview}
               onShareApp={handleShareApp}
@@ -923,11 +922,7 @@ export function IconGalleryScreen({
             ]}
           >
             <View style={styles.previewHandle} />
-            <Text style={styles.feedbackTitle}>
-              {feedbackMode === 'request'
-                ? 'Request New Icons'
-                : 'Report Mismatched Icons'}
-            </Text>
+            <Text style={styles.feedbackTitle}>Request New Icons</Text>
             <Text style={styles.feedbackSubtitle}>
               Select one or more installed apps.
             </Text>
@@ -1136,9 +1131,7 @@ export function IconGalleryScreen({
                 <View style={styles.feedbackOpeningCard}>
                   <ActivityIndicator color="#304AA0" size="large" />
                   <Text style={styles.feedbackOpeningText}>
-                    {feedbackMode === 'request'
-                      ? 'Submitting icon request...'
-                      : 'Submitting mismatch report...'}
+                    Submitting icon request...
                   </Text>
                 </View>
               </View>
@@ -1169,9 +1162,7 @@ export function IconGalleryScreen({
           >
             <Image source={successImageSource} style={styles.feedbackSuccessImage} />
             <Text style={styles.feedbackSuccessTitle}>
-              {feedbackMode === 'request'
-                ? 'Request sent successfully'
-                : 'Report sent successfully'}
+              Request sent successfully
             </Text>
             <Pressable
               style={styles.feedbackSuccessButton}

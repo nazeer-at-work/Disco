@@ -9,7 +9,6 @@ export type SettingsTabScreenProps = {
   onApply: () => void;
   onOpenLauncher: (launcher: SupportedLauncher) => void;
   onOpenRequest: () => void;
-  onOpenReport: () => void;
   onCheckForUpdates: () => void;
   onRateAndReview: () => void;
   onShareApp: () => void;
