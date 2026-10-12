@@ -23351,6 +23351,25 @@
     "drawable": "ibispaint_x"
   },
   {
+    "id": "ic_disco_disco",
+    "name": "IC Disco Disco",
+    "label": "IC Disco Disco",
+    "hue": "#70E177",
+    "category": "Icons",
+    "preview": {
+      "color": "#70E177",
+      "symbol": "ic_disco_disco",
+      "source": {
+        "uri": "ic_disco_disco"
+      }
+    },
+    "tags": [
+      "ic disco disco"
+    ],
+    "requiresCoin": false,
+    "drawable": "ic_disco_disco"
+  },
+  {
     "id": "icc",
     "name": "Icc",
     "label": "Icc",

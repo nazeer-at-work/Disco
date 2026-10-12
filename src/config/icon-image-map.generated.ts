@@ -1231,6 +1231,7 @@ export const iconImageMap: Record<string, ImageSourcePropType> = {
   'i_am': { uri: 'i_am' },
   'i_am_sober': { uri: 'i_am_sober' },
   'ibispaint_x': { uri: 'ibispaint_x' },
+  'ic_disco_disco': { uri: 'ic_disco_disco' },
   'icc': { uri: 'icc' },
   'icon_pack_studio': { uri: 'icon_pack_studio' },
   'icsee': { uri: 'icsee' },

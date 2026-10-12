@@ -24,7 +24,8 @@
     "carve:import": "node scripts/carve-import.mjs",
     "review:recarve": "node scripts/recarve-server.mjs",
     "generate:recarve-html": "node scripts/generate-recarve-html.mjs",
-    "apply:recarve": "node scripts/apply-recarve.mjs"
+    "apply:recarve": "node scripts/apply-recarve.mjs",
+    "normalize:icons": "node scripts/normalize-icon-sizes.mjs"
   },
   "dependencies": {
     "@react-native-vector-icons/material-icons": "^12.4.1",
