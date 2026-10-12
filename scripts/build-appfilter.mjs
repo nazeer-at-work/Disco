@@ -86,8 +86,8 @@ async function main() {
   const appfilterXml = `<?xml version="1.0" encoding="utf-8"?>
 <resources>
     <version>1</version>
-    <iconback img1="ic_disco_back" />
-    <scale factor="0.80" />
+    <scale factor="0.8" />
+    <iconback img1="ic_disco_back" img2="ic_disco_back" img3="ic_disco_back" img4="ic_disco_back" img5="ic_disco_back" />
 ${appfilterLines}
 </resources>\n`;
 

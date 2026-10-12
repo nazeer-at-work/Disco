@@ -9,9 +9,13 @@ export type SettingsTabScreenProps = {
   onApply: () => void;
   onOpenLauncher: (launcher: SupportedLauncher) => void;
   onOpenRequest: () => void;
+  onOpenReport: () => void;
   onCheckForUpdates: () => void;
   onRateAndReview: () => void;
   onShareApp: () => void;
+  freeCoins: number;
+  paidCoins: number;
+  onBuyCoins: () => void;
 };
 
 export type ChevronDownIconProps = {
