@@ -6,7 +6,7 @@ Disco: 3D Glossy Icon Pack
 <!-- 26 chars -->
 
 ## Short Description (max 80 chars)
-1,000+ glossy 3D chrome & holographic icons for dark & AMOLED home screens.
+3,000+ glossy 3D chrome & holographic icons for dark & AMOLED home screens.
 <!-- 75 chars -->
 
 ## Full Description (max 4,000 chars)
@@ -17,8 +17,8 @@ Turn your phone into a futuristic showcase with Disco: a premium 3D icon pack fe
 Every icon keeps your favorite apps instantly recognizable while bathing your home screen in a vibrant, futuristic, and glossy 3D aesthetic that pops on dark, AMOLED, and custom wallpapers.
 
 WHAT YOU GET
-• 1,000+ handcrafted glossy 3D icons (with regular updates)
-• 15,000+ app activities and launcher mappings for broad coverage
+• 3,000+ handcrafted glossy 3D icons (with regular updates)
+• 29,200+ app activities and launcher mappings for broad coverage
 • Reflective chrome edges, holographic highlights, and realistic 3D depth
 • True-to-brand color palettes enhanced with glossy reflections
 • Built-in Icon Browser with instant search and preview
