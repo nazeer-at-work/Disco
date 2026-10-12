@@ -3985,6 +3985,10 @@
       "slug": "galaxywearable"
     },
     {
+      "name": "Gallery - Photo Gallery",
+      "slug": "gallery"
+    },
+    {
       "name": "Moto Gametime",
       "slug": "game_center"
     },
@@ -8791,6 +8795,10 @@
     {
       "name": "radiko",
       "slug": "radiko"
+    },
+    {
+      "name": "Radio",
+      "slug": "radio"
     },
     {
       "name": "Radio Garden",

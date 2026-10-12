@@ -18924,6 +18924,25 @@
     "drawable": "galaxywearable"
   },
   {
+    "id": "gallery",
+    "name": "Gallery",
+    "label": "Gallery",
+    "hue": "#806BE1",
+    "category": "Icons",
+    "preview": {
+      "color": "#806BE1",
+      "symbol": "gallery",
+      "source": {
+        "uri": "gallery"
+      }
+    },
+    "tags": [
+      "gallery"
+    ],
+    "requiresCoin": false,
+    "drawable": "gallery"
+  },
+  {
     "id": "game_center",
     "name": "Game Center",
     "label": "Game Center",
@@ -41779,6 +41798,25 @@
     ],
     "requiresCoin": false,
     "drawable": "radiko"
+  },
+  {
+    "id": "radio",
+    "name": "Radio",
+    "label": "Radio",
+    "hue": "#7087DB",
+    "category": "Icons",
+    "preview": {
+      "color": "#7087DB",
+      "symbol": "radio",
+      "source": {
+        "uri": "radio"
+      }
+    },
+    "tags": [
+      "radio"
+    ],
+    "requiresCoin": false,
+    "drawable": "radio"
   },
   {
     "id": "radio_garden",

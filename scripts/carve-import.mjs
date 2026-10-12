@@ -205,11 +205,48 @@ console.log(`\n🔄 Converting cutouts to WebP and importing to assets/icons-src
 
 for (const [slug, item] of filesBySlug.entries()) {
   try {
-    const buf = await sharp(item.filePath)
-      .trim()
+    const { data, info } = await sharp(item.filePath)
       .ensureAlpha()
-      .webp({ quality: 92, alphaQuality: 100, effort: 4 })
+      .raw()
+      .toBuffer({ resolveWithObject: true });
+
+    let minX = info.width, minY = info.height, maxX = -1, maxY = -1;
+    for (let y = 0; y < info.height; y++) {
+      for (let x = 0; x < info.width; x++) {
+        if (data[(y * info.width + x) * 4 + 3] > 8) {
+          if (x < minX) minX = x;
+          if (y < minY) minY = y;
+          if (x > maxX) maxX = x;
+          if (y > maxY) maxY = y;
+        }
+      }
+    }
+    if (maxX < 0 || maxY < 0) {
+      minX = 0; minY = 0; maxX = info.width - 1; maxY = info.height - 1;
+    }
+    const bw = maxX - minX + 1;
+    const bh = maxY - minY + 1;
+    const canvasSize = 512;
+    const targetPx = Math.round(canvasSize * 0.80);
+    const cropped = sharp(item.filePath).extract({ left: minX, top: minY, width: bw, height: bh });
+    const resized = await cropped.resize({
+      width: bw >= bh ? targetPx : null,
+      height: bh > bw ? targetPx : null,
+      fit: 'contain',
+    }).toBuffer();
+
+    const buf = await sharp({
+      create: {
+        width: canvasSize,
+        height: canvasSize,
+        channels: 4,
+        background: { r: 0, g: 0, b: 0, alpha: 0 },
+      },
+    })
+      .composite([{ input: resized, gravity: 'center' }])
+      .webp({ quality: 95, alphaQuality: 100, effort: 4 })
       .toBuffer();
+
     fs.writeFileSync(path.join(outDir, `${slug}.webp`), buf);
     imported++;
     if (imported % 200 === 0 || imported === filesBySlug.size) {
@@ -259,6 +296,26 @@ if (fs.existsSync(samsungDir)) {
       } catch (e) {}
     }
     console.log(`🧹 Cleared completed assets/carve/batch-samsung/ folder.`);
+  }
+}
+
+// Clean up batch-gallery-radio folder if completed
+const galleryRadioDir = path.join(carveDir, 'batch-gallery-radio');
+if (fs.existsSync(galleryRadioDir)) {
+  const grFiles = fs.readdirSync(galleryRadioDir).filter((f) => f.endsWith('.webp'));
+  const allImported = grFiles.length > 0 && grFiles.every((f) => fs.existsSync(path.join(outDir, f)));
+  if (allImported) {
+    fs.rmSync(galleryRadioDir, { recursive: true, force: true });
+    if (fs.existsSync(manifestPath)) {
+      try {
+        const m = JSON.parse(fs.readFileSync(manifestPath, 'utf8'));
+        if (m.batches && m.batches['batch-gallery-radio']) {
+          delete m.batches['batch-gallery-radio'];
+          fs.writeFileSync(manifestPath, JSON.stringify(m, null, 2), 'utf8');
+        }
+      } catch (e) {}
+    }
+    console.log(`🧹 Cleared completed assets/carve/batch-gallery-radio/ folder.`);
   }
 }
 

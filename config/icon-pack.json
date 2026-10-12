@@ -18443,6 +18443,18 @@
       "rasterSource": "wonderland",
       "rasterDrawable": "wonderland",
       "includeBase": false
+    },
+    "gallery": {
+      "template": "raster",
+      "rasterSource": "gallery",
+      "rasterDrawable": "gallery",
+      "includeBase": false
+    },
+    "radio": {
+      "template": "raster",
+      "rasterSource": "radio",
+      "rasterDrawable": "radio",
+      "includeBase": false
     }
   },
   "drawableDefaults": {
@@ -60531,6 +60543,1494 @@
       "drawable": "galaxywearable"
     },
     {
+      "component": ":GALLERY",
+      "drawable": "gallery"
+    },
+    {
+      "component": "album.photogallery.photoviewer.picture.galleryapp/album.photogallery.photoviewer.picture.galleryapp.activities.activity.SplashBaseActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "apw.sec.android.gallery/apw.sec.android.gallery.MainActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "best.gallery.albums/best.gallery.albums.activities.SplashActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "cc.chenhe.weargallery/cc.chenhe.weargallery.ui.main.MainAty",
+      "drawable": "gallery"
+    },
+    {
+      "component": "cn.nubia.gallery3d/cn.nubia.gallery3d.app.Gallery",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.ai.gallery.android/com.ai.gallery.android.activities.SplashActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.aidroid.gallery/com.aidroid.gallery.sb.app.GnGallery",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.aks_labs.tulsi/com.aks_labs.tulsi.MainActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.akslabs.cloudgallery/com.akslabs.cloudgallery.ui.MainActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.album.photogallery.photomanager.gallerylock/com.album.photogallery.photomanager.gallerylock.RecentActivities.SplashMainActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.alensw.PicFolder/com.alensw.PicFolder.GalleryActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.alensw.PicFolder/com.alensw.PicFolder.MainActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.alsaifgallery/com.alsaifgallery.MainActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.android.gallery3d/com.amazon.gallery3d.app.AmazonGalleryActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.android.gallery3d/com.android.gallery3d.app.Gallery",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.android.gallery3d/com.android.gallery3d.app.GalleryActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.android.gallery3d/com.android.gallery3d.app.HmctGalleryActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.android.gallery3d/com.android.gallery3d.app.StarosGalleryActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.android.gallery3d/com.android.gallery3d.v2.app.GalleryActivity2",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.android.gallery3d/com.android.newgallery.NewGallery",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.android.gallery3d/com.cooliris.media.Gallery",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.android.gallery3d/com.huawei.gallery.app.GalleryMain",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.android.gallery3d/com.zte.gallery3d.activity.launcher.MainGallery",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.appsgenz.launcherios.pro/com.android.launcher3.feature.gallery.SplashGalleryActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.appslab.gallery/com.appslab.gallery.MainActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.asianmobile.launcheros/com.asianmobile.launcheros.ui.component.photo.PhotoActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.asus.gallery/com.asus.gallery.app.EPhotoActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.atomicadd.fotos/com.atomicadd.fotos.FotosSplashScreen",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.atomicadd.fotos/com.atomicadd.fotos.SplashScreen",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.babydola.launcherios/com.android.launcher3.feature.gallery.SplashGalleryActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.beresnevgames.gallerycoloringbook/com.unity3d.player.UnityPlayerActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.bhanu.galleryslideshow/com.bhanu.galleryslideshow.ui.MainActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.botpa.turbophotos/com.botpa.turbophotos.screens.home.HomeActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.coloros.gallery3d/com.coloros.gallery3d.app.MainActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.coloros.gallery3d/com.oppo.gallery3d.app.Gallery",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.dddev.gallery.album.photo.editor/com.gallery.activities.SplashActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.diune.pictures/com.diune.pictures.ui.Bridge",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.diune.pictures/com.diune.pikture_ui.ui.Bridge",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.diune.pictures/com.diune.pikture_ui.ui.main.MainActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.dot.gallery.gplay/com.dot.gallery.feature_node.presentation.main.MainActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.dot.gallery.gplay/com.dot.gallery.Launcher_ReFra",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.dot.gallery/com.dot.gallery.feature_node.presentation.main.MainActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.dot.gallery/com.dot.gallery.Launcher_Gallery_GalleryLogo",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.eagle.gallery.photos.videos.album.hd.gallery.editor/com.eagle.gallery.pro.activities.MainActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.easy.apps.easygallerypro/com.easy.apps.easygallery.activity.Splash",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.ebook.imagemanager/com.xrz.photo.ImageFolderAt",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.ebook.imagemanager/com.xrz.photo.MainActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.flir.myflir.s62/com.flir.monarch.ui.library.LibraryActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.flir.myflir.s62/com.flir.monarch.ui.MainActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.flir.myflir/com.flir.monarch.ui.library.LibraryActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.flir.myflir/com.flir.monarch.ui.MainActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.flir.tiger/com.flir.monarch.ui.library.LibraryActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.flir.tiger/com.flir.monarch.ui.MainActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.galleria.magic.photogallery/com.galleria.magic.photogallery.activity.SplashActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.Gallery_Krrish/com.zipoapps.premiumhelper.ui.splash.PHSplashActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.gallery.albums.photomanager/com.gallery.albums.photomanager.activity.SplashActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.gallery.easy.photo.editor.album.lyrical.video.status.maker/com.example.galleryai.Activities.Splash",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.gallery.photo.galerie.galeria.foto.galerij.galeri.galleri.galery/com.photo.gallery.secret.album.video.status.maker.ui.activities.SplashActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.gallery.photogallery.picturegallery.imagegallery.hidepictures.lockgallery.video/com.dani.gallery.ui.activity.main.MainActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.gallery.photos.editpic/com.gallery.photos.editpic.Activity.SplashActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.gallery.picturegallery.photomanager/com.picturegallery.photos.activity.SplashActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.gallery20/com.gallery20.HomeActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.galleryneu.hidepicture.photovault.photography/com.galleryneu.hidepicture.photovault.photography.all_activities.SplashMainGalleryActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.gallerypicture.photo.photomanager/com.gallerypicture.photo.photomanager.presentation.features.launcher.LauncherActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.gionee.gallery/com.gionee.gallery.sb.app.GnGallery",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.github.vauvenal5.yaga/com.github.vauvenal5.yaga.MainActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.google.android.gallery3d/com.android.gallery3d.app.Gallery",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.google.android.gallery3d/com.android.gallery3d.app.GalleryActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.google.android.gallery3d/com.cooliris.media.Gallery",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.hdgallery.socialvideopure.downloaderpsone/com.hdgallery.socialvideopure.downloaderpsone.Activity.SplashActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.hihonor.photos/com.hihonor.gallery.app.GalleryMain",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.hihonor.photos/com.huawei.gallery.app.GalleryMain",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.hld.anzenbokusu/com.hld.anzenbokusu.splash",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.igallery.iphotos.collectiongallery/com.igallery.iphotos.ui.splash.SplashActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.isfresh27.gallery/com.isfresh27.gallery.activities.SplashActivity.Red",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.jag.essentialgallery/com.jag.quicksimplegallery.activity.MainFragmentActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.jag.gallery.elite.pro/com.jag.quicksimplegallery.activity.MainFragmentActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.jio.photos/com.jio.home.ui.SplashActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.kahluabear.nothing_gallery/com.kahluabear.nothing_gallery.MainActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.launcheros.fastlauncher/com.launcheros.fastlauncher.feature.gallery.SplashPhotoActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.libremobileos.glimpse/org.lineageos.glimpse.MainActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.littlefatfish.photo/com.littlefatfish.lib.viewer.ViewPhotoList",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.meizu.media.gallery/com.meizu.media.gallery.GalleryActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.microsoft.skydrive/com.microsoft.skydrive.photos.PhotosLauncherActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.miui.gallery/.activity.HomePageActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.miui.gallery/com.miui.gallery.activity.HomePageActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.miui.gallery/com.miui.gallery.app.Gallery",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.miui.gallery/com.miui.gallery.MainActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.mmb.gallery/com.mmb.gallery.activities.SplashActivity.Orange",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.mobsnake.verticalgallery/com.android.gallery3d.app.GalleryActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.motorola.cn.gallery/com.motorola.cn.gallery.app.GalleryActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.motorola.MotGallery2/com.android.gallery3d.app.GalleryActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.nkming.nc_photos.gitlab/com.nkming.nc_photos.MainActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.oneplus.gallery/.OPGalleryActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.oneplus.gallery/com.coloros.gallery3d.app.MainActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.oneplus.gallery/com.oneplus.gallery.app.MainActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.oneplus.gallery/com.oneplus.gallery.app.MainActivity#0",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.oneplus.gallery/com.oneplus.gallery.OPGalleryActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.onyx.gallery/com.onyx.gallery.activities.NewMainActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.perracolabs.pixtica/app.application.activities.CameraActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.perracolabs.pixtica/app.application.activities.GalleryActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.photo.gallery.photo.albums/com.photo.gallery.photo.albums.activity.SplashActivity1",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.photogallery.galleryvault.galleryapp/com.photogallery.galleryvault.galleryapp.activities.SplashActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.photography.gallery/com.photography.gallery.activities.SplashActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.photography.hdphotogallery.android.gallery/com.photography.hdphotogallery.android.gallery.activities.SplashActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.Photos_Videos_Gallery/com.Photos_Videos_Gallery.Activities.splash_activity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.photos.gallery.gallerypro/com.photos.gallery.gallerypro.activity.SplashActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.photovault.hdgallery.photomanager.imagegallery/com.photovault.hdgallery.photomanager.imagegallery.Act.Act_Splash",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.picturegallery.gallery.photomanager/com.picturegallery.gallery.photomanager.Activityy.SplashActivityNew",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.pixel.gallery/com.pixel.gallery.MainActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.quickpicplus.gallery.photoeditor/com.quickpicplus.gallery.photoeditor.activities.SplashActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.sec.android.gallery3d/com.sec.android.gallery3d.app.Gallery",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.sec.android.gallery3d/com.sec.android.gallery3d.app.GalleryOpaqueActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.simplemobiletools.gallery/com.onyx.gallery.activities.NewMainActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.simplemobiletools.gallery/com.simplemobiletools.gallery.activities.MainActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.snackshotvideos.videostatus.videosaver/com.snackshotvideos.videostatus.videosaver.activitys.SplashActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.sonyericsson.album/com.sonyericsson.album.MainActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.tcl.gallery/com.tcl.gallery.app.GalleryActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.tclhz.gallery/com.tcl.gallery.app.GalleryActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.threestar.gallery/com.android.gallery.activities.SplashActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.visky.gallery/com.visky.gallery.ui.activity.SplashActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.vivo.gallery/com.android.gallery3d.vivo.GalleryTabActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.vyom.gallery.lite/com.vyom.gallery.G",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.vyom.gallery/com.vyom.gallery.G",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.waophoto.smartphoto/com.waophoto.smartphoto.ui.WelcomeActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.zs.android.apps.photos/com.zs.gallery.MainActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.zui.gallery/com.zui.gallery.app.GalleryActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "com.zui.gallery/com.zui.gallery.main.ui.activity.MainActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{album.photogallery.photoviewer.picture.galleryapp/album.photogallery.photoviewer.picture.galleryapp.activities.activity.SplashBaseActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{apw.sec.android.gallery/apw.sec.android.gallery.MainActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{best.gallery.albums/best.gallery.albums.activities.SplashActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{cc.chenhe.weargallery/cc.chenhe.weargallery.ui.main.MainAty}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{cn.nubia.gallery3d/cn.nubia.gallery3d.app.Gallery}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.ai.gallery.android/com.ai.gallery.android.activities.SplashActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.aidroid.gallery/com.aidroid.gallery.sb.app.GnGallery}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.aks_labs.tulsi/com.aks_labs.tulsi.MainActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.akslabs.cloudgallery/com.akslabs.cloudgallery.ui.MainActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.album.photogallery.photomanager.gallerylock/com.album.photogallery.photomanager.gallerylock.RecentActivities.SplashMainActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.alensw.PicFolder/com.alensw.PicFolder.GalleryActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.alensw.PicFolder/com.alensw.PicFolder.MainActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.alsaifgallery/com.alsaifgallery.MainActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.android.gallery3d/com.amazon.gallery3d.app.AmazonGalleryActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.android.gallery3d/com.android.gallery3d.app.Gallery}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.android.gallery3d/com.android.gallery3d.app.GalleryActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.android.gallery3d/com.android.gallery3d.app.HmctGalleryActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.android.gallery3d/com.android.gallery3d.app.StarosGalleryActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.android.gallery3d/com.android.gallery3d.v2.app.GalleryActivity2}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.android.gallery3d/com.android.newgallery.NewGallery}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.android.gallery3d/com.cooliris.media.Gallery}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.android.gallery3d/com.huawei.gallery.app.GalleryMain}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.android.gallery3d/com.zte.gallery3d.activity.launcher.MainGallery}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.appsgenz.launcherios.pro/com.android.launcher3.feature.gallery.SplashGalleryActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.appslab.gallery/com.appslab.gallery.MainActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.asianmobile.launcheros/com.asianmobile.launcheros.ui.component.photo.PhotoActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.asus.gallery/com.asus.gallery.app.EPhotoActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.atomicadd.fotos/com.atomicadd.fotos.FotosSplashScreen}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.atomicadd.fotos/com.atomicadd.fotos.SplashScreen}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.babydola.launcherios/com.android.launcher3.feature.gallery.SplashGalleryActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.beresnevgames.gallerycoloringbook/com.unity3d.player.UnityPlayerActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.bhanu.galleryslideshow/com.bhanu.galleryslideshow.ui.MainActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.botpa.turbophotos/com.botpa.turbophotos.screens.home.HomeActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.coloros.gallery3d/com.coloros.gallery3d.app.MainActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.coloros.gallery3d/com.oppo.gallery3d.app.Gallery}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.dddev.gallery.album.photo.editor/com.gallery.activities.SplashActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.diune.pictures/com.diune.pictures.ui.Bridge}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.diune.pictures/com.diune.pikture_ui.ui.Bridge}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.diune.pictures/com.diune.pikture_ui.ui.main.MainActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.dot.gallery.gplay/com.dot.gallery.feature_node.presentation.main.MainActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.dot.gallery.gplay/com.dot.gallery.Launcher_ReFra}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.dot.gallery/com.dot.gallery.feature_node.presentation.main.MainActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.dot.gallery/com.dot.gallery.Launcher_Gallery_GalleryLogo}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.eagle.gallery.photos.videos.album.hd.gallery.editor/com.eagle.gallery.pro.activities.MainActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.easy.apps.easygallerypro/com.easy.apps.easygallery.activity.Splash}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.ebook.imagemanager/com.xrz.photo.ImageFolderAt}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.ebook.imagemanager/com.xrz.photo.MainActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.flir.myflir.s62/com.flir.monarch.ui.library.LibraryActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.flir.myflir.s62/com.flir.monarch.ui.MainActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.flir.myflir/com.flir.monarch.ui.library.LibraryActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.flir.myflir/com.flir.monarch.ui.MainActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.flir.tiger/com.flir.monarch.ui.library.LibraryActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.flir.tiger/com.flir.monarch.ui.MainActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.galleria.magic.photogallery/com.galleria.magic.photogallery.activity.SplashActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.Gallery_Krrish/com.zipoapps.premiumhelper.ui.splash.PHSplashActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.gallery.albums.photomanager/com.gallery.albums.photomanager.activity.SplashActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.gallery.easy.photo.editor.album.lyrical.video.status.maker/com.example.galleryai.Activities.Splash}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.gallery.photo.galerie.galeria.foto.galerij.galeri.galleri.galery/com.photo.gallery.secret.album.video.status.maker.ui.activities.SplashActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.gallery.photogallery.picturegallery.imagegallery.hidepictures.lockgallery.video/com.dani.gallery.ui.activity.main.MainActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.gallery.photos.editpic/com.gallery.photos.editpic.Activity.SplashActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.gallery.picturegallery.photomanager/com.picturegallery.photos.activity.SplashActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.gallery20/com.gallery20.HomeActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.galleryneu.hidepicture.photovault.photography/com.galleryneu.hidepicture.photovault.photography.all_activities.SplashMainGalleryActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.gallerypicture.photo.photomanager/com.gallerypicture.photo.photomanager.presentation.features.launcher.LauncherActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.gionee.gallery/com.gionee.gallery.sb.app.GnGallery}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.github.vauvenal5.yaga/com.github.vauvenal5.yaga.MainActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.google.ai.edge.gallery/com.google.ai.edge.gallery.MainActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.google.aiedge.gallery/com.google.ai.edge.gallery.MainActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.google.android.apps.photosgo/com.google.android.apps.photosgo.home.HomeActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.google.android.gallery3d/com.android.gallery3d.app.Gallery}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.google.android.gallery3d/com.android.gallery3d.app.GalleryActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.google.android.gallery3d/com.cooliris.media.Gallery}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.hdgallery.socialvideopure.downloaderpsone/com.hdgallery.socialvideopure.downloaderpsone.Activity.SplashActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.hihonor.photos/com.hihonor.gallery.app.GalleryMain}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.hihonor.photos/com.huawei.gallery.app.GalleryMain}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.hld.anzenbokusu/com.hld.anzenbokusu.splash}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.huawei.photos/com.huawei.gallery.app.GalleryMain}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.igallery.iphotos.collectiongallery/com.igallery.iphotos.ui.splash.SplashActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.isfresh27.gallery/com.isfresh27.gallery.activities.SplashActivity.Red}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.jag.essentialgallery/com.jag.quicksimplegallery.activity.MainFragmentActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.jag.gallery.elite.pro/com.jag.quicksimplegallery.activity.MainFragmentActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.jio.photos/com.jio.home.ui.SplashActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.kahluabear.nothing_gallery/com.kahluabear.nothing_gallery.MainActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.launcheros.fastlauncher/com.launcheros.fastlauncher.feature.gallery.SplashPhotoActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.libremobileos.glimpse/org.lineageos.glimpse.MainActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.littlefatfish.photo/com.littlefatfish.lib.viewer.ViewPhotoList}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.meizu.media.gallery/com.meizu.media.gallery.GalleryActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.microsoft.skydrive/com.microsoft.skydrive.photos.PhotosLauncherActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.miui.gallery/.activity.HomePageActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.miui.gallery/com.miui.gallery.activity.HomePageActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.miui.gallery/com.miui.gallery.app.Gallery}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.miui.gallery/com.miui.gallery.MainActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.mmb.gallery/com.mmb.gallery.activities.SplashActivity.Orange}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.mobsnake.verticalgallery/com.android.gallery3d.app.GalleryActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.motorola.cn.gallery/com.motorola.cn.gallery.app.GalleryActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.motorola.MotGallery2/com.android.gallery3d.app.GalleryActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.nkming.nc_photos.gitlab/com.nkming.nc_photos.MainActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.nothing.gallery/com.nothing.gallery.activity.EntryActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.oneplus.gallery/.OPGalleryActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.oneplus.gallery/com.coloros.gallery3d.app.MainActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.oneplus.gallery/com.oneplus.gallery.app.MainActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.oneplus.gallery/com.oneplus.gallery.app.MainActivity#0}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.oneplus.gallery/com.oneplus.gallery.OPGalleryActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.onyx.gallery/com.onyx.gallery.activities.NewMainActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.perracolabs.pixtica/app.application.activities.CameraActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.perracolabs.pixtica/app.application.activities.GalleryActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.photo.gallery.photo.albums/com.photo.gallery.photo.albums.activity.SplashActivity1}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.photogallery.galleryvault.galleryapp/com.photogallery.galleryvault.galleryapp.activities.SplashActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.photography.gallery/com.photography.gallery.activities.SplashActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.photography.hdphotogallery.android.gallery/com.photography.hdphotogallery.android.gallery.activities.SplashActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.Photos_Videos_Gallery/com.Photos_Videos_Gallery.Activities.splash_activity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.photos.gallery.gallerypro/com.photos.gallery.gallerypro.activity.SplashActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.photovault.hdgallery.photomanager.imagegallery/com.photovault.hdgallery.photomanager.imagegallery.Act.Act_Splash}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.picturegallery.gallery.photomanager/com.picturegallery.gallery.photomanager.Activityy.SplashActivityNew}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.pixel.gallery/com.pixel.gallery.MainActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.quickpicplus.gallery.photoeditor/com.quickpicplus.gallery.photoeditor.activities.SplashActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.samsung.android.gallery.assistant.app/com.samsung.android.gallery.assistant.app.activity.launcher.LauncherActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.sec.android.gallery3d/.app.GalleryOpaqueActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.sec.android.gallery3d/com.samsung.android.gallery.app.activity.GalleryActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.sec.android.gallery3d/com.sec.android.gallery3d.app.Gallery}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.sec.android.gallery3d/com.sec.android.gallery3d.app.GalleryActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.sec.android.gallery3d/com.sec.android.gallery3d.app.GalleryOpaqueActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.simplemobiletools.gallery/com.onyx.gallery.activities.NewMainActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.simplemobiletools.gallery/com.simplemobiletools.gallery.activities.MainActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.snackshotvideos.videostatus.videosaver/com.snackshotvideos.videostatus.videosaver.activitys.SplashActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.sonyericsson.album/com.sonyericsson.album.MainActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.tcl.gallery/com.tcl.gallery.app.GalleryActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.tclhz.gallery/com.tcl.gallery.app.GalleryActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.threestar.gallery/com.android.gallery.activities.SplashActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.visky.gallery/com.visky.gallery.ui.activity.SplashActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.vivo.gallery/com.android.gallery3d.vivo.GalleryTabActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.vyom.gallery.lite/com.vyom.gallery.G}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.vyom.gallery/com.vyom.gallery.G}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.waophoto.smartphoto/com.waophoto.smartphoto.ui.WelcomeActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.zs.android.apps.photos/com.zs.gallery.MainActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.zui.gallery/com.zui.gallery.app.GalleryActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{com.zui.gallery/com.zui.gallery.main.ui.activity.MainActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{gal.galleria.galleryapp.gallery/gal.galleria.galleryapp.gallery.superactivity.SplashActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{gallery.ai.photoeditor/com.coocent.app.gallery.MainActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{gallery.ai.photoeditor/gallery.ai.photoeditor.MainActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{gallery.album.photos.photogallery.photovault.galleryx/com.android.wegallery.SplashActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{gallery.app/gallery.app.activities.SplashActivity.Orange}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{gallery.foto.gallery.album/gallery.foto.gallery.album.pages.LauncherActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{gallery.gallerylock.vaultgallery.hidepictures/gallery.gallerylock.vaultgallery.hidepictures.SplashActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{gallery.hidepictures.photovault.lockgallery/gallery.hidepictures.photovault.lockgallery.ss.activities.SplashActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{gallery.photo.galeria/com.tigersoft.gallery.ui.FirstActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{gallery.photo.vault.photogallery.album/com.ijoysoft.gallery.activity.WelcomeActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{gallery.photogallery.album.editor/gallery.photogallery.album.editor.activity.CoreActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{gallery.photogallery.album.vault.picturemanager/com.android.tools.SplashActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{gallery.photogallery.pictures.vault.album/gallery.photogallery.pictures.vault.album.activity.splash.SplashActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{gallery.photomanager.imagegallery.picturegallery/gallery.photomanager.imagegallery.picturegallery.activityClass.SplashActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{gallery.photomanager.photogallery.hidepictures.pro/gallery.photomanager.photogallery.hidepictures.MainActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{gallery.photomanager.picturegalleryapp.imagegallery/gallery.photomanager.picturegalleryapp.imagegallery.activity.GalleryActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{gallery.photomanager.picturegalleryapp.imagegallery/gallery.photomanager.picturegalleryapp.imagegallery.activity.LaunchAcrivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{gallery.photos.video.quickpic.fastopenphotosvideos/com.galleryapp.gallery.dev.activities.SplashActivity.Orange}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{gallery.photos.video.quickpic.fastopenphotosvideos/com.sarang.gallery.pro.activities.SplashActivity.Orange}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{gallery.photos.video.quickpic.fastopenphotosvideos/gallery.photos.video.quickpic.fastopenphotosvideos.activities.SplashActivity.Orange}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{galleryapp.picturelock.gallerylock.albums/com.fragmentphotos.gallery.pro.activities.SplashActivity.Orange}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{galleryapp.picturelock.gallerylock.albums/com.fragmentphotos.gallery.pro.events.SwashEvent}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{gallerylocker.hideapps.apphider.vault.applock/gallerylocker.hideapps.apphider.vault.applock.activity.LockHomeActivity1}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{gallerylocker.hideapps.apphider.vault.applock/gallerylocker.hideapps.apphider.vault.applock.activity.LockHomeActivity4}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{igallery.launcher.ios.photos.iphotogallery.gallery/igallery.launcher.ios.photos.iphotogallery.gallery.view.activity.Splash}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{io.github.freewatermark.mobileapp/com.example.free_watermark.MainActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{kr.co.ladybugs.fourto/kr.co.ladybugs.fourto.activity.SplashActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{media.album.photo.gallery/com.ijoysoft.gallery.activity.WelcomeActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{media.gallery.videomaker.slideshow/com.ijoysoft.gallery.activity.WelcomeActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{net.vsmart.vphotos/com.android.gallery3d.app.GalleryActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{org.calyxos.glimpse/org.lineageos.glimpse.MainActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{org.codeaurora.gallery/com.android.gallery3d.app.GalleryActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{org.Gallery.Pro/org.Gallery.Pro.activities.SplashActivity.Orange}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{org.leafos.glimpse/org.lineageos.glimpse.MainActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{org.lineageos.glimpse.dev/org.lineageos.glimpse.MainActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{org.lineageos.glimpse/org.lineageos.glimpse.MainActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{oss.gallerynew.android/oss.gallerynew.android.activities.SplashScreen}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{photo.album.galleryvault.photogallery/com.ijoysoft.gallery.activity.WelcomeActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{photo.gallery.hd.photo.album/com.ijoysoft.gallery.activity.WelcomeActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{photo.gallery.photoeditor.photo.album/com.ijoysoft.gallery.activity.WelcomeActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{photo.manager.private.photogallery/com.ijoysoft.gallery.activity.WelcomeActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{photo.photovault.hidepictures.gallery.lockgallery/com.gallery.photovault.splash.AppSplashActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{photoalbumgallery.photomanager.securegallery/photoalbumgallery.photomanager.securegallery.activities.SplashActivityNew}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{photogallery.ai.photoeditor.photo.albums/photogallery.ai.photoeditor.photo.albums.activities.SplashActivityScreen}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{photogallery.gallery.bestgallery/photogallery.gallery.bestgallery.activities.PermissionRequiredActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{photography.blackgallery.android/photography.blackgallery.android.activity.SplashActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{photography.photo.gallery/photography.photo.gallery.activities.StartActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{photos.gallery.album.imagelock.photovault/com.gallery.vault.ui.splash.SplashActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{photos.videos.vault.gallery.android/photos.videos.vault.gallery.android.activities.SplashActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{picture.gallery.media.photo.album/com.ijoysoft.gallery.activity.WelcomeActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{sas.gallery/sas.gallery.activity.SplashActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{ua.com.radiokot.photoprism.debug/ua.com.radiokot.photoprism.features.gallery.view.GalleryActivity}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ComponentInfo{vsgcreation.gallery.photogllery/com.vsgcreation.gallerypro.Splash}",
+      "drawable": "gallery"
+    },
+    {
+      "component": "gal.galleria.galleryapp.gallery/gal.galleria.galleryapp.gallery.superactivity.SplashActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "gallery.ai.photoeditor/com.coocent.app.gallery.MainActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "gallery.ai.photoeditor/gallery.ai.photoeditor.MainActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "gallery.album.photos.photogallery.photovault.galleryx/com.android.wegallery.SplashActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "gallery.app/gallery.app.activities.SplashActivity.Orange",
+      "drawable": "gallery"
+    },
+    {
+      "component": "gallery.foto.gallery.album/gallery.foto.gallery.album.pages.LauncherActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "gallery.gallerylock.vaultgallery.hidepictures/gallery.gallerylock.vaultgallery.hidepictures.SplashActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "gallery.hidepictures.photovault.lockgallery/gallery.hidepictures.photovault.lockgallery.ss.activities.SplashActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "gallery.photo.galeria/com.tigersoft.gallery.ui.FirstActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "gallery.photo.vault.photogallery.album/com.ijoysoft.gallery.activity.WelcomeActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "gallery.photogallery.album.editor/gallery.photogallery.album.editor.activity.CoreActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "gallery.photogallery.album.vault.picturemanager/com.android.tools.SplashActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "gallery.photogallery.pictures.vault.album/gallery.photogallery.pictures.vault.album.activity.splash.SplashActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "gallery.photomanager.imagegallery.picturegallery/gallery.photomanager.imagegallery.picturegallery.activityClass.SplashActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "gallery.photomanager.photogallery.hidepictures.pro/gallery.photomanager.photogallery.hidepictures.MainActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "gallery.photomanager.picturegalleryapp.imagegallery/gallery.photomanager.picturegalleryapp.imagegallery.activity.GalleryActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "gallery.photomanager.picturegalleryapp.imagegallery/gallery.photomanager.picturegalleryapp.imagegallery.activity.LaunchAcrivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "gallery.photos.video.quickpic.fastopenphotosvideos/com.galleryapp.gallery.dev.activities.SplashActivity.Orange",
+      "drawable": "gallery"
+    },
+    {
+      "component": "gallery.photos.video.quickpic.fastopenphotosvideos/com.sarang.gallery.pro.activities.SplashActivity.Orange",
+      "drawable": "gallery"
+    },
+    {
+      "component": "gallery.photos.video.quickpic.fastopenphotosvideos/gallery.photos.video.quickpic.fastopenphotosvideos.activities.SplashActivity.Orange",
+      "drawable": "gallery"
+    },
+    {
+      "component": "galleryapp.picturelock.gallerylock.albums/com.fragmentphotos.gallery.pro.activities.SplashActivity.Orange",
+      "drawable": "gallery"
+    },
+    {
+      "component": "galleryapp.picturelock.gallerylock.albums/com.fragmentphotos.gallery.pro.events.SwashEvent",
+      "drawable": "gallery"
+    },
+    {
+      "component": "gallerylocker.hideapps.apphider.vault.applock/gallerylocker.hideapps.apphider.vault.applock.activity.LockHomeActivity1",
+      "drawable": "gallery"
+    },
+    {
+      "component": "gallerylocker.hideapps.apphider.vault.applock/gallerylocker.hideapps.apphider.vault.applock.activity.LockHomeActivity4",
+      "drawable": "gallery"
+    },
+    {
+      "component": "igallery.launcher.ios.photos.iphotogallery.gallery/igallery.launcher.ios.photos.iphotogallery.gallery.view.activity.Splash",
+      "drawable": "gallery"
+    },
+    {
+      "component": "io.github.freewatermark.mobileapp/com.example.free_watermark.MainActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "kr.co.ladybugs.fourto/kr.co.ladybugs.fourto.activity.SplashActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "media.album.photo.gallery/com.ijoysoft.gallery.activity.WelcomeActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "media.gallery.videomaker.slideshow/com.ijoysoft.gallery.activity.WelcomeActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "net.vsmart.vphotos/com.android.gallery3d.app.GalleryActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "org.calyxos.glimpse/org.lineageos.glimpse.MainActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "org.codeaurora.gallery/com.android.gallery3d.app.GalleryActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "org.Gallery.Pro/org.Gallery.Pro.activities.SplashActivity.Orange",
+      "drawable": "gallery"
+    },
+    {
+      "component": "org.leafos.glimpse/org.lineageos.glimpse.MainActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "org.lineageos.glimpse.dev/org.lineageos.glimpse.MainActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "org.lineageos.glimpse/org.lineageos.glimpse.MainActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "oss.gallerynew.android/oss.gallerynew.android.activities.SplashScreen",
+      "drawable": "gallery"
+    },
+    {
+      "component": "photo.album.galleryvault.photogallery/com.ijoysoft.gallery.activity.WelcomeActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "photo.gallery.hd.photo.album/com.ijoysoft.gallery.activity.WelcomeActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "photo.gallery.photoeditor.photo.album/com.ijoysoft.gallery.activity.WelcomeActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "photo.manager.private.photogallery/com.ijoysoft.gallery.activity.WelcomeActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "photo.photovault.hidepictures.gallery.lockgallery/com.gallery.photovault.splash.AppSplashActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "photoalbumgallery.photomanager.securegallery/photoalbumgallery.photomanager.securegallery.activities.SplashActivityNew",
+      "drawable": "gallery"
+    },
+    {
+      "component": "photogallery.ai.photoeditor.photo.albums/photogallery.ai.photoeditor.photo.albums.activities.SplashActivityScreen",
+      "drawable": "gallery"
+    },
+    {
+      "component": "photogallery.gallery.bestgallery/photogallery.gallery.bestgallery.activities.PermissionRequiredActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "photography.blackgallery.android/photography.blackgallery.android.activity.SplashActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "photography.photo.gallery/photography.photo.gallery.activities.StartActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "photos.gallery.album.imagelock.photovault/com.gallery.vault.ui.splash.SplashActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "photos.videos.vault.gallery.android/photos.videos.vault.gallery.android.activities.SplashActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "picture.gallery.media.photo.album/com.ijoysoft.gallery.activity.WelcomeActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "sas.gallery/sas.gallery.activity.SplashActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "ua.com.radiokot.photoprism.debug/ua.com.radiokot.photoprism.features.gallery.view.GalleryActivity",
+      "drawable": "gallery"
+    },
+    {
+      "component": "vsgcreation.gallery.photogllery/com.vsgcreation.gallerypro.Splash",
+      "drawable": "gallery"
+    },
+    {
       "component": "com.motorola.gamemode/com.motorola.gamemode.ui.launcher.main.PRCGameCenterActivity",
       "drawable": "game_center"
     },
@@ -65749,6 +67249,10 @@
     {
       "component": "ComponentInfo{com.gratis.android/com.gratis.android.GratisMainActivity}",
       "drawable": "gratis"
+    },
+    {
+      "component": "ComponentInfo{com.sec.android.app.voicenote/com.sec.android.app.voicenote.main.VNMainActivity}",
+      "drawable": "gravadordevoz"
     },
     {
       "component": "ComponentInfo{com.oasisfeng.greenify/com.oasisfeng.greenify.GreenifyActivity}",
@@ -83735,6 +85239,10 @@
       "drawable": "moj"
     },
     {
+      "component": "ComponentInfo{com.sec.android.app.myfiles/com.sec.android.app.myfiles.common.MainActivity}",
+      "drawable": "mojepliki"
+    },
+    {
       "component": "ComponentInfo{video.mojo/video.mojo.Launcher}",
       "drawable": "mojo"
     },
@@ -96721,6 +98229,3270 @@
     {
       "component": "jp.radiko.plusfm.player/jp.radiko.Player.ActCustomSchema",
       "drawable": "radiko"
+    },
+    {
+      "component": "am.radio10.app/com.tadevel.mediaapp.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "app.luxeradio.ma/app.luxeradio.ma.ui.home.DashboardActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "app.online.ethiopia.radio1/nemosofts.voxradio.activity.LauncherActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "app.online.uganda.radio1/nemosofts.voxradio.activity.LauncherActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "app.sunshinelive.de.sunshinelive/com.computerrock.radiolikemee.ui.intro.IntroActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "appinventor.ai_MAdelSelim.Haunted_Radio_Spiritbox/appinventor.ai_MAdelSelim.Haunted_Radio_Spiritbox.Screen1",
+      "drawable": "radio"
+    },
+    {
+      "component": "at.liferadio.tirol/de.konsole_labs.webapp.library.activity.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "at.orf.android.oe3/at.orf.android.oe3.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "at.radio.android/de.radio.android.ui.AppActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "at.radio.radiorot/de.konsole_labs.webapp.library.activity.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "at.radioflamingo/at.radioflamingo.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "au.org.cbaa.app/au.org.cbaa.app.view.activity.intro.IntroActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "audio.instant.radio/com.example.webradio.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "be.vrt.radioplus.radio1/be.vrt.radio.air.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "bg.radioplay.app/com.thisisaim.templateapp.view.activity.intro.IntroActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "br.com.agenciauny.rbcradio/br.com.agenciauny.rbcradio.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "br.com.brasilwork.radioclubefm88/br.com.brasilwork.radioclubefm88.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "br.com.mobradio.cidadewebrock/br.com.mobradio.cidadewebrock.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "br.com.radios.radiosmobile.radiosnet/br.com.radios.radiosmobile.radiosnet.activity.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "ca.radioplayer.android/ca.radioplayer.android.IntroActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "ca.rncmedia.radio9/nemosofts.voxradio.activity.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "center.streaming.uvb/com.radiotochka.app.ui.activities.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "cl.biobiochile.radiobiobio/cl.biobiochile.radiobiobio.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "cl.usach.radio.app/cl.altavoz.app.janus.example.android.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.aewt.app.friends/com.aewt.app.aewt.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.alexso.internetradio.p/com.alexso.internetradio.p.RadioStationsActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.alexso.internetradio.p/com.alexso.internetradio.RadioStationsActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.alexso.internetradio/com.alexso.internetradio.RadioStationsActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.allaboutradio.radiofmpuertorico/com.radio.core.ui.home.HomeActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.allindiaradio.akashvani.airnews/com.gayaksoft.radiolite.activities.SplashScreenActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.ancientfaithministries.ancientfaithradio.prod/com.ancientfaithministries.ancientfaithradio.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.android.fmradio/com.android.fmradio.FmActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.android.fmradio/com.android.fmradio.FmMainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.android.fmradio/com.android.fmradio.FmMainUIActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.android.fmradio/com.android.fmradio.FMRadioActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.android.fmradio/com.android.fmradio.InfinixFmMainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.android.fmradio/com.android.fmradio.MeituFmMainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.android.fmradio/com.android.fmradio.ui.FmMainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.antena3.ondaceroradio/com.antena3.ondaceroradio.ui.startup.splash.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.antenna.sro/radio.app.MainActivity2",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.ape.fmradio/com.ape.fmradio.FmMainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.app.radio2509/com.app.radio2509.activities.ActivitySplash",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.app.radioislam/com.app.radioislam.activities.SplashScreenActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.app.ukamradio/com.app.ukamradio.activities.ActivitySplash",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.appgeneration.itunerfree/com.appgeneration.mytunerlib.ui.activities.StarterSplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.appmind.radios.ar/com.appmind.countryradios.screens.splash.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.appmind.radios.br/com.appmind.countryradios.screens.splash.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.appmind.radios.ca/com.appmind.countryradios.screens.splash.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.appmind.radios.ch/com.appmind.countryradios.screens.splash.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.appmind.radios.co/com.appmind.countryradios.screens.splash.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.appmind.radios.egypt/com.appmind.countryradios.screens.splash.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.appmind.radios.fr/com.appmind.countryradios.screens.splash.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.appmind.radios.gb/com.appmind.countryradios.screens.splash.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.appmind.radios.id/com.appmind.countryradios.screens.splash.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.appmind.radios.in/com.appmind.countryradios.screens.splash.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.appmind.radios.jp/com.appmind.countryradios.screens.splash.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.appmind.radios.nl/com.appmind.countryradios.screens.splash.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.appmind.radios.no/com.appmind.countryradios.screens.splash.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.appmind.radios.pe/com.appmind.countryradios.screens.splash.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.appmind.radios.ph/com.appmind.countryradios.screens.splash.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.appmind.radios.pl/com.appmind.countryradios.screens.splash.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.appmind.radios.se/com.appmind.countryradios.screens.splash.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.appmind.radios.ua/com.appmind.countryradios.screens.splash.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.appmind.radios.ve/com.appmind.countryradios.screens.splash.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.appmind.radios.za/com.appmind.countryradios.screens.splash.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.appseo.radiocapitallondonfm/com.appseo.radiocapitallondonfm.activities.ActivitySplash",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.armanmaurya.internetradio/com.armanmaurya.internetradio.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.assistant.greekradio/com.assistant.greekradio.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.audioaddict.cr/md5256881233f05e1a12873c405322115cb.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.audioaddict.di/md5256881233f05e1a12873c405322115cb.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.audioaddict.jr/md5256881233f05e1a12873c405322115cb.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.audioaddict.rr/md5256881233f05e1a12873c405322115cb.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.audioaddict.sky/md5256881233f05e1a12873c405322115cb.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.audioaddict.zr/md5256881233f05e1a12873c405322115cb.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.autocab.taxibooker.radiotaxialbacete.albacete/com.autocab.premiumapp3.ui.activities.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.azmedien.radio24/com.ideamineradiobern.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.azradio/com.azradio.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.azulblaze.catholicmasssongs/com.azulblaze.catholicmasssongs.XRadioSplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.b44e6e4d91d3.app/co.radio.apps.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.bauermedia.ghr/com.bauermedia.ghr.BauerIntroActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.caf.fmradio/com.caf.fmradio.FMRadio",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.caf.fmradio/com.caf.fmradio.FMTransmitterActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.caf.fmradio/com.caf.fmradio.LewaFMRadio",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.caf.fmradio/com.caf.fmradio.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.cbn.radio.christian.music.free.android.app/com.cbn.cbnradio.views.splash.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.chmedia.radioargovia/com.ideamineradiobern.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.cmobile.radiofm/com.cmobile.radiofm.presentation.ui.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.comforter.radio/com.comforter.radio.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.concertzender.radio_app/com.concertzender.radio_app.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.criticalcommunicationsmedia.hamradioprep3/com.criticalcommunicationsmedia.hamradioprep3.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.criticalcommunicationsmedia.hamradioprep3/com.criticalcommunicationsmedia.hamradioprep3.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.crowdradio.ostseewelle/de.dmhhub.radioapplication.ui.RadioActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.crystalmissions.czradio/com.crystalmissions.skradio.activities.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.crystalmissions.plradio/com.crystalmissions.skradio.activities.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.dashradio.dash/com.dashradio.dash.activities.login.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.dm1982.radiomauritius2019/com.dm1982.radiomauritius2019.activitis.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.dms.rock_radio/com.dms.rock_radio.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.dnm.radiokoeln/com.brandsarelive.app.SplashScreenActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.earthflare.anddroid.radioparadisewidget/com.cratorsoft.act.ActRPHD_",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.ellaradio.ellaradio/com.ellaradio.ellaradio.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.empirestreaming.bagelradio/com.empirestreaming.bagelradio.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.eurekateam.fmradio/com.eurekateam.fmradio.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.evenwell.fmradio/com.evenwell.fmradio.FMRadioActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.favoritati.playercaxias/com.goodbarber.v2.core.common.activities.SplashscreenActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.finallevel.radiobox/com.finallevel.application.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.finallevel.radiobox/com.finallevel.radiobox.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.fitradio/com.fitradio.ui.StartUpActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.fourchars.lmpfree/gui.SplashScreenActivity3",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.fourchars.lmpfree/gui.SplashScreenActivity7",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.funbase.xradio/com.funbase.xradio.activity.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.funbase.xradio/com.funbase.xradio.home.activity.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.funbase.xradio/com.transsion.fm.main.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.furryrefuge.furryrefugeradio/com.furryrefuge.furryrefugeradio.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.galaxy.uk.radio.app/com.uk.radio.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.galaxyapps.mylocalradio/net.programmierecke.radiodroid2.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.genesissoftware.policescannerradiocodes/com.genesissoftware.policescannerradiocodes.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.givvyradios/com.givvyradios.shared.view.DefaultActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.gkapps.radio.eighties.pro/com.gkapps.radio.eighties.pro.StartRadio",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.gkapps.radio.nineties.pro/com.gkapps.radio.nineties.pro.StartRadioApp",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.goodbarber.radiourbana/com.goodbarber.v2.core.common.activities.SplashscreenActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.greek.radios/com.greek.radios.activities.OnAirActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.greenshpits.RLive/il.co.radio.rlive.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.grupovaughan.vaughanradio/es.solidgear.vaughanradio.ui.activities.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.haritha_kh.radioinfo/com.haritha_kh.radioinfo.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.HerGarApps.LuxfunkradioHungrary/sekhontech.com.myradio.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.hihonor.android.fmradio/com.hihonor.android.fmradio.FMRadioMainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.hmdglobal.app.fmradio/com.hmdglobal.app.fmradio.FmMainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.hmdglobal.app.fmradio/com.hmdglobal.app.fmradio.FMRadio",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.hnlens.fmradio/com.hnlens.fmradio.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.huaqin.FM/com.huaqin.FM.FM",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.huawei.android.FMRadio/com.huawei.android.FMRadio.FmMainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.huawei.android.FMRadio/com.huawei.android.FMRadio.FmRadioActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.huawei.android.FMRadio/com.huawei.android.FMRadio.FMRadioMainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.huawei.android.FMRadio/com.huawei.FMRadio.page.PageActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.hv.replaio/com.hv.replaio.activities.StartActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.hv.replaio/com.hv.replaio.activities.StartActivity_22",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.ihippo.kpop.music/com.ihippo.kpop.music.XRadioSplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.imsgroups.exyuradio/com.exampleyu.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.infoshell.recradio/com.infoshell.recradio.activity.splash.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.internet.loveworldradio/com.internet.loveworldradio.Splash",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.intothewhitebox.radios.lared/com.intothewhitebox.radios.lared.activity.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.iphonedroid.radiomarca/com.ue.projects.radiomarca.activities.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.j1radio.player/com.zoontek.rnbootsplash.RNBootSplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.jbradio.radio/com.jbradio.radio.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.jesusislordradio.liveapp/com.jesusislordradio.liveapp.activities.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.kakiradios.arabiesaoudite/com.kakiradios.arabiesaoudite.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.kakiradios.royaumeuni/com.kakiradios.royaumeuni.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.kakiradios.world/com.kakiradios.world.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.kinnovatech.mwradio/com.kinnovatech.mwradio.presentation.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.konashone.fm_am_tuner_radio_for_offline/com.konashone.fm_am_tuner_radio_for_offline.konashonezetzer.KonashOneMain",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.last.fm.live.radio.stations/com.ntduc.baseproject.ui.component.splash.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.listen2myapp.listen2myapp234/com.listen2myapp.unicornradio.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.live365.revradio/com.live365.revradio.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.liveradio.fmradio.radiotuner.radiostation.amradio/com.liveradio.fmradio.radiotuner.radiostation.amradio.ui.activities.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.lknninex.gradion/com.lknninex.gradion.activities.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.loficlouds.lofiradio/com.loficlouds.lofiradio.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.maxxt.animeradio/com.maxxt.animeradio.RadioActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.maxxt.chilloutradio/com.maxxt.animeradio.RadioActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.maxxt.chilloutradio/com.maxxt.radioapp.ui.main_view.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.maxxt.classicalradio/com.maxxt.animeradio.RadioActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.maxxt.jazzradio/com.maxxt.animeradio.RadioActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.maxxt.jazzradio/com.maxxt.radioapp.ui.main_view.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.maxxt.pcradio/com.maxxt.pcradio.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.maxxt.pcradio/com.maxxt.pcradio.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.maxxt.rockradio/com.maxxt.animeradio.RadioActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.medengage.radiology/com.medengage.clinical.ui.activities.onboarding.splash.NewSplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.mediatek.FMRadio/com.broadcom.bt.app.fm.rx.fmradio",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.mediatek.FMRadio/com.mediatek.FMRadio.CheckEarphone",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.mediatek.FMRadio/com.mediatek.FMRadio.FMRadio",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.mediatek.fmradio/com.mediatek.fmradio.FmRadioActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.mediatek.FMRadio/com.mediatek.FMRadio.FMRadioActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.mediatek.FMRadio/com.mediatek.FMRadio.FMRadioMainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.mediatek.FMRadio/com.mediatek.FMRadio.HQFMRadioActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.mediatek.FMRadio/com.mediatek.FMRadio.LewaFMRadioActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.miui.fm/com.miui.fmradio.activity.LauncherActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.miui.fm/com.miui.fmradio.FmActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.miui.fm/com.miui.fmradio.FmRadioActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.miui.fm/fm.qingting.qtradio.WelcomeActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.mobitwins.radiovietnamonline/com.mobitwins.radiovietnamonline.activity.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.motorola.fmplayer/com.motorola.fmplayer.ChangeThemeActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.motorola.fmplayer/com.motorola.fmplayer.FMMainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.motorola.fmplayer/com.motorola.fmplayer.FMPlayer",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.motorola.mtkfmplayer/com.motorola.mtkfmplayer.ChangeThemeActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.music.youngradioplus/com.music.youngradioplus.ui.activity.cfbwj",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.music.youngradiopro/com.music.youngradiopro.ui.activity.cchl7",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.music.youngradiopro/com.music.youngradiopro.ui.activity.cfecs",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.myhomesmartlife.bluetooth/com.myhomesmartlife.bluetooth.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.MyIndieApp.FreeMetalRadio/com.MyIndieApp.FreeMetalRadio.RadioActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.MyIndieApp.FreeOldiesRadio/com.MyIndieApp.FreeOldiesRadio.RadioActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.MyIndieApp.FreeRockRadio/com.MyIndieApp.FreeRockRadio.RadioActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.nakko.android.radio10gold/com.nakko.android.radio10gold.MainActivityDefault",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.nakko.android.radio538/com.nakko.android.radio538.MainActivityDefault",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.nakko.android.radio538/com.trapp.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.newliferadio/com.ryanheise.audioservice.AudioServiceActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.nextradioapp.nextradio/com.nextradioapp.nextradio.activities.SplashScreen",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.nextradiotv.rmc/com.nextradiotv.app.clean.ui.navigation.MainNavigationActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.nickstamp.tvradio_gr/com.nickstamp.activity.BottomBarActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.nodemtech.radiojapan/net.programmierecke.radiodroid2.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.nova.radionova/com.nova.radionova.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.ntslive.ntsradio/com.ntslive.ntsradio.UrlModifierLauncherActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.nvbc.knvbcandroid/com.ryanheise.audioservice.AudioServiceActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.onlineradio.fmradioplayer/com.onlineradio.fmradioplayer.ui.activities.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.onlineradio.radiofm/com.onlineradio.radiofm.ui.activities.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.onlineradiofm.phonkmusic/com.onlineradiofm.phonkmusic.MySplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.ontim.fmradio/com.ontim.fmradio.activities.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.opensource.i2pradio/com.opensource.i2pradio.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.p4gruppen.radio.p4/com.p4gruppen.radio.app.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.paqapaqa.radiomobi/com.paqapaqa.radiomobi.ui.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.peakpocketstudios.lofiradio/com.peakpocketstudios.lofi.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.pm.cannes/com.thisisaim.templateapp.view.activity.intro.IntroActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.prisaradio.replicapp.cadenaser/com.prisa.ser.presentation.screens.fakeSplash.FakeSplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.prisaradio.replicapp.radioacktiva/com.thisisaim.templateapp.view.activity.intro.IntroActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.prisaradio.replicapp.wradiocolombia/com.thisisaim.templateapp.view.activity.intro.IntroActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.quicinc.fmradio/com.quicinc.fmradio.FMRadio",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.radio.fmradio/com.radio.fmradio.activities.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.radio.fmradio/com.radio.fmradio.activities.SplashActivityAliasMain",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.radio.fmradio/com.radio.fmradio.activities.SplashActivityAliasPremium",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.radio.fmradio/com.radio.fmradio.InitFM",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.radio.fmradio/com.radio.fmradio.RadioFM",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.radio.helloworld/com.radio.helloworld.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.radio.helloworld/com.radio.helloworld.SplashScreen",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.radio.md9132e5a7/co.radio.apps.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.radio.pl/io.kodular.sp4ubw.Radio_Polska.Screen1",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.radio.TunemoFM/com.radio.TunemoFM.activities.ActivitySplash",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.radio4ne.kixx/com.alexsh.multiradio.activities.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.radioapp.mayakradio/com.radioapp.mayakradio.SplashScreen",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.radioapp.solovievfm/com.radioapp.solovievfm.SplashScreen",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.radiocanada.mauril/com.radiocanada.mauril.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.radiocenter.radiocenterapp/com.radiocenter.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.radiocomercial/com.radiocomercial.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.radiodiblu/com.radiodiblu.activities.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.radioenter.app/com.radiocenter.radiocenterapp.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.radiofg.radiofg/com.thisisaim.templateapp.view.activity.intro.IntroActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.radiofrance.radio.franceinter.android/com.radiofrance.radio.franceinter.android.ui.activity.StarterActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.radioistanbulfm/com.radioistanbulfm.ui.splash.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.radiojavan.androidradio/com.radiojavan.androidradio.DefaultLauncher",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.radiojavan.androidradio/com.radiojavan.androidradio.main.MainLauncherActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.radiojavan.androidradio/com.radiojavan.androidradio.splash.LauncherActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.radioks/com.radioks.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.radiolight.etatsunis/com.radiolight.etatsunis.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.radiolight.hongrie/com.radiolight.hongrie.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.radiolight.italie/com.radiolight.italie.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.radiolight.philippines/com.radiolight.philippines.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.radiolight.pologne/com.radiolight.pologne.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.radiolight.russie/com.radiolight.russie.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.radiolight.ukraine/com.radiolight.ukraine.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.radiomonumental.ajvierci/com.radiomonumental.ajvierci.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.radiooooo/com.google.androidbrowserhelper.trusted.LauncherActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.radioplayer.mobile/com.radioplayer.mobile.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.radiosonline.radiofmjapan/com.radio.core.ui.home.HomeActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.radiosonline.radiofmmalaysia/com.radio.core.ui.home.HomeActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.radiotime.app/com.app.radiotime.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.radiotn.tunisie/com.radiotn.tunisie.ui.splash.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.radiozu.aacplay/ro.radiozu.app.ui.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.rcf.radiogen/com.radiocodeford.fordradiocodegenerator.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.samsung.mdl.radio/com.samsung.mdl.radio.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.sec.android.app.fm/com.sec.android.app.fm.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.sgpcradio/com.sgpcradio.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.shikh.gurbaniradio.livekirtan/com.shikh.gurbaniradio.livekirtan.ui.splash.Splashscreen",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.skyblue.pra.tpr/com.skyblue.activity.InitialActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.slacker.radio/com.slacker.gui.pivot.activities.PreLaunchActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.slaler.radionet/com.slaler.radionet.forms.ActivityStart",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.slipstream.accuradio/com.slipstream.accuradio.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.slzcast.novasdepaz/com.slzcast.novasdepaz.ui.splash.SplashScreenActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.sonymobile.fmradio/com.sonymobile.fmradio.ui.FmRadioActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.soundsofthesoul.audio528hertz528hertzfrequencymusicfreehealingmeditationmusic/sekhontech.com.myradio.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.spotlightenglish.radio/co.median.android.LaunchActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.spreaker.android/com.spreaker.android.radio.main.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.stayfprod.awesomeradio.free/com.stayfprod.awesomeradio.ui.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.tamilfmradio.tamilfmsongs/com.tamilfmradio.tamilfmsongs.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.Tarter.RXPosicionesRadiolgicas/com.unity3d.player.UnityPlayerActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.tasmanic.radio.fm/com.tasmanic.radio.fm.GDPRLauncherActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.tcl.fmradio/com.tct.fmradio.utils.BaseActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.tct.fmradio.bb/com.tct.fmradio.utils.BaseActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.thehouseofcode.radio_nowy_swiat/com.thehouseofcode.radio_nowy_swiat.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.thisisglobal.player.xfm/com.thisisglobal.guacamole.main.views.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.tomorrowland.oneworldradio/com.tomorrowland.oneworldradio.RadioActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.transsion.fmradio/com.funbase.xradio.activity.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.transsion.fmradio/com.funbase.xradio.home.activity.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.transsion.fmradio/com.transsion.fmradio.FmMainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.tuneradios.maranhao/com.tuneradios.maranhao.activities.ActivitySplash",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.vivo.FMRadio/com.vivo.FMRadio.FMRadio",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.vivo.FMRadio/com.vivo.FMRadio.FMRadioActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.warptec.escradio/de.konsole_labs.webapp.library.activity.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.wg.superradio/ru.zharafm.app.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.xdevel.radiostudiopiu/com.radiostudiopiu.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.yuriy.openradio/com.yuriy.openradio.mobile.view.activity.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.yuriy.openradio/com.zipoapps.premiumhelper.ui.splash.PHSplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.zenofm.player/com.zeno.play.ui.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.zui.fmplayer/com.motorola.fmplayer.ChangeThemeActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{am.radio10.app/com.tadevel.mediaapp.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{app.luxeradio.ma/app.luxeradio.ma.ui.home.DashboardActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{app.online.ethiopia.radio1/nemosofts.voxradio.activity.LauncherActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{app.online.uganda.radio1/nemosofts.voxradio.activity.LauncherActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{app.sunshinelive.de.sunshinelive/com.computerrock.radiolikemee.ui.intro.IntroActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{appinventor.ai_MAdelSelim.Haunted_Radio_Spiritbox/appinventor.ai_MAdelSelim.Haunted_Radio_Spiritbox.Screen1}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{at.liferadio.tirol/de.konsole_labs.webapp.library.activity.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{at.orf.android.oe3/at.orf.android.oe3.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{at.radio.android/de.radio.android.ui.AppActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{at.radio.radiorot/de.konsole_labs.webapp.library.activity.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{at.radioflamingo/at.radioflamingo.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{au.org.cbaa.app/au.org.cbaa.app.view.activity.intro.IntroActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{audio.instant.radio/com.example.webradio.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{be.vrt.radioplus.radio1/be.vrt.radio.air.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{bg.radioplay.app/com.thisisaim.templateapp.view.activity.intro.IntroActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{br.com.agenciauny.rbcradio/br.com.agenciauny.rbcradio.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{br.com.brasilwork.radioclubefm88/br.com.brasilwork.radioclubefm88.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{br.com.mobradio.cidadewebrock/br.com.mobradio.cidadewebrock.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{br.com.radios.radiosmobile.radiosnet/br.com.radios.radiosmobile.radiosnet.activity.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{ca.radioplayer.android/ca.radioplayer.android.IntroActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{ca.rncmedia.radio9/nemosofts.voxradio.activity.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{center.streaming.uvb/com.radiotochka.app.ui.activities.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{cl.biobiochile.radiobiobio/cl.biobiochile.radiobiobio.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{cl.usach.radio.app/cl.altavoz.app.janus.example.android.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.aewt.app.friends/com.aewt.app.aewt.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.alexso.internetradio.p/com.alexso.internetradio.p.RadioStationsActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.alexso.internetradio.p/com.alexso.internetradio.RadioStationsActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.alexso.internetradio/com.alexso.internetradio.RadioStationsActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.allaboutradio.radiofmpuertorico/com.radio.core.ui.home.HomeActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.allindiaradio.akashvani.airnews/com.gayaksoft.radiolite.activities.SplashScreenActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.ancientfaithministries.ancientfaithradio.prod/com.ancientfaithministries.ancientfaithradio.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.android.fmradio/com.android.fmradio.FmActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.android.fmradio/com.android.fmradio.FmMainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.android.fmradio/com.android.fmradio.FmMainUIActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.android.fmradio/com.android.fmradio.FMRadioActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.android.fmradio/com.android.fmradio.InfinixFmMainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.android.fmradio/com.android.fmradio.MeituFmMainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.android.fmradio/com.android.fmradio.ui.FmMainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.antena3.ondaceroradio/com.antena3.ondaceroradio.ui.startup.splash.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.antenna.sro/radio.app.MainActivity2}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.ape.fmradio/com.ape.fmradio.FmMainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.app.radio2509/com.app.radio2509.activities.ActivitySplash}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.app.radioislam/com.app.radioislam.activities.SplashScreenActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.app.ukamradio/com.app.ukamradio.activities.ActivitySplash}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.appgeneration.itunerfree/com.appgeneration.mytunerlib.ui.activities.StarterSplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.appmind.radios.ar/com.appmind.countryradios.screens.splash.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.appmind.radios.br/com.appmind.countryradios.screens.splash.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.appmind.radios.ca/com.appmind.countryradios.screens.splash.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.appmind.radios.ch/com.appmind.countryradios.screens.splash.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.appmind.radios.co/com.appmind.countryradios.screens.splash.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.appmind.radios.egypt/com.appmind.countryradios.screens.splash.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.appmind.radios.fr/com.appmind.countryradios.screens.splash.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.appmind.radios.gb/com.appmind.countryradios.screens.splash.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.appmind.radios.id/com.appmind.countryradios.screens.splash.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.appmind.radios.in/com.appmind.countryradios.screens.splash.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.appmind.radios.jp/com.appmind.countryradios.screens.splash.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.appmind.radios.nl/com.appmind.countryradios.screens.splash.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.appmind.radios.no/com.appmind.countryradios.screens.splash.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.appmind.radios.pe/com.appmind.countryradios.screens.splash.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.appmind.radios.ph/com.appmind.countryradios.screens.splash.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.appmind.radios.pl/com.appmind.countryradios.screens.splash.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.appmind.radios.se/com.appmind.countryradios.screens.splash.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.appmind.radios.ua/com.appmind.countryradios.screens.splash.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.appmind.radios.ve/com.appmind.countryradios.screens.splash.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.appmind.radios.za/com.appmind.countryradios.screens.splash.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.appseo.radiocapitallondonfm/com.appseo.radiocapitallondonfm.activities.ActivitySplash}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.armanmaurya.internetradio/com.armanmaurya.internetradio.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.assistant.greekradio/com.assistant.greekradio.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.audioaddict.cr/md5256881233f05e1a12873c405322115cb.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.audioaddict.di/md5256881233f05e1a12873c405322115cb.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.audioaddict.jr/md5256881233f05e1a12873c405322115cb.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.audioaddict.rr/md5256881233f05e1a12873c405322115cb.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.audioaddict.sky/md5256881233f05e1a12873c405322115cb.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.audioaddict.zr/md5256881233f05e1a12873c405322115cb.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.autocab.taxibooker.radiotaxialbacete.albacete/com.autocab.premiumapp3.ui.activities.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.azmedien.radio24/com.ideamineradiobern.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.azradio/com.azradio.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.azulblaze.catholicmasssongs/com.azulblaze.catholicmasssongs.XRadioSplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.b44e6e4d91d3.app/co.radio.apps.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.bauermedia.ghr/com.bauermedia.ghr.BauerIntroActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.caf.fmradio/com.caf.fmradio.FMRadio}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.caf.fmradio/com.caf.fmradio.FMTransmitterActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.caf.fmradio/com.caf.fmradio.LewaFMRadio}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.caf.fmradio/com.caf.fmradio.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.cbn.radio.christian.music.free.android.app/com.cbn.cbnradio.views.splash.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.chmedia.radioargovia/com.ideamineradiobern.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.cmobile.radiofm/com.cmobile.radiofm.presentation.ui.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.comforter.radio/com.comforter.radio.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.concertzender.radio_app/com.concertzender.radio_app.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.criticalcommunicationsmedia.hamradioprep3/com.criticalcommunicationsmedia.hamradioprep3.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.criticalcommunicationsmedia.hamradioprep3/com.criticalcommunicationsmedia.hamradioprep3.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.crowdradio.ostseewelle/de.dmhhub.radioapplication.ui.RadioActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.crystalmissions.czradio/com.crystalmissions.skradio.activities.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.crystalmissions.plradio/com.crystalmissions.skradio.activities.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.dashradio.dash/com.dashradio.dash.activities.login.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.dm1982.radiomauritius2019/com.dm1982.radiomauritius2019.activitis.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.dms.rock_radio/com.dms.rock_radio.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.dnm.radiokoeln/com.brandsarelive.app.SplashScreenActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.earthflare.anddroid.radioparadisewidget/com.cratorsoft.act.ActRPHD_}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.ellaradio.ellaradio/com.ellaradio.ellaradio.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.empirestreaming.bagelradio/com.empirestreaming.bagelradio.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.eurekateam.fmradio/com.eurekateam.fmradio.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.evenwell.fmradio/com.evenwell.fmradio.FMRadioActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.favoritati.playercaxias/com.goodbarber.v2.core.common.activities.SplashscreenActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.finallevel.radiobox/com.finallevel.application.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.finallevel.radiobox/com.finallevel.radiobox.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.fitradio/com.fitradio.ui.StartUpActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.fourchars.lmpfree/gui.SplashScreenActivity3}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.fourchars.lmpfree/gui.SplashScreenActivity7}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.funbase.xradio/com.funbase.xradio.activity.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.funbase.xradio/com.funbase.xradio.home.activity.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.funbase.xradio/com.transsion.fm.main.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.furryrefuge.furryrefugeradio/com.furryrefuge.furryrefugeradio.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.galaxy.uk.radio.app/com.uk.radio.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.galaxyapps.mylocalradio/net.programmierecke.radiodroid2.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.genesissoftware.policescannerradiocodes/com.genesissoftware.policescannerradiocodes.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.givvyradios/com.givvyradios.shared.view.DefaultActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.gkapps.radio.eighties.pro/com.gkapps.radio.eighties.pro.StartRadio}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.gkapps.radio.nineties.pro/com.gkapps.radio.nineties.pro.StartRadioApp}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.goodbarber.radiourbana/com.goodbarber.v2.core.common.activities.SplashscreenActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.greek.radios/com.greek.radios.activities.OnAirActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.greenshpits.RLive/il.co.radio.rlive.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.grupovaughan.vaughanradio/es.solidgear.vaughanradio.ui.activities.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.haritha_kh.radioinfo/com.haritha_kh.radioinfo.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.HerGarApps.LuxfunkradioHungrary/sekhontech.com.myradio.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.hihonor.android.fmradio/com.hihonor.android.fmradio.FMRadioMainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.hmdglobal.app.fmradio/com.hmdglobal.app.fmradio.FmMainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.hmdglobal.app.fmradio/com.hmdglobal.app.fmradio.FMRadio}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.hnlens.fmradio/com.hnlens.fmradio.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.huaqin.FM/com.huaqin.FM.FM}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.huawei.android.FMRadio/com.huawei.android.FMRadio.FmMainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.huawei.android.FMRadio/com.huawei.android.FMRadio.FmRadioActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.huawei.android.FMRadio/com.huawei.android.FMRadio.FMRadioMainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.huawei.android.FMRadio/com.huawei.FMRadio.page.PageActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.hv.replaio/com.hv.replaio.activities.StartActivity_22}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.hv.replaio/com.hv.replaio.activities.StartActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.ihippo.kpop.music/com.ihippo.kpop.music.XRadioSplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.imsgroups.exyuradio/com.exampleyu.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.infoshell.recradio/com.infoshell.recradio.activity.splash.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.internet.loveworldradio/com.internet.loveworldradio.Splash}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.intothewhitebox.radios.lared/com.intothewhitebox.radios.lared.activity.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.iphonedroid.radiomarca/com.ue.projects.radiomarca.activities.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.j1radio.player/com.zoontek.rnbootsplash.RNBootSplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.jbradio.radio/com.jbradio.radio.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.jesusislordradio.liveapp/com.jesusislordradio.liveapp.activities.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.kakiradios.arabiesaoudite/com.kakiradios.arabiesaoudite.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.kakiradios.royaumeuni/com.kakiradios.royaumeuni.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.kakiradios.world/com.kakiradios.world.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.kinnovatech.mwradio/com.kinnovatech.mwradio.presentation.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.konashone.fm_am_tuner_radio_for_offline/com.konashone.fm_am_tuner_radio_for_offline.konashonezetzer.KonashOneMain}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.last.fm.live.radio.stations/com.ntduc.baseproject.ui.component.splash.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.listen2myapp.listen2myapp234/com.listen2myapp.unicornradio.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.live365.revradio/com.live365.revradio.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.liveradio.fmradio.radiotuner.radiostation.amradio/com.liveradio.fmradio.radiotuner.radiostation.amradio.ui.activities.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.lknninex.gradion/com.lknninex.gradion.activities.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.loficlouds.lofiradio/com.loficlouds.lofiradio.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.maxxt.animeradio/com.maxxt.animeradio.RadioActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.maxxt.chilloutradio/com.maxxt.animeradio.RadioActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.maxxt.chilloutradio/com.maxxt.radioapp.ui.main_view.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.maxxt.classicalradio/com.maxxt.animeradio.RadioActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.maxxt.jazzradio/com.maxxt.animeradio.RadioActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.maxxt.jazzradio/com.maxxt.radioapp.ui.main_view.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.maxxt.pcradio/com.maxxt.pcradio.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.maxxt.pcradio/com.maxxt.pcradio.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.maxxt.rockradio/com.maxxt.animeradio.RadioActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.medengage.radiology/com.medengage.clinical.ui.activities.onboarding.splash.NewSplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.mediatek.FMRadio/com.broadcom.bt.app.fm.rx.fmradio}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.mediatek.FMRadio/com.mediatek.FMRadio.CheckEarphone}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.mediatek.FMRadio/com.mediatek.FMRadio.FMRadio}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.mediatek.fmradio/com.mediatek.fmradio.FmRadioActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.mediatek.FMRadio/com.mediatek.FMRadio.FMRadioActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.mediatek.FMRadio/com.mediatek.FMRadio.FMRadioMainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.mediatek.FMRadio/com.mediatek.FMRadio.HQFMRadioActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.mediatek.FMRadio/com.mediatek.FMRadio.LewaFMRadioActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.miui.fm/com.miui.fmradio.activity.LauncherActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.miui.fm/com.miui.fmradio.FmActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.miui.fm/com.miui.fmradio.FmRadioActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.miui.fm/fm.qingting.qtradio.WelcomeActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.mobitwins.radiovietnamonline/com.mobitwins.radiovietnamonline.activity.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.motorola.fmplayer/com.motorola.fmplayer.ChangeThemeActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.motorola.fmplayer/com.motorola.fmplayer.FMMainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.motorola.fmplayer/com.motorola.fmplayer.FMPlayer}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.motorola.mtkfmplayer/com.motorola.mtkfmplayer.ChangeThemeActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.music.youngradioplus/com.music.youngradioplus.ui.activity.cfbwj}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.music.youngradiopro/com.music.youngradiopro.ui.activity.cchl7}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.music.youngradiopro/com.music.youngradiopro.ui.activity.cfecs}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.myhomesmartlife.bluetooth/com.myhomesmartlife.bluetooth.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.MyIndieApp.FreeMetalRadio/com.MyIndieApp.FreeMetalRadio.RadioActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.MyIndieApp.FreeOldiesRadio/com.MyIndieApp.FreeOldiesRadio.RadioActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.MyIndieApp.FreeRockRadio/com.MyIndieApp.FreeRockRadio.RadioActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.nakko.android.radio10gold/com.nakko.android.radio10gold.MainActivityDefault}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.nakko.android.radio538/com.nakko.android.radio538.MainActivityDefault}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.nakko.android.radio538/com.trapp.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.newliferadio/com.ryanheise.audioservice.AudioServiceActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.nextradioapp.nextradio/com.nextradioapp.nextradio.activities.SplashScreen}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.nextradiotv.rmc/com.nextradiotv.app.clean.ui.navigation.MainNavigationActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.nickstamp.tvradio_gr/com.nickstamp.activity.BottomBarActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.nodemtech.radiojapan/net.programmierecke.radiodroid2.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.nova.radionova/com.nova.radionova.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.ntslive.ntsradio/com.ntslive.ntsradio.UrlModifierLauncherActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.nvbc.knvbcandroid/com.ryanheise.audioservice.AudioServiceActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.onlineradio.fmradioplayer/com.onlineradio.fmradioplayer.ui.activities.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.onlineradio.radiofm/com.onlineradio.radiofm.ui.activities.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.onlineradiofm.phonkmusic/com.onlineradiofm.phonkmusic.MySplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.ontim.fmradio/com.ontim.fmradio.activities.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.opensource.i2pradio/com.opensource.i2pradio.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.p4gruppen.radio.p4/com.p4gruppen.radio.app.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.paqapaqa.radiomobi/com.paqapaqa.radiomobi.ui.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.peakpocketstudios.lofiradio/com.peakpocketstudios.lofi.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.pm.cannes/com.thisisaim.templateapp.view.activity.intro.IntroActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.prisaradio.replicapp.cadenaser/com.prisa.ser.presentation.screens.fakeSplash.FakeSplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.prisaradio.replicapp.radioacktiva/com.thisisaim.templateapp.view.activity.intro.IntroActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.prisaradio.replicapp.wradiocolombia/com.thisisaim.templateapp.view.activity.intro.IntroActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.quicinc.fmradio/com.quicinc.fmradio.FMRadio}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.radio.fmradio/com.radio.fmradio.activities.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.radio.fmradio/com.radio.fmradio.activities.SplashActivityAliasMain}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.radio.fmradio/com.radio.fmradio.activities.SplashActivityAliasPremium}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.radio.fmradio/com.radio.fmradio.InitFM}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.radio.fmradio/com.radio.fmradio.RadioFM}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.radio.helloworld/com.radio.helloworld.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.radio.helloworld/com.radio.helloworld.SplashScreen}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.radio.md9132e5a7/co.radio.apps.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.radio.pl/io.kodular.sp4ubw.Radio_Polska.Screen1}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.radio.TunemoFM/com.radio.TunemoFM.activities.ActivitySplash}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.radio4ne.kixx/com.alexsh.multiradio.activities.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.radioapp.mayakradio/com.radioapp.mayakradio.SplashScreen}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.radioapp.solovievfm/com.radioapp.solovievfm.SplashScreen}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.radiocanada.mauril/com.radiocanada.mauril.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.radiocenter.radiocenterapp/com.radiocenter.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.radiocomercial/com.radiocomercial.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.radiodiblu/com.radiodiblu.activities.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.radioenter.app/com.radiocenter.radiocenterapp.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.radiofg.radiofg/com.thisisaim.templateapp.view.activity.intro.IntroActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.radiofrance.radio.franceinter.android/com.radiofrance.radio.franceinter.android.ui.activity.StarterActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.radioistanbulfm/com.radioistanbulfm.ui.splash.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.radiojavan.androidradio/com.radiojavan.androidradio.DefaultLauncher}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.radiojavan.androidradio/com.radiojavan.androidradio.main.MainLauncherActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.radiojavan.androidradio/com.radiojavan.androidradio.splash.LauncherActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.radioks/com.radioks.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.radiolight.etatsunis/com.radiolight.etatsunis.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.radiolight.hongrie/com.radiolight.hongrie.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.radiolight.italie/com.radiolight.italie.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.radiolight.philippines/com.radiolight.philippines.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.radiolight.pologne/com.radiolight.pologne.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.radiolight.russie/com.radiolight.russie.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.radiolight.ukraine/com.radiolight.ukraine.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.radiomonumental.ajvierci/com.radiomonumental.ajvierci.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.radiooooo/com.google.androidbrowserhelper.trusted.LauncherActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.radioplayer.mobile/com.radioplayer.mobile.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.radiosonline.radiofmjapan/com.radio.core.ui.home.HomeActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.radiosonline.radiofmmalaysia/com.radio.core.ui.home.HomeActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.radiotime.app/com.app.radiotime.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.radiotn.tunisie/com.radiotn.tunisie.ui.splash.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.radiozu.aacplay/ro.radiozu.app.ui.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.rcf.radiogen/com.radiocodeford.fordradiocodegenerator.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.samsung.mdl.radio/com.samsung.mdl.radio.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.sec.android.app.fm/com.sec.android.app.fm.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.sgpcradio/com.sgpcradio.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.shikh.gurbaniradio.livekirtan/com.shikh.gurbaniradio.livekirtan.ui.splash.Splashscreen}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.skyblue.pra.tpr/com.skyblue.activity.InitialActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.slacker.radio/com.slacker.gui.pivot.activities.PreLaunchActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.slaler.radionet/com.slaler.radionet.forms.ActivityStart}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.slipstream.accuradio/com.slipstream.accuradio.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.slzcast.novasdepaz/com.slzcast.novasdepaz.ui.splash.SplashScreenActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.sonymobile.fmradio/com.sonymobile.fmradio.ui.FmRadioActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.soundsofthesoul.audio528hertz528hertzfrequencymusicfreehealingmeditationmusic/sekhontech.com.myradio.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.spotlightenglish.radio/co.median.android.LaunchActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.spreaker.android/com.spreaker.android.radio.main.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.stayfprod.awesomeradio.free/com.stayfprod.awesomeradio.ui.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.tamilfmradio.tamilfmsongs/com.tamilfmradio.tamilfmsongs.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.Tarter.RXPosicionesRadiolgicas/com.unity3d.player.UnityPlayerActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.tasmanic.radio.fm/com.tasmanic.radio.fm.GDPRLauncherActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.tcl.fmradio/com.tct.fmradio.utils.BaseActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.tct.fmradio.bb/com.tct.fmradio.utils.BaseActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.thehouseofcode.radio_nowy_swiat/com.thehouseofcode.radio_nowy_swiat.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.thisisglobal.player.xfm/com.thisisglobal.guacamole.main.views.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.tomorrowland.oneworldradio/com.tomorrowland.oneworldradio.RadioActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.transsion.fmradio/com.funbase.xradio.activity.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.transsion.fmradio/com.funbase.xradio.home.activity.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.transsion.fmradio/com.transsion.fmradio.FmMainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.tuneradios.maranhao/com.tuneradios.maranhao.activities.ActivitySplash}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.vivo.FMRadio/com.vivo.FMRadio.FMRadio}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.vivo.FMRadio/com.vivo.FMRadio.FMRadioActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.warptec.escradio/de.konsole_labs.webapp.library.activity.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.wg.superradio/ru.zharafm.app.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.xdevel.radiostudiopiu/com.radiostudiopiu.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.yuriy.openradio/com.yuriy.openradio.mobile.view.activity.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.yuriy.openradio/com.zipoapps.premiumhelper.ui.splash.PHSplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.zenofm.player/com.zeno.play.ui.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{com.zui.fmplayer/com.motorola.fmplayer.ChangeThemeActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{cz.anywhere.radio1/cz.anywhere.radio1.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{cz.anywhere.radiobeat/cz.anywhere.radiobeat.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{datamaster.easybook.xradiocarsmanchester/datamaster.easybook.xradiocarsmanchester.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{de.battlestr1k3.radionerd/de.battlestr1k3.radionerd.activities.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{de.dmhub.android.rtl890/de.dmhhub.radioapplication.ui.RadioActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{de.hirschmilch.radio_app/de.hirschmilch.radio_app.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{de.klassikradio.app/de.klassikradio.app.start.EntryActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{de.lightless.radiostation.lippewelle/com.brandsarelive.app.SplashScreenActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{de.lightless.radiostation.radiokiepenkerl/de.konsole_labs.webapp.library.activity.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{de.program_co.benclockradioplusplus/de.program_co.benclockradioplusplus.activities.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{de.program_co.benradioclock/de.program_co.benradioclock.activities.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{de.radio.android.prime/de.radio.android.activity.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{de.radio.android.prime/de.radio.android.AppActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{de.radio.android.prime/de.radio.android.ui.AppActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{de.radiobob.radio/com.computerrock.radiolikemee.ui.intro.IntroActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{de.radiocom.bigfm/com.computerrock.radiolikemee.ui.intro.IntroActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{de.radioplayer.android/de.radioplayer.android.controller.activity.intro.DEIntroActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{de.regiocast.radio80s80s/com.computerrock.radiolikemee.ui.intro.IntroActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{de.regiocast.radio90s90s/com.computerrock.radiolikemee.ui.intro.IntroActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{de.swr.swr1bwradio/de.swr.swr1.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{de.swr.swr3radio/de.swr.swr3.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{de.westfunk.essen/com.brandsarelive.app.SplashScreenActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{de.westfunk.essen/de.westfunk.essen.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{dev.fzer0x.imsicatcherdetector2/dev.fzer0x.imsicatcherdetector2.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{dev.oasemedia.radioislamindonesia/dev.oasemedia.radioislamindonesia.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{dk.nordfalk.esperanto.radio/dk.dr.radio.akt.Hovedaktivitet}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{dlinemedia.radioplayer.myata/com.example.musicplayerapp.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{egdigital.jazz/egdigital.factory.radio_app.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{es.radioblanca.hitfm/es.sdos.android.project.NavHostActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{es.rtve.playradio/es.rtve.playradio.Activity.SplashActivity_}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{eu.inmite.lag.radio.frekvence1/eu.inmite.lag.radio.evropa2.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{fm.qingting.qtradio/fm.qingting.qtradio.WelcomeActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{fm.radio.sanity.radiofm/fm.radio.sanity.radiofm.activities.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{fm.radioone1037.app/com.tadevel.mediaapp.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{fmradio.audio.video.player.prodcast/fmradio.audio.video.player.prodcast.FMRadio.FMStartActivity.FMOpen}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{fmradio.radiostation.livefm.musicradio/com.fm.radio.live.ui.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{fr.artestudio.arteradio.mobile/fr.artestudio.arteradio.mobile.ui.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{gg.goosegoose/com.azradio.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{gr.eradio.android/ui.LoadingScreen}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{grandiradio.com.radiosei/grandiradio.com.radiosei.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{group.radio.point/group.radio.point.ui.activity.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{hr.apps.n162567259/com.goodbarber.v2.core.common.activities.SplashscreenActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{hu.myonlineradio.onlineradioapplication/hu.myonlineradio.onlineradioapplication.activity.SplashActivity_}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{info.chronixaggression.station/info.chronixaggression.station.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{info.squaradio.france/info.squaradio.france.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{io.r_a_d.radio2/io.r_a_d.radio2.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{ir.iribradio.iranseda3/ir.iranseda.ChannelPage}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{irl.radio.christmasfm/irl.radio.christmasfm.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{it.deejay.radiodeejay/it.deejay.radiodeejay.presentation.ui.first.FirstActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{it.froggy.android.virginradio/it.mediaset.virginradio.activity.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{it.radiorai/it.rainet.raiplaysound.ui.SplashScreenActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{it.streamingmedia.funkyradio/com.ryanheise.audioservice.AudioServiceActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{jp.co.hakuhododymedia.RadioCloud/jp.co.hakuhododymedia.RadioCloud.activity.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{jp.nhk.netradio/com.sikmi.radiru_app.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{manipulations.radiologie.medicale/manipulations.radiologie.medicale.ActivitySplash}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{moldesbrothers.miradio/moldesbrothers.miradio.activities.ActivityPrincipal}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{moldesbrothers.miradioarg/moldesbrothers.miradio.activities.ActivityPrincipal}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{moldesbrothers.miradiomx/moldesbrothers.miradio.activities.ActivityPrincipal}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{myPack.pack/radiozet.ui.activities.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{myradio.radio.fmradio.liveradio.radiostation/radio.fm.onlineradio.views.activity.ActivityMain}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{myradio.radio.fmradio.liveradio.radiostation/radio.fm.onlineradio.views.activity.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{net.amp.era/my.com.astro.radiox.presentation.screens.launch.LaunchActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{net.bluespiresoftware.aRadioCat/com.safakge.radyokulesi.activity.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{net.fluidstream.kisskissnapoli/com.xdevel.radioxdevel.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{net.gensokyoradio.app/net.gensokyoradio.app.LoginActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{net.meradio/net.meradio.presentation.login.view.activity.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{net.radioexpert.radio.fm.czech/com.exampley.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{net.radioexpert.radio.poland/com.exampley.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{net.radioexpert.radio.romania/com.exampley.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{net.radioexpert.radio.uzivo/com.exampley.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{net.studionamehere.acradio/net.studionamehere.animalradio.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{nightradio.pixilang/nightradio.pixilang.MyNativeActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{nightradio.sunvox/nightradio.sunvox.MyNativeActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{nl.nibbixsoft.app/nl.nibbixsoft.app.RadioActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{nl.skyradiogroup.radioveronica/com.mediahouse.rn.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{noods.radio/com.noodsradio.noodsapp.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{noods.radio/noods.radio.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{nz.co.radionz.android/nz.co.radionz.radionz.ui.splash.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{org.bbnradio.player.english/org.bbnradio.english.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{org.onedroid.radiowave/org.onedroid.radiowave.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{org.samsonsen.nederlandse.radio.holland.nl/org.samsonsen.radio.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{pl.antyradio20/pl.antyradio20.ui.activities.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{pl.antyradio20/pl.antyradio20.ui.activities.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{pl.eska/pl.eska.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{pl.eska/pl.eska.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{pl.katowice.radio/com.ryanheise.audioservice.AudioServiceActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{pl.polskieradio.mobile/com.zoontek.rnbootsplash.RNBootSplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{pl.polskieradio.mobile/pl.polskieradio.mobile.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{pl.polskieradio.mobile/pl.polskieradio.mobile.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{pl.Radio357/com.radio.project.ui.splash.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{pl.Radio357/pl.radio357.composable.Activity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{pl.radiofest/pl.toboche.mobileradio.mobile_radio.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{pl.radioram.radio/com.ryanheise.audioservice.AudioServiceActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{pl.radiowawa/pl.radiowawa.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{pl.radioyanosik.radio/pl.radioyanosik.radio.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{pl.radioyanosik.radio/pl.radioyanosik.radio.view.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{radio.airsrinagar/radio.airsrinagar.empezar}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{radio.fm.live.online.podcasts.player.free.podio/radio.fm.live.online.podcasts.player.free.podio.view.activity.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{radio.jamaica.fm.app.online/com.appmind.countryradios.screens.splash.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{radio.kenya.fm.stations.online/com.appmind.countryradios.screens.splash.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{radio.willy.app/nl.qmusic.ui.splash.SplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{radio21Application.com.radio21/com.brandsarelive.app.SplashScreenActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{radiohost.radiorepublika.mobile/radiohost.radiorepublika.mobile.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{rc.appradio.android/com.radiocanada.audio.ui.main.DeepLinkActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{rc.appradio.android/com.radiocanada.audio.ui.main.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{ro.esy.radio/ro.esy.radio.RadioSplashActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{ro.radioromaniaactualitati.podcasts/com.ryanheise.audioservice.AudioServiceActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{ru.bukharsky.radio/ru.bukharsky.radio.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{ru.radcap.capriceradio/ru.radcap.capriceradio.RadioListActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{ru.radioultra.player/com.infteh.radiotemplate.RTActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{ru.yandex.mobile.fmradio/ru.yandex.radio.main_activity.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{ru.yandex.radio/ru.yandex.radio.app.WelcomeActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{se.sbs.radioplay/com.bauermedia.audio.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{si.rockradio.app/com.radiocenter.radiocenterapp.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{tools.app.fmradio/tools.app.fmradio.start.Splash_Activity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{ua.radio.halogen/ua.radio.halogen.Activity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{ua.radioplayer.app/ua.radioplayer.radioplayer.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "ComponentInfo{va.spc.vaticanaudio/va.spc.vaticanaudio.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "cz.anywhere.radio1/cz.anywhere.radio1.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "cz.anywhere.radiobeat/cz.anywhere.radiobeat.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "datamaster.easybook.xradiocarsmanchester/datamaster.easybook.xradiocarsmanchester.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "de.battlestr1k3.radionerd/de.battlestr1k3.radionerd.activities.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "de.dmhub.android.rtl890/de.dmhhub.radioapplication.ui.RadioActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "de.hirschmilch.radio_app/de.hirschmilch.radio_app.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "de.klassikradio.app/de.klassikradio.app.start.EntryActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "de.lightless.radiostation.lippewelle/com.brandsarelive.app.SplashScreenActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "de.lightless.radiostation.radiokiepenkerl/de.konsole_labs.webapp.library.activity.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "de.program_co.benclockradioplusplus/de.program_co.benclockradioplusplus.activities.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "de.program_co.benradioclock/de.program_co.benradioclock.activities.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "de.radio.android.prime/de.radio.android.activity.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "de.radio.android.prime/de.radio.android.AppActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "de.radio.android.prime/de.radio.android.ui.AppActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "de.radiobob.radio/com.computerrock.radiolikemee.ui.intro.IntroActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "de.radiocom.bigfm/com.computerrock.radiolikemee.ui.intro.IntroActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "de.radioplayer.android/de.radioplayer.android.controller.activity.intro.DEIntroActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "de.regiocast.radio80s80s/com.computerrock.radiolikemee.ui.intro.IntroActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "de.regiocast.radio90s90s/com.computerrock.radiolikemee.ui.intro.IntroActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "de.swr.swr1bwradio/de.swr.swr1.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "de.swr.swr3radio/de.swr.swr3.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "de.westfunk.essen/com.brandsarelive.app.SplashScreenActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "de.westfunk.essen/de.westfunk.essen.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "dev.fzer0x.imsicatcherdetector2/dev.fzer0x.imsicatcherdetector2.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "dev.oasemedia.radioislamindonesia/dev.oasemedia.radioislamindonesia.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "dk.nordfalk.esperanto.radio/dk.dr.radio.akt.Hovedaktivitet",
+      "drawable": "radio"
+    },
+    {
+      "component": "dlinemedia.radioplayer.myata/com.example.musicplayerapp.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "egdigital.jazz/egdigital.factory.radio_app.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "es.radioblanca.hitfm/es.sdos.android.project.NavHostActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "es.rtve.playradio/es.rtve.playradio.Activity.SplashActivity_",
+      "drawable": "radio"
+    },
+    {
+      "component": "eu.inmite.lag.radio.frekvence1/eu.inmite.lag.radio.evropa2.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "fm.qingting.qtradio/fm.qingting.qtradio.WelcomeActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "fm.radio.sanity.radiofm/fm.radio.sanity.radiofm.activities.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "fm.radioone1037.app/com.tadevel.mediaapp.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "fmradio.audio.video.player.prodcast/fmradio.audio.video.player.prodcast.FMRadio.FMStartActivity.FMOpen",
+      "drawable": "radio"
+    },
+    {
+      "component": "fmradio.radiostation.livefm.musicradio/com.fm.radio.live.ui.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "fr.artestudio.arteradio.mobile/fr.artestudio.arteradio.mobile.ui.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "gg.goosegoose/com.azradio.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "gr.eradio.android/ui.LoadingScreen",
+      "drawable": "radio"
+    },
+    {
+      "component": "grandiradio.com.radiosei/grandiradio.com.radiosei.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "group.radio.point/group.radio.point.ui.activity.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "hr.apps.n162567259/com.goodbarber.v2.core.common.activities.SplashscreenActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "hu.myonlineradio.onlineradioapplication/hu.myonlineradio.onlineradioapplication.activity.SplashActivity_",
+      "drawable": "radio"
+    },
+    {
+      "component": "info.chronixaggression.station/info.chronixaggression.station.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "info.squaradio.france/info.squaradio.france.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "io.r_a_d.radio2/io.r_a_d.radio2.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "ir.iribradio.iranseda3/ir.iranseda.ChannelPage",
+      "drawable": "radio"
+    },
+    {
+      "component": "irl.radio.christmasfm/irl.radio.christmasfm.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "it.deejay.radiodeejay/it.deejay.radiodeejay.presentation.ui.first.FirstActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "it.froggy.android.virginradio/it.mediaset.virginradio.activity.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "it.radiorai/it.rainet.raiplaysound.ui.SplashScreenActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "it.streamingmedia.funkyradio/com.ryanheise.audioservice.AudioServiceActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "jp.co.hakuhododymedia.RadioCloud/jp.co.hakuhododymedia.RadioCloud.activity.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "jp.nhk.netradio/com.sikmi.radiru_app.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "manipulations.radiologie.medicale/manipulations.radiologie.medicale.ActivitySplash",
+      "drawable": "radio"
+    },
+    {
+      "component": "moldesbrothers.miradio/moldesbrothers.miradio.activities.ActivityPrincipal",
+      "drawable": "radio"
+    },
+    {
+      "component": "moldesbrothers.miradioarg/moldesbrothers.miradio.activities.ActivityPrincipal",
+      "drawable": "radio"
+    },
+    {
+      "component": "moldesbrothers.miradiomx/moldesbrothers.miradio.activities.ActivityPrincipal",
+      "drawable": "radio"
+    },
+    {
+      "component": "myPack.pack/radiozet.ui.activities.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "myradio.radio.fmradio.liveradio.radiostation/radio.fm.onlineradio.views.activity.ActivityMain",
+      "drawable": "radio"
+    },
+    {
+      "component": "myradio.radio.fmradio.liveradio.radiostation/radio.fm.onlineradio.views.activity.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "net.amp.era/my.com.astro.radiox.presentation.screens.launch.LaunchActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "net.bluespiresoftware.aRadioCat/com.safakge.radyokulesi.activity.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "net.fluidstream.kisskissnapoli/com.xdevel.radioxdevel.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "net.gensokyoradio.app/net.gensokyoradio.app.LoginActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "net.meradio/net.meradio.presentation.login.view.activity.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "net.radioexpert.radio.fm.czech/com.exampley.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "net.radioexpert.radio.poland/com.exampley.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "net.radioexpert.radio.romania/com.exampley.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "net.radioexpert.radio.uzivo/com.exampley.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "net.studionamehere.acradio/net.studionamehere.animalradio.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "nightradio.pixilang/nightradio.pixilang.MyNativeActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "nightradio.sunvox/nightradio.sunvox.MyNativeActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "nl.nibbixsoft.app/nl.nibbixsoft.app.RadioActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "nl.skyradiogroup.radioveronica/com.mediahouse.rn.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "noods.radio/com.noodsradio.noodsapp.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "noods.radio/noods.radio.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "nz.co.radionz.android/nz.co.radionz.radionz.ui.splash.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "org.bbnradio.player.english/org.bbnradio.english.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "org.onedroid.radiowave/org.onedroid.radiowave.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "org.samsonsen.nederlandse.radio.holland.nl/org.samsonsen.radio.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "pl.antyradio20/pl.antyradio20.ui.activities.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "pl.antyradio20/pl.antyradio20.ui.activities.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "pl.eska/pl.eska.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "pl.eska/pl.eska.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "pl.katowice.radio/com.ryanheise.audioservice.AudioServiceActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "pl.polskieradio.mobile/com.zoontek.rnbootsplash.RNBootSplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "pl.polskieradio.mobile/pl.polskieradio.mobile.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "pl.polskieradio.mobile/pl.polskieradio.mobile.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "pl.Radio357/com.radio.project.ui.splash.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "pl.Radio357/pl.radio357.composable.Activity",
+      "drawable": "radio"
+    },
+    {
+      "component": "pl.radiofest/pl.toboche.mobileradio.mobile_radio.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "pl.radioram.radio/com.ryanheise.audioservice.AudioServiceActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "pl.radiowawa/pl.radiowawa.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "pl.radioyanosik.radio/pl.radioyanosik.radio.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "pl.radioyanosik.radio/pl.radioyanosik.radio.view.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "radio.airsrinagar/radio.airsrinagar.empezar",
+      "drawable": "radio"
+    },
+    {
+      "component": "radio.fm.live.online.podcasts.player.free.podio/radio.fm.live.online.podcasts.player.free.podio.view.activity.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "radio.jamaica.fm.app.online/com.appmind.countryradios.screens.splash.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "radio.kenya.fm.stations.online/com.appmind.countryradios.screens.splash.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "radio.willy.app/nl.qmusic.ui.splash.SplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "radio21Application.com.radio21/com.brandsarelive.app.SplashScreenActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "radiohost.radiorepublika.mobile/radiohost.radiorepublika.mobile.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "rc.appradio.android/com.radiocanada.audio.ui.main.DeepLinkActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "rc.appradio.android/com.radiocanada.audio.ui.main.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "ro.esy.radio/ro.esy.radio.RadioSplashActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "ro.radioromaniaactualitati.podcasts/com.ryanheise.audioservice.AudioServiceActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "ru.bukharsky.radio/ru.bukharsky.radio.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "ru.radcap.capriceradio/ru.radcap.capriceradio.RadioListActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "ru.radioultra.player/com.infteh.radiotemplate.RTActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "ru.yandex.mobile.fmradio/ru.yandex.radio.main_activity.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "ru.yandex.radio/ru.yandex.radio.app.WelcomeActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "se.sbs.radioplay/com.bauermedia.audio.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "si.rockradio.app/com.radiocenter.radiocenterapp.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "tools.app.fmradio/tools.app.fmradio.start.Splash_Activity",
+      "drawable": "radio"
+    },
+    {
+      "component": "ua.radio.halogen/ua.radio.halogen.Activity",
+      "drawable": "radio"
+    },
+    {
+      "component": "ua.radioplayer.app/ua.radioplayer.radioplayer.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "va.spc.vaticanaudio/va.spc.vaticanaudio.MainActivity",
+      "drawable": "radio"
     },
     {
       "component": "ComponentInfo{com.jonathanpuckey.radiogarden/com.google.android.archive.ReactivateActivity}",
@@ -130533,6 +135305,18 @@
     {
       "component": "ComponentInfo{com.zvooq.openplay/com.zvooq.openplay.SplashAliasDefault}",
       "drawable": "zvuk"
+    },
+    {
+      "component": "ComponentInfo{com.sec.android.app.fm/.MainActivity}",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.sec.android.app.fm/.MainActivity",
+      "drawable": "radio"
+    },
+    {
+      "component": "com.sec.android.gallery3d/com.samsung.android.gallery.app.activity.GalleryActivity",
+      "drawable": "gallery"
     }
   ]
 }

@@ -9,6 +9,7 @@
     <item drawable="clock" />
     <item drawable="contacts" />
     <item drawable="downloads" />
+    <item drawable="gallery" />
     <item drawable="messages" />
     <item drawable="phone" />
     <item drawable="settings" />
@@ -2216,6 +2217,7 @@
     <item drawable="quora" />
     <item drawable="radarbot" />
     <item drawable="radiko" />
+    <item drawable="radio" />
     <item drawable="radio_garden" />
     <item drawable="radio_net" />
     <item drawable="railyatri" />
