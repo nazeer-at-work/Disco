@@ -65,6 +65,49 @@ iconPackConfig.mappings = dedupedMappings;
 let newIconsCount = 0;
 let newMappingsCount = 0;
 
+// Pre-load Fluffy mappings for O(1) lookup
+const fluffyMappingsByDrawable = new Map();
+const fluffyConfigPath = path.join(root, '..', 'Fluffy', 'config', 'icon-pack.json');
+if (fs.existsSync(fluffyConfigPath)) {
+  try {
+    const fluffyData = JSON.parse(fs.readFileSync(fluffyConfigPath, 'utf8'));
+    (fluffyData.mappings || []).forEach((m) => {
+      if (m.drawable && m.component) {
+        if (!fluffyMappingsByDrawable.has(m.drawable)) {
+          fluffyMappingsByDrawable.set(m.drawable, []);
+        }
+        fluffyMappingsByDrawable.get(m.drawable).push(m.component);
+      }
+    });
+    console.log(`📋 Pre-loaded ${fluffyData.mappings.length} mappings from Fluffy.`);
+  } catch (e) {
+    console.warn('Could not load Fluffy mappings:', e.message);
+  }
+}
+
+// Load explicit Samsung mappings
+const samsungMappingsPath = path.join(root, '..', 'Fluffy', 'samsung_mappings.json');
+if (fs.existsSync(samsungMappingsPath)) {
+  try {
+    const sData = JSON.parse(fs.readFileSync(samsungMappingsPath, 'utf8'));
+    let samsungCount = 0;
+    (sData.apps || []).forEach((app) => {
+      if (app.slug && Array.isArray(app.components)) {
+        if (!fluffyMappingsByDrawable.has(app.slug)) {
+          fluffyMappingsByDrawable.set(app.slug, []);
+        }
+        app.components.forEach((comp) => {
+          fluffyMappingsByDrawable.get(app.slug).push(comp);
+          samsungCount++;
+        });
+      }
+    });
+    console.log(`📋 Loaded ${samsungCount} Samsung OEM component bindings from Fluffy/samsung_mappings.json.`);
+  } catch (e) {
+    console.warn('Could not load samsung_mappings.json:', e.message);
+  }
+}
+
 for (const file of sourceFiles) {
   const slug = path.basename(file, '.webp');
 
@@ -97,6 +140,19 @@ for (const file of sourceFiles) {
   const appInfo = masterBySlug.get(slug);
   if (appInfo && Array.isArray(appInfo.components)) {
     for (const comp of appInfo.components) {
+      const key = `${comp}|${slug}`;
+      if (!existingMappingKeys.has(key)) {
+        iconPackConfig.mappings.push({ component: comp, drawable: slug });
+        existingMappingKeys.add(key);
+        newMappingsCount++;
+      }
+    }
+  }
+
+  // Add exact confirmed mappings from Fluffy for this slug
+  const fluffyComps = fluffyMappingsByDrawable.get(slug);
+  if (fluffyComps) {
+    for (const comp of fluffyComps) {
       const key = `${comp}|${slug}`;
       if (!existingMappingKeys.has(key)) {
         iconPackConfig.mappings.push({ component: comp, drawable: slug });

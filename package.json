@@ -1,6 +1,6 @@
 {
   "name": "icon-pack-template",
-  "version": "1.0.6",
+  "version": "1.0.9",
   "private": true,
   "scripts": {
     "android": "NODE_ENV=development bash ./scripts/run-android.sh",
@@ -19,7 +19,12 @@
     "start": "NODE_ENV=development react-native start --port 19001 --reset-cache",
     "lint": "eslint .",
     "test": "jest",
-    "remove-bg": "node scripts/remove-bg.mjs"
+    "remove-bg": "node scripts/remove-bg.mjs",
+    "carve:prepare": "node scripts/prepare-carve-batches.mjs",
+    "carve:import": "node scripts/carve-import.mjs",
+    "review:recarve": "node scripts/recarve-server.mjs",
+    "generate:recarve-html": "node scripts/generate-recarve-html.mjs",
+    "apply:recarve": "node scripts/apply-recarve.mjs"
   },
   "dependencies": {
     "@react-native-vector-icons/material-icons": "^12.4.1",

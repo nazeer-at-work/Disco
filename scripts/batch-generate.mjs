@@ -40,6 +40,7 @@ const getArg = (name, fallback) => {
 const candidateMfluxPaths = [
   process.env.MFLUX_COMMAND,
   path.join(packRoot, '.mflux-venv', 'bin', 'mflux-generate-flux2-edit'),
+  path.resolve(packRoot, '..', 'Fluffy', '.mflux-venv', 'bin', 'mflux-generate-flux2-edit'),
   path.resolve(packRoot, '..', 'Fluff', '.mflux-venv', 'bin', 'mflux-generate-flux2-edit'),
 ].filter(Boolean);
 const mfluxCmd = candidateMfluxPaths.find((candidate) => fs.existsSync(candidate));
@@ -115,7 +116,8 @@ async function getReferenceImage(app, slug, packageId) {
     path.join(REF_DIR, `${slug}.webp`),
     path.join(packRoot, 'assets', 'logo-refs', `${slug}.png`),
     path.resolve(packRoot, '..', 'spidey', 'assets', 'icon-generation-references', `${slug}.png`),
-    path.resolve(packRoot, '..', 'spidey', 'assets', 'icon-generation-references', `${packageId || slug}.png`),
+    path.resolve(packRoot, '..', 'Fluffy', 'assets', 'icon-generation-references', `${slug}.png`),
+    path.resolve(packRoot, '..', 'Fluffy', 'assets', 'icon-generation-references', `${packageId || slug}.png`),
     path.resolve(packRoot, '..', 'Fluff', 'assets', 'icon-generation-references', `${slug}.png`),
     path.resolve(packRoot, '..', 'Fluff', 'assets', 'icon-generation-references', `${packageId || slug}.png`),
     path.resolve(packRoot, '..', 'pixel', 'assets', 'icon-generation-references', `${slug}.png`),

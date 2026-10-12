@@ -1,220 +1,1083 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="icon_pack" translatable="false">
+        <item>_1010_klooni</item>
+        <item>_101_okey_plus</item>
+        <item>_1111</item>
+        <item>_11st</item>
+        <item>_17track</item>
+        <item>_1945airforce</item>
+        <item>_1dm</item>
         <item>_1password</item>
         <item>_2048</item>
+        <item>_2248</item>
+        <item>_2_3_4_player_games</item>
+        <item>_2_accounts</item>
+        <item>_2_player_games</item>
+        <item>_2d</item>
+        <item>_2gis</item>
+        <item>_30_day_fitness_challenge</item>
+        <item>_365scores</item>
+        <item>_3bmeteo</item>
+        <item>_3d_modeling_app</item>
+        <item>_3dlut_mobile</item>
+        <item>_3plus</item>
+        <item>_4g</item>
+        <item>_7_minute_workout</item>
+        <item>_7eleven</item>
+        <item>_7plus</item>
+        <item>_7zipper</item>
         <item>_8_ball_pool</item>
+        <item>_90_fps</item>
+        <item>_90s</item>
+        <item>_99</item>
+        <item>_9gag</item>
+        <item>aa</item>
+        <item>aarogya_setu</item>
+        <item>abank24</item>
+        <item>abema_tv</item>
+        <item>abha</item>
+        <item>about_you</item>
+        <item>absa_banking</item>
+        <item>absher</item>
+        <item>acalendar</item>
+        <item>access_more</item>
+        <item>accubattery</item>
         <item>accuweather</item>
+        <item>acko</item>
+        <item>acorns</item>
+        <item>act_fibernet</item>
+        <item>action_app</item>
+        <item>actionlauncher</item>
+        <item>activearmor</item>
+        <item>activitylauncher</item>
+        <item>adblock_for_samsung_internet</item>
+        <item>adblockbrowser</item>
+        <item>add_text</item>
+        <item>adda247</item>
+        <item>addons_for_minecraft_pe</item>
+        <item>adguard</item>
+        <item>adguard_vpn</item>
         <item>adidas</item>
         <item>adidas_running</item>
+        <item>adm</item>
         <item>adobe_acrobat</item>
         <item>adobe_express</item>
         <item>adobe_lightroom</item>
         <item>adobe_scan</item>
+        <item>adpmobile</item>
+        <item>adv_screen_recorder</item>
+        <item>adw_launcher</item>
         <item>affirm</item>
         <item>afk_arena</item>
         <item>afterpay</item>
+        <item>aftership</item>
+        <item>agar_io</item>
         <item>agoda</item>
+        <item>aha</item>
+        <item>aha_games</item>
+        <item>ahnlab_v3_plus</item>
+        <item>ai_chat_open_assistant_chatbot</item>
+        <item>ai_retouch_remove_objects</item>
+        <item>ai_score</item>
         <item>aida64</item>
+        <item>aimp</item>
+        <item>aiqfome</item>
+        <item>airalo</item>
+        <item>airasia_move</item>
         <item>airbnb</item>
+        <item>airbrush</item>
+        <item>airdroid</item>
         <item>airtable</item>
+        <item>airtel</item>
+        <item>airtel_xstream</item>
+        <item>ais_play</item>
+        <item>ajaib</item>
         <item>ajio</item>
+        <item>akbank</item>
+        <item>akinator</item>
+        <item>al_cambio</item>
+        <item>al_quran_indonesia</item>
         <item>alarmy</item>
+        <item>albion_online</item>
+        <item>alchemy_2</item>
+        <item>aldi_talk</item>
+        <item>aldiko_next</item>
+        <item>alfagift</item>
+        <item>alfred_camera</item>
         <item>alibaba</item>
+        <item>alienshooter</item>
         <item>aliexpress</item>
         <item>alight_motion</item>
+        <item>alipay</item>
+        <item>all_4</item>
+        <item>all_accor</item>
+        <item>all_football</item>
         <item>allegro</item>
+        <item>allstate</item>
         <item>alltrails</item>
         <item>ally</item>
+        <item>alrajhi_bank</item>
+        <item>alto</item>
+        <item>altos_odyssey</item>
         <item>amazon</item>
+        <item>amazon_alexa</item>
+        <item>amazon_minitv</item>
         <item>amazon_music</item>
+        <item>amazon_photos</item>
         <item>amazon_prime_video</item>
+        <item>amazon_seller</item>
+        <item>ameli</item>
+        <item>american_airlines</item>
+        <item>americanas</item>
         <item>amex</item>
+        <item>amigo</item>
         <item>amongus</item>
+        <item>ampere</item>
+        <item>an_elmwood_trail</item>
+        <item>ancestry</item>
+        <item>androidauto</item>
+        <item>andropods</item>
+        <item>angel_one</item>
         <item>anghami</item>
+        <item>angry_birds</item>
+        <item>angry_birds_2</item>
+        <item>animal_restaurant</item>
+        <item>animex_wallpaper</item>
         <item>ankidroid</item>
+        <item>annelids</item>
+        <item>ant_legion</item>
+        <item>antistress</item>
+        <item>anton</item>
+        <item>any_icon</item>
         <item>anydesk</item>
+        <item>anydo</item>
+        <item>aol</item>
         <item>ap_news</item>
+        <item>apex_girl</item>
+        <item>apna</item>
+        <item>apollo_247</item>
+        <item>apowermirror</item>
+        <item>app_vault</item>
+        <item>appblock</item>
         <item>apple_tv</item>
         <item>applemusic</item>
+        <item>apteka_april</item>
+        <item>arabam</item>
+        <item>arattai</item>
+        <item>archero</item>
+        <item>ard_mediathek</item>
+        <item>arena_of_valor</item>
+        <item>argos</item>
+        <item>armworkout</item>
+        <item>arplan_3d</item>
+        <item>arrows</item>
+        <item>arte</item>
+        <item>arzone</item>
         <item>asana</item>
+        <item>ask_ai</item>
         <item>asos</item>
+        <item>asphalt_8</item>
+        <item>asphalt_9</item>
+        <item>assassin</item>
+        <item>assoluto_racing</item>
+        <item>astropay</item>
+        <item>asung_daiso</item>
+        <item>asus_data_transfer</item>
+        <item>at_and_t_cloud</item>
+        <item>at_voice</item>
+        <item>athan</item>
+        <item>atom_store</item>
+        <item>atome</item>
+        <item>attapoll</item>
+        <item>atv</item>
+        <item>au_pay</item>
+        <item>au_pay_market</item>
+        <item>au_selfcare</item>
+        <item>au_services_today</item>
+        <item>au_wifi_access</item>
+        <item>auction</item>
         <item>audible</item>
+        <item>audio_editor</item>
+        <item>audiolab</item>
         <item>audiomack</item>
+        <item>ausweisapp</item>
+        <item>authy</item>
+        <item>auto_club</item>
+        <item>auto_ru</item>
+        <item>autocad</item>
+        <item>autodoc</item>
+        <item>autonavi</item>
+        <item>autoscout24</item>
+        <item>autotrader</item>
+        <item>avast_mobile_security</item>
+        <item>avatar_world</item>
+        <item>avee_music_player</item>
         <item>avg_antivirus</item>
+        <item>avg_cleaner</item>
+        <item>avg_vpn</item>
+        <item>aviasales</item>
+        <item>avira_security</item>
+        <item>axio</item>
+        <item>axismobile</item>
+        <item>axisnet</item>
+        <item>axs</item>
+        <item>ayah</item>
+        <item>azar</item>
         <item>b612</item>
         <item>babbel</item>
+        <item>babycentre</item>
+        <item>back_market</item>
+        <item>background_eraser</item>
+        <item>backgrounderaser</item>
+        <item>backgrounds</item>
+        <item>backup</item>
+        <item>bacon</item>
+        <item>bad_piggies</item>
+        <item>badland</item>
         <item>badoo</item>
+        <item>bagan_keyboard</item>
+        <item>bajaj_finserv</item>
+        <item>ballpark</item>
+        <item>bananakong</item>
+        <item>banca_movil</item>
+        <item>banca_movil_bac</item>
+        <item>banco_azteca</item>
+        <item>banco_de_la_nacion</item>
+        <item>banco_del_bienestar</item>
+        <item>banco_estado</item>
+        <item>banco_galicia</item>
+        <item>banco_next</item>
+        <item>banco_pan</item>
+        <item>bancoppel</item>
+        <item>band</item>
         <item>bandcamp</item>
         <item>bandlab</item>
+        <item>bandsintown</item>
+        <item>banggood</item>
+        <item>bangla_keyboard</item>
         <item>bank_of_america</item>
+        <item>bankid</item>
+        <item>bankmillennium</item>
+        <item>banorte_mvil</item>
+        <item>banxo</item>
+        <item>barcode</item>
         <item>basecamp</item>
+        <item>basketball</item>
+        <item>battery</item>
+        <item>battlelands</item>
+        <item>battlenet</item>
+        <item>battles_2</item>
+        <item>bb</item>
+        <item>bb_racing</item>
+        <item>bb_racing_2</item>
+        <item>bbc</item>
         <item>bbc_iplayer</item>
         <item>bbc_news</item>
+        <item>bbc_sounds</item>
+        <item>bbc_weather</item>
+        <item>bbva</item>
+        <item>bca_mobile</item>
+        <item>bcp</item>
+        <item>bdv</item>
+        <item>be</item>
+        <item>beatfind</item>
+        <item>beats</item>
+        <item>beautyplus</item>
+        <item>beeline</item>
         <item>behance</item>
+        <item>bein_connect</item>
+        <item>bein_sports</item>
+        <item>bejeweled_blitz</item>
+        <item>beowulfweather</item>
         <item>bereal</item>
+        <item>bershka</item>
+        <item>besoccer</item>
         <item>bestbuy</item>
+        <item>betterme</item>
+        <item>bettersleep</item>
+        <item>between</item>
+        <item>bewakoof</item>
+        <item>bharatpe</item>
+        <item>bhim</item>
+        <item>bhim_sbi_pay</item>
+        <item>bhop_pro</item>
+        <item>bibit</item>
+        <item>bicycle</item>
+        <item>biedronka</item>
         <item>bigbasket</item>
+        <item>bigo_live</item>
+        <item>bigo_live_lite</item>
+        <item>bikroy</item>
         <item>bilibili</item>
+        <item>bima</item>
         <item>binance</item>
+        <item>bingx</item>
+        <item>bip</item>
+        <item>bird</item>
+        <item>bis_care</item>
+        <item>bitdefender</item>
+        <item>bitdefender_antivirus</item>
         <item>bitget</item>
+        <item>bitget_wallet</item>
+        <item>bitlife</item>
+        <item>bitmoji</item>
+        <item>bitso</item>
+        <item>bittorrent</item>
         <item>bitwarden</item>
+        <item>bixby_routines</item>
+        <item>bixby_vision</item>
+        <item>bkash</item>
         <item>blablacar</item>
+        <item>black_russia</item>
+        <item>blackboard</item>
+        <item>bleacher_report</item>
+        <item>blink</item>
         <item>blinkist</item>
         <item>blinkit</item>
+        <item>blitzerde</item>
+        <item>block_blast_adventure_master</item>
+        <item>block_puzzle</item>
+        <item>block_puzzle_plus</item>
         <item>blockchain_com</item>
+        <item>blocksite</item>
+        <item>blockudoku</item>
+        <item>blogger</item>
+        <item>bloody_bastards</item>
         <item>bloomberg</item>
         <item>bloonstd6</item>
+        <item>blue_light_filter</item>
+        <item>bluemail</item>
         <item>bluesky</item>
+        <item>bluetooth_filetransfer</item>
+        <item>bmg</item>
+        <item>bna_plus</item>
+        <item>bni_mobile_banking</item>
+        <item>boat_crest</item>
+        <item>boat_hearables</item>
+        <item>boat_wearables</item>
+        <item>bob_world</item>
+        <item>bobble_ai_keyboard</item>
+        <item>bodega_aurrera</item>
+        <item>bol</item>
         <item>bolt</item>
+        <item>bolt_food</item>
+        <item>bombsquad</item>
+        <item>boo</item>
         <item>booking</item>
+        <item>bookmate</item>
+        <item>bookmyshow</item>
+        <item>booksy</item>
         <item>boomplay</item>
+        <item>bose_connect</item>
+        <item>bose_music</item>
+        <item>botim</item>
+        <item>bottle_jump</item>
+        <item>bouncemasters</item>
+        <item>bouygues_telecom</item>
         <item>bowmasters</item>
         <item>box</item>
+        <item>boyner</item>
+        <item>bpi</item>
+        <item>brain_dots</item>
+        <item>brain_it_on</item>
+        <item>brain_out</item>
+        <item>brain_test</item>
         <item>brainly</item>
         <item>brave</item>
         <item>brawlhalla</item>
         <item>brawlstars</item>
+        <item>brevent</item>
         <item>brilliant</item>
+        <item>brimo</item>
+        <item>bring</item>
+        <item>brother_print_service_plugin</item>
+        <item>bsi_mobile</item>
+        <item>bsnl_selfcare</item>
+        <item>bt_remote</item>
+        <item>btn_mobile_banking</item>
+        <item>bualuangm</item>
+        <item>bubble_alt</item>
+        <item>bubble_level</item>
+        <item>bubble_pop</item>
+        <item>bubbleupnp</item>
+        <item>buienradar</item>
+        <item>buildings_for_minecraft_pe</item>
+        <item>bukalapak</item>
+        <item>bulut_mailru</item>
         <item>bumble</item>
         <item>burger_king</item>
+        <item>burrito_bison</item>
+        <item>bus_simulator_indonesia</item>
+        <item>business_empire</item>
+        <item>business_kalender</item>
+        <item>business_suite</item>
         <item>busuu</item>
+        <item>buz</item>
         <item>bybit</item>
+        <item>byjus_the_learning_app</item>
+        <item>bykea</item>
+        <item>byu</item>
+        <item>c6bank</item>
+        <item>c_and_a</item>
+        <item>cabify</item>
+        <item>caf</item>
+        <item>caixa</item>
+        <item>caixa_tem</item>
+        <item>cajaarena</item>
+        <item>cake</item>
         <item>calculator</item>
         <item>calendar</item>
         <item>calendly</item>
+        <item>call_blocker</item>
+        <item>call_filter</item>
         <item>call_of_duty</item>
+        <item>callapp_contacts</item>
         <item>calm</item>
         <item>camera</item>
+        <item>camera_fv5_lite</item>
+        <item>cameraconnect</item>
+        <item>camokat</item>
         <item>camscanner</item>
+        <item>canara_epassbook</item>
+        <item>canarabank</item>
         <item>candy_crush_saga</item>
         <item>candy_crush_soda</item>
+        <item>canon_print_service</item>
         <item>canva</item>
+        <item>canvas</item>
         <item>capcut</item>
         <item>capitalone</item>
+        <item>capitec</item>
+        <item>capybara</item>
+        <item>car_parking</item>
+        <item>car_parking_2</item>
+        <item>cardekho</item>
         <item>careem</item>
+        <item>carinfo</item>
+        <item>carlcare</item>
+        <item>carousell</item>
+        <item>carrom_disc_pool</item>
+        <item>carscanner</item>
+        <item>carteira_digital_de_transito</item>
+        <item>cartola</item>
+        <item>casas_bahia</item>
+        <item>cashea</item>
+        <item>cashify</item>
+        <item>cashkaro</item>
         <item>castbox</item>
+        <item>castle</item>
+        <item>cat_bird</item>
+        <item>catalone</item>
+        <item>cats_and_soup</item>
+        <item>cbs_sports</item>
+        <item>ccc</item>
+        <item>ccleaner</item>
+        <item>cdapl</item>
+        <item>cdek</item>
+        <item>cdiscount</item>
+        <item>cells</item>
+        <item>cent_m_passbook</item>
+        <item>centauro</item>
+        <item>cepte_sok</item>
+        <item>cepteteb</item>
+        <item>cfe_contigo</item>
+        <item>ch7hd</item>
+        <item>chai</item>
+        <item>chalo</item>
         <item>characterai</item>
         <item>chase</item>
+        <item>chat_nektome</item>
+        <item>chaton_ai</item>
+        <item>chatous</item>
+        <item>chatruletka</item>
+        <item>check24</item>
+        <item>checkers</item>
+        <item>chefkoch</item>
+        <item>chemistry</item>
         <item>chess</item>
+        <item>chess_clock</item>
+        <item>chestnyj_znak</item>
+        <item>chevrolet</item>
         <item>chewy</item>
+        <item>chickfila</item>
         <item>chime</item>
         <item>chipotle</item>
+        <item>chomp</item>
+        <item>chordify</item>
+        <item>chotot</item>
+        <item>chrome_remote_desktop</item>
+        <item>ciceksepeti</item>
+        <item>cieid</item>
+        <item>cifra_club</item>
+        <item>cifra_club_tuner</item>
+        <item>cinepolis</item>
+        <item>citi_mobile</item>
+        <item>citibanamex</item>
+        <item>citrix_workspace</item>
+        <item>cittamobi</item>
         <item>citymapper</item>
+        <item>claro</item>
+        <item>claro_drive</item>
+        <item>claro_flex</item>
+        <item>claro_movel</item>
+        <item>claro_pay</item>
+        <item>claro_shop</item>
+        <item>claro_tv_plus</item>
+        <item>claro_video</item>
         <item>clash_of_clans</item>
         <item>clash_royale</item>
+        <item>classdojo</item>
         <item>claude</item>
+        <item>clavepin</item>
+        <item>cleaner</item>
+        <item>cleanfox</item>
+        <item>cleanup</item>
+        <item>clear_wave</item>
+        <item>clearscan</item>
+        <item>cleartrip</item>
+        <item>clever_tanken</item>
+        <item>click_assistant</item>
+        <item>click_to_chat</item>
         <item>clickup</item>
+        <item>clima</item>
+        <item>clip_studio</item>
         <item>clock</item>
+        <item>clone_phone</item>
         <item>clubhouse</item>
         <item>clue</item>
+        <item>clusterduck</item>
         <item>cnn</item>
+        <item>coca_cola</item>
         <item>coin_master</item>
         <item>coinbase</item>
+        <item>coindcx_bitcoin</item>
+        <item>coinmarketcap</item>
+        <item>coinswitch</item>
+        <item>coke_on</item>
+        <item>collage_maker</item>
+        <item>collage_maker_gridart</item>
+        <item>color</item>
+        <item>color_puzzle</item>
+        <item>color_slide</item>
+        <item>color_switch</item>
+        <item>colorfulstage</item>
         <item>colornote</item>
+        <item>commbank</item>
+        <item>computrabajo</item>
+        <item>conecte_sus</item>
+        <item>confirmtkt</item>
+        <item>conquer_countries</item>
+        <item>consumidor</item>
         <item>contacts</item>
+        <item>control_screen_orientation</item>
+        <item>converter</item>
+        <item>cookidoo</item>
+        <item>cookie_run_kingdom</item>
+        <item>cookingmama</item>
+        <item>cookpad</item>
+        <item>correios</item>
         <item>costco</item>
+        <item>countdown</item>
         <item>coupang</item>
+        <item>couple_widget</item>
         <item>coursera</item>
+        <item>cpu</item>
+        <item>cpuz</item>
+        <item>craigslist</item>
         <item>crave</item>
         <item>cred</item>
+        <item>credit_karma</item>
+        <item>credit_one</item>
+        <item>creditagricole</item>
+        <item>crex</item>
+        <item>cricbuzz</item>
+        <item>cricheroes</item>
+        <item>cricket</item>
+        <item>critical_ops</item>
         <item>cron</item>
+        <item>crookcatcher</item>
+        <item>cross</item>
+        <item>cross_dj</item>
+        <item>cross_math</item>
+        <item>crosshair_hero</item>
+        <item>crossword</item>
+        <item>crosswords</item>
         <item>crossy_road</item>
+        <item>crowdcity</item>
+        <item>crumbl</item>
         <item>crunchyroll</item>
         <item>cryptocom</item>
+        <item>cryptogram_letters_and_numbers</item>
+        <item>cryptomania</item>
+        <item>csr_racing</item>
+        <item>csr_racing_2</item>
+        <item>cube_acr</item>
+        <item>cube_rubik</item>
+        <item>cubex</item>
+        <item>cuenta_dni</item>
+        <item>cultfit</item>
+        <item>cup_heroes</item>
+        <item>cureskin</item>
+        <item>currency_dollar</item>
+        <item>cursed_house_multiplayer_gmm</item>
+        <item>custom_aim</item>
+        <item>customuse</item>
         <item>cut_the_rope</item>
+        <item>cut_the_rope_2</item>
+        <item>cvs</item>
+        <item>cx_file_explorer</item>
+        <item>cyan</item>
+        <item>cyberghost</item>
+        <item>d_menu</item>
+        <item>d_payment</item>
+        <item>d_point</item>
+        <item>da_fit</item>
+        <item>daha</item>
+        <item>daily_board</item>
         <item>dailyhunt</item>
         <item>dailymotion</item>
+        <item>dailytube</item>
+        <item>dainik_bhaskar</item>
+        <item>dairy_queen</item>
+        <item>dan_the_man</item>
+        <item>dana</item>
+        <item>daraz</item>
+        <item>dark_mode</item>
+        <item>dasher</item>
         <item>dashlane</item>
+        <item>datawing</item>
+        <item>daum</item>
+        <item>daviplata</item>
+        <item>daylio</item>
         <item>dazn</item>
+        <item>db_legends</item>
+        <item>dbnavigator</item>
+        <item>dbs_digibank</item>
+        <item>dbz</item>
+        <item>decision_roulette</item>
+        <item>deco</item>
+        <item>deemo</item>
         <item>deepl</item>
         <item>deepseek</item>
         <item>deezer</item>
+        <item>defacto</item>
+        <item>delhi_metro</item>
+        <item>delhi_metro_navigator</item>
+        <item>delhivery</item>
         <item>deliveroo</item>
+        <item>delivery_club</item>
         <item>delta</item>
+        <item>delta_force</item>
         <item>depop</item>
+        <item>desh_marathi_keyboard</item>
+        <item>desh_tamil_keyboard</item>
+        <item>design_keyboard</item>
+        <item>desmos</item>
+        <item>despegar</item>
+        <item>destiny_2</item>
+        <item>detsky_mir</item>
+        <item>devcheck</item>
         <item>deviantart</item>
+        <item>device_care</item>
+        <item>device_help</item>
+        <item>device_info</item>
+        <item>device_pulse</item>
+        <item>devinfo</item>
+        <item>dfndr_security</item>
+        <item>dhan</item>
+        <item>dhgate</item>
+        <item>diablo_immortal</item>
+        <item>dictators_no_peace</item>
+        <item>dictionary_com</item>
+        <item>didi</item>
+        <item>didi_food</item>
+        <item>die_again</item>
+        <item>digi_yatra</item>
+        <item>digical</item>
+        <item>digid</item>
+        <item>digilocker</item>
+        <item>digital_secure</item>
+        <item>digital_wellbeing</item>
+        <item>digital_work_wallet</item>
+        <item>diia</item>
+        <item>diksha</item>
+        <item>directv</item>
         <item>disco</item>
         <item>discord</item>
+        <item>discover</item>
         <item>discovery_</item>
+        <item>diskdigger</item>
+        <item>dislyte</item>
         <item>disney</item>
+        <item>district</item>
+        <item>dito</item>
+        <item>divineko</item>
+        <item>division_calculator</item>
+        <item>djay</item>
+        <item>dls</item>
+        <item>dmart_ready</item>
+        <item>dmss</item>
+        <item>dna_launcher</item>
+        <item>dns_changer_3</item>
+        <item>doc_scanner</item>
+        <item>docomo_my_daiz</item>
+        <item>doctolib</item>
+        <item>docusign</item>
+        <item>dodopizza</item>
+        <item>dolap</item>
+        <item>dollar_general</item>
+        <item>dolphinemulator</item>
+        <item>domino</item>
         <item>dominos</item>
+        <item>doodle_jump</item>
         <item>doordash</item>
+        <item>downloads</item>
+        <item>dpm</item>
+        <item>dr_driving</item>
+        <item>dr_web</item>
+        <item>dr_web_light</item>
+        <item>dr_wolf</item>
+        <item>drag_racing</item>
+        <item>dragoncity</item>
+        <item>dragonml</item>
+        <item>dramabox</item>
+        <item>dramawave</item>
+        <item>dream</item>
+        <item>dream11</item>
+        <item>dreamface</item>
+        <item>driefcase</item>
         <item>drive</item>
+        <item>drive_ahead</item>
+        <item>drives</item>
+        <item>drogasil</item>
+        <item>drogasil_raia</item>
+        <item>droidcam</item>
+        <item>drom</item>
+        <item>drom_auto</item>
         <item>dropbox</item>
         <item>drops</item>
+        <item>ds_get</item>
+        <item>dstv</item>
+        <item>dtac</item>
+        <item>dual</item>
         <item>duckduckgo</item>
+        <item>dude_theft_wars</item>
+        <item>duet</item>
+        <item>dumb_ways</item>
+        <item>dumb_ways_2</item>
+        <item>dune</item>
         <item>dunkin</item>
         <item>duolingo</item>
+        <item>duomobile</item>
+        <item>durak</item>
+        <item>dwg_fastview</item>
+        <item>ea_sports_fc_companion</item>
+        <item>eapteka</item>
+        <item>earn_to_die_2</item>
+        <item>earn_to_die_rogue</item>
+        <item>earnin</item>
+        <item>easycut</item>
         <item>easyjet</item>
+        <item>easypaisa</item>
+        <item>easypark</item>
+        <item>easyshare</item>
+        <item>eatclub</item>
+        <item>eatsure</item>
+        <item>eatventure</item>
+        <item>eba</item>
         <item>ebay</item>
+        <item>eboox</item>
+        <item>economic_times</item>
         <item>economist</item>
         <item>ecosia</item>
+        <item>ecourts_services</item>
+        <item>edadeal</item>
+        <item>edeka</item>
+        <item>edenred_wallet</item>
+        <item>edevlet</item>
+        <item>edf_moi</item>
         <item>edx</item>
+        <item>efhub</item>
         <item>efootball</item>
+        <item>egg_inc</item>
+        <item>egovph</item>
         <item>element</item>
+        <item>elevate</item>
+        <item>elsa</item>
+        <item>emag</item>
         <item>emby</item>
+        <item>emergency_alert</item>
         <item>emirates</item>
+        <item>emochi</item>
+        <item>emoji_airplane</item>
+        <item>emoji_airplane_departure</item>
+        <item>emoji_baseball</item>
+        <item>emoji_bomb</item>
+        <item>emoji_chicken</item>
+        <item>emoji_crown</item>
+        <item>emoji_dog_face</item>
+        <item>emoji_face_joy</item>
+        <item>emoji_face_smile</item>
+        <item>emoji_fire</item>
+        <item>emoji_fish</item>
+        <item>emoji_soccer_ball</item>
+        <item>emoji_tiger</item>
+        <item>emoji_wolf</item>
+        <item>emopar</item>
+        <item>empik</item>
+        <item>enabiz</item>
+        <item>english</item>
+        <item>englishscore_1</item>
+        <item>enjoei</item>
+        <item>entel</item>
+        <item>eokul</item>
         <item>epic_games</item>
+        <item>epic_plane</item>
+        <item>epik</item>
+        <item>episodes</item>
+        <item>epson_iprint</item>
+        <item>epson_print_enabler</item>
+        <item>epson_smart_panel</item>
+        <item>ereader_prestigio</item>
+        <item>eruditetranslator</item>
+        <item>eset_payment_protection</item>
+        <item>esewa</item>
+        <item>eshare</item>
+        <item>esound</item>
+        <item>esp</item>
         <item>espn</item>
+        <item>espn_fantasy</item>
+        <item>espncricinfo</item>
+        <item>essential_space</item>
+        <item>et_money</item>
+        <item>etisalat</item>
         <item>etoro</item>
         <item>etsy</item>
+        <item>ettulo</item>
+        <item>eventbrite</item>
         <item>evernote</item>
+        <item>evertale</item>
+        <item>ewa</item>
+        <item>exness</item>
         <item>exodus_wallet</item>
         <item>expedia</item>
+        <item>expertoption</item>
         <item>expressvpn</item>
+        <item>exxen</item>
+        <item>eyecon</item>
+        <item>eyes</item>
+        <item>ezviz</item>
+        <item>f1_clash</item>
+        <item>f1_tv</item>
+        <item>f_b</item>
+        <item>fabulous</item>
         <item>faceapp</item>
         <item>facebook</item>
         <item>facebook_messenger</item>
+        <item>facer</item>
         <item>facetune</item>
         <item>fall_guys</item>
+        <item>falloutshelter</item>
+        <item>family_space</item>
+        <item>familyalbum</item>
+        <item>familysearch_get_involved</item>
+        <item>fampay</item>
+        <item>fancade</item>
+        <item>fancode</item>
+        <item>fandango</item>
+        <item>farlight_84</item>
+        <item>fast</item>
+        <item>fasting_tracker</item>
+        <item>fastlikeafox</item>
+        <item>fastrack_reflex</item>
+        <item>fatsecret</item>
+        <item>fbreader</item>
+        <item>fc_barcelona</item>
+        <item>fedex</item>
+        <item>fedmobile</item>
         <item>feedly</item>
+        <item>ferns_n_petals</item>
+        <item>fetch_rewards</item>
+        <item>fgts</item>
+        <item>fhs_russia</item>
         <item>fidelity</item>
+        <item>fifa_mobile</item>
         <item>figma</item>
+        <item>file</item>
+        <item>file_commander</item>
         <item>filmorago</item>
+        <item>finance</item>
+        <item>finch</item>
+        <item>find</item>
+        <item>fine_lock</item>
+        <item>fing</item>
         <item>firefox</item>
+        <item>firefox_beta</item>
+        <item>firefox_focus</item>
+        <item>firetv</item>
+        <item>firstcry</item>
+        <item>firstmobile</item>
         <item>fitbit</item>
+        <item>fitcloudpro</item>
+        <item>fitia</item>
+        <item>fitify</item>
+        <item>fitpro</item>
         <item>fiverr</item>
+        <item>fixprice</item>
+        <item>fizy</item>
+        <item>fkey</item>
+        <item>flappy_bird</item>
+        <item>flightaware</item>
         <item>flightradar24</item>
+        <item>flip_transfer</item>
+        <item>flipaclip</item>
         <item>flipboard</item>
         <item>flipkart</item>
+        <item>flipp</item>
         <item>flixbus</item>
         <item>flo</item>
+        <item>flo_tr</item>
+        <item>floating_apps</item>
+        <item>floor_plan_creator</item>
+        <item>flowfree</item>
+        <item>flowfreebridges</item>
+        <item>fltr</item>
+        <item>fluffy_fall</item>
+        <item>fluid_simulation</item>
+        <item>fly_delta</item>
+        <item>flypgs</item>
+        <item>fnb_banking_app</item>
+        <item>focus_to_do</item>
+        <item>folder</item>
+        <item>folder_secure</item>
+        <item>fomz</item>
+        <item>fonts_art</item>
+        <item>foodie</item>
         <item>foodpanda</item>
+        <item>foodvisor</item>
+        <item>forcelte</item>
+        <item>fordpass</item>
+        <item>forest</item>
+        <item>forge_of_empires</item>
+        <item>formsapp</item>
+        <item>formula_1</item>
         <item>fortnite</item>
+        <item>fotmob</item>
         <item>fotor</item>
+        <item>foundit_monster</item>
+        <item>foxit_pdf</item>
+        <item>fpt_play</item>
+        <item>fr_legends</item>
+        <item>fractions</item>
+        <item>frag</item>
+        <item>francais</item>
+        <item>francetv</item>
         <item>free_fire</item>
+        <item>free_fire_max</item>
         <item>free_now</item>
+        <item>freecell</item>
+        <item>freecharge</item>
+        <item>freelancer</item>
         <item>freeletics</item>
+        <item>freeprints</item>
+        <item>freereels</item>
+        <item>friday_night_funkin</item>
         <item>fruit_ninja</item>
+        <item>fuelflash</item>
+        <item>funimate</item>
         <item>funimation</item>
+        <item>futbin</item>
+        <item>fx</item>
+        <item>g19_game_booster</item>
         <item>gaana</item>
+        <item>gacha_club</item>
+        <item>gacha_life_2</item>
+        <item>galaxy_themes</item>
+        <item>galaxyinvaders</item>
+        <item>galaxystore</item>
+        <item>galaxywearable</item>
+        <item>game_center</item>
+        <item>game_launcher</item>
+        <item>game_plugins</item>
+        <item>garanti_bbva</item>
         <item>gardenscapes</item>
         <item>garmin_connect</item>
+        <item>garmin_connect_iq</item>
+        <item>gasbuddy</item>
         <item>gate_io</item>
+        <item>gauthmath</item>
+        <item>gc_auto_clicker</item>
         <item>gcash</item>
+        <item>gcmob</item>
+        <item>gearup_booster</item>
         <item>genius</item>
+        <item>genius_scan</item>
         <item>genshin_impact</item>
+        <item>geocaching</item>
+        <item>geoguessr</item>
         <item>geometry_dash</item>
+        <item>geometry_dash_meltdown</item>
+        <item>geometry_dash_subzero</item>
+        <item>geometry_dash_world</item>
+        <item>getcontact</item>
+        <item>getir</item>
+        <item>gettr</item>
+        <item>gfx_tool_for_pubg_bgmi</item>
+        <item>gifmaker</item>
+        <item>gigalife</item>
+        <item>giphy</item>
         <item>github</item>
         <item>glassdoor</item>
+        <item>glip</item>
+        <item>glitch_video_effect</item>
+        <item>globeone</item>
+        <item>globopay</item>
+        <item>gloryfit</item>
         <item>glovo</item>
+        <item>gmxmail</item>
+        <item>gnc</item>
+        <item>go_escape</item>
+        <item>go_launcher_z</item>
+        <item>goat</item>
+        <item>gochat</item>
+        <item>godaddy_studio</item>
+        <item>gofasting</item>
+        <item>goibibo</item>
+        <item>going_balls</item>
+        <item>gojek</item>
+        <item>gold_apple</item>
+        <item>golf_battle</item>
+        <item>good_coffee_great_coffee</item>
+        <item>good_lock</item>
         <item>goodreads</item>
+        <item>goodrx</item>
+        <item>goodwy_voice_memos</item>
         <item>google</item>
+        <item>google_ads</item>
+        <item>google_analytics</item>
         <item>google_arts_and_culture</item>
         <item>google_assistant</item>
         <item>google_authenticator</item>
         <item>google_camera</item>
+        <item>google_cardboard</item>
         <item>google_chat</item>
         <item>google_chrome</item>
+        <item>google_chrome_beta</item>
+        <item>google_chrome_dev</item>
         <item>google_classroom</item>
+        <item>google_cloud</item>
         <item>google_contacts</item>
+        <item>google_digital_wellbeing</item>
         <item>google_docs</item>
         <item>google_drive</item>
         <item>google_earth</item>
+        <item>google_family_link</item>
         <item>google_fi</item>
         <item>google_files</item>
+        <item>google_find_device</item>
         <item>google_fit</item>
+        <item>google_gallery_go</item>
         <item>google_gemini</item>
         <item>google_home</item>
         <item>google_keep</item>
@@ -225,370 +1088,1988 @@
         <item>google_meet</item>
         <item>google_messages</item>
         <item>google_news</item>
+        <item>google_notebooklm</item>
         <item>google_one</item>
         <item>google_pay</item>
+        <item>google_pay_for_business</item>
         <item>google_phone</item>
         <item>google_photos</item>
+        <item>google_pixel_buds</item>
+        <item>google_play_books</item>
+        <item>google_play_games</item>
         <item>google_play_store</item>
         <item>google_podcasts</item>
         <item>google_sheets</item>
+        <item>google_slides</item>
         <item>google_tasks</item>
         <item>google_translate</item>
         <item>google_tv</item>
         <item>google_voice</item>
         <item>google_wallet</item>
+        <item>google_watch</item>
+        <item>google_webview_devtools</item>
+        <item>goose_goose_duck</item>
+        <item>gopay</item>
+        <item>gopro_quik</item>
+        <item>gorebox</item>
+        <item>goskey</item>
+        <item>gotube</item>
+        <item>gotyme_bank</item>
+        <item>gov_br</item>
+        <item>government_services_auto</item>
+        <item>gps_emulator</item>
+        <item>gps_map_camera</item>
+        <item>gpsstatus</item>
+        <item>gpstools</item>
         <item>grab</item>
         <item>grammarly</item>
+        <item>granny_1</item>
+        <item>granny_2</item>
+        <item>granny_3</item>
+        <item>graphionica</item>
+        <item>gratis</item>
+        <item>gravadordevoz</item>
+        <item>greenify</item>
+        <item>greentuber</item>
+        <item>gridmaker</item>
         <item>grindr</item>
         <item>grok</item>
+        <item>groovepad</item>
         <item>groupme</item>
+        <item>groupon</item>
+        <item>growcastle</item>
         <item>groww</item>
+        <item>gsrtc</item>
+        <item>gstrings</item>
+        <item>gtav_manual</item>
+        <item>gu</item>
         <item>guardian</item>
+        <item>guardian_tales</item>
+        <item>guitar</item>
+        <item>guitartuna</item>
+        <item>gwent</item>
+        <item>gymtrainer</item>
+        <item>habit_tracker</item>
+        <item>hacker_x</item>
+        <item>hadi</item>
+        <item>halifax</item>
+        <item>halkbank</item>
+        <item>hallow</item>
+        <item>halyk</item>
+        <item>happ</item>
         <item>happn</item>
+        <item>happy_color</item>
+        <item>happy_wheels</item>
+        <item>haqibat_elmomen</item>
+        <item>haunted_dorm</item>
         <item>hay_day</item>
+        <item>hbl_mobile</item>
         <item>hbo_max</item>
         <item>headspace</item>
+        <item>headway</item>
+        <item>healow</item>
+        <item>healthifyme</item>
+        <item>heart</item>
         <item>hearthstone</item>
+        <item>heetch</item>
+        <item>height_increase_workout</item>
+        <item>helakuru</item>
+        <item>hellochinese</item>
         <item>hellofresh</item>
+        <item>hellotalk</item>
+        <item>hepsiburada</item>
+        <item>here</item>
+        <item>heymelody</item>
+        <item>hh</item>
+        <item>hi_browser</item>
+        <item>hide_online</item>
+        <item>hiface</item>
+        <item>hikconnect</item>
         <item>hill_climb_2</item>
         <item>hill_climb_racing</item>
         <item>hilton_honors</item>
+        <item>hily</item>
+        <item>hindu_calendar</item>
         <item>hinge</item>
+        <item>hitray</item>
+        <item>hiwatchpro</item>
         <item>hm</item>
+        <item>hocus</item>
+        <item>hoichoi</item>
+        <item>hole_io</item>
+        <item>home_depot</item>
+        <item>home_plus</item>
+        <item>home_workouts</item>
         <item>homescapes</item>
+        <item>honkai_impact_3rd_</item>
         <item>honkai_star_rail</item>
+        <item>honor_health</item>
+        <item>honor_of_kings</item>
+        <item>hopi</item>
         <item>hotels_com</item>
+        <item>hotlink</item>
+        <item>hotmart</item>
+        <item>hotpepper</item>
+        <item>housing</item>
+        <item>houzz</item>
+        <item>how_to_tie_a_tie</item>
+        <item>hoyolab</item>
+        <item>hp_pay</item>
+        <item>hpprinteraio</item>
+        <item>hryfine</item>
+        <item>http_custom</item>
+        <item>http_injector</item>
+        <item>hue2</item>
+        <item>hugogame</item>
+        <item>huji</item>
         <item>hulu</item>
+        <item>hungry_shark</item>
+        <item>hushed</item>
+        <item>hypic</item>
+        <item>hyundaicard</item>
+        <item>i_am</item>
+        <item>i_am_sober</item>
+        <item>ibispaint_x</item>
+        <item>icc</item>
+        <item>icon_pack_studio</item>
+        <item>icsee</item>
+        <item>idbi_bank</item>
+        <item>idealo_shopping</item>
+        <item>idfc_first_bank</item>
+        <item>idfmobilits</item>
+        <item>idle_egg_factory</item>
+        <item>idle_miner</item>
+        <item>ifood</item>
         <item>ifttt</item>
+        <item>ifunny</item>
         <item>iheartradio</item>
+        <item>iherb</item>
+        <item>ihg_hotel</item>
         <item>ikea</item>
+        <item>iko</item>
+        <item>illuminati</item>
+        <item>imagesearchman</item>
+        <item>imagine</item>
+        <item>imagingedgemobile</item>
+        <item>imdb</item>
+        <item>imgur</item>
+        <item>immoscout24</item>
+        <item>immowelt</item>
         <item>imo</item>
+        <item>imo_beta</item>
+        <item>imo_lite</item>
+        <item>imobile_pay</item>
+        <item>imou_life</item>
+        <item>impotsgouv</item>
+        <item>impulse</item>
+        <item>imss</item>
+        <item>incollage_collage_maker</item>
+        <item>ind_money</item>
         <item>indeed</item>
+        <item>indiamart</item>
+        <item>indian_bikes_driving_3d</item>
+        <item>indian_train_status_minits</item>
+        <item>indianoil_one</item>
+        <item>indie</item>
+        <item>indigo</item>
         <item>indrive</item>
+        <item>indsmart</item>
+        <item>infinite_painter</item>
+        <item>ing</item>
+        <item>ingress</item>
+        <item>inpost_mobile</item>
+        <item>inps_mobile</item>
+        <item>inshare</item>
         <item>inshorts</item>
         <item>inshot</item>
         <item>insight_timer</item>
         <item>instacart</item>
         <item>instagram</item>
+        <item>instagram_downloader</item>
+        <item>instapay</item>
+        <item>instrument_tuner</item>
+        <item>intelligent_cv</item>
+        <item>inter</item>
+        <item>interactive_wallpapers</item>
+        <item>interbank</item>
+        <item>internet_speed_meter</item>
+        <item>intesa</item>
+        <item>intra</item>
+        <item>investing</item>
+        <item>io</item>
+        <item>ios_launcher</item>
+        <item>ip_tools</item>
+        <item>ip_webcam</item>
+        <item>ippb_mobile</item>
+        <item>iprint_and_scan</item>
+        <item>ipvanish</item>
+        <item>iq_option</item>
         <item>iqiyi</item>
+        <item>irctc_rail_connect</item>
+        <item>iriunwebcam</item>
+        <item>irobot</item>
+        <item>iscep</item>
+        <item>islam360</item>
+        <item>island</item>
+        <item>iss_live_now</item>
+        <item>istanbulkart</item>
+        <item>itiita</item>
+        <item>itsme</item>
+        <item>itvx</item>
+        <item>ivi</item>
+        <item>ixigo_trains</item>
+        <item>j_and_t_express</item>
+        <item>jago</item>
+        <item>jagran</item>
+        <item>jakdojade</item>
+        <item>japan_transit</item>
+        <item>jazzcash</item>
+        <item>jazzworld</item>
+        <item>jbl_portable</item>
+        <item>jblheadphones</item>
+        <item>jd_sports</item>
+        <item>jeevansathi</item>
         <item>jellyfin</item>
+        <item>jenius</item>
         <item>jetpack_joyride</item>
+        <item>jigsaw</item>
         <item>jiocinema</item>
+        <item>jiofinance</item>
+        <item>jiohome</item>
         <item>jiohotstar</item>
+        <item>jiojoin</item>
         <item>jiomart</item>
+        <item>jionews</item>
+        <item>jiopos_lite</item>
         <item>jiosaavn</item>
+        <item>jiosphere</item>
+        <item>jiotv</item>
+        <item>jitsimeet</item>
+        <item>jmo</item>
+        <item>jobkorea</item>
+        <item>jobstreet</item>
+        <item>joom</item>
         <item>joox</item>
+        <item>jornada_do_estudante</item>
+        <item>journal</item>
+        <item>joyride_superapp</item>
+        <item>juegos</item>
+        <item>jujutsu_kaisen_phantom_parade</item>
         <item>jumia</item>
+        <item>jumpplus</item>
+        <item>jupiter</item>
+        <item>jurassic_world</item>
+        <item>just_dance_now</item>
         <item>just_eat</item>
+        <item>justdial</item>
+        <item>justwatch</item>
+        <item>jw_library</item>
+        <item>k_plus</item>
         <item>kahoot</item>
+        <item>kai_access</item>
+        <item>kakao</item>
+        <item>kakao_bank</item>
+        <item>kakao_pay</item>
+        <item>kakao_story</item>
+        <item>kakao_webtoon</item>
         <item>kakaotalk</item>
+        <item>kamusku</item>
+        <item>karaca</item>
+        <item>kari</item>
+        <item>karrot</item>
+        <item>kaspikz</item>
+        <item>kaufland</item>
+        <item>kayac_number_master</item>
+        <item>kb_pay</item>
+        <item>kb_star_banking</item>
+        <item>kbank</item>
+        <item>kbzpay</item>
+        <item>keeper_password_manager</item>
+        <item>keepsafe</item>
+        <item>keeta</item>
+        <item>keylimba</item>
+        <item>keymapper</item>
         <item>kfc</item>
         <item>khan_academy</item>
+        <item>khangs_sir_official</item>
+        <item>khatabook</item>
+        <item>kick</item>
+        <item>kids_space</item>
+        <item>kijiji</item>
         <item>kik</item>
+        <item>kika_keyboard</item>
+        <item>kilimall</item>
         <item>kindle</item>
         <item>kinemaster</item>
+        <item>kingdom_rush</item>
+        <item>kingshot</item>
+        <item>kinopoisk</item>
+        <item>kion</item>
+        <item>kiwi</item>
         <item>kiwibrowser</item>
+        <item>klar</item>
         <item>klarna</item>
+        <item>kleinanzeigen</item>
+        <item>klook</item>
+        <item>kma</item>
         <item>kmplayer</item>
+        <item>knife_hit</item>
+        <item>knowunity</item>
+        <item>kobo_books</item>
         <item>kodi</item>
+        <item>koloro</item>
         <item>komoot</item>
+        <item>kore</item>
+        <item>kotak811</item>
+        <item>kotak_bank</item>
         <item>kraken</item>
+        <item>krasnoye_and_beloye</item>
+        <item>kredivo</item>
+        <item>kroger</item>
         <item>kucoin</item>
+        <item>kuda</item>
+        <item>kuji_cam</item>
+        <item>kuku_fm</item>
+        <item>kurashiru</item>
+        <item>kuveyt_turk</item>
         <item>kwai</item>
+        <item>kwgt</item>
+        <item>kwsp_i_akaun</item>
+        <item>la_poste</item>
+        <item>laban_key</item>
+        <item>lalamove</item>
+        <item>lamar_idle_vlogger</item>
+        <item>lamoda</item>
+        <item>landbank</item>
+        <item>lark_player</item>
+        <item>last_day_on_earth_survival</item>
+        <item>last_war</item>
         <item>lastfm</item>
         <item>lastpass</item>
+        <item>latern</item>
+        <item>lawson</item>
         <item>lazada</item>
+        <item>lazypay</item>
+        <item>lc_waikiki</item>
+        <item>league</item>
+        <item>lean_remote</item>
+        <item>leboncoin</item>
+        <item>led_scroller</item>
         <item>ledger_live</item>
+        <item>lefun_health</item>
+        <item>legends_of_runterra</item>
+        <item>lego_builder</item>
+        <item>lemana_pro</item>
+        <item>lemon8</item>
         <item>lensa</item>
+        <item>lenskart</item>
+        <item>leo</item>
+        <item>leroy_merlin</item>
+        <item>letgo</item>
+        <item>letras</item>
+        <item>letter_lowercase_circle_b</item>
+        <item>letter_lowercase_square_l</item>
+        <item>letter_uppercase_circle_g</item>
+        <item>letter_uppercase_circle_s</item>
+        <item>letter_uppercase_square_g</item>
+        <item>letter_uppercase_square_q</item>
+        <item>letter_uppercase_square_y</item>
         <item>letterboxd</item>
+        <item>level_devil</item>
+        <item>lexis_audio_editor</item>
+        <item>lg_thinq</item>
+        <item>libary</item>
         <item>libby</item>
+        <item>lic_digital</item>
         <item>lichess</item>
+        <item>lidl_plus</item>
+        <item>lien_quan_mobile</item>
+        <item>life</item>
+        <item>life_fits_into_home</item>
+        <item>lifebox</item>
+        <item>lifecell</item>
         <item>lifesum</item>
+        <item>light_it_up</item>
+        <item>lightbulb</item>
+        <item>like_a_dino</item>
         <item>likee</item>
         <item>lime</item>
         <item>line</item>
+        <item>line_bubble</item>
+        <item>line_bubble_2</item>
+        <item>line_camera</item>
+        <item>line_lets_get_rich</item>
+        <item>line_man</item>
+        <item>line_music</item>
+        <item>line_pop_2</item>
+        <item>line_rangers</item>
+        <item>linea_de_la_mandibula</item>
         <item>lingodeer</item>
+        <item>link2sd</item>
         <item>linkedin</item>
+        <item>linkedin_learning</item>
+        <item>listonic</item>
+        <item>litmatch</item>
+        <item>litres</item>
+        <item>little_caesars</item>
+        <item>live_transcribe</item>
+        <item>liverpool</item>
+        <item>livescore</item>
+        <item>livetalk</item>
+        <item>livin_by_mandiri</item>
+        <item>lloydsbank</item>
+        <item>local_warfare_re_portable</item>
+        <item>localsend</item>
+        <item>locket</item>
+        <item>logo_maker_plus</item>
+        <item>lonewolf</item>
+        <item>loop_infinity</item>
+        <item>looper</item>
+        <item>lose_weight_men</item>
+        <item>lotus_lantern</item>
+        <item>love8</item>
+        <item>lovely</item>
+        <item>lovoo</item>
         <item>lowes</item>
+        <item>luca</item>
+        <item>ludo_club</item>
         <item>ludo_king</item>
+        <item>lufthansa</item>
+        <item>lumii_photo_editor</item>
+        <item>lumosity</item>
+        <item>luzia</item>
         <item>lyft</item>
+        <item>m6</item>
+        <item>m64plus_fz</item>
+        <item>m_pesa</item>
+        <item>m_video</item>
+        <item>maadhaar</item>
+        <item>mackolik</item>
+        <item>macrodroid</item>
+        <item>mactivepro</item>
+        <item>mae</item>
+        <item>maf_carrefour</item>
+        <item>magalu</item>
+        <item>magic_eraser</item>
+        <item>magic_rampage</item>
+        <item>magic_widgets</item>
+        <item>magiconnect</item>
+        <item>magicpin</item>
+        <item>magicplan</item>
+        <item>magnit</item>
+        <item>mahavitaran</item>
         <item>mahjong</item>
+        <item>mail</item>
+        <item>major_cineplex</item>
+        <item>makemytrip</item>
         <item>malwarebytes</item>
+        <item>mame4droid</item>
+        <item>man_utd</item>
+        <item>manga_plus</item>
+        <item>mangatoon</item>
+        <item>manglish_keyboard</item>
+        <item>mango</item>
+        <item>manman</item>
+        <item>manus</item>
+        <item>mappls_mapmyindia</item>
         <item>maps</item>
+        <item>maps_2</item>
+        <item>mapsme</item>
+        <item>mapy</item>
+        <item>marco_polo</item>
+        <item>marinetraffic</item>
+        <item>mario_kart_tour</item>
+        <item>marktplaats</item>
+        <item>marmiton</item>
         <item>marriott_bonvoy</item>
+        <item>marusya</item>
+        <item>marvel_contest_of_champions</item>
+        <item>master_for_minecraft_pe</item>
         <item>mastodon</item>
+        <item>math_riddles</item>
+        <item>mathtricks</item>
         <item>mathway</item>
         <item>max</item>
+        <item>max_fashion</item>
+        <item>max_messenger</item>
+        <item>maxim</item>
+        <item>maya</item>
+        <item>maze</item>
+        <item>mb_bank</item>
         <item>mcafee_security</item>
+        <item>mcdelivery</item>
         <item>mcdonalds</item>
+        <item>mcdonalds_plus</item>
+        <item>mcpedl</item>
+        <item>me_lifestyle_routine</item>
+        <item>mecharena</item>
+        <item>mediafire</item>
+        <item>medibang_paint</item>
+        <item>meditopia</item>
         <item>medium</item>
         <item>meesho</item>
+        <item>meetme</item>
+        <item>meetup</item>
+        <item>meezanbank</item>
         <item>mega</item>
+        <item>megamarket</item>
+        <item>megogo</item>
+        <item>mein_dm</item>
         <item>meitu</item>
+        <item>mekorama</item>
+        <item>meliuz</item>
+        <item>melon_playground</item>
+        <item>meme_generator</item>
         <item>memrise</item>
         <item>mercado_libre</item>
+        <item>mercado_pago</item>
+        <item>mercantil_banco</item>
         <item>mercari</item>
+        <item>merlin</item>
+        <item>merriamwebster_dictionary</item>
+        <item>message_assistant_answer_phone</item>
         <item>messages</item>
+        <item>meta_ads</item>
+        <item>meta_edits</item>
+        <item>meta_viewpoints</item>
+        <item>metalstorm</item>
         <item>metamask</item>
+        <item>metatrader_4</item>
+        <item>metatrader_5</item>
+        <item>meteo</item>
+        <item>meteo_france</item>
+        <item>metro</item>
+        <item>metrozone</item>
+        <item>meu_tim</item>
+        <item>meualelo</item>
+        <item>meuinss</item>
+        <item>mewe</item>
+        <item>mexc</item>
+        <item>mhrs_mobil</item>
+        <item>mi_afip</item>
+        <item>mi_att</item>
+        <item>mi_bancolombia</item>
         <item>mi_browser</item>
+        <item>mi_community</item>
+        <item>mi_entel_peru</item>
+        <item>mi_home</item>
+        <item>mi_mover</item>
+        <item>mi_movistar</item>
+        <item>mi_o2</item>
+        <item>mi_personal_flow</item>
+        <item>mi_store</item>
+        <item>mi_telcel</item>
+        <item>mi_video</item>
+        <item>michelin</item>
+        <item>mico</item>
+        <item>microsoft</item>
+        <item>microsoft_365</item>
         <item>microsoft_authenticator</item>
+        <item>microsoft_bing</item>
+        <item>microsoft_bing_wallpapers</item>
+        <item>microsoft_company_portal</item>
         <item>microsoft_copilot</item>
+        <item>microsoft_defender</item>
         <item>microsoft_edge</item>
         <item>microsoft_excel</item>
         <item>microsoft_launcher</item>
         <item>microsoft_onedrive</item>
         <item>microsoft_onenote</item>
         <item>microsoft_outlook</item>
+        <item>microsoft_power_apps</item>
         <item>microsoft_powerpoint</item>
+        <item>microsoft_remotedesktop</item>
+        <item>microsoft_sharepoint</item>
+        <item>microsoft_solitaire</item>
+        <item>microsoft_start</item>
         <item>microsoft_teams</item>
         <item>microsoft_todo</item>
+        <item>microsoft_translator</item>
         <item>microsoft_word</item>
+        <item>midgt</item>
+        <item>mifit</item>
+        <item>migros</item>
         <item>mimo</item>
+        <item>mindicator</item>
         <item>minecraft</item>
+        <item>minecraft_compass</item>
+        <item>minecraft_creeper</item>
+        <item>minecraft_education</item>
+        <item>minecraft_education_preview</item>
+        <item>mini_militia</item>
+        <item>mininote</item>
+        <item>minion</item>
+        <item>mint_launcher</item>
+        <item>miremote</item>
         <item>miro</item>
+        <item>missiles</item>
+        <item>mistplay</item>
+        <item>mivi</item>
+        <item>mivo</item>
+        <item>mixcloud</item>
+        <item>mobildeniz</item>
+        <item>mobile_de</item>
+        <item>mobile_jkn</item>
         <item>mobile_legends_bang_bang</item>
+        <item>mobile_print</item>
+        <item>mobile_suica</item>
+        <item>mobily</item>
+        <item>mobizen</item>
+        <item>mobywatel</item>
+        <item>modanisa</item>
+        <item>modern_warships</item>
+        <item>mods_maps_skins_for_minecraft</item>
+        <item>moises</item>
+        <item>moj</item>
+        <item>mojepliki</item>
+        <item>mojo</item>
+        <item>molotov</item>
+        <item>momo</item>
+        <item>momondo</item>
+        <item>mon_eleclerc</item>
+        <item>mon_espace</item>
+        <item>mondly_languages</item>
+        <item>monefy</item>
+        <item>money_manager</item>
+        <item>moneycontrol</item>
+        <item>monobank</item>
+        <item>monomax</item>
+        <item>monopoly</item>
+        <item>monoposto</item>
+        <item>monster_super_league</item>
         <item>monzo</item>
+        <item>moodle</item>
         <item>moovit</item>
+        <item>mopria_print_service</item>
+        <item>mortal_kombat</item>
+        <item>motion_ninja</item>
+        <item>motionleap</item>
+        <item>motivation</item>
+        <item>moto</item>
+        <item>moto_note</item>
+        <item>moto_secure</item>
+        <item>moto_unplugged</item>
+        <item>motonotifications</item>
+        <item>mountain_bike_xtreme</item>
+        <item>movavi_clips</item>
+        <item>move_it</item>
+        <item>move_to_ios</item>
+        <item>movistar_plus</item>
+        <item>moy_7</item>
+        <item>mp3_snijder_and_beltoon_maker</item>
+        <item>mp3_video_converter</item>
+        <item>mparivahan</item>
+        <item>mpt4u</item>
+        <item>mtn_momo</item>
+        <item>mts_urent</item>
         <item>mubi</item>
+        <item>multiple_accounts</item>
+        <item>musclebooster</item>
+        <item>musescore</item>
+        <item>music_editor</item>
+        <item>music_speed_changer</item>
+        <item>musicolet</item>
+        <item>musicplayer</item>
         <item>musixmatch</item>
+        <item>muslim_pro</item>
+        <item>muviz_edge</item>
         <item>mx</item>
+        <item>my_argentina</item>
+        <item>my_au</item>
+        <item>my_data_manager</item>
+        <item>my_desktop_iscreen</item>
+        <item>my_device</item>
+        <item>my_diary_2</item>
+        <item>my_dishtv</item>
+        <item>my_docomo</item>
+        <item>my_ee</item>
+        <item>my_friend_pedro</item>
+        <item>my_health</item>
+        <item>my_health_online</item>
+        <item>my_honor</item>
+        <item>my_mci</item>
+        <item>my_orange</item>
+        <item>my_page</item>
+        <item>my_perfect_hotel</item>
+        <item>my_rakuten_mobile</item>
+        <item>my_robi</item>
+        <item>my_singing_monsters</item>
+        <item>my_spectrum</item>
+        <item>my_supermarket_simulator_3d</item>
+        <item>my_tamagotchi_forever</item>
+        <item>my_tele2</item>
+        <item>my_telstra</item>
+        <item>my_telus</item>
+        <item>my_universe</item>
+        <item>my_verizon</item>
+        <item>my_viettel</item>
+        <item>my_vnpt</item>
+        <item>my_we</item>
+        <item>myais</item>
+        <item>myasus</item>
+        <item>myat_and_t</item>
+        <item>mybca</item>
+        <item>mybell</item>
+        <item>mybl</item>
+        <item>mycalendar</item>
+        <item>mycricket</item>
+        <item>mydialog</item>
+        <item>mydigicel</item>
         <item>myfitnesspal</item>
+        <item>mygp</item>
+        <item>myhub</item>
+        <item>myicon</item>
+        <item>myim3</item>
+        <item>myjio</item>
+        <item>myjpj</item>
+        <item>mykyivstar</item>
+        <item>mymail</item>
+        <item>mymetro</item>
+        <item>mymo</item>
+        <item>myna_portal</item>
         <item>myntra</item>
+        <item>myoffice_documents</item>
+        <item>myq</item>
+        <item>myrogers</item>
+        <item>mysafaricom</item>
+        <item>mysejahtera</item>
+        <item>mysmartfren</item>
+        <item>mystc</item>
+        <item>myt_muzik</item>
+        <item>mytel_myid</item>
+        <item>mytelkomsel</item>
+        <item>mytheme</item>
+        <item>mytim</item>
+        <item>myufone</item>
+        <item>myumobile</item>
+        <item>myxl</item>
+        <item>myzong</item>
+        <item>n11</item>
         <item>n26</item>
+        <item>nafath</item>
+        <item>nagad</item>
+        <item>nameless_cat</item>
+        <item>namma_yatri</item>
+        <item>napster</item>
+        <item>nasa</item>
+        <item>nate</item>
+        <item>natwest</item>
+        <item>naukricom</item>
+        <item>naver_cafe</item>
+        <item>naver_prism</item>
+        <item>naver_whale</item>
+        <item>navi</item>
+        <item>navy_federal</item>
+        <item>nba</item>
+        <item>nba_2k_mobile</item>
+        <item>ncell_app</item>
+        <item>ncert_books_and_solutions</item>
+        <item>nebulous_io</item>
+        <item>nectar</item>
+        <item>neko_atsume</item>
+        <item>nequi_colombia</item>
+        <item>nerd_ai</item>
+        <item>neshan</item>
+        <item>nest</item>
         <item>netflix</item>
+        <item>netguard</item>
+        <item>netmeds</item>
+        <item>netshoes</item>
+        <item>netspeed_indicator</item>
+        <item>netto_app</item>
         <item>newsbreak</item>
+        <item>next</item>
         <item>nextdoor</item>
+        <item>nfctools</item>
+        <item>nfl</item>
+        <item>nfs_no_limits</item>
+        <item>ngl</item>
+        <item>nh_smart</item>
+        <item>nhl</item>
+        <item>nhsapp</item>
         <item>niagara_launcher</item>
+        <item>nice_catch</item>
         <item>niconico</item>
+        <item>night_screen</item>
         <item>nike</item>
         <item>nike_run_club</item>
         <item>nike_training_club</item>
+        <item>nikke</item>
+        <item>nimo_tv</item>
+        <item>nina</item>
+        <item>ninja_arashi</item>
+        <item>ninja_arashi_2</item>
+        <item>nintendo_switch_online</item>
+        <item>nintendo_switch_parental_controls</item>
+        <item>nitori</item>
+        <item>nitro_nation</item>
+        <item>no_humanity</item>
+        <item>nodevideo</item>
+        <item>noisefit</item>
+        <item>nokoprint</item>
         <item>noon</item>
         <item>nordpass</item>
         <item>nordvpn</item>
+        <item>norton_360</item>
+        <item>notebloc</item>
+        <item>notein</item>
+        <item>noteit</item>
+        <item>nothing_gallery</item>
+        <item>nothing_launcher</item>
+        <item>nothing_weather</item>
+        <item>nothing_x</item>
         <item>notion</item>
+        <item>notistar</item>
+        <item>nova</item>
+        <item>nova_launcher</item>
+        <item>noveltoon</item>
+        <item>nperf</item>
+        <item>nps</item>
+        <item>npv_tunnel</item>
+        <item>ntes</item>
         <item>nubank</item>
+        <item>numberogram</item>
+        <item>numero</item>
+        <item>numpuz</item>
+        <item>nvidia</item>
+        <item>nxt</item>
         <item>nykaa</item>
+        <item>nykaa_fashion</item>
+        <item>nytimes</item>
+        <item>o_boticario</item>
+        <item>obilet</item>
         <item>obsidian</item>
+        <item>oculus</item>
+        <item>offerup</item>
+        <item>offline_games</item>
+        <item>offlinemaps</item>
+        <item>oitube</item>
+        <item>ok</item>
+        <item>okay</item>
         <item>okcupid</item>
+        <item>okko</item>
+        <item>okok</item>
+        <item>okta_verify</item>
         <item>okx</item>
         <item>ola</item>
+        <item>oldroll</item>
+        <item>olymp_trade</item>
+        <item>olympics</item>
+        <item>ometv</item>
         <item>omio</item>
+        <item>one_hand_operation</item>
+        <item>onecard</item>
+        <item>oned</item>
+        <item>onefootball</item>
+        <item>oneplus_weather</item>
+        <item>onescore</item>
         <item>openai_chatgpt</item>
+        <item>opencamera</item>
+        <item>openscale</item>
+        <item>opensignal</item>
         <item>opentable</item>
+        <item>openvpn</item>
+        <item>openvpnconnect</item>
         <item>opera</item>
+        <item>opera_beta</item>
         <item>opera_gx</item>
+        <item>opera_mini</item>
+        <item>opera_mini_beta</item>
+        <item>opera_news</item>
+        <item>orange_tv</item>
+        <item>orbia</item>
+        <item>orbot</item>
         <item>organicmaps</item>
+        <item>origin_health</item>
+        <item>osaifu_keitai</item>
+        <item>osmand_plus</item>
+        <item>otherworld_legends</item>
+        <item>otto</item>
+        <item>ouisncf</item>
         <item>oura</item>
+        <item>ourocard</item>
+        <item>ovo</item>
+        <item>oxford_dictionary</item>
+        <item>oyo</item>
         <item>ozon</item>
+        <item>pacman</item>
+        <item>padlet</item>
+        <item>pagbank</item>
+        <item>pagesjaunes</item>
+        <item>paisabazaar</item>
+        <item>palmpay</item>
+        <item>panda_video_compressor</item>
         <item>pandora</item>
+        <item>panel_led_digital</item>
+        <item>panera</item>
+        <item>paotang</item>
+        <item>papa_johns</item>
+        <item>papago</item>
+        <item>papara</item>
+        <item>paper_io_2</item>
         <item>paramount_plus</item>
+        <item>parchisi_star_online</item>
+        <item>park4night</item>
+        <item>park_plus</item>
+        <item>parkmobile</item>
+        <item>part_time_job_heaven</item>
+        <item>pass_by_skt</item>
+        <item>passes</item>
+        <item>pathao</item>
+        <item>patreon</item>
+        <item>payback</item>
+        <item>payback_2</item>
+        <item>paybyphone</item>
+        <item>payme</item>
         <item>payoneer</item>
         <item>paypal</item>
+        <item>paypal_business</item>
+        <item>paypay</item>
+        <item>paysafecard</item>
         <item>paytm</item>
+        <item>paytm_for_business</item>
+        <item>payzapp</item>
+        <item>pc_creator_2</item>
+        <item>pc_remote</item>
+        <item>pccovid</item>
+        <item>pdanet</item>
+        <item>pdf_extra</item>
+        <item>pdf_scan</item>
         <item>peacock</item>
+        <item>peak</item>
+        <item>pedidosya</item>
+        <item>pedometer_step_counter</item>
         <item>peloton</item>
+        <item>pemutar_visha</item>
+        <item>penghemat_status</item>
+        <item>pentastic</item>
+        <item>penup</item>
+        <item>perekrestok</item>
+        <item>perfect_piano</item>
         <item>perplexity</item>
+        <item>persona</item>
+        <item>personal_pay</item>
+        <item>petitbambou</item>
         <item>phantom</item>
+        <item>pharmeasy</item>
+        <item>phoenix</item>
         <item>phone</item>
+        <item>phone_guardian</item>
         <item>phonepe</item>
+        <item>phonto</item>
+        <item>photo_and_picture_resizer</item>
+        <item>photolayers</item>
         <item>photomath</item>
         <item>photoroom</item>
+        <item>photoscan</item>
+        <item>physics_wallah</item>
+        <item>pi</item>
+        <item>pi_browser</item>
+        <item>piano_tiles_2</item>
+        <item>piavpn</item>
+        <item>picap</item>
         <item>piccollage</item>
+        <item>piccoma</item>
+        <item>pickme</item>
         <item>picpay</item>
         <item>picsart</item>
+        <item>picturethis</item>
         <item>pinduoduo</item>
+        <item>pinout</item>
         <item>pinterest</item>
+        <item>pixel_art</item>
+        <item>pixel_car_racer</item>
+        <item>pixellab</item>
+        <item>pixelup</item>
+        <item>pixiv</item>
+        <item>pixlr</item>
+        <item>pixverse</item>
+        <item>pizza_ready</item>
         <item>pizzahut</item>
+        <item>pjsc_rostelecom</item>
+        <item>pk_xd</item>
         <item>plagueinc</item>
+        <item>planet_fitness</item>
+        <item>planet_vpn</item>
+        <item>plank_workout</item>
+        <item>planner_5d</item>
+        <item>plant_parent</item>
+        <item>plantnet</item>
         <item>plants_vs_zombies</item>
+        <item>plants_vs_zombies_2</item>
+        <item>plato</item>
+        <item>play24</item>
+        <item>player</item>
+        <item>playit</item>
         <item>plex</item>
+        <item>pln_mobile</item>
+        <item>plus500</item>
         <item>pluto_tv</item>
+        <item>pnb_one</item>
+        <item>pnc</item>
         <item>pocket</item>
+        <item>pocket_broker</item>
         <item>pocket_casts</item>
+        <item>pocket_fm</item>
+        <item>pocketbook</item>
+        <item>pocketlove</item>
+        <item>pocolauncher</item>
+        <item>podcastaddict</item>
         <item>poe</item>
+        <item>pokegenie</item>
         <item>pokemon_go</item>
+        <item>pokemon_home</item>
+        <item>pokemon_masters_ex</item>
+        <item>pokemon_quest</item>
+        <item>pokemon_sleep</item>
+        <item>pokemon_tcg_live</item>
+        <item>pokemon_tcgp</item>
         <item>pokemon_unite</item>
+        <item>poker</item>
+        <item>polaris_office</item>
+        <item>polarsteps</item>
+        <item>police_scanner</item>
+        <item>policybazaar</item>
+        <item>poly_ai</item>
+        <item>polygrams</item>
+        <item>polytopia</item>
+        <item>pony_town</item>
+        <item>pop</item>
+        <item>popeyes</item>
+        <item>porter</item>
         <item>poshmark</item>
+        <item>postdhl</item>
+        <item>postid</item>
+        <item>postident</item>
+        <item>pou</item>
+        <item>poweramp</item>
         <item>powerdirector</item>
+        <item>powerschool</item>
+        <item>ppsspp</item>
+        <item>premier_league</item>
+        <item>premise</item>
+        <item>prequel</item>
         <item>prisma</item>
+        <item>prisma3d</item>
+        <item>privat24</item>
+        <item>private_share</item>
+        <item>pro_guitar_tuner</item>
+        <item>proccd</item>
+        <item>programming_hub</item>
+        <item>progressive</item>
+        <item>project_bloodstrike</item>
+        <item>prom</item>
+        <item>promplus</item>
+        <item>pronote</item>
         <item>proton_drive</item>
         <item>proton_mail</item>
         <item>proton_pass</item>
         <item>proton_vpn</item>
+        <item>providers</item>
+        <item>ps4_second_screen</item>
+        <item>ps_app</item>
+        <item>psiphon</item>
+        <item>psremoteplay</item>
         <item>pubg_mobile</item>
+        <item>public_india</item>
+        <item>public_services</item>
+        <item>public_services_culture</item>
+        <item>puhutv</item>
+        <item>pull_and_bear</item>
+        <item>pupg_new_state</item>
+        <item>pure_dating</item>
+        <item>pvr</item>
+        <item>pyaterochka</item>
+        <item>pydroid3</item>
+        <item>qanda</item>
+        <item>qatar_airways</item>
+        <item>qiwi</item>
+        <item>qnb_finansbank</item>
         <item>qobuz</item>
+        <item>qq</item>
+        <item>qrforkeepass</item>
+        <item>questionai</item>
+        <item>quick_bible</item>
+        <item>quickedit</item>
+        <item>quicksupport</item>
+        <item>quickweather</item>
+        <item>quizizz</item>
         <item>quizlet</item>
+        <item>quizzland</item>
         <item>quora</item>
+        <item>radarbot</item>
+        <item>radiko</item>
+        <item>radio_garden</item>
+        <item>radio_net</item>
+        <item>railyatri</item>
+        <item>rainbow_six_mobile</item>
+        <item>raiplay</item>
         <item>rakuten</item>
+        <item>rakuten_card</item>
+        <item>rakuten_link</item>
+        <item>rakuten_pay</item>
+        <item>rakuten_pointclub</item>
+        <item>randochat</item>
+        <item>randonautica</item>
+        <item>rapido</item>
+        <item>rappi</item>
+        <item>rar</item>
+        <item>ratp</item>
+        <item>rave</item>
+        <item>rbl_mycard</item>
+        <item>rd_client</item>
+        <item>readera</item>
+        <item>ready_for</item>
+        <item>real_drum</item>
         <item>real_racing_3</item>
+        <item>realme_community</item>
+        <item>realme_link</item>
+        <item>realme_store</item>
+        <item>realtor</item>
+        <item>rebel_inc</item>
+        <item>rebtel</item>
+        <item>recargapay</item>
+        <item>recorder</item>
+        <item>red_ball_4</item>
+        <item>redbus</item>
         <item>reddit</item>
+        <item>redfin</item>
+        <item>reelshort</item>
         <item>reface</item>
+        <item>relive</item>
+        <item>remind</item>
+        <item>reminder</item>
         <item>remini</item>
+        <item>remitly</item>
+        <item>remote_atv</item>
+        <item>remote_mouse</item>
+        <item>removebg</item>
+        <item>replika</item>
+        <item>retouche_photo</item>
+        <item>retrica</item>
+        <item>retro_bowl</item>
         <item>reuters</item>
+        <item>reversocontext</item>
+        <item>revheadz</item>
         <item>revolut</item>
+        <item>rewards</item>
+        <item>rewe</item>
+        <item>rg_digital_sp</item>
+        <item>rico</item>
+        <item>rider</item>
+        <item>rider_worlds</item>
+        <item>ridmik_keyboard</item>
+        <item>ring_2</item>
+        <item>ringgo</item>
+        <item>ringtone_maker</item>
+        <item>rise_up</item>
+        <item>risk</item>
         <item>robinhood</item>
         <item>roblox</item>
+        <item>roborock</item>
+        <item>rock_identifier</item>
+        <item>rocket</item>
+        <item>rocket_money</item>
+        <item>rodeo_stampede</item>
         <item>roku</item>
+        <item>romeo</item>
+        <item>ronin_the_last_samurai</item>
+        <item>room_planner</item>
+        <item>roomsort</item>
+        <item>root_checker_basic</item>
+        <item>rosetta_stone</item>
+        <item>rossmann</item>
         <item>royal_match</item>
+        <item>rozetka</item>
+        <item>rozmiar_obrazu</item>
+        <item>rs_file_manager</item>
+        <item>rtl_plus</item>
+        <item>rts_ce</item>
+        <item>rucardsmobile</item>
         <item>rumble</item>
+        <item>rummikub</item>
+        <item>russian_railway_passengers</item>
+        <item>russianpost</item>
+        <item>rutube</item>
         <item>ryanair</item>
+        <item>s_exam_prep_formerly_gradeup</item>
+        <item>s_lime</item>
+        <item>safeway</item>
+        <item>sahibinden</item>
+        <item>sajda</item>
+        <item>salatuk</item>
+        <item>sams_club</item>
+        <item>samsung_cloud</item>
+        <item>samsung_finder</item>
+        <item>samsung_flow</item>
+        <item>samsung_free</item>
+        <item>samsung_gift_indonesia</item>
+        <item>samsung_global_goals</item>
+        <item>samsung_good_guardians</item>
         <item>samsung_health</item>
+        <item>samsung_health_monitor</item>
         <item>samsung_internet</item>
+        <item>samsung_keys_cafe</item>
+        <item>samsung_kids</item>
+        <item>samsung_members</item>
+        <item>samsung_music</item>
+        <item>samsung_my_galaxy</item>
         <item>samsung_notes</item>
+        <item>samsung_pay</item>
+        <item>samsung_print_service_plugin</item>
+        <item>samsung_secure</item>
+        <item>samsung_shop</item>
+        <item>samsung_smart_switch</item>
+        <item>samsung_tv_plus</item>
+        <item>samsungpass</item>
+        <item>samsungpaymini</item>
+        <item>sanchar_saathi</item>
+        <item>sassla</item>
+        <item>satusehat</item>
+        <item>sbi_rewardz</item>
+        <item>sbt</item>
+        <item>scam_shield</item>
+        <item>scb_easy</item>
+        <item>school_planner</item>
+        <item>schoolboy_runaway</item>
+        <item>score_hero</item>
+        <item>scratchjr</item>
+        <item>scream_go_hero</item>
+        <item>screenmaster</item>
+        <item>scribd</item>
+        <item>scrl</item>
+        <item>sd_maid</item>
+        <item>seabank</item>
+        <item>secure_vpn</item>
+        <item>secure_wi_fi</item>
+        <item>securid</item>
+        <item>seekee</item>
+        <item>seekho</item>
+        <item>send_anywhere</item>
+        <item>send_files_to_tv</item>
+        <item>sendit</item>
         <item>sephora</item>
+        <item>serasa</item>
+        <item>series_kr</item>
         <item>session</item>
+        <item>set_edit</item>
         <item>settings</item>
+        <item>shaadi</item>
+        <item>shadow_fight_2</item>
+        <item>shadow_fight_3</item>
+        <item>shadow_fight_4</item>
+        <item>shahid</item>
+        <item>shakes_fidget</item>
+        <item>share_karo</item>
+        <item>sharechat</item>
         <item>shareit</item>
+        <item>shareme</item>
         <item>shazam</item>
+        <item>shedevrum</item>
         <item>shein</item>
+        <item>shell</item>
+        <item>shield_protect</item>
+        <item>shimeji</item>
+        <item>shizuku</item>
+        <item>shootingplus_v3</item>
+        <item>shop</item>
+        <item>shop_apotheke_redcare</item>
+        <item>shop_samsung</item>
+        <item>shopback</item>
         <item>shopee</item>
+        <item>shopeepay</item>
         <item>shopify</item>
+        <item>shopsy</item>
+        <item>shortcut_maker</item>
+        <item>shotcut</item>
+        <item>shpock</item>
+        <item>shshow</item>
+        <item>sicoob</item>
         <item>signal</item>
+        <item>simcity</item>
+        <item>simeji</item>
+        <item>simple_calendar</item>
+        <item>simple_radio</item>
+        <item>simpledraw</item>
+        <item>simplegallery</item>
+        <item>sims_freeplay</item>
+        <item>siriusxm</item>
+        <item>six_pack_in_30_days</item>
+        <item>sketchbook</item>
+        <item>sketches</item>
         <item>skillshare</item>
         <item>skrill</item>
+        <item>skullgirls</item>
+        <item>sky</item>
+        <item>skylark</item>
+        <item>skymap</item>
         <item>skype</item>
         <item>skyscanner</item>
+        <item>skyshowtime</item>
+        <item>skyview</item>
         <item>slack</item>
         <item>sleepcycle</item>
+        <item>slice</item>
+        <item>slitherio</item>
+        <item>slots</item>
+        <item>smart_fit</item>
+        <item>smart_life</item>
+        <item>smart_transfer</item>
+        <item>smart_transport</item>
+        <item>smart_tutor</item>
+        <item>smartbanking</item>
+        <item>smartlauncher</item>
         <item>smartnews</item>
+        <item>smartphone</item>
+        <item>smartthings</item>
+        <item>smash_hit</item>
+        <item>smashy_road_wanted</item>
+        <item>smashy_road_wanted_2</item>
+        <item>sms_backup_restore_alt</item>
         <item>smule</item>
+        <item>smytten</item>
+        <item>snack_bar</item>
+        <item>snackvideo</item>
+        <item>snake_io</item>
+        <item>snap</item>
+        <item>snapbridge</item>
         <item>snapchat</item>
         <item>snapdeal</item>
+        <item>snapedit</item>
         <item>snapseed</item>
+        <item>sncf</item>
+        <item>snes9x</item>
+        <item>sniper</item>
+        <item>snkrs</item>
         <item>snow</item>
+        <item>sofascore</item>
         <item>sofi</item>
+        <item>softbank</item>
+        <item>solar_smash</item>
         <item>solid_explorer</item>
         <item>solitaire</item>
+        <item>solo_leveling_arise</item>
         <item>sololearn</item>
+        <item>sonic_boom</item>
         <item>sonic_dash</item>
+        <item>sonic_forces</item>
+        <item>sonic_restaurant</item>
+        <item>sonic_rumble</item>
+        <item>sonos</item>
+        <item>sony_sound_connect</item>
         <item>sonyliv</item>
+        <item>sortpuz</item>
+        <item>soul_knight</item>
+        <item>sound_amplifier</item>
+        <item>sound_assistant</item>
         <item>soundcloud</item>
+        <item>soundcore</item>
+        <item>soundcorset_tuner_and_metronome</item>
         <item>soundhound</item>
+        <item>south_park_phone_destroyer</item>
         <item>southwest_airlines</item>
+        <item>spacedesk</item>
+        <item>spaceflight_simulator</item>
         <item>spark</item>
+        <item>sparkasse</item>
+        <item>spatial_touch</item>
+        <item>speak</item>
+        <item>speaker_cleaner</item>
+        <item>specialforcesgroup2</item>
+        <item>specimen_zero</item>
+        <item>speechify</item>
+        <item>speedometer</item>
         <item>speedtest</item>
+        <item>spider_fighter</item>
+        <item>spider_fighter_2</item>
+        <item>spider_fighter_3</item>
+        <item>spin_by_oxxo</item>
+        <item>spin_premia</item>
+        <item>spin_the_wheel</item>
+        <item>splayer</item>
         <item>splitwise</item>
+        <item>sportmaster</item>
         <item>spotify</item>
+        <item>squad_busters</item>
+        <item>square2</item>
+        <item>square_pic</item>
+        <item>squid_game_unleashed</item>
+        <item>stack</item>
         <item>stack_overflow</item>
+        <item>standoff</item>
+        <item>star_health</item>
+        <item>star_walk_2</item>
         <item>starbucks</item>
+        <item>starlink</item>
         <item>starmaker</item>
+        <item>start</item>
+        <item>starz</item>
+        <item>state_connect_traffic_control</item>
+        <item>state_farm</item>
+        <item>state_io</item>
+        <item>stats_royale</item>
+        <item>statsfm_spotistats</item>
+        <item>status_sticker_saver</item>
+        <item>stayfree</item>
         <item>steam</item>
+        <item>steam_chat</item>
+        <item>steamlink</item>
+        <item>stellariumfree</item>
+        <item>stick_war_legacy</item>
+        <item>stick_war_saga</item>
+        <item>stickerly</item>
+        <item>stickermaker</item>
+        <item>stickman_hook</item>
+        <item>stickman_party</item>
         <item>stockx</item>
+        <item>storage_saver</item>
+        <item>stori</item>
+        <item>storytel</item>
         <item>strava</item>
+        <item>streamlabs</item>
         <item>stremio</item>
         <item>stripe</item>
+        <item>studio</item>
+        <item>studysmarter</item>
         <item>stumble_guys</item>
+        <item>stunt_bike_extreme</item>
+        <item>stylish_text</item>
+        <item>sube</item>
+        <item>subito</item>
         <item>substack_reader</item>
         <item>subway</item>
+        <item>subway_princess_runner</item>
+        <item>subwaysurf</item>
+        <item>subwaysurf_2</item>
         <item>sudoku</item>
+        <item>summoners_war</item>
+        <item>sumup</item>
+        <item>sun_nxt</item>
+        <item>sunlight</item>
+        <item>suno</item>
+        <item>super_backup</item>
+        <item>super_bear_adventure</item>
+        <item>super_mario_run</item>
+        <item>super_sound</item>
+        <item>super_sus</item>
+        <item>supermarket_management_simulator</item>
+        <item>supermoney</item>
+        <item>supervpn</item>
+        <item>supreme_duelist_stickman</item>
         <item>surfshark</item>
+        <item>survivalcraft</item>
+        <item>survivalcraft2</item>
+        <item>survivor_io</item>
+        <item>sush</item>
+        <item>sushiro</item>
+        <item>swagbucks</item>
+        <item>swap_no_root</item>
+        <item>swarail</item>
+        <item>swayam</item>
+        <item>sweat_wallet</item>
+        <item>sweatcoin</item>
         <item>swiftkey</item>
         <item>swiggy</item>
+        <item>symbolab</item>
+        <item>t_mobile</item>
+        <item>t_mobile_play</item>
+        <item>tabby</item>
+        <item>tabii</item>
+        <item>tabs</item>
         <item>taco_bell</item>
+        <item>tactical_war</item>
+        <item>taimi</item>
+        <item>takealot</item>
         <item>talabat</item>
+        <item>talkie</item>
+        <item>talking_angela</item>
+        <item>talking_angela_2</item>
+        <item>talking_tom</item>
+        <item>talking_tom_2</item>
+        <item>talking_tom_gold_run</item>
+        <item>tamam_keyboard_iraq</item>
+        <item>tamam_keyboard_saudi</item>
+        <item>tamara</item>
+        <item>tamasha</item>
+        <item>tandem</item>
+        <item>tanglemaster3d</item>
+        <item>tango</item>
+        <item>tank</item>
+        <item>tank_alt</item>
         <item>tantan</item>
         <item>taobao</item>
+        <item>tapas</item>
+        <item>tapscanner</item>
         <item>target</item>
+        <item>tarteel</item>
         <item>tasker</item>
+        <item>tata_1mg</item>
+        <item>tata_cliq</item>
+        <item>tata_play</item>
+        <item>tata_play_binge</item>
+        <item>tawakkalna_services</item>
+        <item>tcl_home</item>
+        <item>td_bank</item>
+        <item>tds</item>
+        <item>team_fight_tactics</item>
         <item>teamviewer</item>
+        <item>techcombank</item>
+        <item>tecno_spot</item>
+        <item>ted</item>
+        <item>teen_patti_rummy</item>
+        <item>telcel</item>
+        <item>telebox</item>
         <item>telegram</item>
+        <item>telegram_plus</item>
+        <item>telegraph</item>
+        <item>tellonym</item>
+        <item>telmex</item>
         <item>temple_run</item>
         <item>temu</item>
+        <item>tennis</item>
+        <item>tenor</item>
+        <item>terabox</item>
+        <item>terminal</item>
+        <item>terraria</item>
+        <item>tesco_grocery</item>
+        <item>testbook</item>
+        <item>testerup</item>
+        <item>tether</item>
+        <item>tetris</item>
+        <item>textfairy</item>
+        <item>textnow</item>
+        <item>textra</item>
+        <item>tflat_dictionary</item>
+        <item>thai_kao_ke</item>
+        <item>thai_tv</item>
+        <item>thaid</item>
+        <item>thangrat</item>
+        <item>that_level_again</item>
+        <item>the_baby_in_yellow</item>
+        <item>the_chosen</item>
+        <item>the_day_before</item>
+        <item>the_fork</item>
+        <item>the_ghost</item>
+        <item>the_girl_in_the_window</item>
+        <item>the_souled_store</item>
+        <item>theants</item>
+        <item>thebattlecats</item>
+        <item>thehindu</item>
+        <item>theme_park</item>
+        <item>theme_store</item>
+        <item>themes_app_icons</item>
+        <item>theotown</item>
+        <item>thescore</item>
         <item>threads</item>
         <item>threema</item>
+        <item>thunder_vpn</item>
+        <item>tic_tac_toe</item>
+        <item>tickertape</item>
+        <item>ticketmaster</item>
+        <item>ticketnew</item>
         <item>ticktick</item>
         <item>tidal</item>
+        <item>tier</item>
+        <item>tiki</item>
         <item>tiktok</item>
+        <item>tiktok_downloader</item>
+        <item>tile</item>
+        <item>tiles_hop</item>
         <item>tim_hortons</item>
+        <item>timetree</item>
         <item>tinder</item>
+        <item>tiny_room</item>
+        <item>tinyscanner</item>
+        <item>tira</item>
+        <item>tix_id</item>
+        <item>tng_ewallet</item>
+        <item>to_do_list</item>
+        <item>toca_world</item>
+        <item>tochi_wallet</item>
         <item>todoist</item>
+        <item>toi</item>
+        <item>toing</item>
         <item>tokopedia</item>
+        <item>tomb_of_the_mask</item>
+        <item>tomtom_go</item>
+        <item>tonkeeper</item>
+        <item>toogoodtogo</item>
+        <item>toon_blast</item>
+        <item>top_eleven</item>
         <item>torbrowser</item>
+        <item>torrdroid</item>
         <item>toss</item>
         <item>totalcommander</item>
+        <item>totalplay</item>
+        <item>tower_war</item>
+        <item>township</item>
+        <item>tractor</item>
+        <item>traderepublic</item>
+        <item>trading_212</item>
+        <item>tradingview</item>
+        <item>traffic_racer</item>
+        <item>traffic_rider</item>
+        <item>train_conductor_world</item>
         <item>trainline</item>
         <item>transit</item>
+        <item>traveloka</item>
+        <item>trebel_music</item>
+        <item>treinta</item>
         <item>trello</item>
         <item>trendyol</item>
+        <item>trenitalia</item>
+        <item>trexrunner</item>
+        <item>tricount</item>
         <item>tripadvisor</item>
         <item>tripcom</item>
+        <item>triple_a</item>
         <item>trivago</item>
+        <item>trivia_crack</item>
+        <item>truck</item>
+        <item>true_app</item>
+        <item>truecaller</item>
+        <item>trueid</item>
+        <item>truemoney</item>
+        <item>trulia</item>
         <item>trust_wallet</item>
+        <item>ttb_touch</item>
+        <item>ttslexx</item>
         <item>tubi</item>
+        <item>tuesdays</item>
         <item>tumblr</item>
+        <item>tunein_radio</item>
         <item>tunnelbear</item>
+        <item>turbo_vpn</item>
+        <item>turbotax</item>
+        <item>turk_telekom</item>
+        <item>turkcell</item>
+        <item>turkcell_tvplus</item>
+        <item>turkish_airlines</item>
+        <item>turo</item>
+        <item>tuya_smart</item>
+        <item>tver</item>
+        <item>tving</item>
+        <item>tvs_credit_saathi</item>
+        <item>tvtime</item>
+        <item>twilight</item>
         <item>twitch</item>
         <item>twitter</item>
+        <item>twodots</item>
+        <item>uae_pass</item>
+        <item>uala</item>
+        <item>uba_mobile</item>
         <item>uber</item>
+        <item>uber_driver</item>
+        <item>uber_eats</item>
         <item>ubereats</item>
+        <item>ubl_digital</item>
         <item>uc_browser</item>
+        <item>uc_browser_mini</item>
+        <item>uc_browser_turbo</item>
+        <item>uco_mbanking_plus</item>
         <item>udemy</item>
+        <item>uds</item>
+        <item>uefa</item>
+        <item>uefa_gaming</item>
+        <item>ufc</item>
+        <item>ufficiopostale</item>
+        <item>uklon</item>
+        <item>ukraine_alarm</item>
+        <item>umang</item>
         <item>unacademy</item>
+        <item>unicodepad</item>
+        <item>unicorn_https</item>
+        <item>unicredit</item>
+        <item>unimote</item>
+        <item>unionbank</item>
         <item>united_airlines</item>
+        <item>universalcopy</item>
+        <item>unlimited_energy</item>
+        <item>uno</item>
+        <item>ups</item>
+        <item>upside</item>
+        <item>upstox</item>
         <item>upwork</item>
+        <item>uq_mobile</item>
+        <item>urban_company</item>
+        <item>urbandroid</item>
+        <item>us_bank</item>
+        <item>usaa</item>
+        <item>usb_backup</item>
+        <item>uts</item>
+        <item>v2raytun</item>
+        <item>v380_pro</item>
+        <item>v_point</item>
+        <item>vakifbank</item>
+        <item>vampire_survivors</item>
         <item>vampiresurvivors</item>
+        <item>vaulty</item>
+        <item>vector</item>
+        <item>veepee</item>
         <item>venmo</item>
+        <item>vepatria</item>
+        <item>verizon_cloud</item>
+        <item>veryfit</item>
+        <item>vflat</item>
+        <item>vi</item>
+        <item>vi_movies_and_tv</item>
+        <item>via</item>
+        <item>viaplay</item>
         <item>viber</item>
+        <item>vidaa</item>
+        <item>video_game</item>
+        <item>video_maker</item>
+        <item>video_to_audio</item>
+        <item>videoland</item>
+        <item>videotvsideview</item>
+        <item>vidio</item>
+        <item>vidiq</item>
+        <item>vietcombank</item>
+        <item>vietinbank_ipay</item>
+        <item>viettel_money</item>
         <item>viki</item>
         <item>vimeo</item>
         <item>vinted</item>
+        <item>vip_access</item>
+        <item>vita</item>
         <item>viu</item>
+        <item>vivacut</item>
         <item>vivaldi</item>
+        <item>vivavideo</item>
         <item>vivino</item>
+        <item>vivo</item>
+        <item>vivo_easy</item>
+        <item>vivo_themes</item>
+        <item>vivocom</item>
+        <item>vix</item>
+        <item>vizio</item>
+        <item>vk_messenger</item>
+        <item>vk_music</item>
+        <item>vk_video</item>
         <item>vlc</item>
         <item>vllo</item>
+        <item>vn</item>
+        <item>vneid</item>
+        <item>vocabulary_builder</item>
+        <item>voice_access</item>
+        <item>voicemail</item>
+        <item>volleyball</item>
+        <item>volume_styles</item>
+        <item>voter_helpline</item>
+        <item>vpbank_neo</item>
+        <item>vrbo</item>
         <item>vsco</item>
+        <item>vudu</item>
+        <item>wafer_vault</item>
+        <item>wake_on_lan</item>
         <item>walgreens</item>
+        <item>walk_band</item>
+        <item>wall_kickers</item>
+        <item>wallapop</item>
+        <item>wallcraft</item>
+        <item>walli</item>
         <item>walmart</item>
+        <item>wamr</item>
+        <item>wardencam</item>
+        <item>waterdrinkreminder</item>
+        <item>watermelon_game</item>
         <item>wattpad</item>
+        <item>wavepay</item>
         <item>wayfair</item>
         <item>waze</item>
+        <item>wazirx</item>
         <item>wealthsimple</item>
+        <item>weapon_master</item>
+        <item>wearfit_pro</item>
+        <item>wearos</item>
+        <item>weatherbug</item>
+        <item>weathercan</item>
+        <item>weawow</item>
+        <item>webde_mail</item>
         <item>webex</item>
+        <item>webmd</item>
+        <item>webmotors</item>
+        <item>webnovel</item>
         <item>webtoon</item>
         <item>webull</item>
+        <item>webvideocaster</item>
         <item>wechat</item>
+        <item>weibo</item>
         <item>wells_fargo</item>
+        <item>wendys</item>
+        <item>weplay</item>
         <item>wesing</item>
         <item>western_union</item>
+        <item>wetransfer</item>
+        <item>wetteronline</item>
+        <item>wetv</item>
+        <item>weverse</item>
+        <item>weward</item>
+        <item>what3words</item>
+        <item>whatisremoved</item>
+        <item>whatnot</item>
+        <item>whats_up</item>
         <item>whatsapp</item>
+        <item>whatsapp_business</item>
+        <item>whiteout_survival</item>
+        <item>whoosh</item>
+        <item>whoscall</item>
+        <item>widgeet</item>
+        <item>widgetable</item>
+        <item>widgetopia</item>
+        <item>wifi_map</item>
+        <item>wifi_master</item>
+        <item>wifi_monitor_pro</item>
+        <item>wifianalyzer</item>
         <item>wikiloc</item>
         <item>wikipedia</item>
+        <item>wild_rift</item>
         <item>wildberries</item>
         <item>windscribe</item>
+        <item>windtre</item>
+        <item>windy</item>
+        <item>windyapp</item>
         <item>wink</item>
+        <item>wink_video</item>
+        <item>winzip</item>
+        <item>wireguard</item>
         <item>wise</item>
         <item>wish</item>
+        <item>wizz_air</item>
         <item>wolfram_alpha</item>
         <item>wolt</item>
+        <item>wolvesville</item>
+        <item>wom</item>
+        <item>wonderland</item>
+        <item>wood_screws_games</item>
+        <item>woodoku</item>
+        <item>word_scenery</item>
+        <item>word_trip</item>
+        <item>wordfeud</item>
+        <item>wordle</item>
+        <item>wordpress</item>
+        <item>wordreference</item>
+        <item>words_of_wonders_crossword</item>
         <item>wordscapes</item>
+        <item>workday</item>
+        <item>workplace_from_meta</item>
+        <item>world_geography</item>
+        <item>worldbox</item>
+        <item>worldcoin</item>
+        <item>wps_office</item>
+        <item>wps_office_lite</item>
         <item>wpsoffice</item>
+        <item>wtmp</item>
+        <item>wunderground</item>
         <item>wuthering_waves</item>
+        <item>ww</item>
         <item>wynk_music</item>
+        <item>wyze</item>
         <item>x</item>
+        <item>x_icon_changer</item>
+        <item>x_plore</item>
+        <item>xanh_sm</item>
+        <item>xapk_installer</item>
+        <item>xbox</item>
+        <item>xbox_beta</item>
+        <item>xclub</item>
+        <item>xe</item>
         <item>xender</item>
+        <item>xfinity</item>
+        <item>xiaohongshu_rednote</item>
+        <item>xiaomi_earbuds</item>
+        <item>xiaomiwear</item>
+        <item>xmeye</item>
+        <item>xododocs</item>
+        <item>xos_launcher</item>
+        <item>xp_investimentos</item>
+        <item>xpark</item>
+        <item>xrecorder</item>
+        <item>xstation</item>
+        <item>yaeda</item>
+        <item>yahoo_fantasy</item>
+        <item>yahoo_japan</item>
+        <item>yahoo_japan_auction</item>
+        <item>yahoo_japan_browser</item>
+        <item>yahoo_japan_flea_market</item>
+        <item>yahoo_japan_news</item>
         <item>yahoo_mail</item>
+        <item>yahoo_sport</item>
+        <item>yamada_denki</item>
+        <item>yamaps</item>
+        <item>yanavi</item>
+        <item>yandex_alice</item>
+        <item>yandex_bank</item>
+        <item>yandex_browser</item>
+        <item>yandex_disk</item>
+        <item>yandex_iot</item>
+        <item>yandex_keyboard</item>
+        <item>yandex_market</item>
         <item>yandex_music</item>
+        <item>yandex_pro_taximeter</item>
+        <item>yandex_start</item>
+        <item>yandex_trains</item>
+        <item>yandex_with_alice</item>
+        <item>yango</item>
+        <item>yanosik</item>
+        <item>yape</item>
+        <item>yapi_kredi</item>
+        <item>yaweather</item>
         <item>yazio</item>
         <item>yelp</item>
+        <item>yemeksepeti</item>
+        <item>yi_home</item>
+        <item>yi_iot</item>
+        <item>yoga</item>
+        <item>yono_lite_sbi</item>
+        <item>yono_sbi</item>
+        <item>yoosee</item>
+        <item>yoti</item>
+        <item>youcam_perfect</item>
+        <item>youcutvideoeditor</item>
         <item>youku</item>
+        <item>youla</item>
         <item>youtube</item>
+        <item>youtube_create</item>
         <item>youtube_kids</item>
         <item>youtube_music</item>
+        <item>youtube_studio</item>
         <item>youtube_tv</item>
+        <item>yowindow</item>
+        <item>yr</item>
+        <item>yu_gi_oh</item>
+        <item>yu_gi_oh_master_duel</item>
+        <item>yubo</item>
+        <item>yuka</item>
         <item>zalando</item>
         <item>zalo</item>
+        <item>zalopay</item>
+        <item>zalora</item>
+        <item>zappka</item>
         <item>zara</item>
         <item>zarchiver</item>
+        <item>zaza_remote</item>
+        <item>zdfmediathek</item>
         <item>zedge</item>
         <item>zee5</item>
         <item>zelle</item>
+        <item>zello</item>
+        <item>zen</item>
         <item>zenless_zone_zero</item>
+        <item>zepp</item>
         <item>zepto</item>
         <item>zerodha_kite</item>
+        <item>zestmoney</item>
+        <item>zing_mp3</item>
+        <item>ziprecruiter</item>
+        <item>ziraat_mobile</item>
+        <item>zoho_mail</item>
         <item>zohomail</item>
         <item>zomato</item>
+        <item>zombie_catchers</item>
+        <item>zombie_tsunami</item>
+        <item>zooba</item>
         <item>zoom</item>
+        <item>zvuk</item>
     </string-array>
 </resources>
