@@ -11827,7 +11827,6 @@
     <item component="com.gratis.android/com.gratis.android.GratisMainActivity" drawable="gratis" />
     <item component="ComponentInfo{com.gratis.android/com.app.gratis.ui.splash.SplashActivity}" drawable="gratis" />
     <item component="ComponentInfo{com.gratis.android/com.gratis.android.GratisMainActivity}" drawable="gratis" />
-    <item component="ComponentInfo{com.sec.android.app.voicenote/com.sec.android.app.voicenote.main.VNMainActivity}" drawable="gravadordevoz" />
     <item component="ComponentInfo{com.oasisfeng.greenify/com.oasisfeng.greenify.GreenifyActivity}" drawable="greenify" />
     <item component="ComponentInfo{com.oasisfeng.greenify/com.oasisfeng.greenify.GreenifyShortcut}" drawable="greenify" />
     <item component="ComponentInfo{com.oasisfeng.greenify/com.oasisfeng.greenify.HibernateAndLockScreen}" drawable="greenify" />
@@ -16324,7 +16323,6 @@
     <item component="ComponentInfo{in.mohalla.video/in.mohalla.sharechat.splash.SplashActivity}" drawable="moj" />
     <item component="in.mohalla.video/in.mohalla.sharechat.mojvideoplayer.MojVideoPlayerActivity" drawable="moj" />
     <item component="in.mohalla.video/in.mohalla.sharechat.splash.SplashActivity" drawable="moj" />
-    <item component="ComponentInfo{com.sec.android.app.myfiles/com.sec.android.app.myfiles.common.MainActivity}" drawable="mojepliki" />
     <item component="ComponentInfo{video.mojo/video.mojo.Launcher}" drawable="mojo" />
     <item component="ComponentInfo{video.mojo/video.mojo.pages.main.MainActivity}" drawable="mojo" />
     <item component="video.mojo/video.mojo.Launcher" drawable="mojo" />

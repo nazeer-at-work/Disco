@@ -65751,10 +65751,6 @@
       "drawable": "gratis"
     },
     {
-      "component": "ComponentInfo{com.sec.android.app.voicenote/com.sec.android.app.voicenote.main.VNMainActivity}",
-      "drawable": "gravadordevoz"
-    },
-    {
       "component": "ComponentInfo{com.oasisfeng.greenify/com.oasisfeng.greenify.GreenifyActivity}",
       "drawable": "greenify"
     },
@@ -83737,10 +83733,6 @@
     {
       "component": "in.mohalla.video/in.mohalla.sharechat.splash.SplashActivity",
       "drawable": "moj"
-    },
-    {
-      "component": "ComponentInfo{com.sec.android.app.myfiles/com.sec.android.app.myfiles.common.MainActivity}",
-      "drawable": "mojepliki"
     },
     {
       "component": "ComponentInfo{video.mojo/video.mojo.Launcher}",
